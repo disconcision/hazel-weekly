@@ -54,6 +54,8 @@ The existing PDF builders use Python, ReportLab, Pillow, pypdf, Node, Playwright
 
 Imported September 11, 2026. This is the project repository and a starting point for cloud migration. **Creating it did not move or activate a scheduled job.** The existing Friday 9 a.m. America/Los_Angeles Codex task still runs locally and reads the original production kit in the sibling `hazel` checkout. Until that task is migrated, reconcile any newer issues and ledgers from that working kit before using this repository for production.
 
+A [one-off cloud back-issue trial](docs/CLOUD-TRIAL.md) has since been started in the existing ChatGPT **hazel** project. It uses this repository as its production kit and has no publishing or scheduling role. See [the migration record](docs/CLOUD-MIGRATION.md) for its task ID and the handover sequence that prevents overlapping weekly schedules.
+
 The live website remains in [disconcision/disconcision.github.io](https://github.com/disconcision/disconcision.github.io), deployed from `master`. This repository's `site/` directory is a complete imported copy of the archive, not a second deployment. Publishing a commit here does not update the website. Keep website changes confined to `hazel/weekly/` and preserve the existing `/hazel` redirect and all other navigation.
 
 The import includes the finished issues and retained revisions without changing their bytes. [The import manifest](docs/import-manifest.json) records paths, sizes, checksums, and the source website commit. Local credentials, browser profiles, dependency installations, Hazel worktrees, and automation configuration are not included.

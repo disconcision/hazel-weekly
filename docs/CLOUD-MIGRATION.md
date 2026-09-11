@@ -1,6 +1,20 @@
 # Moving weekly production off the Mac
 
-Assessment: September 11, 2026. This document records a proposed migration. No cloud environment, paid API use, deployment workflow, or replacement schedule has been activated.
+Assessment: September 11, 2026. A one-off ChatGPT Work Cloud trial has now been started. No replacement weekly schedule, separately provisioned Codex cloud environment, paid API integration, or deployment workflow has been activated.
+
+## Current next step: the hosted back-issue trial
+
+The app already contains two distinct projects named **hazel**: a local project connected to the Mac's Hazel checkout, and a ChatGPT project. The trial was started directly in the existing ChatGPT project using the app's ChatGPT Work Cloud task creation capability. Andrew does not need to create another project for this trial. The local project and this production conversation remain intact; no in-place conversion was attempted.
+
+- Cloud task ID: `6aa49166-9678-83ea-a228-bcc4e5135ce7`.
+- ChatGPT project ID: `g-p-6898c74753888191b5b9e8751ebbd402`.
+- Starting production revision: `36c0a703e8b84014dd5030e74de712f8f16f61d7`.
+- Assignment: [one new retrospective issue](CLOUD-TRIAL.md), including an actual hosted-tool capability check before production.
+- Initial state verified through the app: the task exists, contains the requested assignment, and is active. Successful production is not yet established.
+
+This is **ChatGPT Work Cloud**, which is distinct from the repository-oriented Codex cloud environment described below. The official [Work guide](https://learn.chatgpt.com/docs/get-started-with-work) describes hosted work that can continue after the desktop app closes. A [ChatGPT project](https://learn.chatgpt.com/docs/projects) organizes shared sources and conversations; the local-folder project does not automatically become a hosted filesystem. This trial reads its durable production kit from GitHub.
+
+The cloud task must attempt the new back issue, record which tools work, and identify any exact missing connection or dependency. During the trial it cannot publish or enable recurring execution. After the result passes review, pause and verify the local schedule before activating a cloud replacement, as specified in the trial brief. There must be only one active weekly publisher.
 
 ## What exists now
 
@@ -8,13 +22,13 @@ The editorial process, source snapshots, issue/image ledgers, artwork, screensho
 
 Local scheduled tasks require the computer to be on and the Codex app running. Web scheduled tasks are a separate capability, available when enabled for the account/workspace; they do not preserve this local checkout between runs. See the official [scheduled-task documentation](https://learn.chatgpt.com/docs/automations).
 
-## Two possible execution routes
+## Alternative execution routes if the hosted trial needs them
 
 **Codex cloud:** connect this repository, create an environment, and install the required tools through its setup. Codex runs repository tasks remotely. Before choosing it for the whole magazine, test its browser capture, image editing/generation, artifact handling, and recurring execution together. The documentation does not establish that this existing desktop heartbeat can simply be transferred with all the same tools. See [Codex cloud](https://learn.chatgpt.com/docs/cloud) and [cloud environments](https://learn.chatgpt.com/docs/environments/cloud-environment).
 
 **A scheduled hosted CI runner running Codex:** a GitHub-hosted job could check out the production and Hazel repositories, run the editorial agent with the saved brief, render the outputs, and publish to the existing website repository. OpenAI provides a [Codex GitHub Action](https://learn.chatgpt.com/docs/github-action) that runs Codex CLI in CI and requires an OpenAI API key. A full magazine workflow would still need screenshot and image-generation tools, dependency setup, persistence, and a measured per-run budget. This is a proposed architecture, not something this repository currently runs.
 
-The second route gives explicit control over the long visual-production pipeline. The first may be simpler if an end-to-end trial confirms the required tools and scheduling are available. Validate those capabilities before choosing a scheduler.
+The CI route gives explicit control over the long visual-production pipeline. A separately configured Codex cloud environment may also be useful if the ChatGPT Work Cloud trial exposes limitations. Neither alternative is required merely to start the current hosted trial. Validate the actual capabilities before choosing a weekly scheduler.
 
 ## Remaining work
 
