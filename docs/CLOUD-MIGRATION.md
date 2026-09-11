@@ -10,11 +10,25 @@ The app already contains two distinct projects named **hazel**: a local project 
 - ChatGPT project ID: `g-p-6898c74753888191b5b9e8751ebbd402`.
 - Starting production revision: `36c0a703e8b84014dd5030e74de712f8f16f61d7`.
 - Assignment: [one new retrospective issue](CLOUD-TRIAL.md), including an actual hosted-tool capability check before production.
-- Initial state verified through the app: the task exists, contains the requested assignment, and is active. Successful production is not yet established.
+- The task is now titled **Produce Cloud Trial Issue**. Its actual web conversation shows repository retrieval, Node/Python and Poppler checks, and selection of Issue **-058**, July 18–24, 2025, with historical cutoff head beginning `790b84e568`. Browser access to public `hazel.org` was allowed for this chat, and the web UI then showed work continuing. Successful completion is not yet established.
+- The desktop `read_thread` tool returned only the initial user brief despite substantial assistant progress being visible on the web. Do not use an empty assistant-message result or the generic active/idle flag alone to conclude that this cloud task has not started or has finished.
 
 This is **ChatGPT Work Cloud**, which is distinct from the repository-oriented Codex cloud environment described below. The official [Work guide](https://learn.chatgpt.com/docs/get-started-with-work) describes hosted work that can continue after the desktop app closes. A [ChatGPT project](https://learn.chatgpt.com/docs/projects) organizes shared sources and conversations; the local-folder project does not automatically become a hosted filesystem. This trial reads its durable production kit from GitHub.
 
 The cloud task must attempt the new back issue, record which tools work, and identify any exact missing connection or dependency. During the trial it cannot publish or enable recurring execution. After the result passes review, pause and verify the local schedule before activating a cloud replacement, as specified in the trial brief. There must be only one active weekly publisher.
+
+## Access across devices is an acceptance requirement
+
+Andrew wants a clearly discoverable project and task in the desktop client and on his phone, without depending on a special link supplied by an agent. Do not declare the migration ready until this is verified along with production and publishing.
+
+- [Existing ChatGPT hazel project](https://chatgpt.com/g/g-p-6898c74753888191b5b9e8751ebbd402-hazel/project).
+- [Produce Cloud Trial Issue](https://chatgpt.com/g/g-p-6898c74753888191b5b9e8751ebbd402/c/6aa49166-9678-83ea-a228-bcc4e5135ce7).
+
+Both URLs were observed in the authenticated ChatGPT web UI. Expanding its sidebar showed the task as a Work conversation under **hazel**. Desktop-sidebar discovery and phone access still need confirmation. The native desktop UI could not be inspected through Computer Use because that tool blocks control of the Codex app; the app's purpose-built project/task APIs and the separate ChatGPT web UI were used instead.
+
+The [official comparison](https://learn.chatgpt.com/docs/use-chatgpt) distinguishes the ChatGPT view, which includes Work and web/mobile conversations, from the Codex developer view. A local Hazel folder entry is a different project from the ChatGPT **hazel** project. Work Cloud and Codex share core execution machinery, but their tool access and histories are not interchangeable. The [cloud execution documentation](https://learn.chatgpt.com/docs/enterprise/chatgpt-work-cloud-security) makes this distinction explicit. A clearly named dedicated magazine project may improve organization later; creating another project is not by itself a fix for missing desktop navigation.
+
+An existing [desktop cloud-project synchronization report](https://github.com/openai/codex/issues/32718), filed July 13, 2026, describes projects visible on the web but missing in a desktop app version. This is related user evidence, not a confirmed diagnosis for Andrew's current app. First check the ChatGPT product view and project navigation; do not assume a reported bug applies or recreate the trial merely because a sidebar entry is missing.
 
 ## What exists now
 
