@@ -14,6 +14,7 @@ Read the magazine at **[andrewblinn.com/hazel/weekly](https://andrewblinn.com/ha
 - [Preferred screenshot treatment](output/week-in-hazel/assets/probes-cards-woodcut.png), with its [authentic PNG](output/week-in-hazel/assets/probes-cards-clean.png): a light stamp texture, with no added frame.
 - [Web publication guide](output/week-in-hazel/web/README.md): HTML editions, the disclosure banner, and the existing personal-site destination.
 - [Cloud migration assessment](docs/CLOUD-MIGRATION.md): what is portable now and what still needs work.
+- [PDF size audit](docs/PDF-SIZE.md): measured lossless compression headroom, deferred until after the cloud trial.
 
 ## Editions
 

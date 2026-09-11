@@ -30,3 +30,7 @@ The second route gives explicit control over the long visual-production pipeline
 Run one complete cloud trial before changing the existing automation: acquire a bounded source window, build a representative Hazel feature, compose and capture a screenshot, apply the approved stamp treatment, produce original art, render and inspect a PDF, and build the readable HTML edition. Compare the result with Issue 001 and confirm the archive links and disclosure. Use an unpublished trial artifact so the experiment does not consume an issue number or duplicate an existing edition.
 
 Once the chosen environment can do that reliably, reconcile any newer local issues and ledgers into this repository, configure the weekly schedule, and retire the old local schedule as one coordinated change. Keep the current Friday schedule until the replacement is tested. The existing public website address can stay the same throughout.
+
+## Deferred: smaller PDFs
+
+After the cloud execution trial, evaluate a lossless PDF packaging pass. Andrew requested no visible quality loss and explicitly prioritized the cloud work. The [initial file-size audit](PDF-SIZE.md) finds that images dominate Issue 001, with a projected 26.8% saving from removing encoding overhead and compressing unchanged stream data. This estimate has not yet been validated in a rewritten PDF; published editions are unchanged.
