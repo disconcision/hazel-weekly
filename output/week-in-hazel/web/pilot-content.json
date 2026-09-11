@@ -1,0 +1,1973 @@
+{
+  "lead": [
+    {
+      "type": "page",
+      "args": [
+        "The big landing"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "title",
+      "args": [
+        "More room to inspect<br/>a running program.",
+        "MERGED INTO DEV / PROBES IV"
+      ],
+      "kwargs": {
+        "size": 33
+      }
+    },
+    {
+      "type": "image",
+      "args": [
+        "probes-cards.png",
+        65,
+        150,
+        410
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "para",
+      "args": [
+        "<b>Cards / dev.</b> Insertion sort compares card ranks and builds ordered hands. Alexander’s card renderer makes those intermediate values readable beside the recursive program.",
+        36,
+        405,
+        468
+      ],
+      "kwargs": {
+        "size": 8.7,
+        "font": "Sans",
+        "leading": 11.3,
+        "maxh": 34
+      }
+    },
+    {
+      "type": "dropcap",
+      "args": [
+        "Andrew Blinn’s <b>Probes IV</b> reached dev on September 8, merged by Cyrus Omar. A sample can now expand into a multiline drawer below its source line. Each probe has its own drawer state; values longer than fifteen rows scroll within that space.<br/><br/>The Cards example shows why room helps. Its <b>insert</b> function compares a card with the first card in a hand, then places it before that hand or recurses through the tail. Probes expose the comparisons and intermediate hands. The renderer comes from Alexander Bandukwala’s earlier work, integrated into dev this week. Small rich views stay inside the chip, preserving its controls; taller views open the drawer.",
+        36,
+        446,
+        222
+      ],
+      "kwargs": {
+        "size": 11.1,
+        "leading": 14,
+        "maxh": 218
+      }
+    },
+    {
+      "type": "para",
+      "args": [
+        "Automatic rich views are on by default. A probe can return to text; tables remain an explicit&#160;choice.<br/><br/>Auto-probe now offers <b>Off / Caret / All</b>: manual placement, the current top-level definition, or one probe per row across the program. Adding a probe also refreshes analysis so a cached evaluation cannot leave it empty until another edit.<br/><br/>Step-into reaches indirect calls, sample navigation scrolls its selection into view, and menus open on right- or alt-click. Try <b>Documentation → Cards</b> on dev to follow a recursive call through its arguments and results.",
+        282,
+        446,
+        222
+      ],
+      "kwargs": {
+        "size": 11.1,
+        "leading": 14,
+        "maxh": 218
+      }
+    },
+    {
+      "type": "sources",
+      "args": [
+        [
+          [
+            "#2363: features, discussion & merge",
+            "https://github.com/hazelgrove/hazel/pull/2363"
+          ],
+          [
+            "Try dev",
+            "https://hazel.org/build/dev/"
+          ]
+        ]
+      ],
+      "kwargs": {
+        "y": 673
+      }
+    }
+  ],
+  "aftermath": [
+    {
+      "type": "page",
+      "args": [
+        "After the landing"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "title",
+      "args": [
+        "The first drawer reports.",
+        "OPEN ISSUES / A MERGED CI CHANGE"
+      ],
+      "kwargs": {
+        "size": 34
+      }
+    },
+    {
+      "type": "para",
+      "args": [
+        "Three interaction reports and a recursive-ascription regression followed the Probes IV merge. All four remained open on September 11.",
+        36,
+        119,
+        468
+      ],
+      "kwargs": {
+        "size": 13.2,
+        "leading": 17,
+        "maxh": 51
+      }
+    },
+    {
+      "type": "label",
+      "args": [
+        "01 / INTERACTION",
+        36,
+        188
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "label",
+      "args": [
+        "02 / PERFORMANCE",
+        282,
+        188
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "para",
+      "args": [
+        "Missing menus.",
+        36,
+        207,
+        222
+      ],
+      "kwargs": {
+        "size": 21,
+        "font": "SerifBold",
+        "leading": 23,
+        "maxh": 25
+      }
+    },
+    {
+      "type": "para",
+      "args": [
+        "A cost inside recursion.",
+        282,
+        207,
+        222
+      ],
+      "kwargs": {
+        "size": 21,
+        "font": "SerifBold",
+        "leading": 23,
+        "maxh": 25
+      }
+    },
+    {
+      "type": "para",
+      "args": [
+        "Closing a tall table can leave its renderer selected after the picture disappears: the menu still says “Hide table.” Recovering it requires hiding and selecting it again (<b>#2519</b>). Inside the drawer, the sample context menu is unavailable; right-click can fall through to the editor’s menu (<b>#2520</b>).<br/><br/>Short tables expose a separate fault. A positioning rule left from the old modal anchors the column menu below the entire drawer. Tall, scrolling tables use a sticky header and avoid this particular problem (<b>#2521</b>).",
+        36,
+        240,
+        222
+      ],
+      "kwargs": {
+        "size": 11.1,
+        "leading": 14,
+        "maxh": 203
+      }
+    },
+    {
+      "type": "para",
+      "args": [
+        "In <b>#2524</b>, a recursive sum with an ascription on each call exhausts memory at 12,800 calls after the merge. The reporter’s pre-merge version completes; removing the ascription also restores roughly linear behavior.<br/><br/>The report traces the growth to copying and retaining call-stack identifiers at each relevant evaluation step. Removing the ascription changes the scaling without changing the recursive structure, giving the investigation a narrower target than recursion itself.",
+        282,
+        240,
+        222
+      ],
+      "kwargs": {
+        "size": 11.1,
+        "leading": 14,
+        "maxh": 203
+      }
+    },
+    {
+      "type": "label",
+      "args": [
+        "03 / CI: A FAILURE THAT CAUSED A NEEDLESS REVERT",
+        36,
+        460
+      ],
+      "kwargs": {
+        "size": 8
+      }
+    },
+    {
+      "type": "para",
+      "args": [
+        "Matthew Hammer’s comment on <b>#2482</b> gives flaky tests a concrete cost: his team reverted a good Fumola commit after an unrelated evaluator property failed. Alexander’s merged change disables two unstable randomized properties, retains their bodies for compilation, and runs fixed counterexamples instead.",
+        36,
+        483,
+        222
+      ],
+      "kwargs": {
+        "size": 11,
+        "leading": 13.8,
+        "maxh": 98
+      }
+    },
+    {
+      "type": "para",
+      "args": [
+        "Those checks expect the evaluators to disagree. If the examples start agreeing, the checks fail with a reminder to restore the properties. They do not pin an exact wrong result or fix either semantic bug. Matthew also notes that the separate Pattern equivalence test can still exhaust memory.",
+        282,
+        483,
+        222
+      ],
+      "kwargs": {
+        "size": 11,
+        "leading": 13.8,
+        "maxh": 98
+      }
+    },
+    {
+      "type": "text",
+      "args": [
+        "12",
+        48,
+        599,
+        28,
+        "SerifBold",
+        "#355B43"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "issues opened",
+        48,
+        632,
+        8.2,
+        "Sans"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "4",
+        202,
+        599,
+        28,
+        "SerifBold",
+        "#355B43"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "issues closed",
+        202,
+        632,
+        8.2,
+        "Sans"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "344",
+        356,
+        599,
+        28,
+        "SerifBold",
+        "#355B43"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "issues outstanding*",
+        356,
+        632,
+        8.2,
+        "Sans"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "para",
+      "args": [
+        "Opened and closed: September 4-10 UTC. *Outstanding on September 11.",
+        36,
+        652,
+        468
+      ],
+      "kwargs": {
+        "size": 7.7,
+        "font": "Sans",
+        "leading": 9.5,
+        "maxh": 20
+      }
+    },
+    {
+      "type": "sources",
+      "args": [
+        [
+          [
+            "#2519",
+            "https://github.com/hazelgrove/hazel/issues/2519"
+          ],
+          [
+            "#2520",
+            "https://github.com/hazelgrove/hazel/issues/2520"
+          ],
+          [
+            "#2521",
+            "https://github.com/hazelgrove/hazel/issues/2521"
+          ],
+          [
+            "#2524",
+            "https://github.com/hazelgrove/hazel/issues/2524"
+          ],
+          [
+            "#2482 & discussion",
+            "https://github.com/hazelgrove/hazel/pull/2482"
+          ],
+          [
+            "Open issues",
+            "https://github.com/hazelgrove/hazel/issues?q=is%3Aissue%20is%3Aopen"
+          ]
+        ]
+      ],
+      "kwargs": {
+        "y": 675
+      }
+    }
+  ],
+  "modules": [
+    {
+      "type": "page",
+      "args": [
+        "The branch garden"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "title",
+      "args": [
+        "Modules, all the way up.",
+        "MODULES II / NINE DRAFT PRs"
+      ],
+      "kwargs": {
+        "size": 37
+      }
+    },
+    {
+      "type": "para",
+      "args": [
+        "Alexander Bandukwala’s nine-part draft stack makes modules distinct values, repairs their boundaries, and tries a modular standard library.",
+        36,
+        122,
+        468
+      ],
+      "kwargs": {
+        "size": 14.2,
+        "leading": 18,
+        "maxh": 56
+      }
+    },
+    {
+      "type": "label",
+      "args": [
+        "THE STACK / VALUES → BOUNDARIES → LIBRARY",
+        36,
+        174
+      ],
+      "kwargs": {
+        "size": 7.6
+      }
+    },
+    {
+      "type": "text",
+      "args": [
+        "1-3",
+        49,
+        207,
+        26,
+        "SerifItalic",
+        "#355B43"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "A module gets an identity",
+        114,
+        203,
+        16,
+        "SerifBold"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "Signatures, width matching, abstract members",
+        114,
+        223,
+        9,
+        "Sans"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "para",
+      "args": [
+        "<link href=\"https://github.com/hazelgrove/hazel/pull/2493\" color=\"#355B43\">#2493</link>  <link href=\"https://github.com/hazelgrove/hazel/pull/2494\" color=\"#355B43\">#2494</link>  <link href=\"https://github.com/hazelgrove/hazel/pull/2495\" color=\"#355B43\">#2495</link>",
+        114,
+        239,
+        378
+      ],
+      "kwargs": {
+        "size": 8.5,
+        "font": "Mono"
+      }
+    },
+    {
+      "type": "text",
+      "args": [
+        "4-7",
+        63,
+        277,
+        26,
+        "SerifItalic",
+        "#355B43"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "Make the edges behave",
+        128,
+        273,
+        16,
+        "SerifBold"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "Module functions, errors, expectations, duplicates",
+        128,
+        293,
+        9,
+        "Sans"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "para",
+      "args": [
+        "<link href=\"https://github.com/hazelgrove/hazel/pull/2498\" color=\"#355B43\">#2498</link>  <link href=\"https://github.com/hazelgrove/hazel/pull/2500\" color=\"#355B43\">#2500</link>  <link href=\"https://github.com/hazelgrove/hazel/pull/2501\" color=\"#355B43\">#2501</link>  <link href=\"https://github.com/hazelgrove/hazel/pull/2503\" color=\"#355B43\">#2503</link>",
+        128,
+        309,
+        364
+      ],
+      "kwargs": {
+        "size": 8.5,
+        "font": "Mono"
+      }
+    },
+    {
+      "type": "text",
+      "args": [
+        "8-9",
+        77,
+        347,
+        26,
+        "SerifItalic",
+        "#355B43"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "Try the language on itself",
+        142,
+        343,
+        16,
+        "SerifBold"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "Modular implicits + a modular standard library",
+        142,
+        363,
+        9,
+        "Sans"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "para",
+      "args": [
+        "<link href=\"https://github.com/hazelgrove/hazel/pull/2508\" color=\"#355B43\">#2508</link>  <link href=\"https://github.com/hazelgrove/hazel/pull/2510\" color=\"#355B43\">#2510</link>",
+        142,
+        379,
+        350
+      ],
+      "kwargs": {
+        "size": 8.5,
+        "font": "Mono"
+      }
+    },
+    {
+      "type": "para",
+      "args": [
+        "A module becomes a value with a signature, rather than a labeled tuple. Members evaluate in order and projections resolve by name. One follow-up fixes a revealing bug: <b>let f(x) = …</b> exported the argument <b>x</b> instead of the function <b>f</b>.<br/><br/>Width matching lets a function asking only for <b>name : String</b> accept a module containing both name and age. The function sees the narrower interface. But differently shaped <b>if</b> arms do not silently find a shared signature: the author must write a narrowing ascription.<br/><br/>Abstract members hide representation while retaining identity. Outside a sealed module <b>M</b>, a member can have type <b>M.T</b>. Aliases preserve that identity; independently sealed modules get distinct types.",
+        36,
+        411,
+        222
+      ],
+      "kwargs": {
+        "size": 11.1,
+        "leading": 14,
+        "maxh": 253
+      }
+    },
+    {
+      "type": "para",
+      "args": [
+        "The middle drafts improve error locations and rules around names. A nested signature mismatch should identify the offending inner definition. Duplicate declarations in a signature are errors; repeated bindings in a module body deliberately shadow earlier ones.<br/><br/>The last two PRs remain early prototypes. Modular implicits explore how arguments are found. The library sketch exposes <b>Int, Float, String, List, Option</b> and <b>Pair</b>, while keeping existing flat names available.<br/><br/>There is a concrete cost to investigate: looking up <b>List.map</b> currently copies a 65-member module value. That cost is unmeasured. Sharing constraints and implicit-resolution design also remain unfinished; the prototypes make those costs and design choices available to examine.",
+        282,
+        411,
+        222
+      ],
+      "kwargs": {
+        "size": 11.1,
+        "leading": 14,
+        "maxh": 253
+      }
+    },
+    {
+      "type": "sources",
+      "args": [
+        [
+          [
+            "Start at #2493",
+            "https://github.com/hazelgrove/hazel/pull/2493"
+          ],
+          [
+            "Nested errors #2501",
+            "https://github.com/hazelgrove/hazel/pull/2501"
+          ],
+          [
+            "Duplicates #2503",
+            "https://github.com/hazelgrove/hazel/pull/2503"
+          ],
+          [
+            "Implicits #2508",
+            "https://github.com/hazelgrove/hazel/pull/2508"
+          ],
+          [
+            "Library #2510",
+            "https://github.com/hazelgrove/hazel/pull/2510"
+          ]
+        ]
+      ],
+      "kwargs": {
+        "y": 673
+      }
+    }
+  ],
+  "agent": [
+    {
+      "type": "page",
+      "args": [
+        "Aiject / the workspace"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "title",
+      "args": [
+        "Edit a definition.<br/>Keep the program live.",
+        "DRAFT: MODULAR EDITORS / OPEN: AGENT HARDENING"
+      ],
+      "kwargs": {
+        "size": 34
+      }
+    },
+    {
+      "type": "image",
+      "args": [
+        "modular-focus.png",
+        36,
+        155,
+        468
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "para",
+      "args": [
+        "<b>Modular editors / Mega 1k.</b> <b>RunningSums.running_sum</b> from Mega 1k. A probe on <b>total</b> collects eight samples from the surrounding program, whose result remains <b>true</b>.",
+        36,
+        348,
+        468
+      ],
+      "kwargs": {
+        "size": 8.5,
+        "font": "Sans",
+        "leading": 11,
+        "maxh": 34
+      }
+    },
+    {
+      "type": "dropcap",
+      "args": [
+        "Andrew’s modular editors open focused cells from a collapsible outline. Each cell has a header and body, while the master document supplies context, tests and results. A probe can collect calls from outside the definition being edited.<br/><br/>The screenshot’s function accumulates partial sums in reverse order, then reverses the list. The probe exposes intermediate totals without opening the rest of Mega 1k. This is the useful promise of the smaller view: its values still belong to the whole program.<br/><br/>One of this week’s fixes repairs a failure of that arrangement. Editing a later definition could leave evaluation stuck on an old result.",
+        36,
+        393,
+        222
+      ],
+      "kwargs": {
+        "size": 11.1,
+        "leading": 14,
+        "maxh": 238
+      }
+    },
+    {
+      "type": "para",
+      "args": [
+        "The incremental evaluator saw an apparently unchanged enclosing term and reused its answer, although the program below it had changed. The fix includes that remaining program in the term and adds a regression test.<br/><br/>Analysis also works from the affected dependencies. An edit in the PR review’s Mega 4k headless benchmark analyzed 16 of 891 items. Autosave still has a whole-text fallback, so an edit does not avoid all document-sized work.<br/><br/>The related agent-hardening PR waits up to roughly ten seconds for probe evaluation to settle. Edit, view and probe tools gain owner/member paths, and persistence moves to per-chat records. Both PRs remain open.",
+        282,
+        393,
+        222
+      ],
+      "kwargs": {
+        "size": 11.1,
+        "leading": 14,
+        "maxh": 238
+      }
+    },
+    {
+      "type": "para",
+      "args": [
+        "<b>The check:</b> values in a focused cell must agree with the master document.",
+        46,
+        645,
+        448
+      ],
+      "kwargs": {
+        "size": 9.4,
+        "leading": 12,
+        "maxh": 13
+      }
+    },
+    {
+      "type": "sources",
+      "args": [
+        [
+          [
+            "Editors #2469",
+            "https://github.com/hazelgrove/hazel/pull/2469"
+          ],
+          [
+            "Evaluation repair",
+            "https://github.com/hazelgrove/hazel/commit/46bdb6b16e"
+          ],
+          [
+            "Hardening #2427",
+            "https://github.com/hazelgrove/hazel/pull/2427"
+          ],
+          [
+            "Performance review",
+            "https://github.com/hazelgrove/hazel/pull/2469#issuecomment-5486808215"
+          ]
+        ]
+      ],
+      "kwargs": {
+        "y": 673
+      }
+    }
+  ],
+  "constellation": [
+    {
+      "type": "page",
+      "args": [
+        "Aiject / Constellation"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "title",
+      "args": [
+        "A graph you can<br/>edit through.",
+        "DRAFT #2505 / GRAPH, EDITOR, AGENT"
+      ],
+      "kwargs": {
+        "size": 35
+      }
+    },
+    {
+      "type": "image",
+      "args": [
+        "constellation-score.png",
+        50,
+        166,
+        194
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "para",
+      "args": [
+        "<b>Scorekeeper / agent-canvas.</b> A module hull groups <b>Score</b> and its member <b>bonus</b>. Passing-test dots attach to <b>tally</b> and <b>capped</b>. The arrows describe relationships between definitions and their types.",
+        36,
+        436,
+        222
+      ],
+      "kwargs": {
+        "size": 8.4,
+        "font": "Sans",
+        "leading": 10.6,
+        "maxh": 64
+      }
+    },
+    {
+      "type": "dropcap",
+      "args": [
+        "Constellation arranges a program by types and definitions. Type aliases become nodes; functions become arrows from input to output. Values attach to their types, and tests to the functions they mention. Small builtin-type terminals keep <b>Int</b> from collecting every arrow in one place.",
+        282,
+        166,
+        222
+      ],
+      "kwargs": {
+        "size": 11.1,
+        "leading": 14,
+        "maxh": 144
+      }
+    },
+    {
+      "type": "para",
+      "args": [
+        "In Scorekeeper, <b>Score</b> supplies a base of 10, a doubling bonus and a cap of 50. <b>tally</b> adds the base to the bonus; <b>capped</b> limits the answer. For an input of 7, the program returns 24.<br/><br/>This week’s main canvas mode turns selection into navigation. Selecting <b>tally</b>, or Counter App’s <b>update</b>, opens its definition below the graph. Leaving the mode restores the whole program. The relationships help locate a definition; the panel gives access to its source, values and tests.",
+        282,
+        283,
+        222
+      ],
+      "kwargs": {
+        "size": 11.1,
+        "leading": 14,
+        "maxh": 202
+      }
+    },
+    {
+      "type": "label",
+      "args": [
+        "KEEPING SAMPLES AND MOTION IN SYNC",
+        36,
+        523
+      ],
+      "kwargs": {
+        "color": "#355B43",
+        "size": 7.6
+      }
+    },
+    {
+      "type": "para",
+      "args": [
+        "Value wells needed a matching repair: their samples belonged to the master editor, but clicks and arrow keys went to the active definition cell. The fix routes actions to the owner of the displayed values and outlines the selected sample.<br/><br/>For agent edits, <b>pace</b> separates travel, act and settle; <b>follow</b> controls camera attention.",
+        36,
+        546,
+        222
+      ],
+      "kwargs": {
+        "size": 10.8,
+        "leading": 13.5,
+        "maxh": 118
+      }
+    },
+    {
+      "type": "para",
+      "args": [
+        "The animation code moves module hulls with their nodes and holds the camera when the program is already visible. These controls aim to make agent edits easier to follow.<br/><br/>One demo switch with a definition open left the graph blank until reload. Six demos include nested modules, many callers and pipeline depth.",
+        282,
+        546,
+        222
+      ],
+      "kwargs": {
+        "size": 10.8,
+        "leading": 13.5,
+        "maxh": 118
+      }
+    },
+    {
+      "type": "sources",
+      "args": [
+        [
+          [
+            "Canvas #2505",
+            "https://github.com/hazelgrove/hazel/pull/2505"
+          ],
+          [
+            "Canvas mode",
+            "https://github.com/hazelgrove/hazel/commit/b1d83917ce"
+          ],
+          [
+            "Sample fix",
+            "https://github.com/hazelgrove/hazel/commit/73325cb58c"
+          ],
+          [
+            "Hull motion",
+            "https://github.com/hazelgrove/hazel/commit/03f4c2badc"
+          ],
+          [
+            "Camera hold",
+            "https://github.com/hazelgrove/hazel/commit/a5b6dbf4c6"
+          ]
+        ]
+      ],
+      "kwargs": {
+        "y": 675
+      }
+    }
+  ],
+  "fumola": [
+    {
+      "type": "page",
+      "args": [
+        "A visitor moves in"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "title",
+      "args": [
+        "Two languages.<br/>One notebook.",
+        "OPEN PR / FUMOLA LIVELITS / EXPERIMENTAL"
+      ],
+      "kwargs": {
+        "size": 37
+      }
+    },
+    {
+      "type": "image",
+      "args": [
+        "fumola-scene.png",
+        36,
+        161,
+        468
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "para",
+      "args": [
+        "<b>Fumola / fumola-livelit-mvp.</b> A GCD calculation and a named-cell read return <b>(6, 42)</b> to Hazel. Both expressions use the same runtime instance.",
+        36,
+        364,
+        468
+      ],
+      "kwargs": {
+        "size": 8.6,
+        "font": "Sans",
+        "leading": 11,
+        "maxh": 33
+      }
+    },
+    {
+      "type": "dropcap",
+      "args": [
+        "Matthew Hammer’s Fumola integration lets a Hazel document name and use an external runtime. Livelits sharing an instance id communicate with the same store; named thunks give successive edits an identity within it.<br/><br/>The current branch has four entry points. <b>fumola_new</b> declares a runtime and mode. <b>fumola_put_force</b> evaluates inside a named thunk; <b>fumola_eval</b> runs without that wrapper. <b>fumola_with</b> passes a Hazel value across as <b>input</b>. Its example doubles 21 and returns 42. Holes and functions cannot cross this boundary.",
+        36,
+        404,
+        222
+      ],
+      "kwargs": {
+        "size": 11.1,
+        "leading": 14,
+        "maxh": 212
+      }
+    },
+    {
+      "type": "para",
+      "args": [
+        "Runtime mode matters. <b>Simple</b> is the default and keeps no dependency graph. <b>Graphical</b> records nodes, dependencies and events; one example returns its event log as a Hazel table. Those records are groundwork for repair, which the example above does not exercise.<br/><br/>Two loader changes merged into the Fumola feature branch: source fallback and a manifest that selects a matched JavaScript/Wasm pair at content-addressed URLs, identifying the loaded build.<br/><br/>The runtime remains unpinned, but identifying the loaded build makes stale-version problems easier to diagnose.",
+        282,
+        404,
+        222
+      ],
+      "kwargs": {
+        "size": 11.1,
+        "leading": 14,
+        "maxh": 212
+      }
+    },
+    {
+      "type": "para",
+      "args": [
+        "<b>A testing gap:</b> translation fixtures cover expected formats, but the evaluator suite skips the four live forms. Those tests can stay green when the published runtime changes incompatibly.",
+        48,
+        629,
+        444
+      ],
+      "kwargs": {
+        "size": 10.3,
+        "leading": 13,
+        "maxh": 27
+      }
+    },
+    {
+      "type": "sources",
+      "args": [
+        [
+          [
+            "#2492",
+            "https://github.com/hazelgrove/hazel/pull/2492"
+          ],
+          [
+            "Branch merges #2504",
+            "https://github.com/hazelgrove/hazel/pull/2504"
+          ],
+          [
+            "#2509",
+            "https://github.com/hazelgrove/hazel/pull/2509"
+          ],
+          [
+            "Runtime docs",
+            "https://github.com/hazelgrove/hazel/blob/583e84d07b/docs/fumola-runtime-changes.md"
+          ]
+        ]
+      ],
+      "kwargs": {
+        "y": 675
+      }
+    }
+  ],
+  "people": [
+    {
+      "type": "page",
+      "args": [
+        "People & small things"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "title",
+      "args": [
+        "Around the workbench.",
+        "THIS WEEK’S THREADS"
+      ],
+      "kwargs": {
+        "size": 35
+      }
+    },
+    {
+      "type": "text",
+      "args": [
+        "Andrew Blinn",
+        36,
+        124,
+        18,
+        "SerifBold"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "@disconcision",
+        314,
+        127,
+        8.5,
+        "Mono",
+        "#6C7267"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "para",
+      "args": [
+        "Probes IV reaches dev after accumulated work on drawers, sample navigation and rich views. His open workspace stack tackles a related problem at document scale: selecting a definition while retaining the surrounding program’s evaluation, tests and observations.",
+        36,
+        148,
+        468
+      ],
+      "kwargs": {
+        "size": 11.1,
+        "leading": 14,
+        "maxh": 43
+      }
+    },
+    {
+      "type": "text",
+      "args": [
+        "Alexander Bandukwala",
+        36,
+        208,
+        18,
+        "SerifBold"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "@7h3kk1d",
+        314,
+        211,
+        8.5,
+        "Mono",
+        "#6C7267"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "para",
+      "args": [
+        "Modules II combines signature design with fixes to member binding and error locations. Generating random signatures exposed failures that part 4 reports converting into deterministic regressions. Alongside that stack: editable tutorials, CI changes and reports of new probe problems.",
+        36,
+        232,
+        468
+      ],
+      "kwargs": {
+        "size": 11.1,
+        "leading": 14,
+        "maxh": 43
+      }
+    },
+    {
+      "type": "text",
+      "args": [
+        "Matthew Hammer",
+        36,
+        292,
+        18,
+        "SerifBold"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "@matthewhammer",
+        314,
+        295,
+        8.5,
+        "Mono",
+        "#6C7267"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "para",
+      "args": [
+        "Fumola and the Wasm spike both cross runtime boundaries. His benchmark correction matches answers and settings before narrowing the speedup claim. His comment on a flaky evaluator test traces an unnecessary Fumola revert, connecting CI behavior to a specific development cost.",
+        36,
+        316,
+        468
+      ],
+      "kwargs": {
+        "size": 11.1,
+        "leading": 14,
+        "maxh": 43
+      }
+    },
+    {
+      "type": "text",
+      "args": [
+        "Cyrus Omar",
+        36,
+        376,
+        18,
+        "SerifBold"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "@cyrus-",
+        314,
+        379,
+        8.5,
+        "Mono",
+        "#6C7267"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "para",
+      "args": [
+        "Merged Probes IV into dev and opened the dependency update that also landed there. Probes IV’s arrival also brings its follow-up reports onto the shared build, where people outside the branch can encounter the new interactions.",
+        36,
+        400,
+        468
+      ],
+      "kwargs": {
+        "size": 11.1,
+        "leading": 14,
+        "maxh": 43
+      }
+    },
+    {
+      "type": "label",
+      "args": [
+        "SMALL THINGS, REAL CONSEQUENCES",
+        36,
+        469
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "para",
+      "args": [
+        "Editable lessons expose broken tests.",
+        36,
+        488,
+        468
+      ],
+      "kwargs": {
+        "size": 22,
+        "font": "SerifBold"
+      }
+    },
+    {
+      "type": "para",
+      "args": [
+        "The open tutorial stack replaces 25 generated lesson files with <b>.hzt</b> text: prose, code, hints and hidden tests get separate sections. Conversion exposed six hidden tests containing <b>$==</b>, which Hazel cannot lex. Alexander reports fixing the operator and passing the affected suites.<br/><br/>Three recovered Gradebook tasks bring the branch to 28 lessons. Previous and next stay inside a folder; a dropdown changes folders.",
+        36,
+        521,
+        222
+      ],
+      "kwargs": {
+        "size": 10.9,
+        "leading": 13.6,
+        "maxh": 143
+      }
+    },
+    {
+      "type": "para",
+      "args": [
+        "Lesson identities stay separate from titles, so reorganization need not discard saved work. The authors ask to merge the three dependent PRs together.<br/><br/>Issue <b>#2518</b> explains another editing cost: <b>[¿]</b> reloads as <b>[]</b>. Removing the marker leaves a valid empty list, so loading does not restore its blank. The workaround, <b>[?]</b>, preserves an explicit hole but makes the student select and replace a tile instead of typing into a gap.",
+        282,
+        521,
+        222
+      ],
+      "kwargs": {
+        "size": 10.9,
+        "leading": 13.6,
+        "maxh": 143
+      }
+    },
+    {
+      "type": "sources",
+      "args": [
+        [
+          [
+            "#2363",
+            "https://github.com/hazelgrove/hazel/pull/2363"
+          ],
+          [
+            "#2493",
+            "https://github.com/hazelgrove/hazel/pull/2493"
+          ],
+          [
+            "#2492",
+            "https://github.com/hazelgrove/hazel/pull/2492"
+          ],
+          [
+            "#2511",
+            "https://github.com/hazelgrove/hazel/pull/2511"
+          ],
+          [
+            "Tutorials #2485",
+            "https://github.com/hazelgrove/hazel/pull/2485"
+          ],
+          [
+            "#2513",
+            "https://github.com/hazelgrove/hazel/pull/2513"
+          ],
+          [
+            "#2518",
+            "https://github.com/hazelgrove/hazel/issues/2518"
+          ]
+        ]
+      ],
+      "kwargs": {
+        "y": 675
+      }
+    }
+  ],
+  "stats": [
+    {
+      "type": "page",
+      "args": [
+        "The instrument panel"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "title",
+      "args": [
+        "A busy week.<br/>An imperfect instrument.",
+        "REPOSITORY ACTIVITY / UTC WINDOW"
+      ],
+      "kwargs": {
+        "size": 33
+      }
+    },
+    {
+      "type": "text",
+      "args": [
+        "23",
+        46,
+        159,
+        33,
+        "SansBold",
+        "#355B43"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "PRs opened",
+        45,
+        202,
+        7.7,
+        "Sans"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "13",
+        165,
+        159,
+        33,
+        "SansBold",
+        "#355B43"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "of those are drafts*",
+        164,
+        202,
+        7.7,
+        "Sans"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "5",
+        284,
+        159,
+        33,
+        "SansBold",
+        "#355B43"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "PRs merged",
+        283,
+        202,
+        7.7,
+        "Sans"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "65",
+        403,
+        159,
+        33,
+        "SansBold",
+        "#355B43"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "recent branch tips**",
+        402,
+        202,
+        7.7,
+        "Sans"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "para",
+      "args": [
+        "The 5 merges: 3 into dev, 2 into fumola-livelit-mvp. *Draft state at retrieval.<br/>**Tip committer dates fall in the week; this is not a count of branch pushes.",
+        36,
+        234,
+        468
+      ],
+      "kwargs": {
+        "size": 8.8,
+        "font": "Sans",
+        "leading": 12,
+        "maxh": 28
+      }
+    },
+    {
+      "type": "text",
+      "args": [
+        "VISIBLE CLAUDE CO-AUTHOR CREDITS",
+        36,
+        281,
+        8.4,
+        "Mono"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "277 / 382",
+        36,
+        303,
+        31,
+        "SerifBold",
+        "#355B43"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "para",
+      "args": [
+        "unique reachable commit objects carry a Claude co-author trailer (72.5%). Among 294 non-merge objects, 271 carry one (92.2%).",
+        228,
+        301,
+        276
+      ],
+      "kwargs": {
+        "size": 10.1,
+        "font": "Sans",
+        "leading": 13,
+        "maxh": 43
+      }
+    },
+    {
+      "type": "label",
+      "args": [
+        "DAILY COMMIT OBJECTS / SEPTEMBER 2026",
+        36,
+        359
+      ],
+      "kwargs": {
+        "size": 7.5,
+        "color": "#222A23"
+      }
+    },
+    {
+      "type": "text",
+      "args": [
+        "76",
+        55,
+        411.28,
+        9,
+        "Mono"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "04",
+        61,
+        494,
+        8,
+        "Mono"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "47",
+        120,
+        432.16,
+        9,
+        "Mono"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "05",
+        126,
+        494,
+        8,
+        "Mono"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "16",
+        185,
+        454.48,
+        9,
+        "Mono"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "06",
+        191,
+        494,
+        8,
+        "Mono"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "15",
+        250,
+        455.2,
+        9,
+        "Mono"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "07",
+        256,
+        494,
+        8,
+        "Mono"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "126",
+        315,
+        375.28,
+        9,
+        "Mono"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "08",
+        321,
+        494,
+        8,
+        "Mono"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "77",
+        380,
+        410.56,
+        9,
+        "Mono"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "09",
+        386,
+        494,
+        8,
+        "Mono"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "25",
+        445,
+        448.0,
+        9,
+        "Mono"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "10",
+        451,
+        494,
+        8,
+        "Mono"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "Claude credited",
+        51,
+        518,
+        8.5,
+        "Sans"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "text",
+      "args": [
+        "No Claude trailer",
+        195,
+        518,
+        8.5,
+        "Sans"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "para",
+      "args": [
+        "<b>Counting the activity.</b> The sample covers commits reachable from 690 remote branch tips, with committer dates in September 4-10 UTC. Shared SHAs count once. Rebases and cherry-picks can create different SHAs for similar work; 88 objects are merges. This is activity, not a productivity leaderboard.",
+        36,
+        558,
+        222
+      ],
+      "kwargs": {
+        "size": 10.3,
+        "leading": 13,
+        "maxh": 126
+      }
+    },
+    {
+      "type": "para",
+      "args": [
+        "<b>Reading the credits.</b> 128 commit objects contain signature headers (signatures unchecked). These are separate from agent credits. Zero OpenAI/Codex/ChatGPT co-author trailers were found; this does not establish zero use. Missing trailers mean assistance is unknown. Trailers measure disclosed assistance, not its share of the work.",
+        282,
+        558,
+        222
+      ],
+      "kwargs": {
+        "size": 10.3,
+        "leading": 13,
+        "maxh": 126
+      }
+    }
+  ],
+  "dispatch": [
+    {
+      "type": "page",
+      "args": [
+        "Bench notes & the back room"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "title",
+      "args": [
+        "What the Wasm<br/>benchmark measures.",
+        "WASM SPIKE / AUTHOR-REPORTED RESULTS"
+      ],
+      "kwargs": {
+        "size": 30
+      }
+    },
+    {
+      "type": "para",
+      "args": [
+        "Matthew’s Wasm spike gets <b>SInt</b> and <b>Float</b> workloads running, avoiding the arbitrary-precision runtime still needed by <b>Int</b> and <b>Nat</b>. Corrected evaluator benchmarks report <b>3.0-4.1×</b>, roughly 3.5×. Both backends use <font name=\"Serif\" size=\"11.1\">js_of_ocaml</font> 6.2.0 and Node 22, with 20 iterations and matching result checksums.",
+        36,
+        145,
+        222
+      ],
+      "kwargs": {
+        "size": 11.1,
+        "leading": 14.3,
+        "maxh": 115
+      }
+    },
+    {
+      "type": "para",
+      "args": [
+        "Probe recording made little difference on these tiny, compute-heavy workloads. Large documents with short evaluations remain a different question. The initial cold-statics timing was distorted by warm-up and does not support a speedup claim. The branch also removes livelits as a shortcut; it is not for merge.",
+        282,
+        145,
+        222
+      ],
+      "kwargs": {
+        "size": 11.1,
+        "leading": 14.3,
+        "maxh": 115
+      }
+    },
+    {
+      "type": "text",
+      "args": [
+        "~3.5×",
+        48,
+        280,
+        28,
+        "SansBold",
+        "#F3EBDD"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "para",
+      "args": [
+        "The evaluator, on these workloads.<br/>No measured app-wide speedup.",
+        184,
+        282,
+        299
+      ],
+      "kwargs": {
+        "size": 11.5,
+        "font": "Sans",
+        "color": "#F3EBDD",
+        "leading": 14
+      }
+    },
+    {
+      "type": "label",
+      "args": [
+        "THE FICTION DEPARTMENT",
+        36,
+        349
+      ],
+      "kwargs": {
+        "color": "#BB3E27"
+      }
+    },
+    {
+      "type": "image",
+      "args": [
+        "observable-comic.png",
+        36,
+        372,
+        468
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "para",
+      "args": [
+        "“Unfinished business” / an original comic",
+        36,
+        536,
+        468
+      ],
+      "kwargs": {
+        "size": 8.3,
+        "font": "Sans",
+        "color": "#6C7267"
+      }
+    },
+    {
+      "type": "para",
+      "args": [
+        "<b>Branch postcards.</b> <font name=\"Mono\" size=\"9\">resizable-type-probe</font> gives tuple types a shared abbreviation budget; <font name=\"Mono\" size=\"9\">fix/probe-rich-depth-clamp</font> frees rich chips from a one-row clamp. Both were branch-only changes on September 11.",
+        36,
+        569,
+        468
+      ],
+      "kwargs": {
+        "size": 10.8,
+        "leading": 14,
+        "maxh": 58
+      }
+    },
+    {
+      "type": "para",
+      "args": [
+        "<b>Late wire:</b> Matthew also opened Blackboard MVP: a proof-assistant kernel and editor sort. Editor statics and tactics remain future work. Draft #2525.",
+        36,
+        633,
+        468
+      ],
+      "kwargs": {
+        "size": 9.2,
+        "leading": 11.5,
+        "maxh": 26
+      }
+    },
+    {
+      "type": "sources",
+      "args": [
+        [
+          [
+            "Wasm correction",
+            "https://github.com/hazelgrove/hazel/pull/2490#issuecomment-5534741226"
+          ],
+          [
+            "Type budget",
+            "https://github.com/hazelgrove/hazel/commit/14aa84c23c"
+          ],
+          [
+            "Rich depth",
+            "https://github.com/hazelgrove/hazel/commit/e644dcb91b"
+          ],
+          [
+            "Blackboard #2525",
+            "https://github.com/hazelgrove/hazel/pull/2525"
+          ]
+        ]
+      ],
+      "kwargs": {
+        "y": 673
+      }
+    }
+  ],
+  "back": [
+    {
+      "type": "page",
+      "args": [
+        "Still on the bench"
+      ],
+      "kwargs": {}
+    },
+    {
+      "type": "title",
+      "args": [
+        "Still on the bench.",
+        "OPEN QUESTIONS"
+      ],
+      "kwargs": {
+        "size": 39
+      }
+    },
+    {
+      "type": "para",
+      "args": [
+        "Several of this week’s changes make a small part of a program easier to work with. The unresolved questions concern what must remain connected: a sample to its call, a member to its module, an edit to its runtime state.",
+        36,
+        134,
+        468
+      ],
+      "kwargs": {
+        "size": 14,
+        "leading": 18,
+        "maxh": 75
+      }
+    },
+    {
+      "type": "label",
+      "args": [
+        "01 / PROBES",
+        36,
+        237
+      ],
+      "kwargs": {
+        "color": "#355B43"
+      }
+    },
+    {
+      "type": "label",
+      "args": [
+        "02 / MODULES",
+        282,
+        237
+      ],
+      "kwargs": {
+        "color": "#355B43"
+      }
+    },
+    {
+      "type": "para",
+      "args": [
+        "How much of the call stack<br/>does a sample need?",
+        36,
+        258,
+        222
+      ],
+      "kwargs": {
+        "size": 19,
+        "font": "SerifItalic",
+        "leading": 21,
+        "maxh": 44
+      }
+    },
+    {
+      "type": "para",
+      "args": [
+        "Where should narrowing<br/>happen automatically?",
+        282,
+        258,
+        222
+      ],
+      "kwargs": {
+        "size": 19,
+        "font": "SerifItalic",
+        "leading": 21,
+        "maxh": 44
+      }
+    },
+    {
+      "type": "para",
+      "args": [
+        "The recursive sum in <b>#2524</b> needs an ascription to trigger its memory growth. The report points to retained copies of call-stack identifiers. That makes the lifetime and representation of probe metadata central to the fix: inspection should remain useful as the number of calls grows.",
+        36,
+        315,
+        222
+      ],
+      "kwargs": {
+        "size": 11.2,
+        "leading": 14.4,
+        "maxh": 106
+      }
+    },
+    {
+      "type": "para",
+      "args": [
+        "Width matching accepts a richer module at a typed argument, but a list of wider modules does not automatically become a list of narrower signatures. The draft’s workaround is to ascribe each element. That gap puts a concrete usability question beside the rules for hiding members.",
+        282,
+        315,
+        222
+      ],
+      "kwargs": {
+        "size": 11.2,
+        "leading": 14.4,
+        "maxh": 106
+      }
+    },
+    {
+      "type": "label",
+      "args": [
+        "03 / FUMOLA",
+        36,
+        457
+      ],
+      "kwargs": {
+        "color": "#355B43"
+      }
+    },
+    {
+      "type": "label",
+      "args": [
+        "04 / CONSTELLATION",
+        282,
+        457
+      ],
+      "kwargs": {
+        "color": "#355B43"
+      }
+    },
+    {
+      "type": "para",
+      "args": [
+        "What should a copy share?",
+        36,
+        478,
+        222
+      ],
+      "kwargs": {
+        "size": 19,
+        "font": "SerifItalic",
+        "leading": 21,
+        "maxh": 23
+      }
+    },
+    {
+      "type": "para",
+      "args": [
+        "Can several edits stay legible?",
+        282,
+        478,
+        222
+      ],
+      "kwargs": {
+        "size": 18.5,
+        "font": "SerifItalic",
+        "leading": 21,
+        "maxh": 23
+      }
+    },
+    {
+      "type": "para",
+      "args": [
+        "A Fumola instance id connects livelits to one store. Reusing it preserves that connection; assigning a new id separates state. Copying a document raises a further choice: which identities and cached results should the copy inherit? Loader versioning helps identify the runtime, but leaves that ownership question open.",
+        36,
+        515,
+        222
+      ],
+      "kwargs": {
+        "size": 11,
+        "leading": 14,
+        "maxh": 106
+      }
+    },
+    {
+      "type": "para",
+      "args": [
+        "Constellation’s pace and follow controls organize motion as well as layout. Keeping a module hull with its definitions and holding a useful camera position are small but necessary steps. The harder case is a sequence of agent edits: additions, deletions and changed relationships must remain understandable together.",
+        282,
+        515,
+        222
+      ],
+      "kwargs": {
+        "size": 11,
+        "leading": 14,
+        "maxh": 106
+      }
+    },
+    {
+      "type": "para",
+      "args": [
+        "<b>Editor</b> Astra · <b>Reporting</b> Ellis, Rowan &amp; Mica · AI editorial team<br/>Illustrations and screenshot treatments: ImageGen. Screenshots are illustrated reproductions; the clean edition preserves exact UI.",
+        36,
+        650,
+        468
+      ],
+      "kwargs": {
+        "size": 8.1,
+        "font": "Sans",
+        "leading": 10.5,
+        "maxh": 33
+      }
+    }
+  ]
+}

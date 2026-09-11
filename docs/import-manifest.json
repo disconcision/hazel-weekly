@@ -1,0 +1,4348 @@
+{
+  "imported_at": "2026-09-11T23:25:39.744301+00:00",
+  "description": "Byte-preserving seed from the existing production kit, final PDFs, and published web archive. Paths and hashes describe the initial import, not later revisions.",
+  "website_repository": "disconcision/disconcision.github.io",
+  "website_commit": "7ec37a4cd95728dbdc1ac47562ed37aace58165c",
+  "files": [
+    {
+      "path": "output/week-in-hazel/AUDIENCE.md",
+      "bytes": 4907,
+      "sha256": "25d04e315458706df91e49066e6160623688987099a835c10bd9fafb0fe4580b"
+    },
+    {
+      "path": "output/week-in-hazel/CONSTELLATION-PROMPT.txt",
+      "bytes": 1271,
+      "sha256": "82c288b875ded982fe3928c9c5c389c0e7a7be1ba904d896516f33c69f467238"
+    },
+    {
+      "path": "output/week-in-hazel/EDITORIAL.md",
+      "bytes": 17876,
+      "sha256": "d86f544f520f111dd52a89d1e46ea79e974dca645b4e103e64bfbb1603ffdc4a"
+    },
+    {
+      "path": "output/week-in-hazel/NUMBERING.md",
+      "bytes": 2356,
+      "sha256": "3db712455577ad16d6210614c3f1c2bc7ca955889ade47ccf92a946479721acf"
+    },
+    {
+      "path": "output/week-in-hazel/PROCESS.md",
+      "bytes": 8513,
+      "sha256": "5ff8aba59c6334b5983e9769c1031e4d382f7802f7d1230d2d8602cb4eb7056f"
+    },
+    {
+      "path": "output/week-in-hazel/PRODUCTION.md",
+      "bytes": 20025,
+      "sha256": "e49fb377eee16109eb268f28e8498c3c35085b4027fb228585682d778d2c488a"
+    },
+    {
+      "path": "output/week-in-hazel/PROMPTS.md",
+      "bytes": 3706,
+      "sha256": "85273fe77769435af59faa8e43a920b07d3beaff55f1920217c08f5ae11088b6"
+    },
+    {
+      "path": "output/week-in-hazel/QA.md",
+      "bytes": 4610,
+      "sha256": "6a08143770fe1a993e8e6097ba7ea7302e1a5a411c8b1e953d50220b64983ff8"
+    },
+    {
+      "path": "output/week-in-hazel/README.md",
+      "bytes": 7828,
+      "sha256": "314b0000c7eda903e884fc10f5101a393a5ac7ccc890e7cbee49e23c63caa51c"
+    },
+    {
+      "path": "output/week-in-hazel/REVISION-NOTES.md",
+      "bytes": 7353,
+      "sha256": "f0886b83c173e7cb1e162aea7aafa70faeb8ed5ee0210a54c8a339d147d92a78"
+    },
+    {
+      "path": "output/week-in-hazel/SOURCES.md",
+      "bytes": 16056,
+      "sha256": "97dd00651c77b901fc72a7efaa5a02d80a482ca38b543b28cf88b105e9070d89"
+    },
+    {
+      "path": "output/week-in-hazel/WOODCUT-PROMPTS.json",
+      "bytes": 5166,
+      "sha256": "43888d6eb4ecc009e3569e0a09eff52c7b2df9cc833eef7423d45938b126c06b"
+    },
+    {
+      "path": "output/week-in-hazel/analyze.py",
+      "bytes": 4340,
+      "sha256": "5d4245b93c1646c2bfaa690257ea34bef9ce2b252fdad32296fed11de8d8620b"
+    },
+    {
+      "path": "output/week-in-hazel/assets/constellation-score-clean.png",
+      "bytes": 220793,
+      "sha256": "00e020184d370376709373003506b0496b9b8e55540adb4eb80f5e3a75ddbf42"
+    },
+    {
+      "path": "output/week-in-hazel/assets/constellation-score-woodcut.png",
+      "bytes": 2122365,
+      "sha256": "37ae43c0f69503ba8669a34009162ec0e0bc2087728229f83aa4c3210d7670fa"
+    },
+    {
+      "path": "output/week-in-hazel/assets/drawer-tree.png",
+      "bytes": 4030758,
+      "sha256": "17fc570edf7a06ef8eefd586ac0fdf13b71d42eb61e889915d058f7944df92f5"
+    },
+    {
+      "path": "output/week-in-hazel/assets/fumola-scene-clean.png",
+      "bytes": 149218,
+      "sha256": "920e08b91c6859056549a850fea4b7ee60d80100e703efe890939435449a623e"
+    },
+    {
+      "path": "output/week-in-hazel/assets/fumola-scene-full.png",
+      "bytes": 36918,
+      "sha256": "f90c1b2f2d103ce606312144ce634421c933f16faf5083a0635e049e8f4d69ca"
+    },
+    {
+      "path": "output/week-in-hazel/assets/fumola-scene-woodcut.png",
+      "bytes": 2615663,
+      "sha256": "74cbde2014db05d009879f3c0bab22ede0985fe2ac189cf08dd3ef057e2d4161"
+    },
+    {
+      "path": "output/week-in-hazel/assets/fumola-scene.hz",
+      "bytes": 210,
+      "sha256": "91f1647a9212f73693c107c7420b2d3152b1111d11a8d9db2847a444b8de18ad"
+    },
+    {
+      "path": "output/week-in-hazel/assets/fumola-scene.png",
+      "bytes": 7736,
+      "sha256": "6fd01471c00004caa9885e074cdb2077b8518915eae7a4cd0bad16ae5b89a7ea"
+    },
+    {
+      "path": "output/week-in-hazel/assets/modular-focus-clean.png",
+      "bytes": 257603,
+      "sha256": "d834b18d0ff069b3dfb28e4a30ea51fa3c300c00fbebe2a2b1b01761209ccec1"
+    },
+    {
+      "path": "output/week-in-hazel/assets/modular-focus-full.png",
+      "bytes": 52869,
+      "sha256": "1f205f813b5bccdfc459828796d60de6a08e042ab1fb473b125c919548465a7b"
+    },
+    {
+      "path": "output/week-in-hazel/assets/modular-focus-woodcut.png",
+      "bytes": 3165803,
+      "sha256": "a5f4015d155ce36564b336b355881ff1188fb89e63c60f41bc702f52cbdc798d"
+    },
+    {
+      "path": "output/week-in-hazel/assets/modular-focus.png",
+      "bytes": 11516,
+      "sha256": "0b8ef3f19fba9cbebaecc656987d97271672912a7f4d07bc79d8458a67712575"
+    },
+    {
+      "path": "output/week-in-hazel/assets/observable-comic.png",
+      "bytes": 3571299,
+      "sha256": "cb5924db3d8649ec51ed01ad85d76004461133d005a8139be68ebf85848ed00d"
+    },
+    {
+      "path": "output/week-in-hazel/assets/probes-cards-clean.png",
+      "bytes": 228272,
+      "sha256": "15a72176901ebcce7ef2865cc9b1c2cf9e87870ca3b758688031fb42fe265399"
+    },
+    {
+      "path": "output/week-in-hazel/assets/probes-cards-full.png",
+      "bytes": 65251,
+      "sha256": "bdae7fa4b0baebfeb8a4b6b5960c1473145ef5c7dacbb5c6387e7bc31bd6aac9"
+    },
+    {
+      "path": "output/week-in-hazel/assets/probes-cards-woodcut.png",
+      "bytes": 2550333,
+      "sha256": "13083f2d97c6f8b20ddb370d780da08fbbee7458ba231ba2b85548e8b4889285"
+    },
+    {
+      "path": "output/week-in-hazel/assets/probes-cards.png",
+      "bytes": 12766,
+      "sha256": "355e89b09c3cc222d405d8a8dba705715d72b0b3921b8d03f0b3ecafb90ef433"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/ART-PROMPTS.json",
+      "bytes": 4012,
+      "sha256": "1ee73a93301497ee2231d83f31f8241dd871d249a77c6ca43d659e759dea28c4"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/COMIC-CLEANUP.md",
+      "bytes": 1599,
+      "sha256": "46468a0338da659dbfed82ff06ef617bb282292d0b551c10cea2f20221b5b0c2"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/COMIC-PROMPTS.json",
+      "bytes": 3391,
+      "sha256": "e1014b1ac453229d74df8b53000701c78c1f361818829fe544993675fe9aa0d2"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/QA.md",
+      "bytes": 2686,
+      "sha256": "6eab3c82a81dc9f71945502d0cffbd638b79b685cd733ae3105fe087275ea249"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/README.md",
+      "bytes": 5780,
+      "sha256": "5824dc4a798f3b3209a4efd3638d70c7678fe2e7d087ad4fdf9431ef7f9dedd3"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/analyze_periods.py",
+      "bytes": 2890,
+      "sha256": "b0054621a80bdc7fba3f848c76c57ab2bb0ca8780226e82410b01ddd94f7f900"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/browser_layer.py",
+      "bytes": 2851,
+      "sha256": "c604fe9cff94d1cfecd8548a6a22e2ea888e7840ee84054fa3c8e8f2733a1bb9"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/browser_typeset.cjs",
+      "bytes": 5644,
+      "sha256": "8d85d573fb5ff17a4989a71d3c75d0f8bd8cada189d6d710dcfcfa31e4902b4e"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/build.py",
+      "bytes": 7257,
+      "sha256": "b33879f6bf96c93d05924a42ff63d515f69c0e99cc4ebd20b1248ad5e96d6450"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/inspect_builds.cjs",
+      "bytes": 953,
+      "sha256": "2989a9c4707ab882196a68323688618c314a4c7d456bb6e2e1a8b52744c99412"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/layout.py",
+      "bytes": 7645,
+      "sha256": "bfc4777254121ed926442bb9420493476d7d7816a3edb6b8b02ad03fd7d01da5"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/SOURCES.md",
+      "bytes": 4923,
+      "sha256": "9aba309416c7e387fcedc12c3ef9eb58ed12ee808e424c96287a72df1c51d175"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/assets/build-initial.png",
+      "bytes": 187252,
+      "sha256": "4a961a31d1194b70e3f5bff73f2587764552a898b9076dc018f5fc65d9679529"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/assets/comic-first.png",
+      "bytes": 3555496,
+      "sha256": "77d3744b61a44ad4891b1a2dd23c5b5b18e55ceb7382987ca5376e86a8f13ce7"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/assets/comic.png",
+      "bytes": 3244520,
+      "sha256": "b930b5c62b220b088aefbe90ed7122b3a60493631fafed5194e2deb9ca78deae"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/assets/cover.png",
+      "bytes": 4174658,
+      "sha256": "f5c88116da8ac19f83470a278b38ba0d34863a1ff140f98513b767ab0d487a4e"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/assets/screenshot.png",
+      "bytes": 98882,
+      "sha256": "67e9f633cfad9f7fb942c66ea6957789e1e523a1a5d198d3e161a164f4ee2a46"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/assets/stage.png",
+      "bytes": 242141,
+      "sha256": "d573ddf6e50a52fe96a52150de669dec66b472d8907200bed1df9f2a76238720"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/copy.json",
+      "bytes": 16315,
+      "sha256": "e40c9fb72da1c1f7d6ad56f2300d751987ca26bf401706e9328d33bdea571d72"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/build-dom.html",
+      "bytes": 44835,
+      "sha256": "dd2da83729d29e8849caa71714f49376ddebf268b53703c27259bdc6a3e0f65f"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/build-process.json",
+      "bytes": 170,
+      "sha256": "34475663b3e6097443fa4d91b29980f8eb90ced92e839a5f54c9ea99770863ae"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/build-provenance.json",
+      "bytes": 699,
+      "sha256": "fb586059077c33a08c4165848442cc3b8ff4bfeb09d08775aef56e2abf4d3d00"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-1012.json",
+      "bytes": 25191,
+      "sha256": "a1139a3c60990967d94447648361131c2e31c6ca571edc7f81f0e9d53103b187"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-1020.json",
+      "bytes": 71594,
+      "sha256": "8e2bd83dad087b8f1ff4a162d1a8a7c314738eb45de0e3486dc1643230abb41b"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-1056.json",
+      "bytes": 20734,
+      "sha256": "7496150da4e2fa3cd99fe5a16c627167a66a477a10bf18ba3feb865df461b9da"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-1060.json",
+      "bytes": 1653,
+      "sha256": "1849341a3b2e8f75bd41ffaef3264f4c8d7b6475456fbf692610878b6a393b0f"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-1084.json",
+      "bytes": 1638,
+      "sha256": "e8a3fd96ab81124de3707ee9916cefef4c297bb170763e9201e9617bc6923c15"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-1117.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-1118.json",
+      "bytes": 23259,
+      "sha256": "1826383bbb5842701ebc3a83fbdd5546b9a25a46e7b0efb9d0be5ef04d83e4ed"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-1125.json",
+      "bytes": 5307,
+      "sha256": "3cc12704666f60214d8ec9a24f83b1629042de33fd8b768649ef71e91c009c98"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-1139.json",
+      "bytes": 18510,
+      "sha256": "f4e05f9ffc6f0874f3faf4498893f7761e83c0d527d298539dd0b8725e7b7421"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-1154.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-1155.json",
+      "bytes": 84081,
+      "sha256": "ec163a5976395516ea2fce5e73c69b72bac406c5530baa0de860dd7b5cea61ce"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-1241.json",
+      "bytes": 3333,
+      "sha256": "fd8f0c3acd27e2154eb15fd3d8ae57fbacf679e94612b6709ec14125d84b02f5"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-1254.json",
+      "bytes": 22593,
+      "sha256": "ebd7814a84e322bc74129fcd068ee658949b4cd72fcf46d2b979147283807550"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-1308.json",
+      "bytes": 7321,
+      "sha256": "23cddf6f48a791595138b847c39e2d21c161db2177f3b90ef6f5da80a9495b7c"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-1328.json",
+      "bytes": 3184,
+      "sha256": "0f7849b8167762f97dd2e195a599d0958228bfff0113c7e9f1e1b1fbe7cc3629"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-1337.json",
+      "bytes": 8752,
+      "sha256": "6a107b9832c0c541d9cca730d6a59974c0c5f69e983b08231a9e9239924cee6c"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-1457.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-1594.json",
+      "bytes": 1662,
+      "sha256": "fa2126c0c372a6ce34a6b9bac67cf2f21142d5349272125d9038de01fb113159"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-1641.json",
+      "bytes": 9344,
+      "sha256": "530dce0004eae4fb9a09c24ffd704f48b648f4626da9e61345637b93be6d7d2e"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-1784.json",
+      "bytes": 4767,
+      "sha256": "041424777cef3b653efe3b3a5bb7392bf10e45764db2492141acdfb9d9213a22"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-1788.json",
+      "bytes": 8150,
+      "sha256": "27b7d7ad672cc45fca96e060c00785c255fea879d721cc80f9c9857cd2229796"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-1863.json",
+      "bytes": 1718,
+      "sha256": "9eb7a6ee3efb8bef867fd6212815a64794a592c05bc83d24567f130b2cfebe9b"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-1891.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-2007.json",
+      "bytes": 10088,
+      "sha256": "ffbeec6e5372281e5728247fab9a71c789f568e39e70af5c2936bbcdee8dfa24"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-2028.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-2102.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-2113.json",
+      "bytes": 6879,
+      "sha256": "17473c72e4b47abfeb9168633fe9cda08e59c8503647c0c738f46dd2d2279d28"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-2169.json",
+      "bytes": 8366,
+      "sha256": "d6bac0f20c2d9ee6c554fd1c6df936ded85c29b1c273738971f73b5adc7fbac6"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-2171.json",
+      "bytes": 8229,
+      "sha256": "f01da97e7c8d614365172f662010ec335a5672df6297d99b9b22b6284e1f545a"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-2180.json",
+      "bytes": 20859,
+      "sha256": "a189d684d5b5778847d9a0150b15bbcfc92ccb649a6d7e787520b90c5e98387d"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-2191.json",
+      "bytes": 8926,
+      "sha256": "58af61ea24fe5314a7f940b2e0d5eec9ab674892443e105f39aadf45783f1953"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-2195.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-2198.json",
+      "bytes": 37298,
+      "sha256": "b303088727cea1a90c19caf0df45c8b2ee9ea59dad224f3c6c33fce400d6f96f"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-2208.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-2212.json",
+      "bytes": 1588,
+      "sha256": "829879baab76325664f6b8fc57231085144e05a2a9b36bda2b90c33a7b0b8f09"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-2213.json",
+      "bytes": 16775,
+      "sha256": "e9515ba22409052a71fa71841e838f7bb60f4436028651cc0f0f4a88aa34dccb"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-2215.json",
+      "bytes": 8633,
+      "sha256": "2d234f4dd2a8ffdd38c70409a1fe158b6fc4714653c117d8ea7ee625b9fbbad6"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-2219.json",
+      "bytes": 8227,
+      "sha256": "5336211bbec17e6ad0bb1fb0c4e538bb11ff5a62a14b79ca7072157350e59807"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-2220.json",
+      "bytes": 6936,
+      "sha256": "2e33492e7484b6315a46a2ec851d8b0188a3b1e5785cb763cc3e829cddd95e88"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-2221.json",
+      "bytes": 8339,
+      "sha256": "f855b95f14c82c2d91e15772c6d447898bd7aa3b90b6b6f1dd42fba5b0484b15"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-2222.json",
+      "bytes": 26615,
+      "sha256": "7d2fcbac2d6f4b9184d4ef7f274588714242b131dee48993d55260e1ad85bb01"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-2225.json",
+      "bytes": 15367,
+      "sha256": "63f595a28a13e0f413fbaa6d59bf4aff45450e7dc9ce19240facc4b7c2656f91"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/comments-965.json",
+      "bytes": 3524,
+      "sha256": "4da96fad50cdcaf82a3c27c9b2f9e98a4265d1321701923625239ab0cbc6bde0"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/final-text.txt",
+      "bytes": 15670,
+      "sha256": "e3d2e14e7b02413c0f70c3ace37359316690652913ec0c0b97b92494928e7d7d"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/issues-closed.json",
+      "bytes": 24145,
+      "sha256": "2014d352162dd5129e4ea655302693b28f6698e19d77ed7e5f032f83691f8b4e"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/issues-opened.json",
+      "bytes": 21376,
+      "sha256": "6640054d6535be576361d59b57cf331bd98022f45f89ef3c7629d0459d9a7550"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/local-build.log",
+      "bytes": 5837,
+      "sha256": "ac296c78e5bffbba0cb595a42d1b90a198b93839254a27057ba8db8118c63aa4"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/local-server.log",
+      "bytes": 14590,
+      "sha256": "2e3ced8234a5f74dbca751bb73aeb56ddb22490374381dbe1742cfcc479a4342"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/metrics.json",
+      "bytes": 2727,
+      "sha256": "e3549d106e834469698a134875bf00da5f78195b78bb521bab6078ecd1d45c84"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/period-dev-commits.tsv",
+      "bytes": 11308,
+      "sha256": "8f4ba00ea2dc5335a37cf281e8646167d93e202877462b825afb0049a5e6b524"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-1012.json",
+      "bytes": 19789,
+      "sha256": "b647abe75b8a318253bfdb41ead5335c03d5383f0370072debabf5a74baff7b5"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-1020.json",
+      "bytes": 17902,
+      "sha256": "5efe1a9d289a6b9298e31a3851f2bca19c9e05969928c4f98ff6fa0acf768d15"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-1056.json",
+      "bytes": 17487,
+      "sha256": "a94e7586dc5ad3ce10ec1e86a4accf114dec51a0aab35c31db42d6e7c74ee6b8"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-1060.json",
+      "bytes": 16801,
+      "sha256": "b7371b5bea3ff30c555b23744889717a4232422c97c6c834679d34a5fd2f7cc1"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-1084.json",
+      "bytes": 19294,
+      "sha256": "2ede895ea66215ae9f16a948a21ac910339733508dd9f2d7cbbf81d17d139d77"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-1117.json",
+      "bytes": 15906,
+      "sha256": "30ab6ae69888e5ba8c0b3954bd3b2214636bc604f0aff01cf78d91898f6263aa"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-1118.json",
+      "bytes": 19555,
+      "sha256": "bc3cc452817601b0eadb052e41901e31f81ef1921ee03e1afd4c79b78b353c50"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-1125.json",
+      "bytes": 19345,
+      "sha256": "c0f9db388ee09d6b802324a9dfe17400b3712e7445dd211b0c5442779de258a4"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-1139.json",
+      "bytes": 21727,
+      "sha256": "c45bfb1b9d30298c5635dcfe49b2e3dff83d0c1283f7739bf0a5293febc52de5"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-1154.json",
+      "bytes": 17751,
+      "sha256": "3b2bf958826ad5a0e7541ef57a30532d34cb3f76cf3343d4864b84b5075ae795"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-1155.json",
+      "bytes": 18776,
+      "sha256": "6ad05f98039c20bb72e413e0715dbf7ffbf78b864448d46ba5cc6a59929ec897"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-1241.json",
+      "bytes": 17835,
+      "sha256": "4d51e1ee0cd8b2ad16a617de183df9195dceac6a8fe31822827bbb8cf10e618e"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-1254.json",
+      "bytes": 20546,
+      "sha256": "874385d3ba53dec3df4a0ed0895170d6d96558dcad6e4008d798c763594ea8f3"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-1308.json",
+      "bytes": 19706,
+      "sha256": "5be52c48f6beafbfc21983747a9d359958a4103485d672fdef612325a2ec5fc3"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-1328.json",
+      "bytes": 17405,
+      "sha256": "ab4ab1ef547c9dcbe8f68412b1598a1510325a55f7088225038ac53c13f84ad1"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-1337.json",
+      "bytes": 16080,
+      "sha256": "d0db4651a7b1261b785cf445cb7d4cc1ec3981258e52e9c0601fa79fe0cd387e"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-1457.json",
+      "bytes": 15988,
+      "sha256": "41615d8b7d4b84887552056e7dcd3139932f125672cd82b54e20532515d89251"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-1594.json",
+      "bytes": 15808,
+      "sha256": "f8ff8a06da5e58619ca9e7c30fef1581d98ac11b0c24c8c288f2a99fe6a50e12"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-1641.json",
+      "bytes": 15965,
+      "sha256": "4c0a0599e2543f0728d488f98634a763d8a329588df074f19df889c07c89d682"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-1784.json",
+      "bytes": 15920,
+      "sha256": "7a47fbe08675ec2eff128a787eaec774a9faab250d7728b239ee320849b8789c"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-1788.json",
+      "bytes": 19249,
+      "sha256": "6da7d78eac944d92a0892749253797228fc281ce4306383c35f1b8cf9dc8a7e0"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-1863.json",
+      "bytes": 15906,
+      "sha256": "43003d9894bb38eed91b0ea6a0aa989ce2ac0e440a8f6ad72d5af418ba4dc48e"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-1891.json",
+      "bytes": 23756,
+      "sha256": "c3f8c47fa1e2a7ff92fadbe6b9214000abbb1e21b0f87fd113df50d8360fe33f"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-2007.json",
+      "bytes": 15703,
+      "sha256": "1458d03bb33c2666c8c9b507a437e871d818721d5876b426b6e02888ff330086"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-2028.json",
+      "bytes": 19706,
+      "sha256": "7a13370138ed9cb947fdb8b8572432ac64d1ac2554dc6828817ce579efcf9022"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-2102.json",
+      "bytes": 20071,
+      "sha256": "9c5277db7f67416c2ff9b5ef88702c0446d03b857007e4dffb5b5e64aafda923"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-2113.json",
+      "bytes": 16735,
+      "sha256": "7b6616984135bab9f82c777c0d19ce3e04677bce1e136ce2e73d54f6adfb5d1e"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-2169.json",
+      "bytes": 18216,
+      "sha256": "263f8ac9dc251d8f1cc2e82d42e498a584b27c707a0a4acb52c58c07bc99d617"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-2171.json",
+      "bytes": 21134,
+      "sha256": "1f4400493ad6363f35cee8afcc09bd2e76a34aa90f8df91c7b7088d2472ae924"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-2180.json",
+      "bytes": 18898,
+      "sha256": "558e5cb9072dff3639c55b366a43c3ee218650d12c2dabfbcfbe4c16ec21eac2"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-2191.json",
+      "bytes": 16798,
+      "sha256": "4f0a586ba47a75fe60287b7be66bb5e6a57713e0cc8efae63f93929aa3a8f911"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-2195.json",
+      "bytes": 26854,
+      "sha256": "665feef3c100a1154abe5060aa4ab43bfb524513c6437d709dce02ede5ccf0d0"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-2198.json",
+      "bytes": 20685,
+      "sha256": "fde54facf47a891ec63395c7ac015cd05e373cee7b6f269ef5d60257ae00ee8b"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-2208.json",
+      "bytes": 27013,
+      "sha256": "95f224d21c752edbae37683327221bc05d3e82f047f7511f044bb7d195b324e7"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-2212.json",
+      "bytes": 15868,
+      "sha256": "7b91562343c79df6554459acdbbb1aead1ebe877612ea38d0b438a7ed82a3058"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-2213.json",
+      "bytes": 18319,
+      "sha256": "95d2f9ae326ec734c791b70d2a4b5053526e1d85bfd8fc8594429eb0c1092176"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-2215.json",
+      "bytes": 16822,
+      "sha256": "82c72bb88e6709fb5b97bba76f44ecae17ab349086bc58196b74c0823549e58a"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-2219.json",
+      "bytes": 16704,
+      "sha256": "2b7ee22ee93e6e1ec675d7950e7ec4cccf540036af6af53fa8182e0479a85c1f"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-2220.json",
+      "bytes": 16733,
+      "sha256": "2fdb493ceeb7c8c9bbc56b7d834d199063d5b03c705830004ee4464f47822271"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-2221.json",
+      "bytes": 17061,
+      "sha256": "5a7e49d0edf59ffd4dad6e7b902a9006da2885ebe512b0be3eec12c3e8a3f3ed"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-2222.json",
+      "bytes": 17957,
+      "sha256": "c993d1f9298e0eec526119d5123a594373d9525cec215784f87b92836429542f"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-2225.json",
+      "bytes": 27511,
+      "sha256": "c6272469b4cf3c0fc45848581645abb9dd2127b5bf5399bbabb2cd959587e08d"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/pr-965.json",
+      "bytes": 18283,
+      "sha256": "c9751a2ad215d8adcbd05d45eb87ca4398d3780ac8bc88a953a61831c406aed9"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reader.md",
+      "bytes": 187561,
+      "sha256": "6a867b20cf4e47b36ce420f11c1172836bd748866d9974c940af39e214525a04"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-1012.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-1020.json",
+      "bytes": 57737,
+      "sha256": "9871d613eaaf0d14e1feb0219e4776d9f858546122ad4611b9eb68dec3e6c5dc"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-1056.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-1060.json",
+      "bytes": 22952,
+      "sha256": "b3482324b194c80bf63844c27ec47baa9fc28afcd6979972d8097d3f908a8c01"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-1084.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-1117.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-1118.json",
+      "bytes": 70592,
+      "sha256": "137dcb312630bccc6433a752cdcf27c22fb28be96fd76160c35d95318732a809"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-1125.json",
+      "bytes": 4978,
+      "sha256": "77d47cfbc940d4c399fa5c84bf6395c063b8558c86fd295f53cc0ff446eae6b2"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-1139.json",
+      "bytes": 5540,
+      "sha256": "693d54ef4857f08e9e932b988f39776cbbdfb7ad5d16079822b6c74695f83fd7"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-1154.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-1155.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-1241.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-1254.json",
+      "bytes": 45235,
+      "sha256": "ffcf49a24dde335c1d37679bc9644855a15712da41236868f1a1c8b713de1f7a"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-1308.json",
+      "bytes": 22373,
+      "sha256": "583c83e2ca7ef353907e265ab55530768057163197d8fd3985af392eba6eb305"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-1328.json",
+      "bytes": 68023,
+      "sha256": "58b5f6725ba873b4b3797078f1e944780966fbe353f97ccd6c1bb7328f732203"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-1337.json",
+      "bytes": 125628,
+      "sha256": "cfe62dd4e1e1c76d24be94f915ae0786ab81eda9fd33e6c0b5f8aaead2fe9d43"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-1457.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-1594.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-1641.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-1784.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-1788.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-1863.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-1891.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-2007.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-2028.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-2102.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-2113.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-2169.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-2171.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-2180.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-2191.json",
+      "bytes": 13740,
+      "sha256": "6ffede61421fc6e7113e743166c9812623a2a2bd8a291c612adb53b1a74fbd5c"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-2195.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-2198.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-2208.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-2212.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-2213.json",
+      "bytes": 165981,
+      "sha256": "72b578bef2c1bf687a7036620578b411f9270b8465af6138f0fbb47f8573475e"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-2215.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-2219.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-2220.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-2221.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-2222.json",
+      "bytes": 3294,
+      "sha256": "4e0c6d42caed99680c6a56636df5d907a1069fb46d2ba0c201486af18c65721b"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-2225.json",
+      "bytes": 93624,
+      "sha256": "68e2eee81e042b913a735760c6f928535901fd42d8932f8192dc46ad59825d19"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/review-comments-965.json",
+      "bytes": 29212,
+      "sha256": "3e4b1397ca1547b25f27e6e24d9af41f6d84ab9f2c7b2746b528d385bc10ed1c"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-1012.json",
+      "bytes": 3252,
+      "sha256": "7514dfe36223cbfd40275f1f5a64dcc9b2a78ffc10acf2a676814d0c6c134839"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-1020.json",
+      "bytes": 20345,
+      "sha256": "ff2915f71cc8cc1454792fe38662d2d4f64e917f41521fe763308d7b26bf9946"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-1056.json",
+      "bytes": 1742,
+      "sha256": "5bf1a19ae1e480ec326c34ce96dbe3bec32e8a407bb0eaae1d1c7f30b594e41a"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-1060.json",
+      "bytes": 1725,
+      "sha256": "90b03fd9e4550094cb1a323f00c229db30a45751083796bfb73fd29fcce78996"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-1084.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-1117.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-1118.json",
+      "bytes": 16582,
+      "sha256": "8b00ff0576d50d4b346a9fee10d976ed36853f48212cf9648685a7338230b32b"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-1125.json",
+      "bytes": 3160,
+      "sha256": "3ece9c2d86c87285356bd21b984a61aef2ad436910d48734198c88e83786acde"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-1139.json",
+      "bytes": 3073,
+      "sha256": "51b558a4a66b503666ba5c90fc0b27a883a9beb748f2db3f5f72c01564916081"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-1154.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-1155.json",
+      "bytes": 1552,
+      "sha256": "fd2cc8f1d415b83628e20c83d78c55390a52aa9fe09700f2dcf374542ba48599"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-1241.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-1254.json",
+      "bytes": 13848,
+      "sha256": "ed8128f49746f0b40a69dad0567d04abfe883aa3bcf6390c4f2ed1a5928fd4da"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-1308.json",
+      "bytes": 12086,
+      "sha256": "daab1516d937f6d950b233e615006ad95450c220f72544edc04ceae3ecbe2f0c"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-1328.json",
+      "bytes": 1551,
+      "sha256": "88002bf6d588a58c62befb8fef3d493c7940fdf1668782e9e187c580b1ec60cc"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-1337.json",
+      "bytes": 13728,
+      "sha256": "0d11c181873815002806ea045561ddc1ba43eba2cdc1cb3d0c5811bcf1b51c0d"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-1457.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-1594.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-1641.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-1784.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-1788.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-1863.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-1891.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-2007.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-2028.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-2102.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-2113.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-2169.json",
+      "bytes": 1527,
+      "sha256": "97bf2c17ff4fe70a1cc94d69dc0c3069c553e9236c7994127f837d002342f41b"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-2171.json",
+      "bytes": 1527,
+      "sha256": "74ede4e49ed8f1ddef5470f592f4bc66072a043f2c8b70350a4092e4bbc6a3dc"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-2180.json",
+      "bytes": 3527,
+      "sha256": "cf575e9bac56f16e21042d4a557c2ebead3cf9554b8b4606e96c1a997c4e3cdf"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-2191.json",
+      "bytes": 6295,
+      "sha256": "42a37e226bc255408a53beec19a3971a6cd7eb035067ab78fe2229600b4bb2c5"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-2195.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-2198.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-2208.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-2212.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-2213.json",
+      "bytes": 25072,
+      "sha256": "06ddc23af957fb2db51d86b37002482ddf7e081e40db5466faba0588d8f4904b"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-2215.json",
+      "bytes": 1515,
+      "sha256": "d676f1c318923a683abfe08cab5913e844233a86b5da4f67bd8f092733e33d98"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-2219.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-2220.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-2221.json",
+      "bytes": 1591,
+      "sha256": "0e8858ddeb6558a5fe35ad5c4672408412b9dc69bf00425ea0e639722812d734"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-2222.json",
+      "bytes": 5168,
+      "sha256": "594e4f4fc710dc3680f6926b977480795198dee7ac02709f0166d48f54a2eb36"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-2225.json",
+      "bytes": 38327,
+      "sha256": "f09b8d9208504e55f3d0de015a087108777eca9b3db79f87f8f202f69311cff9"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/reviews-965.json",
+      "bytes": 2117,
+      "sha256": "bbc5f4fcb7022c47a9a85810e7cdb93b083de0d283d9c47fcd78c882fce80323"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/screenshot-program.hz",
+      "bytes": 197,
+      "sha256": "b69148e56e9f0561d66e94878a34926c0ab86bd50470cfa235979dd19ab3c053"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/ui.html",
+      "bytes": 55834,
+      "sha256": "4b2964465804cb1f498fc0dbce8a5fbe0c742ecba45c3447bcf0e04ef0014be8"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg019/research/week-pr-metadata.json",
+      "bytes": 940701,
+      "sha256": "37f38d4c0b2b167bfbcdcc687e108582e16c3494c99a8da00e1e2e2e36328210"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/SOURCES.md",
+      "bytes": 4618,
+      "sha256": "8b56dddac868929948bd0279617da994d2aed70a4143d579d81930be9f438d32"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/assets/build-initial.png",
+      "bytes": 324740,
+      "sha256": "bb6a5d8eb6655bf498b31332593d7a86f71a1aff437a45d9d4f29ca468628d1b"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/assets/comic-first.png",
+      "bytes": 3294213,
+      "sha256": "4b56bc64b5a51855ee89b14340574e912553de28af168dbea19092dfd597456b"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/assets/comic.png",
+      "bytes": 3197202,
+      "sha256": "028a13e78cc6b76deff857eb5a88b6fa53f05b1bd135de6ef3a151767cd58bc0"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/assets/cover.png",
+      "bytes": 3984555,
+      "sha256": "bd91ab69bf9e3900c8dceea44cb2983475494e966b13a4aff40d9239d073484e"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/assets/screenshot.png",
+      "bytes": 223022,
+      "sha256": "04ad8e4c48febb32387c55b069c5368ecd86eb685184a2d32f001750b2dae1c2"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/assets/stage.png",
+      "bytes": 284885,
+      "sha256": "4735c4d4ca3152854ab3bac774c5038b3f8ec7c7df99f3862cd627c2d73a1105"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/copy.json",
+      "bytes": 13920,
+      "sha256": "02266cac658dadeb0c593740fb287178003f2730d25e765012eba44cf00ce108"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/build-dom.html",
+      "bytes": 90184,
+      "sha256": "7c94dfd8923156e2d9c138557eb88d0702d865eb33478915e174b4ad2b112986"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/build-process.json",
+      "bytes": 170,
+      "sha256": "e17a853c8d017d010843d06e785918739fb95c7814dd7e64eca449e450c64055"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/build-provenance.json",
+      "bytes": 699,
+      "sha256": "013b892f40409ea4182554c4602a340310e29484b50c75f16757d48827737367"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/comments-1099.json",
+      "bytes": 5336,
+      "sha256": "a6dbfeeda026ec8068144923c66a7bffb9e0213ed14ac46777a176e249e0f27e"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/comments-1468.json",
+      "bytes": 22066,
+      "sha256": "0f8deab2fae05ac74b423b63973fd371ff31de1f7713fd72f340ae0769ca9ac5"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/comments-1575.json",
+      "bytes": 109734,
+      "sha256": "31e41c2a07fddcd382ad9ecd23cc54cbc8d5d5701363c3bde34b78b840346153"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/comments-1721.json",
+      "bytes": 11979,
+      "sha256": "5365c71a2c419a79d593bdf20ba11e92073f304c6c4d79d80aecf33e5ffabf6f"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/comments-1726.json",
+      "bytes": 16671,
+      "sha256": "9b2133a2c47e93058f2af1240e6d5943c011f530c9b8ad7511be4a82b8402821"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/comments-1751.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/comments-1754.json",
+      "bytes": 16429,
+      "sha256": "dc679265dd83c18d4b3f2e859dbebb53cbb7cd3ac95347f233c41a76575f94fb"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/comments-1757.json",
+      "bytes": 8109,
+      "sha256": "37037b6dfb7bd8179fae830702a0cb6b1dbe54d67a4974b9c4fea0d5e22da24e"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/comments-1758.json",
+      "bytes": 9316,
+      "sha256": "c48889d284297510a3489288b4bd3c1b4416667bbeab32c1888916b1482bb9bb"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/comments-1760.json",
+      "bytes": 17636,
+      "sha256": "fa52857f934dcf5527d56468992815ce0a1a56503938b6f8db83723c9f5d16f3"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/comments-1761.json",
+      "bytes": 11145,
+      "sha256": "88999c08aed127caa442d5d4a80f8039e023b3587a905334347453c9c5ccfb05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/comments-1765.json",
+      "bytes": 6863,
+      "sha256": "a96a9e407293d96bce187c1c27aef50c2601b1f832be5b1782e7701c84f11eb0"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/comments-1766.json",
+      "bytes": 8125,
+      "sha256": "5cb2026cb885563ffa33379d1aa77e61c0e03356fc57b0c4f30bd3ca68c0a9c6"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/comments-1768.json",
+      "bytes": 1682,
+      "sha256": "eefdaebcefdd5f397becb844ce10efff0fed50d479c15620825473296a5bb8e2"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/comments-1769.json",
+      "bytes": 8797,
+      "sha256": "8367fc3bf2124c7eec27d72110963e124b8787ce3984d3d1dd1d49b896db84d3"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/comments-1781.json",
+      "bytes": 10338,
+      "sha256": "1f1d203a3116f975e857f28cd60337937147cc513db1f3e4ec6a72cbd46369a8"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/final-text.txt",
+      "bytes": 13411,
+      "sha256": "d0e9550e356f50f6d64d2f8850b320ba13028fbb0760f8d37d31fe3f3539b858"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/issues-closed.json",
+      "bytes": 118164,
+      "sha256": "83079985cee2c9ecbf0de8857004c73a6174a863e074eb1a768faec080f0da5c"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/issues-opened.json",
+      "bytes": 64030,
+      "sha256": "3c24d1f0c9731efdeeb12b75765829a6f171a712b886f01b98f8322f026a1c05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/local-build.log",
+      "bytes": 4388,
+      "sha256": "dc5113e0d740996c8916b125f19eec02049475f0722e07eefb18999246bec9e7"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/local-server.log",
+      "bytes": 21476,
+      "sha256": "1e2a71c75eef0304c4432767ac19fcf8f10ba0891f283aecd4e682f38bd74371"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/metrics.json",
+      "bytes": 1243,
+      "sha256": "9ec6a026449f84703123ae505d7dfa2893f7edc0b1b5104e5b519b9688f6614c"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/period-dev-commits.tsv",
+      "bytes": 6935,
+      "sha256": "90aaa235b7e01c3807e2d59a731a4561c8d8511e0a5c090060dd60c6d8b598cb"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/pr-1099.json",
+      "bytes": 17008,
+      "sha256": "3a44ad72bf32a2b3188724792eebe5f3b65bda60db60ffaaee3cd2659b499bca"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/pr-1468.json",
+      "bytes": 15785,
+      "sha256": "e2f568ea31d5a4bfa6f44eefca8d7386c2e1b52bd0a02501616063d128762e5e"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/pr-1575.json",
+      "bytes": 24984,
+      "sha256": "a8cc735337b2e5debcd4375349de5860bba5fd40cb3f99af768d7674c90aea45"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/pr-1721.json",
+      "bytes": 20718,
+      "sha256": "9bedbdbe619884abf769c351c6da6fc21617c98179be8146f2354b232bae2043"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/pr-1726.json",
+      "bytes": 18852,
+      "sha256": "4963635cfc234daa92127d6044bdb9d87ea5a3a30617fe2e2283573350f65186"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/pr-1751.json",
+      "bytes": 19268,
+      "sha256": "8362ce93ee29f2387aa6bed805c7868a928f46cac291862311292cb785fb5065"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/pr-1754.json",
+      "bytes": 18803,
+      "sha256": "74479d98987ba5cbd5fa706b730142ff7550a34aa44a5b3ff8b5977d7c03ddf4"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/pr-1757.json",
+      "bytes": 19608,
+      "sha256": "3940d53e0b420edf1eea94a8a642ccbd0b3a4a8216a849f44581e3dff4a1bd21"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/pr-1758.json",
+      "bytes": 18535,
+      "sha256": "7ed701b0bd8ee996c014c8e4a7099beee12f842961f937f3c9dcd5b8314034a1"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/pr-1760.json",
+      "bytes": 16746,
+      "sha256": "5398c0152d1f035bd4fd62b7b0d67eb3c8e7eb843376854de32cb88052e5ce69"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/pr-1761.json",
+      "bytes": 19136,
+      "sha256": "3e2ce77cfdaf3713d9df581db7384bf2cfdc74fd20e629c91f4e80fa0ef651f1"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/pr-1765.json",
+      "bytes": 16935,
+      "sha256": "5face538004cde24a9af28183a7bc2ab8b5603990037b01f0c3ec20c12529300"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/pr-1766.json",
+      "bytes": 18620,
+      "sha256": "a52f965eef7992e7a807e13e805de4b6667ddf417bc0be9b19944ba4b2a77caa"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/pr-1768.json",
+      "bytes": 15884,
+      "sha256": "3115e8f42a07e68777ad513c60de8806076b1f39bd056173c24414a337f2400f"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/pr-1769.json",
+      "bytes": 20451,
+      "sha256": "c90a9222a0e13f5b46f04e2183ddb1724c9246f38ff8a18f997c9b2b4ae1cc88"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/pr-1781.json",
+      "bytes": 19604,
+      "sha256": "d48bd78e68d418598d5d3f47747901c7a687609f9e657d57c0a51c9027040d43"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/reader.md",
+      "bytes": 63961,
+      "sha256": "64618ab3e8803d74224359cfe8f49a8a03b5678f2a2962d83ae10fae977028c7"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/review-comments-1099.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/review-comments-1468.json",
+      "bytes": 43801,
+      "sha256": "1bec6a99f9d3edcdad0ba2ff768cd47a7e0b24ab1339e66a019a5a9fd1e1f72b"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/review-comments-1575.json",
+      "bytes": 121809,
+      "sha256": "1b2fa778393c4810f005bd33f010949f37f83bf0c766da83af677d4f2c0716fe"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/review-comments-1721.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/review-comments-1726.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/review-comments-1751.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/review-comments-1754.json",
+      "bytes": 2816,
+      "sha256": "0147001ede3b1b906e5b0714e4692eed760d9af7bafb8737688861089cc08125"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/review-comments-1757.json",
+      "bytes": 5550,
+      "sha256": "a72054eabf64ca1d133ea4c92f3c657ffef33d084dcfa7b97a8e28cfc2ea4843"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/review-comments-1758.json",
+      "bytes": 4698,
+      "sha256": "95a7b38f493cedc0741d569070bfc9ec58db688a1afc417ff3198bb190db44f7"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/review-comments-1760.json",
+      "bytes": 2432,
+      "sha256": "372c30fbe23fb28a2a95261cab2e1c6bc32f17baa8ff10202a73da78a95cfd91"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/review-comments-1761.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/review-comments-1765.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/review-comments-1766.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/review-comments-1768.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/review-comments-1769.json",
+      "bytes": 5985,
+      "sha256": "c20e72430a104ab92a7ce5d14f6a102bb0f4f13e661dcd6c866d845bc2e0ed81"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/review-comments-1781.json",
+      "bytes": 38085,
+      "sha256": "3a28f55baab3c153a5d3bdc29b0ea888738df3c9279b7a0d34c781a9cf4b359e"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/reviews-1099.json",
+      "bytes": 1593,
+      "sha256": "2ed324cd8410d56222e000f9fa1b3af3f69ffddaebcd9c542e7efa40f25502fb"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/reviews-1468.json",
+      "bytes": 1983,
+      "sha256": "526afec8a479c6af2e4f198c6043c6e7891d2eec2c867d0c975b382a27ffa9a3"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/reviews-1575.json",
+      "bytes": 21846,
+      "sha256": "7a2ea52072f14e673967b12683c470b1e5aed6e2f6c16ea59a1885d864e735f3"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/reviews-1721.json",
+      "bytes": 3355,
+      "sha256": "61947433201410e71750c3f2e9e8af245c5a9f9b5b5565fa541efc251d78a559"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/reviews-1726.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/reviews-1751.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/reviews-1754.json",
+      "bytes": 1592,
+      "sha256": "3ae3f9fd679e2c316f2b87fdec3579516d08c881e41f0fce78dc2f78bf06c6b9"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/reviews-1757.json",
+      "bytes": 3053,
+      "sha256": "e90c4b163799c25e35671e0a72d403d5ee1584c0c9ee7b268b80b4220fff939c"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/reviews-1758.json",
+      "bytes": 4632,
+      "sha256": "315a8c85d85752061fd90b5ca8a95d2367e0af5387aec7daf29cc8e5e5db872d"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/reviews-1760.json",
+      "bytes": 3104,
+      "sha256": "e8c5f9b408d253560d4c191663d08bbc0881788503808b7592f721799aed1b1a"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/reviews-1761.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/reviews-1765.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/reviews-1766.json",
+      "bytes": 1515,
+      "sha256": "beb1076a5a923ad89f6dc75847acbcc8939d65e436bc0ef259b242d8e1c19a87"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/reviews-1768.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/reviews-1769.json",
+      "bytes": 3289,
+      "sha256": "b60cd3fcf806543c6d3dd2b937d6be751379f5a2f3abf380e9075df02311c35a"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/reviews-1781.json",
+      "bytes": 17037,
+      "sha256": "bfabacd19f0e89d55329891fe990729148d00d27ee4a92bf660fc9337130a8e3"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/screenshot-program.hz",
+      "bytes": 205,
+      "sha256": "76a78326415013cabc87bd44b8385d1ddf77554e3e6561a8504b3fdeb53cd871"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/ui.html",
+      "bytes": 57770,
+      "sha256": "e823d6de5f69fc1f939863474b64e72b5ff08b9e0cb98494dce60db3d041983d"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg060/research/week-pr-metadata.json",
+      "bytes": 348143,
+      "sha256": "520c334f377bf0bb895f7dfa8dea2608182f22f81416d88fd6d930092bea9b15"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/SOURCES.md",
+      "bytes": 3889,
+      "sha256": "08857ffae0ac3e0cb31cb1e68fb4c577399f4bfac6959fa26bc8fb2b12d9ce51"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/assets/build-initial.png",
+      "bytes": 327585,
+      "sha256": "8fd1ed7d87aa7b5911095a6980a20781438d54f1cf924f86c6e1eae23223730d"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/assets/comic-first.png",
+      "bytes": 3688170,
+      "sha256": "c986fe9bafaf065d639595174771ca59e90dd4ccb8d94d17227b55f93cdfeabb"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/assets/comic.png",
+      "bytes": 3481169,
+      "sha256": "51534045a7038ba464e59bec851b022198b117a05ad7b7c84662b45e0da81b0d"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/assets/cover.png",
+      "bytes": 4243559,
+      "sha256": "0d0d5b7b10a084b82b5de70a7bd26d19e7df7c6416b6f9b2fc36620fc289f381"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/assets/screenshot.png",
+      "bytes": 83673,
+      "sha256": "4f8705e667346d3dadcf03395524b7770c4420af0b9cf16642a6d0683f5ef20b"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/assets/stage.png",
+      "bytes": 233909,
+      "sha256": "a154dd203785cdbf9fed1716f0407e42c2a776f88f2fb897e9de8bf5eef6cf50"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/copy.json",
+      "bytes": 12941,
+      "sha256": "05c0e86ab0ba5cad29e48ac24016233252f24b38a566e8aebbc51b44f8a92dfc"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/build-dom.html",
+      "bytes": 75736,
+      "sha256": "116c71afdfce4427ef9881cee95bb5337bf85c22340925c7dbcd57a7b1a3b2d5"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/build-process.json",
+      "bytes": 170,
+      "sha256": "c86372c175c413ff194c246550e26033d938c480b7560a90d8d61e23a328716a"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/build-provenance.json",
+      "bytes": 699,
+      "sha256": "016e47cd756f4970408c80c8d45897f03ec45c48859d0a1ea6e72bf6ccb84ef6"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/comments-1325.json",
+      "bytes": 1743,
+      "sha256": "69d17129f0633780e406643fd037f624482fb9f6cf12964c6cdbeb6a49d72af1"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/comments-1378.json",
+      "bytes": 3341,
+      "sha256": "1acc3a34a1883244b956eeef8f4613d0c931cced3e44a8f520de118974272856"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/comments-1399.json",
+      "bytes": 1655,
+      "sha256": "aa329969301364e76f324003843978b02e09e69126771e97f999be3809affa5e"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/comments-1400.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/comments-1401.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/comments-1402.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/comments-1404.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/comments-1405.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/final-text.txt",
+      "bytes": 13418,
+      "sha256": "ded490533e0897929179dbbc6b205c8e23bf83b1b6f6f2af2767af6139bfbd27"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/issues-closed.json",
+      "bytes": 4502,
+      "sha256": "f411fd02f33187f4d146a0aaf2ead709c2f151c4150bea86bc8161733448d908"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/issues-opened.json",
+      "bytes": 4502,
+      "sha256": "f411fd02f33187f4d146a0aaf2ead709c2f151c4150bea86bc8161733448d908"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/local-build.log",
+      "bytes": 2582,
+      "sha256": "77af6fdb9cb79a7019bd5d178c8ec77a3ce2a0e8791c82a3e151dd89701177e8"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/local-server.log",
+      "bytes": 10682,
+      "sha256": "a7d37473f94cb51656b1318966ae1d2501c66d3ae83d713696d7785d81342a99"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/metrics.json",
+      "bytes": 1463,
+      "sha256": "8ece451a185a629b7986e46659a9cb9c0cbc35a88824fca276d4f3f66833add7"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/period-dev-commits.tsv",
+      "bytes": 2862,
+      "sha256": "969f2af4bcdc643e792dc15c4b7d17ab47ca9fce8a1ff8990e560dff3c208343"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/pr-1325.json",
+      "bytes": 15897,
+      "sha256": "c6ce28335e88e5cff2d759ebe697c25c25dd8760bdc4b1e862e357be4b54f535"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/pr-1378.json",
+      "bytes": 16961,
+      "sha256": "25507777347e868e68e0b958246664cc66c93b6791c28c46a0d8e29202664cec"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/pr-1399.json",
+      "bytes": 17141,
+      "sha256": "7b3db2184d877556cc8da6826ca2bbe41185ce7859417fc12b839f6aa73468e2"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/pr-1400.json",
+      "bytes": 17719,
+      "sha256": "d0724a85d37972cc457240b48755a8e481e8b080e43f37ec51f21175bcec4c17"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/pr-1401.json",
+      "bytes": 19686,
+      "sha256": "87c95c60ff23b98308657f4d044bceb1404a84d695581d40f154d9374078175c"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/pr-1402.json",
+      "bytes": 18803,
+      "sha256": "bc1fbeca71a6fb4ecf93c411579988002e5ba7d39e6805eb5406ad9f01dd0ab8"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/pr-1404.json",
+      "bytes": 18989,
+      "sha256": "7fc1ed0f0acb087e0fe0c22f2588dbadfb53e1f74df43b54dbdf889d4072540d"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/pr-1405.json",
+      "bytes": 17624,
+      "sha256": "748db6be6473383e76370a5bf54e23123a21810c8d45b3ed5d68559425f8141d"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/reader.md",
+      "bytes": 7506,
+      "sha256": "613a85defeb837c897f71b44cf587ff6c8d0b9faa3dd698faf5c693cb7de08e3"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/review-comments-1325.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/review-comments-1378.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/review-comments-1399.json",
+      "bytes": 6268,
+      "sha256": "94bbaa73d5a4d56359ae90006e9b0c769691f68ecf1e9faebde239e83fc4e8ca"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/review-comments-1400.json",
+      "bytes": 12109,
+      "sha256": "e739537ea128f5fe43ff971482689d902b838d14d64ec103aed3a2ff852448c5"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/review-comments-1401.json",
+      "bytes": 8190,
+      "sha256": "2594577a0da1bea73545be9d89ceafed892c4c3ce933157232063287c19ac947"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/review-comments-1402.json",
+      "bytes": 25560,
+      "sha256": "6d8b5b4b1f43478811e5033a32ecdd48c1289323c3dcfd53eec75068b2827583"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/review-comments-1404.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/review-comments-1405.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/reviews-1325.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/reviews-1378.json",
+      "bytes": 1515,
+      "sha256": "25ece9a285e73d752cffaecb0e0a3f6c027475c766a487ea5d4f9455f623e86f"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/reviews-1399.json",
+      "bytes": 4587,
+      "sha256": "57d2c8e834b97b7e50c31e79cfc63e777b095494d9a66d88d4ce9c343deedf42"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/reviews-1400.json",
+      "bytes": 10661,
+      "sha256": "eaef4df19c74faee40f7518bb8ecb9e94f761578a2791896598c8482d895d147"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/reviews-1401.json",
+      "bytes": 3053,
+      "sha256": "acf89f65926bfdb3e9980092c0b532d3b0f61837207961d912f123eb1bbc70a8"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/reviews-1402.json",
+      "bytes": 13713,
+      "sha256": "43ad07b4b626bfb6de6c37e08a60118e091364ff6d3d5ee03cb02a0940c5d1ff"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/reviews-1404.json",
+      "bytes": 1515,
+      "sha256": "ec252f8f354accbf298acf5ae5b16deec86b9cab87e65b58e0646d26d521eddc"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/reviews-1405.json",
+      "bytes": 1515,
+      "sha256": "7392874319c0b1f73ffeea5052a9b652fd04ea9914884d3b8bf5d19f4f692ae8"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/screenshot-program.hz",
+      "bytes": 185,
+      "sha256": "9112a4eacf2b85cfd6d44bbac2f201677fafaa68721711ae62947f72860f1742"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/ui.html",
+      "bytes": 31179,
+      "sha256": "d8752d82301d5964cd56db4299b39b5aa55c59d232092fd0cc9448ab53b3b900"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/neg100/research/week-pr-metadata.json",
+      "bytes": 164154,
+      "sha256": "b86de8383dd0c11d4326156e832f8dee82a10050c30ccdb7ad8464c9105c84b8"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/pages.json",
+      "bytes": 2171,
+      "sha256": "82b650ab403f69bba061adee2bda92a30ca971b9f2a02ac2682b2269543568c6"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/register.py",
+      "bytes": 4893,
+      "sha256": "273d496198de21d7435a62dde05faefeb8f7788ce527e0173c30995408a13639"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/research/all-pr-pages.json",
+      "bytes": 20839988,
+      "sha256": "541651a81f442fb99189ac55dd2e8bca75f0154eec346b5cf71717c0a3b3a66c"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/research/dev-history.tsv",
+      "bytes": 952214,
+      "sha256": "ec9feacd8cd219cccf06991ae1c87f1c26bee27474273a3820100221edc25479"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/research/harvest-jobs.json",
+      "bytes": 34953,
+      "sha256": "951bbfb0294ce2e7a243502a0a98b5c729deabca143ee0af7b1061216d94a6e1"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/research/harvest-manifest.json",
+      "bytes": 270,
+      "sha256": "6023aea0b063fd704cde2d15562510c5ebcdc531812eef29ed2b8c07ef5682c6"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/research/weeks.json",
+      "bytes": 1762549,
+      "sha256": "a6fd35acc737ac7670979b4e2ea790246c1185e828a08fdb69fe4bdf0c9e58c3"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/selection.json",
+      "bytes": 1423,
+      "sha256": "71b1e887683ac7e87cc7f4591b6dc4ce76f6671b1bcfb5696c815db2dd323f04"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/stage.cjs",
+      "bytes": 2930,
+      "sha256": "4dbd100b9d017c9609f5b73b9769ead1641812b3864feaceeb099e34aa0b2ada"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/typeset-text.txt",
+      "bytes": 42943,
+      "sha256": "556139bb10334267fd8a997feb99ca4586a6909af719a59d780204e517ad3537"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/typesetting/layout.json",
+      "bytes": 84908,
+      "sha256": "cd9e0d0b13f71d8f01ab982141a9ff59e1be89ed84432748ace5762087c0f027"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/typesetting/metrics.json",
+      "bytes": 26040,
+      "sha256": "9d46cdc526f005adc68865f51e975a3613b255b7397020b12cd761ec79d2dbe2"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/typesetting/week-in-hazel-neg019.html",
+      "bytes": 25790,
+      "sha256": "fdfec74086774e5f9e36d8daf644909affee5df7c3da034e9734455fbb95e622"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/typesetting/week-in-hazel-neg060.html",
+      "bytes": 22782,
+      "sha256": "31fe30f634507ba88697ec7b7e1119236d89d22346df7531ab804dc666f0cf7d"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/typesetting/week-in-hazel-neg100.html",
+      "bytes": 22161,
+      "sha256": "726868ce1debb811aef8c98d1d94592406b153370dec28c0758bfc3aaf32c719"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/verification.json",
+      "bytes": 3172,
+      "sha256": "d0824f3e64e3d7469db1302853f7e23a2f07f063f970faaf0b527b7f4f40e966"
+    },
+    {
+      "path": "output/week-in-hazel/back-issues/verify.py",
+      "bytes": 2418,
+      "sha256": "c0b756e5c78fdb12b89d18730b24af13f44feb97dc98511c6e9259a4107333ef"
+    },
+    {
+      "path": "output/week-in-hazel/browser_layer.py",
+      "bytes": 2804,
+      "sha256": "d001890cf4c0f1a7738716e45f2d1e7922ca0ac3b1bb22ea41f918dff842a668"
+    },
+    {
+      "path": "output/week-in-hazel/browser_typeset.cjs",
+      "bytes": 5644,
+      "sha256": "8d85d573fb5ff17a4989a71d3c75d0f8bd8cada189d6d710dcfcfa31e4902b4e"
+    },
+    {
+      "path": "output/week-in-hazel/build_zine.py",
+      "bytes": 38480,
+      "sha256": "024d95a47134f4c3212ccd719fc4d5fa6339ed20744ee3bab3a9d9e7686a5f15"
+    },
+    {
+      "path": "output/week-in-hazel/collect.py",
+      "bytes": 2354,
+      "sha256": "b50f2e1085b71b5e4065f42e0b96afdfc2c4067f26a0cc8080051ff2567e6dec"
+    },
+    {
+      "path": "output/week-in-hazel/image-ledger.json",
+      "bytes": 16911,
+      "sha256": "f0489a6fd6accdc6546a964407e2d601d72f4e6a979a4e3fff4d7dd2b50a367c"
+    },
+    {
+      "path": "output/week-in-hazel/issues.json",
+      "bytes": 14287,
+      "sha256": "212d091d14fbe9c94f426fbee3fd87a2213b3ce9c6d341ddf55bac5dea819be4"
+    },
+    {
+      "path": "output/week-in-hazel/layout-manifest.json",
+      "bytes": 2683,
+      "sha256": "245a7fe63dfcba84e713773f3c925e13bcfd813eaa38be6c49832898dcdda6a2"
+    },
+    {
+      "path": "output/week-in-hazel/research/agent-canvas-deployment-failure.log",
+      "bytes": 224407,
+      "sha256": "5ae3d1639664dfee1402f454256f6625c691a7e7291e99d95780bf1790a7817a"
+    },
+    {
+      "path": "output/week-in-hazel/research/agent-canvas-local-build.log",
+      "bytes": 8933,
+      "sha256": "6531f3643607a3371aa1b05d2031da536e899766e583fbbffd05a6fe33f74544"
+    },
+    {
+      "path": "output/week-in-hazel/research/branch-commits.json",
+      "bytes": 472021,
+      "sha256": "8b81de3da7f05606014f0ebebe769dd747c62be2a329a77c2b5c6d3b3cd3888a"
+    },
+    {
+      "path": "output/week-in-hazel/research/branch-commits.raw",
+      "bytes": 363938,
+      "sha256": "45fb41cceabbc37a95922e88e9465fce2901dbb12b9968e2bb96172ff9809c83"
+    },
+    {
+      "path": "output/week-in-hazel/research/branches-pages.json",
+      "bytes": 292254,
+      "sha256": "320a4585e96c66f6809edc499ae71fffb36141207d8e14e9a31af3a5bd9a8dfd"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-1388.json",
+      "bytes": 48309,
+      "sha256": "bda2823099da23d7452f99c90fcf27d716deb692b46e338d06faa5607ebd0d54"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-1395.json",
+      "bytes": 29964,
+      "sha256": "47e1c65eba655d2477c95066e6404a4fffcd0a626112cd366f5c91695e6840d4"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-1481.json",
+      "bytes": 4193,
+      "sha256": "54acba6ab9b8196e5ace5dee6876e9f59fedb6ae3cf3d4eeaa609719054fae79"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-1591.json",
+      "bytes": 47273,
+      "sha256": "e7111e0a086c472d52f6913934f3faaeb41449c943e026d7c5dd28270d8585c7"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-1858.json",
+      "bytes": 48432,
+      "sha256": "81f29ae593163fd7dba5e2d4b62ac4f80556935b08441c852bbb5b131816990c"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-1890.json",
+      "bytes": 20818,
+      "sha256": "2d2c76595e985e71e5a92f8154401a3e1529eb1f5a6db9d98041a312d79603af"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-1911.json",
+      "bytes": 18062,
+      "sha256": "ba049fdb85ed3485a6bc65a6894807079ff4846c0848e41cbcaabde4121e3761"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-1959.json",
+      "bytes": 22494,
+      "sha256": "542344dd03188370ec1bbf4b89baa62636c2c99fc3570c313cb7debccc8b2e14"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-1988.json",
+      "bytes": 25756,
+      "sha256": "77f82e87eb68d4d99695389248bf6893318159bafc82b47b385ad6a9d614a9da"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2065.json",
+      "bytes": 14551,
+      "sha256": "8c7b48e39d573e51543c378fd831462ae6efee0203dfd7839f7a8b20d9c2c3a8"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2067.json",
+      "bytes": 2673,
+      "sha256": "6855466470005cdf6596060deff9d53f1ab10f5811162a5ec68b46eedb62746e"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2115.json",
+      "bytes": 22243,
+      "sha256": "27fb04674ed12ccbe1c99e0468b99ca5912f7b79c6011bbffd71d6d3bc49f77f"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2128.json",
+      "bytes": 4063,
+      "sha256": "a4c2ed247882700e6944f7309724e5952ee998076c4c3b7ab50c52d3554d4168"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2137.json",
+      "bytes": 10038,
+      "sha256": "057b1c9ca53fa885457143db6ac1dd6a3bdc185657fa11dd66f5c182bfe28751"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2166.json",
+      "bytes": 23463,
+      "sha256": "b97a950e2c1cccdeb33b791b6ec6b05df62215f55786500623a797bc276e4a3b"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2226.json",
+      "bytes": 7946,
+      "sha256": "03ae4cf86291701ddd785183446bd15f3be8cbbb466a6b45da116ac6cf43a6cd"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2241.json",
+      "bytes": 19052,
+      "sha256": "337ab999174dd9b409e9549a1a38a1aa864fc7a0b91ef6773f428e3b19ea27d9"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2247.json",
+      "bytes": 15431,
+      "sha256": "f9cd5ff0e09efe79ad29ac79601dc239c5a355b3ef1a440e9e2260ca91139567"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2248.json",
+      "bytes": 12191,
+      "sha256": "d19634f8823f5a6f24e70abc4408f599023654ab8c7b474d1c003a7fd815f690"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2249.json",
+      "bytes": 15477,
+      "sha256": "e9681c19c880d52404afd207002d7a5423d64bdc92494e0c56c04fd12b371a8c"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2250.json",
+      "bytes": 16095,
+      "sha256": "45f126c5d404d5977a9b7ca7bdacf0454bca6f563320922f0ec901cf9eae2696"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2254.json",
+      "bytes": 35016,
+      "sha256": "e79d3108608b110b20934232f2b3c9ee10fc25c9cd6e0b8bbe070e17702dad40"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2309.json",
+      "bytes": 24323,
+      "sha256": "86952e7628b158ada528c33632580e9ed1ca5f8f0a33446a721604296859e157"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2310.json",
+      "bytes": 17800,
+      "sha256": "3ff0f71f8cdd30c3ce77e29c6d40b951a56714e186de29d93deff1e21cd11b6d"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2315.json",
+      "bytes": 20638,
+      "sha256": "170c1ba1b39a8424f943a9da9759e65bff272f6afcd63bc7a273112eb674da55"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2322.json",
+      "bytes": 17836,
+      "sha256": "42d0b5dc72bee33ac8246aa2de353c166f0c7d98ba33d8be0bd8cce0e19e82c8"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2323.json",
+      "bytes": 6545,
+      "sha256": "3fcd9ae97142e22866b9fb27589bcfd67d167259896190e987a72e54022c732d"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2332.json",
+      "bytes": 9412,
+      "sha256": "9233e1d0a88638c703de1e80d855762d17d739d372f0ef32462da6292b83b355"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2334.json",
+      "bytes": 2049,
+      "sha256": "5f97c19bac2af4cb92a6dbdff9ad8de3ad3f6735a6c4dd788ef58cc02b47adea"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2337.json",
+      "bytes": 23618,
+      "sha256": "326f01f855d6ef6e4fc8fb7c599395ceb8f141bab8a21f2a53e484b0e8bcad69"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2341.json",
+      "bytes": 26221,
+      "sha256": "513b6bfca8ff79388948fd32494a623d42d82aa30c2651b43ec2cedb96f94995"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2349.json",
+      "bytes": 18203,
+      "sha256": "3e5ab284442ccb1306babe9bb7dfec5e7c5e2a23e9c7312d975b22bf72146f09"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2350.json",
+      "bytes": 20833,
+      "sha256": "2a4b6e100c2c40e046c7ad263b99ab747dcb3e9fd86b78435d065d01f531967f"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2363.json",
+      "bytes": 38295,
+      "sha256": "d12fdc3b72fea6f22e125f74478dfb62b183ecc5a8a4e4c8f9a6b47f8e92c558"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2364.json",
+      "bytes": 17654,
+      "sha256": "d8ffed003e6088e774bcd327fe0b7800654dfe482bd2c19a9e14b857c36a6bca"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2372.json",
+      "bytes": 9892,
+      "sha256": "558d1eea6a17ed7984993b867c5d3c586caa597da413318d1ba913b475cf5e70"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2374.json",
+      "bytes": 28997,
+      "sha256": "85d378328f292ab9fa4a7174d2b8b42f6a5837fb8da072f0e150b12b52ddbe95"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2378.json",
+      "bytes": 25834,
+      "sha256": "d98e059498fec75e806267bcc5ef0a4dcb5a9f79d4d0c80fb5cf0742c4c5ba97"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2389.json",
+      "bytes": 17627,
+      "sha256": "17f79e0f239abf41edb688eb2e5aea2e0dd9eec023d56384d19cf3a74cf3479f"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2393.json",
+      "bytes": 17849,
+      "sha256": "c596a0813e49b2cea640d67f04e37051b2a3c422b3a9b43760880f40fadf314c"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2395.json",
+      "bytes": 13904,
+      "sha256": "94d0854357dd3a59f5dd258e9c544f150ea340508b4bd1bff9ee1ac3ebf4589f"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2398.json",
+      "bytes": 23527,
+      "sha256": "94ed274abce0d290439dca9f416e3103d0a058a90933403c1233fe0bca2c2abd"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2406.json",
+      "bytes": 17920,
+      "sha256": "f6616e78e049bdf084be5a4b366d8c7bbac1ba738afc0fa8f164df658ad457d7"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2408.json",
+      "bytes": 22385,
+      "sha256": "9faa2c45a9a9978d13a5a8756ded58a222a8f5429eaea49222a2c413f1994bcf"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2411.json",
+      "bytes": 17494,
+      "sha256": "5f3f65cc6cb5c8a3b710a7e29bcc8013e32fd833176110e6c87b2a04ebf356e5"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2421.json",
+      "bytes": 34854,
+      "sha256": "2eb868ce0112b7e06c6ca39d7550e011bce58208c664600a0b368fcba3dde52b"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2422.json",
+      "bytes": 10017,
+      "sha256": "9b8217a7d8b7988e32de983aa03ae846c4ad3187e2ab3742dd880e63321ae436"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2423.json",
+      "bytes": 12477,
+      "sha256": "0640fb4074821e42f79eedb96e574a2611813c0c190cf631aead38ab311ddec9"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2427.json",
+      "bytes": 18001,
+      "sha256": "c7124cd5cbcb2bf89511732c0664197f2f67933df33c34986f75fdbca4784564"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2431.json",
+      "bytes": 16339,
+      "sha256": "9f3037585a57c4633060a8a69c1caebe3ff22a50b4028f3c616de08303f31f1b"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2436.json",
+      "bytes": 14423,
+      "sha256": "9719cbad0bef63a0932f732420ba074475abbe2472394d8e169f879a6c63d51f"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2437.json",
+      "bytes": 13793,
+      "sha256": "7abf90bf5ef0d042d00d89a392e1984ce590aa7d5e01d343a5e2d9db9e0aec72"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2438.json",
+      "bytes": 7946,
+      "sha256": "ae9af13fb670fa7096fa546528be244edb11121ce34311fa6331538d5c921e4a"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2439.json",
+      "bytes": 14053,
+      "sha256": "3d8916d74671619675d67860dbca835841d52bd473298cf5ec99dd29834ab8a4"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2440.json",
+      "bytes": 9049,
+      "sha256": "2ad8838bf494a02d2e59a2682cac6ed8161c74ca02848568ca9a01451bfaf9c8"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2445.json",
+      "bytes": 6400,
+      "sha256": "21d42b9274cdd3322e6f6dfd7bbc85942ecf872ede8a503edb1c09aa9b4b35d7"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2448.json",
+      "bytes": 11483,
+      "sha256": "7fe71c76cd9e88a8eba4e3fe21b4a8441c7dfdf72b5fcd7f24d863ed13df3811"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2449.json",
+      "bytes": 8576,
+      "sha256": "79ca9e4c5cd250f18bc639fd1e7a37f0cae426aa730bfb367e330690894f624e"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2450.json",
+      "bytes": 4073,
+      "sha256": "b655877ed49fb3ffefbd65b3675144a714d15876ecf7882d3d9e7d91536c87b9"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2451.json",
+      "bytes": 12318,
+      "sha256": "3cbd546d1d8c9b970e8c875d255b3634ae336f98d9ae06783da5b85691d96bc7"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2452.json",
+      "bytes": 8562,
+      "sha256": "d250c9cb3508b9a589bf863d41563afb3d926af6a72cae66abeb5724876105a9"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2453.json",
+      "bytes": 2929,
+      "sha256": "c1f291f4c66879b3da161eb3e4b71ed2980fb87717f06f3e04db650ebff540d8"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2457.json",
+      "bytes": 17741,
+      "sha256": "606d9d3201ba7d8bfe44eedb71e3de47659a2767fa392198a84435379c635f31"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2458.json",
+      "bytes": 8503,
+      "sha256": "6dd5ab0d4a7eeb2b12d3a6fc6c7ef24f3b023c8593f0cffa6934cbf094da5848"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2459.json",
+      "bytes": 10708,
+      "sha256": "a6112bcd3b8e27d3863c78d20102bd5d3c549a8ed58e50560a70e78d80d8041f"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2460.json",
+      "bytes": 10679,
+      "sha256": "202bc783b75bc9f7acef05c69d2e168a028dcab02443b55d291cfe620b7ed77e"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2461.json",
+      "bytes": 17735,
+      "sha256": "842cced3aa755fab068967e659f9d099d2f810d9c2ecff7726b42e5e1f9b6f54"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2463.json",
+      "bytes": 9366,
+      "sha256": "0e750dca5291658475dea381f4c0b462167598f67500ff32e39f14ebbb09d13c"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2464.json",
+      "bytes": 11225,
+      "sha256": "649fc962bfed1585aab543ab48f04fff8bc5f6b299a74e8362145a027fe5e189"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2465.json",
+      "bytes": 2188,
+      "sha256": "66580446a3ad7e43dc5f28128803e29cf2e36bea9c1fa9d319db58c3b47984b7"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2468.json",
+      "bytes": 7946,
+      "sha256": "37ce84689204442db4ffe66903efb09a02fb94fbfb04fa6833d7407704673c6c"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2469.json",
+      "bytes": 27417,
+      "sha256": "b119b06a40352ab5d38a8c2b4036acd2d196a0802da7d5fcd4d338403016653e"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2470.json",
+      "bytes": 16774,
+      "sha256": "802899c6af9cdd6245431129c96e492799b277fbf54466bfb1efcf9585716cae"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2471.json",
+      "bytes": 12149,
+      "sha256": "33b3cbde5ac437c44a512cfe7e9065004f27496a09395477bcb238fa649fe062"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2472.json",
+      "bytes": 17718,
+      "sha256": "4164e906b7ff02ce20faf4a5f9493f0c025fafaabfb1b195cb9faf0aa301c6bb"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2473.json",
+      "bytes": 17661,
+      "sha256": "01a1d3e08f82a03e7f728dce141971c0e38f8d1507aa32e09b41c80fb6457b0f"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2474.json",
+      "bytes": 18129,
+      "sha256": "e944bb3dc9fc0b583fac999fd7e9bcb20360b3fe9a1b2990a4066ffeff67498c"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2475.json",
+      "bytes": 11239,
+      "sha256": "66c7f89ff5f91d50765f77dc175b85d4dd68a6a785570112d4fe0f6c02543ee0"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2476.json",
+      "bytes": 7723,
+      "sha256": "888e8043c080e561a23dd46045ae1f2155da3dbf6e4f81d3879453d47f73400a"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2477.json",
+      "bytes": 16508,
+      "sha256": "95905dd378f1655fdc7ed977d5ba417d5f40a4773b7dce9fe3714f187ea5d382"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2479.json",
+      "bytes": 12361,
+      "sha256": "e4f7d8d143c643f74c1500c04b64a723267377e6401304a32e8b1cb497ff4fcb"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2480.json",
+      "bytes": 28537,
+      "sha256": "19e5f25e8b70fe1991192c6a218d0bac80b0017623820c6917ace0664d7233c1"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2481.json",
+      "bytes": 11545,
+      "sha256": "323826ceaf599aff540a8ab6d2647a0aee4e6a36b921ce2aa9d52661201c6970"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2482.json",
+      "bytes": 17853,
+      "sha256": "4d534a8620aeb72f2309a39a946484617990499f5179ad9fdb26f5071b3e9cb7"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2484.json",
+      "bytes": 10927,
+      "sha256": "24ce2a8098be5199fd58ec470f49717234b8e5551de1ea4c01f6f06c80454a6a"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2485.json",
+      "bytes": 17536,
+      "sha256": "0d5a0e5e93e95531e787c11336d0bf5404d6198b59035ef6522ac8c33ae37c12"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2487.json",
+      "bytes": 7916,
+      "sha256": "a4a9f5e9a509030bf9a31eb49394ab4890c6e76e8ebfe0ac8d00a484e24174b5"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2488.json",
+      "bytes": 26735,
+      "sha256": "b356226e391fdb7339dc1778f55928140bba9b5ff315f6cbbfd95d63e07e8f24"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2489.json",
+      "bytes": 9552,
+      "sha256": "898cde4b3db366c6d1ab464584ee034e3e5f1695200ad6bc25193e56ddf8699c"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2490.json",
+      "bytes": 25821,
+      "sha256": "129ecb4e885b39af063a2b002d6c1ef7fe759536971effd9e057a203968cce16"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2491.json",
+      "bytes": 7946,
+      "sha256": "697f300885a15714b52f6b1756605591a08b5c45c944e82a52ca69b0b152ecf2"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2492.json",
+      "bytes": 17916,
+      "sha256": "13ebd262c2fb25d7f9844db8b1a46f0ee656c793fa8f0d1704a06648c2f25c4b"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2493.json",
+      "bytes": 21390,
+      "sha256": "888e5ad79ad17f77eaffe6e75f2b22cb56d1df365a351f4d1b9c7555aa274781"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2494.json",
+      "bytes": 12459,
+      "sha256": "45a6a69ad799b817258ca8cf9323f885166f0235fabb4470e945a48470500686"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2495.json",
+      "bytes": 17834,
+      "sha256": "fc7529ef85b6212df51b0679dfdb935a2f6b0731a616b13ee638f21b6c5ab788"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2498.json",
+      "bytes": 20556,
+      "sha256": "92fdaf35fa1d660ceb018c4a5eb9d8f78a29de00d4394009fd1011b97fd0ea61"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2499.json",
+      "bytes": 10434,
+      "sha256": "453e102f6740bb3b7cc8d26baeb4ea44abdc195b6bd092fee1dbef739625814e"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2500.json",
+      "bytes": 12995,
+      "sha256": "36e4537c3c2ed7adf3b00d9bc89ed597dd479dfe84c5a4f8e687001e0bde1831"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2501.json",
+      "bytes": 9698,
+      "sha256": "74ad46a3b1d038c55fb2176eb7aed96c74b972f0040fafb2ab03bd9d14228676"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2502.json",
+      "bytes": 11910,
+      "sha256": "c0e100a23f689350e47026dac7009d0ce91c732e78abf45331e48f37e70641d4"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2503.json",
+      "bytes": 13113,
+      "sha256": "8fe54977f7a7538302f8e86b39ffdbdfaeb8cb7092e2ac2c584d57b43f4d248c"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2505.json",
+      "bytes": 18029,
+      "sha256": "b70780619a5aa037d43cb6d8590f855d9123a4c13d345375a33f70fcb86feb28"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2506.json",
+      "bytes": 8897,
+      "sha256": "2583e6767a11043238c08e14901a51b6daf4eeda8426bd7ef8cb85809ba031c1"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2508.json",
+      "bytes": 17942,
+      "sha256": "02828c39b95220c99f008a0a333877012c63fc29ab1033ba1b0751ca99f305f6"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2509.json",
+      "bytes": 8066,
+      "sha256": "2ecc4ccfd87b28439441059318a1b0a668b12b08e8d803c9ef69c822d0ce1878"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2510.json",
+      "bytes": 9570,
+      "sha256": "6e6a2969e05de00523eb6ecd22ed58c9add2c48266ef7985336b70429b4f4880"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2511.json",
+      "bytes": 7946,
+      "sha256": "2119447cc52e2bce5dcc910703e8f92a0d82ac8a761d828eb88666164214646c"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2513.json",
+      "bytes": 15976,
+      "sha256": "0de765ecaa29e5973e0e8337ab59f56abce7b39edd7e341692c01a0ea2bfeb14"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2516.json",
+      "bytes": 7946,
+      "sha256": "0e2a165505ede96b8b7fc3ab8d564b0ba7d086d74c00ece474b83d4aa5149140"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2517.json",
+      "bytes": 14488,
+      "sha256": "1e3c408891751dfb98e6be9e6097c8c4ad6593727fa7bec3ecff94b73a278a82"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2518.json",
+      "bytes": 2602,
+      "sha256": "6358a9d808bf6264ee40ac01e8259428165ca2efb4acd6101d9b3ccbf9a8d581"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2523.json",
+      "bytes": 7946,
+      "sha256": "c96a5669963d8b348291ba49e60266ea333c5e3bcef65b96e4780dec1fff76d6"
+    },
+    {
+      "path": "output/week-in-hazel/research/comments-2525.json",
+      "bytes": 17717,
+      "sha256": "398d0440e1e4f4f88edd6927b1f785135eca893580e9215f69963ac7fdae3065"
+    },
+    {
+      "path": "output/week-in-hazel/research/dev-commits-pages.json",
+      "bytes": 394868,
+      "sha256": "011120afeb9006d197c9bddf4db80a15fbd504a476318f11946bc11f05735f69"
+    },
+    {
+      "path": "output/week-in-hazel/research/events-pages.json",
+      "bytes": 709306,
+      "sha256": "860442e6e8fec629d4797ae2fece55db2d9cf8993f1c9f1f1eec2d04b57b6e45"
+    },
+    {
+      "path": "output/week-in-hazel/research/harvest-manifest.json",
+      "bytes": 367,
+      "sha256": "af7ecf430e8483ebcfa89d8f36dc3c46b8d95fc48e002d057ad1ed4a60b63015"
+    },
+    {
+      "path": "output/week-in-hazel/research/issues-pages.json",
+      "bytes": 759743,
+      "sha256": "843dc128a3d6e687fea6826cf97ee871266084afd1b20ae3362cd71d3978f22e"
+    },
+    {
+      "path": "output/week-in-hazel/research/metrics.json",
+      "bytes": 3792,
+      "sha256": "aca357cf1b45a57e916f075b932fe22095e4ca4773cdea8fcf5928d714fabb07"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-1388.json",
+      "bytes": 19575,
+      "sha256": "73e09c83f68c359eaaca57d8199799274fd447474adf55d4b2c2b8f0e25f0cc7"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-1395.json",
+      "bytes": 20465,
+      "sha256": "e4565409d94f9c2774b66e274205ac1f7f5d53fb634f5792c50359f0eddbcb30"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-1591.json",
+      "bytes": 26907,
+      "sha256": "81ee5458ad9c1b1ee962ee38034f9a50416b458e18e9eb527dcc5ced4690001a"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-1858.json",
+      "bytes": 26080,
+      "sha256": "c318d40f9f1564312b18fc03e02709ad3a9516010db3b4f0933b3eb6b2514956"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-1890.json",
+      "bytes": 19749,
+      "sha256": "0f2cb3063d2662b10036a5625f15b404faac47442584f933d5ef58af23937936"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-1911.json",
+      "bytes": 19437,
+      "sha256": "be9cb5772c612ffbb74d08bf22134f75c33faa27ec95fe108c5b8f2a33c89681"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-1959.json",
+      "bytes": 27591,
+      "sha256": "8ca17b4cc0ecebfd8021aa87ed005b1e1a5eb09b1ebc66031a8a72eebca11d87"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-1988.json",
+      "bytes": 25706,
+      "sha256": "4faa021f34dec3f0b337e03784adfaf79fa88bf14a4eaede1b581d197dd67fe5"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2065.json",
+      "bytes": 22744,
+      "sha256": "43348ac5b48d4a4366621abe173e4940dac07f828311cdf36206be6d8c46b073"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2115.json",
+      "bytes": 24960,
+      "sha256": "72a8a5f4c998665d4b935d110214c86015df46ab422378870fea1541f4c8fad5"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2137.json",
+      "bytes": 19639,
+      "sha256": "40163a66311c533f04a4e13f271c705dc8255ae55240c290e148f6246af958e7"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2166.json",
+      "bytes": 20429,
+      "sha256": "c7f14e8ee2e77aac4ba8e9c1ae83a2fa019161139534e741852288e996071a26"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2226.json",
+      "bytes": 20439,
+      "sha256": "f2e97f5a40723e41ccb7277fdff085720b5732f931f35334bb89f7f7b19f7316"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2241.json",
+      "bytes": 20367,
+      "sha256": "bdbda7b1337f0aba86a6f5c2f25fd6f51711769ef05a104676931af4e563142e"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2247.json",
+      "bytes": 20365,
+      "sha256": "c48b524b8771791ba2e4b8ee2230b13d764870fabf27f8991e2b91b949982504"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2248.json",
+      "bytes": 20933,
+      "sha256": "e1082473770b20edba137e775ba756fff6c16f71d12cf8c946e87e7065124e9d"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2249.json",
+      "bytes": 20059,
+      "sha256": "8a65ae1013c005312cb75c19290caa473e2b88dc36d9670916f75ca901c77565"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2250.json",
+      "bytes": 26216,
+      "sha256": "41592609c63ba2d8c97123701fc600ec02c820b0c83fc434fe1b5d0d330a88a4"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2254.json",
+      "bytes": 32640,
+      "sha256": "04b8e32c39b4656f74bf9fb1ba176e8eaba14ae31f736ff735dd294dbf98fa8c"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2309.json",
+      "bytes": 22204,
+      "sha256": "7697652040608e9e133795e2ebcb476c9181b1707d4d5b58a5828acf38dbd345"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2310.json",
+      "bytes": 19580,
+      "sha256": "972c348ae42bafb18583a30a5d8fae356d9bb2444be36803f96b87b375781934"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2315.json",
+      "bytes": 25556,
+      "sha256": "5a5427415cfdba4a590d981d5c156951518a1faf42abda086d597a4f04e0db17"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2322.json",
+      "bytes": 22762,
+      "sha256": "3ac1fb44ba7f7392db2235a294435aa632c38fd512e144c248517e7073c44332"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2332.json",
+      "bytes": 20704,
+      "sha256": "be676d52f64e44514cf155351e5d03632d2aa6847a9925044114263234d4ddfe"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2337.json",
+      "bytes": 21095,
+      "sha256": "0e7da25924c3728145e88857e52c5202d056f13a7a80ea2bfbec6221e9f13594"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2341.json",
+      "bytes": 25711,
+      "sha256": "480acd39100855850a02e916ebc06527442e6480636c63115820a04111345762"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2349.json",
+      "bytes": 21271,
+      "sha256": "391e4dc4b02ee6e8584607c8ccb33b38ec2ea59e1bc75dce198e425a052cef0d"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2350.json",
+      "bytes": 24927,
+      "sha256": "34f82dc0287fc8eb1469d5c8ae3722d243e68db1b5a7963b7471039b2869a97c"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2363.json",
+      "bytes": 26899,
+      "sha256": "3c91b22977d9cd7aefa729402097c79c20e84b05ae0c583d3b13d6e8db12fa88"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2364.json",
+      "bytes": 19359,
+      "sha256": "f26939b012ee684ebc70c0fa7d06c33f0f6390d101c948343238d6c8037f4406"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2374.json",
+      "bytes": 36236,
+      "sha256": "0af9716b945ded480e38ffacdf0a45c86e5252fa4b630950e0fbc7a3608de0bf"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2378.json",
+      "bytes": 24557,
+      "sha256": "8c0fc9da555eb05fd7fce6107fbdedc296e2d23d2df575af207774dc3ddbdcd6"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2384.json",
+      "bytes": 19717,
+      "sha256": "0c31b4c77b2fcaa2989321be908822392d3c5988c5bd9390b59af5615caa49cd"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2389.json",
+      "bytes": 22253,
+      "sha256": "ddf05a612098f0c0a5bfe9ddca6f57243fdcc0e419c3422f5009c60fdbe70c27"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2393.json",
+      "bytes": 24219,
+      "sha256": "f3eb5549726fa37666c3ee567b375ee2d0f37a24f1433ac426ba85133e7248d2"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2395.json",
+      "bytes": 19752,
+      "sha256": "a4bb09c4df5078b9ef17324b4bd68ab6604546f26ee1c6902c99d16b87132d6a"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2398.json",
+      "bytes": 19916,
+      "sha256": "ba183f770976130aa47b7ccf0ee79c41e7320ccb2588eb6edc4f5e732c2e81a4"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2406.json",
+      "bytes": 20491,
+      "sha256": "664cc552b27590fd28a361dc4c65b1e913a90804b15f9e535b7e01e4ce9000bf"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2408.json",
+      "bytes": 20649,
+      "sha256": "fad4c2e9bbad7fad73ad91f14dcbcec3b702d3ce67c46841284f28bfef313f41"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2411.json",
+      "bytes": 21635,
+      "sha256": "9ea2f906cff31e0a3c5ad3a8a64e4fa1d800c185d1be4428db5b9e41b8bbd2da"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2421.json",
+      "bytes": 24578,
+      "sha256": "31135e3050d6150500a5c4cfdd98a6dcc0bb47039e3b63610d8e7a5fb981cf5c"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2422.json",
+      "bytes": 27245,
+      "sha256": "aa65d3b5fe95a5b89be88cff0cb2287133e78fc29d16ccd24ebef8b5d0497e60"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2423.json",
+      "bytes": 22013,
+      "sha256": "286c0cd5d42e5d14008642f75ad56056278873448de66f4e1ec5d888f0aa9372"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2427.json",
+      "bytes": 22694,
+      "sha256": "6b8d5dc92e728d2df2255e274e7e38f567e8ae708aea98fb3951600d3c81199b"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2431.json",
+      "bytes": 30076,
+      "sha256": "a18a04b9cac30b84acdf6663cd0faf2959b6676dfa9bca074da6b65c0f2d2184"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2436.json",
+      "bytes": 29542,
+      "sha256": "eff1dd4f81c4c9ca4e735ae02f1c5baefd572e715e49ead3ae5c0c372fe3f425"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2437.json",
+      "bytes": 24349,
+      "sha256": "d427984c1944785cec7c97e256674be0a33fd4becb538dc92ad51e8578772f3b"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2438.json",
+      "bytes": 25427,
+      "sha256": "d93d857d9d4f68cf0b4bb99544dd831108a8111166a2d03edf74af18ab73f59b"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2439.json",
+      "bytes": 22442,
+      "sha256": "db47af6edc156e0e3faac9a8758aaa0b8073c91c4c3854ef6a4f9b6496745e6e"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2440.json",
+      "bytes": 22468,
+      "sha256": "e3889e61b148e9df40ccaf0e1c921a06fd4a3a01a5732f2f7751b3bb64a2eea6"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2448.json",
+      "bytes": 22222,
+      "sha256": "ba3720e66a9c4f1550bed635392ae8760d0cc34e980d7a9e3f234cefd73ac78e"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2449.json",
+      "bytes": 21301,
+      "sha256": "ddd204811ab4f4a7233180391e5f7ae8ca003b067c5579e2b7d794b2c806453d"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2451.json",
+      "bytes": 20572,
+      "sha256": "debe020fa261b290fc30b04ef6306ce5c3f5341fb0babbcbfb67222e9ecd827d"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2452.json",
+      "bytes": 22893,
+      "sha256": "7b335469c9a517711564f1612932d6e54d4bf047bebfb1bd3873ac2a716a99e4"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2458.json",
+      "bytes": 28222,
+      "sha256": "08c4e1bcc00170a604b2db31b3135c486694841d418ca2b4e9addaa4e127dc8b"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2459.json",
+      "bytes": 19422,
+      "sha256": "0d878a8aa82ec1af549c8550399cb8d81716fb94540baa2959cec600d5155624"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2460.json",
+      "bytes": 22019,
+      "sha256": "348ef64208227a5a3ba0496ad5a541e36506fba8cb84efd55dbc1cc425441f48"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2461.json",
+      "bytes": 25301,
+      "sha256": "79b90b058f24bb88afe5b3b7977e43c2af24e4c318743cef4827f583d800a61c"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2463.json",
+      "bytes": 23220,
+      "sha256": "4915587240cc348713af6318f33390a011dd6af07b6ca350e1c057ac6abc6fcf"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2464.json",
+      "bytes": 26863,
+      "sha256": "9bc79aa0189a7adcf0bc2e4b84f567fdac2fb8e7f9270def6fc59c3618a511de"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2465.json",
+      "bytes": 20244,
+      "sha256": "af4f7d366f6d3b0498cd8292490006579215f7ac6999414cd09ba34141307bf6"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2468.json",
+      "bytes": 21247,
+      "sha256": "9a730f90c6389715a6b5182de7df0fbf4d0fb0ca5bbf9f989db2f5c18b2e5739"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2469.json",
+      "bytes": 29397,
+      "sha256": "75165059ba09933bc527cf8a1bb8458857def2961264e70d079d76cdeafe3d6d"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2470.json",
+      "bytes": 20832,
+      "sha256": "d16089626dc621c78698977bcc8ac4463f9f8854b5c82ab5325564eeec7f58f6"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2471.json",
+      "bytes": 21029,
+      "sha256": "71e2ac75cfc840dd45e75ebe28bebc072c084eaa75c4f1961418bfef74fa1337"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2472.json",
+      "bytes": 21321,
+      "sha256": "0a3d8ab86d31249c4992c45e7552d1dae6ff2e021224f571a13be63f5a97c884"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2473.json",
+      "bytes": 21070,
+      "sha256": "f5947fc8ce7894187b47432dd958306d85d360fd9f01e6ee520d5bc94839b86c"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2474.json",
+      "bytes": 20982,
+      "sha256": "260aa3f0750282c5677020e56ff4376fdaaf122fcc5ecb47ee880eb1f4da63e8"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2475.json",
+      "bytes": 20424,
+      "sha256": "87f686050c6ab6ff87d03e669d8146f9e32db1844cd6196cdff43aff73ba7e85"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2476.json",
+      "bytes": 20862,
+      "sha256": "5fe935678e14cc6fbb8b2bc705ad0fc979587a8bfcf897a92b5c5e70ebc94eb1"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2477.json",
+      "bytes": 20478,
+      "sha256": "2ca95827efd11f8679d9d893b50c1dfe1cdc34ecf724a5e45661417917c24af7"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2479.json",
+      "bytes": 23171,
+      "sha256": "205ad6131e1ebcc09f2ee0c1a9576001f4a9ca97871a93d7e9fd8183273981b7"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2480.json",
+      "bytes": 22374,
+      "sha256": "09c85d758aae9714c6b3723e23867ff65469b1f2c5aacc439abc2b9dd2d85d41"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2481.json",
+      "bytes": 26065,
+      "sha256": "c4b39165648b1a300911047685925dbf65fd4c80a25fdc6ca84b69dee99b15f8"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2482.json",
+      "bytes": 23256,
+      "sha256": "a8c41ef52d7bf46f917eb175fa4ff3ac28cfbf0be1a0b05c1d6547a84514e076"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2484.json",
+      "bytes": 21368,
+      "sha256": "1748eb53b89cb9b5862b35ac7d7340dd85ce50210bde394b1537f8672b4e15b4"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2485.json",
+      "bytes": 25200,
+      "sha256": "57f3dffb90da69c43fb0bb2c55181c6dfd269574f703c3cde1ee694c62609e87"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2487.json",
+      "bytes": 21148,
+      "sha256": "8a11c1c5a8fdda747bf5514b577d99495412541e74d1220301985455968e1bc1"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2488.json",
+      "bytes": 25898,
+      "sha256": "213eff0cd92cfb7e18b2676efbc88a99e149af14ed6c8fbd17d0e5fc3ab8af03"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2489.json",
+      "bytes": 23866,
+      "sha256": "5990e1d07c334270c1c016c0d21f7ee0a993a61009a793866a8339d140e27925"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2490.json",
+      "bytes": 23249,
+      "sha256": "4d7d7868b66ceb4c1fcf6c17a982d2735ad22e29bfabc66d764e8ddea57406ae"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2491.json",
+      "bytes": 20789,
+      "sha256": "717ccfe1b41b78a04e9bb040618c171411baa46c6406878a3512974a4447f9b1"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2492.json",
+      "bytes": 31627,
+      "sha256": "139f374f27126c5c2bd06e969ca952d2fd2a5af1262e62673ca20cbf050e0080"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2493.json",
+      "bytes": 24564,
+      "sha256": "f11a6b4ab65f1159b76fd8bd1b334434ca889f624f691ef0a4b59009047eddd1"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2494.json",
+      "bytes": 29706,
+      "sha256": "b3eb72c1faa85d8cdd2db12ac3ac927ff2699d08bbb671f2032241a31693aa1e"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2495.json",
+      "bytes": 24894,
+      "sha256": "3493c1a52f3d3bf6f04452d1bf6b4e92e6a9bc25f52d2ddc07101450dfbd1c61"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2498.json",
+      "bytes": 29395,
+      "sha256": "d03210b5bd757b306d4745b178ebd5a3021297ee1b3279f4c672f545084b07ef"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2500.json",
+      "bytes": 21322,
+      "sha256": "1a03155af02cb5153821205713c6eceb2efac4ac3908cedfb5c2077693cb5be3"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2501.json",
+      "bytes": 21069,
+      "sha256": "fde44f016015ddbca5680ab2adde32923462ec87f0c6cba143c70031238336ca"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2502.json",
+      "bytes": 23389,
+      "sha256": "03048b5de1865821b2ddcbfa4ddbfc5233d46f5815f745b8d175b5f9b8622403"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2503.json",
+      "bytes": 20866,
+      "sha256": "b524728ef166d172d5abeeb4311983b51ad6f108ad49c4dbc7348c107f1a91f2"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2504.json",
+      "bytes": 22592,
+      "sha256": "339bddcf4bbacc70f46431f894197fded859107c53e5b9f30753fc305ffc2b83"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2505.json",
+      "bytes": 21122,
+      "sha256": "0ca779951032b28ed79898ea9fe05967e20fd319dad809a5c9b8eb8bb30f29f5"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2506.json",
+      "bytes": 21411,
+      "sha256": "903746cc574b46a7fb71f0065038d670e942c4538b37108c9ddd63a7962757e0"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2508.json",
+      "bytes": 27100,
+      "sha256": "39157a07d5b53a1f430c62ef7c0fbcd7052cbce8907da5d0bc04cb8932747291"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2509.json",
+      "bytes": 24653,
+      "sha256": "6f18ff2ed8cdfb3823230799e370f69b0b2a6c62d8a1789c5e86591893b17310"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2510.json",
+      "bytes": 25642,
+      "sha256": "dafdfb722cc9ce1bb2485d2f54f1ac78b07e49ec63bd52bdc379ec3d786d98ee"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2511.json",
+      "bytes": 20445,
+      "sha256": "f6e1739494ebc0f5bec1af3f896b46914cb6bfe4b898da443c70108630ab8f88"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2513.json",
+      "bytes": 26320,
+      "sha256": "6cfb30be541e467823b6afdb2c857673a02ba5c2c580f6dc66e3622d46652330"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2516.json",
+      "bytes": 21855,
+      "sha256": "912e619f95aa36e4300c659240530edcb2e038652594c9e2cd6cb839fcd078e8"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2517.json",
+      "bytes": 22003,
+      "sha256": "9bab0a2bb2ee7a988a5ede2a195a50f7a205afb97bd324b4662291eef6a0044a"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2523.json",
+      "bytes": 21676,
+      "sha256": "3a8320fcf7d51bc3230f234e18d323577ee54157378e7557dec768a66023ac75"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2525.json",
+      "bytes": 23784,
+      "sha256": "6bd2811a65be85508030e110e005179223592ac03cc257c9d0ab84c89ee5c4a0"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-2526.json",
+      "bytes": 23509,
+      "sha256": "3df7371bec1e633293939d621d9ab2a5884b0e171631f60b33146da954e765ec"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-comments-2363.json",
+      "bytes": 15452,
+      "sha256": "4d54f26217267797916d16292ac09f8ca5d38f178174580c982c76b2bbe88670"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-comments-2427.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-comments-2469.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-comments-2482.json",
+      "bytes": 36187,
+      "sha256": "c0ea28cb101ed2520690480788ce408064a95e4f8300c3056daaf42990e39552"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-comments-2490.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-comments-2492.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-comments-2493.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-comments-2505.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-comments-2508.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-comments-2510.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-comments-2513.json",
+      "bytes": 82770,
+      "sha256": "84d8baf06ce7856fcb86c9573803eb403cade44c7fb252801dd18685034c76c2"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-comments-2525.json",
+      "bytes": 4,
+      "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-files-2363.json",
+      "bytes": 663678,
+      "sha256": "5b8f1544787a2a326abc9c5885cc8bb73b1e9928e7e6f013802ae6c16dee0bb5"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-files-2427.json",
+      "bytes": 211710,
+      "sha256": "9e6296ea0c7d3e18956c98bc43a1b66465fbe8a9b9b32918dbdc6ffa8e31d95f"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-files-2469.json",
+      "bytes": 956584,
+      "sha256": "7de20aed32e99305c876d2b5c4210778757fd5ba63ea1c67e8081ff1cba4613b"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-files-2482.json",
+      "bytes": 18693,
+      "sha256": "7194c7fe964c06bb5756524343071b88ff2f78a43475d4a9f304b3953d083677"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-files-2490.json",
+      "bytes": 2229070,
+      "sha256": "b0fdf5f8480be6bc180337ba3c560506ce25c56c562ddcfe5bc8b95ca3901103"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-files-2492.json",
+      "bytes": 311746,
+      "sha256": "eac4077ef405a1a1e475d5d6f571ac18a9cdb0d200483a02f2c47ba3ed651b71"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-files-2493.json",
+      "bytes": 279242,
+      "sha256": "38a3a2c6bf5b8c2526425854104026fac8a6d4e0a90835236ebc3b6215fa215c"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-files-2505.json",
+      "bytes": 2904558,
+      "sha256": "33dc5d279dde3bdc479227625f1889fc9c01c08eb3a77d3cda7165c66fcb2952"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-files-2508.json",
+      "bytes": 207997,
+      "sha256": "d116009e17011b8802fc39e740331259e107cc5b655572dc50657ebbdbf72020"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-files-2510.json",
+      "bytes": 31284,
+      "sha256": "930233907edfd269bea2b98f82cbbaf5dac41ae2bfd0c89acf9c9cf3aba7b3ff"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-files-2513.json",
+      "bytes": 83441,
+      "sha256": "448643507ff03d07608401bd834f7c20e313c4f32b1734699a5203ac7b302509"
+    },
+    {
+      "path": "output/week-in-hazel/research/pr-files-2525.json",
+      "bytes": 183035,
+      "sha256": "3423e3db3a72e29ec26e12c7d26b63c215c955932410ae0941ebc7da9d26ce2c"
+    },
+    {
+      "path": "output/week-in-hazel/research/ref-snapshot.tsv",
+      "bytes": 63741,
+      "sha256": "e6938ea16cd0728a3cd3c2dd11fc995f44ce8cb1438dcbf2990efc0a65e440bf"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-1388.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-1395.json",
+      "bytes": 7566,
+      "sha256": "1f91ba131dcc67bcdd1c15017348acef62b42392e7bd7669ad1cf30bec4f5e95"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-1591.json",
+      "bytes": 11598,
+      "sha256": "4080ea3c96622fd7610d3294bb4402809ff409fec0856d8b83f0c7d6834ae6ee"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-1858.json",
+      "bytes": 36987,
+      "sha256": "36bc8b87df8676905fb873035385f9241608085b1fe395ab5ce923b7ede713b6"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-1890.json",
+      "bytes": 4281,
+      "sha256": "02b74ca3ec3dfaf366ac045c9694bcd6e96fe1fc4f6682935373993cbbe3aa7a"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-1911.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-1959.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-1988.json",
+      "bytes": 51116,
+      "sha256": "cb906724a8d1704aec774b98d5ee79dcb7b42722c6d60888f9e4f8e13e0079f6"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2065.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2115.json",
+      "bytes": 3800,
+      "sha256": "d75ab659c84bbc8d7b176549e4f9755d4b88819da5021e58fb8c8487965ac911"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2137.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2166.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2226.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2241.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2247.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2248.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2249.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2250.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2254.json",
+      "bytes": 11413,
+      "sha256": "e6f556970d31f0a9c7dc9e6c3b7758d3393143b46901ebf058a000dd6b9d7a73"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2309.json",
+      "bytes": 9401,
+      "sha256": "7e08992f880952c883df98bab9b52cc9fcb21f3685ce662d7a100147370e582b"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2310.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2315.json",
+      "bytes": 1905,
+      "sha256": "bca8dfd48acb745d54cbfa45f11e4bd47984ca7a42cb196d1e43db2c8ce88f7d"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2322.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2332.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2337.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2341.json",
+      "bytes": 15430,
+      "sha256": "b0959f17cb6a7f92bcc3c1b5332c1c3a4e03e81def1a8f66c1deced9e8beec77"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2349.json",
+      "bytes": 16575,
+      "sha256": "41a8ea879b171462f6cbb59dbbaf06076ba8c86337d36fc929817f7945c15376"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2350.json",
+      "bytes": 18261,
+      "sha256": "7237c3fc7b99ede25bdbe5219c352457422cb059c5db87b38da2c345dc37df17"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2363.json",
+      "bytes": 8677,
+      "sha256": "a91ca9b53c68dd6708ca0cccb8204e9a4f6c523e479b3f3f614c6d3ede5a3df7"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2364.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2374.json",
+      "bytes": 7253,
+      "sha256": "18ecd3ffcca36a8922b28b0251fa2650e699de251c36f4026cd10d2676ff6b41"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2378.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2384.json",
+      "bytes": 1904,
+      "sha256": "3d25a729779fb8b3d34463730f7df61e576f5bf0b6e7bd2b3d05bbb2438fcb54"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2389.json",
+      "bytes": 1969,
+      "sha256": "b706bb281bb114daad2d0274a1c8c6fc3405cc401cc6efeb4e915df6ce58f3df"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2393.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2395.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2398.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2406.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2408.json",
+      "bytes": 11508,
+      "sha256": "6e7c583df19fb494c30bda5faab403a38d77eb8a1e9e769c9a06a9c16e2e8d04"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2411.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2421.json",
+      "bytes": 102340,
+      "sha256": "27b290686b3e6a62ab74698986196475cfe7a2099a33a4be032351249d0e6d2a"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2422.json",
+      "bytes": 2193,
+      "sha256": "3e9f94ed453bb93a11b4d5dbbbd56f33902b27e11074311d338efe2fc2d78fc7"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2423.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2427.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2431.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2436.json",
+      "bytes": 76769,
+      "sha256": "bcaad1bac197c4d8bc755216bbd3be28ba03374c0d189967b2ceffaecd86733f"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2437.json",
+      "bytes": 2372,
+      "sha256": "f04d0faccc788d6dd52c1fb1687bef96e0a0cf21dae2b892a9a749b166b16bad"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2438.json",
+      "bytes": 3800,
+      "sha256": "2ce295ef4bef5ba84144e2ec21cd1e4369f2028b5cf61c6d41811d3a08273f32"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2439.json",
+      "bytes": 11380,
+      "sha256": "614b23b1f84544a42af196ea3ca7cf996fe7fa5273532dab94423da1397eb216"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2440.json",
+      "bytes": 18991,
+      "sha256": "d631bf2cf4883b97757d8a33141e066ce43ca6d217c1052374f20d583fa2557f"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2448.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2449.json",
+      "bytes": 5758,
+      "sha256": "0624b182a734076b91f49c94b94d600b936b5c84ca2fe6845b03693be5418843"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2451.json",
+      "bytes": 1901,
+      "sha256": "eecc0fecaac59a38fd2237ee695922f6ad6d7de13e79e5aba866e263c7db0919"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2452.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2458.json",
+      "bytes": 5759,
+      "sha256": "ab728879a8d405ad54d11c32028a7b6a7281680470a892c02e43fdbb2aa290d0"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2459.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2460.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2461.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2463.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2464.json",
+      "bytes": 1901,
+      "sha256": "f2d116dd8f6d38010235345e09462b2edc9342c1d81a8a40bef3764a6d17d3d6"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2465.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2468.json",
+      "bytes": 1901,
+      "sha256": "c938a93b5fe03c47aca60a8c51780a1abb42316b0ab6f373cbe0950e1749c485"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2469.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2470.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2471.json",
+      "bytes": 3800,
+      "sha256": "aa8a1ab34498f2387b90175f4aee2fea3911f0f7fdaef427aa2643f738159ed3"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2472.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2473.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2474.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2475.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2476.json",
+      "bytes": 1905,
+      "sha256": "156ba50cfdf7cde7f53dfa44db4a60e6942a1e9ee91c7a125f7ce6a09bd4d0d0"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2477.json",
+      "bytes": 1905,
+      "sha256": "eaad1adacbb6e06dfe2f97132935fc916b6b2d56bdcf02b3e1712a9dd7d78dd2"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2479.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2480.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2481.json",
+      "bytes": 3800,
+      "sha256": "d94c12ca0d6c7a6db457b17e4f65a7db35b99c927acb011dca506f9bc3632824"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2482.json",
+      "bytes": 21444,
+      "sha256": "bc6fc53483072ba2343fde4764b9e848267ab883bf3325d423c0fc4651ec4dc5"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2484.json",
+      "bytes": 1904,
+      "sha256": "3e2c857f6308f984c364e47b55bc6560ba1253efe92ab849e82b835f54110e12"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2485.json",
+      "bytes": 18960,
+      "sha256": "08b0fd640d06154eaced91f3d6226c359abfefef4fbbf491aa3a1e0c6932e838"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2487.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2488.json",
+      "bytes": 20419,
+      "sha256": "0e95dd8b0c0d3377f65b46b1726b59e3ef95ebf56fa95a847657e40da27fb194"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2489.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2490.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2491.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2492.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2493.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2494.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2495.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2498.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2500.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2501.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2502.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2503.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2504.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2505.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2506.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2508.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2509.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2510.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2511.json",
+      "bytes": 1904,
+      "sha256": "b0762b7475382c4c952d0c8996668eaacd6f754cdd85bb984b995d9e9cb7eaa4"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2513.json",
+      "bytes": 36015,
+      "sha256": "424c85617ef9874c6bdda457c4a4b5501bbdcb29d6d7c99d5472877a5ff26db3"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2516.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2517.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2523.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2525.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/reviews-2526.json",
+      "bytes": 8,
+      "sha256": "1eb35a67f4650b046c4626d838d56f7d7434ad5c15b8733bcb55975f7d58888e"
+    },
+    {
+      "path": "output/week-in-hazel/research/revision-open-issues.json",
+      "bytes": 5088,
+      "sha256": "731724c8a24f59efb647f0e437309b3b08908e8018c15d2c36ed13cac54d5e27"
+    },
+    {
+      "path": "output/week-in-hazel/research/revision4-modules-report.md",
+      "bytes": 12304,
+      "sha256": "3f0528f3fc457c963b33ddfbdd47e4a1e3ed6dc9544b9871ff5b28bc3fc13891"
+    },
+    {
+      "path": "output/week-in-hazel/research/revision4-probes-report.md",
+      "bytes": 16500,
+      "sha256": "a6109808f78b8bb7e0006f14e199fd10468fb0dd920309e0d0b4a368ae04f95b"
+    },
+    {
+      "path": "output/week-in-hazel/research/revision4-runtime-workspace-report.md",
+      "bytes": 15584,
+      "sha256": "4299df14d3bcdaff9695616d1b7c49c3bae922753c9285800b8c04e46179ef8a"
+    },
+    {
+      "path": "output/week-in-hazel/research/revision5-browser-proof.cjs",
+      "bytes": 2609,
+      "sha256": "8a38524af9c6e13bd08400c9e5ec1b4f2b279d83d8792a78f411365e4c177b0d"
+    },
+    {
+      "path": "output/week-in-hazel/research/revision5-browser-proof.html",
+      "bytes": 3041,
+      "sha256": "383f7eed69d73095270c3e9a4f3dc6ab6a1ab7890e5d5f42a3c2c31c7b2eb729"
+    },
+    {
+      "path": "output/week-in-hazel/research/revision5-browser-proof.png",
+      "bytes": 212866,
+      "sha256": "d4982bbaf56251c6d2df680250e6c5a99ca3c9f0a55af0ceb1ef0d465fdabb0f"
+    },
+    {
+      "path": "output/week-in-hazel/research/typography-comparison.png",
+      "bytes": 232936,
+      "sha256": "f561b494923394a1d8328f11092530d52d4af230c63b3b4929e7fa5a87420845"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/build_zine-v1.py",
+      "bytes": 26709,
+      "sha256": "acdd56fe90a00fb3bf58a1533611c9c497e611ae14d941d29ebed0d5ec5c1760"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r2/EDITORIAL.md",
+      "bytes": 12435,
+      "sha256": "6ab770935e1588a02153308fbc05d0af77c988824404497622a9b73e1f52e6a0"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r2/QA.md",
+      "bytes": 3360,
+      "sha256": "7374fa87d528e8c3972634a8fbf8af0440f710af854a00a2c5d3591a2161938e"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r2/README.md",
+      "bytes": 4418,
+      "sha256": "01da4b192578848519c8d47222ad29f88cab7fa9063ec111ed34c7e81acc3984"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r2/REVISION-NOTES.md",
+      "bytes": 2802,
+      "sha256": "a6fd191f77285009442b73f27c9f2994008c0d18e7df69686743bab97654164f"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r2/SOURCES.md",
+      "bytes": 10675,
+      "sha256": "cf02d555d47ff67c36ac8b2b1987cfd118c7870fba1411f020ad9462faacdc38"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r2/build_zine.py",
+      "bytes": 31225,
+      "sha256": "d338aef8ed0b3bf7734cfdb31169bc6ac8f84e770158919e63e058a98ee1ab7e"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r2/image-ledger.json",
+      "bytes": 7180,
+      "sha256": "6e41e8574a9d0435fa85bf071600e37429b2f138b29e57b7621c4e1b6e0ab467"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r2/issues.json",
+      "bytes": 4387,
+      "sha256": "71f5f7fe8fffe697125c9b3a116ac97b6a9f87766b3caf17b39cb65b50653172"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r2/verification.json",
+      "bytes": 3352,
+      "sha256": "ab67031c1bf0eccf3bfc48887dfcacdc84fce484cdde081294287c75791a7f1d"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r2/verify_pdf.py",
+      "bytes": 2599,
+      "sha256": "a5b989fe7879ec0184e490dc610ca48c5dabc7c1697d3362880e02101495ed47"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r2/week-in-hazel-001-style-lab.pdf",
+      "bytes": 10704510,
+      "sha256": "66c04c19d3e9c66413e2723d4f5aa9d11c094c237f5f450f01e97e9d5b63bd28"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r2/week-in-hazel-001-woodcut.pdf",
+      "bytes": 22741689,
+      "sha256": "9c755b5b161010a961e0792bbd31b836ab93696d5044c5ea7d1f9a4e4591cea8"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r2/week-in-hazel-001.pdf",
+      "bytes": 11561014,
+      "sha256": "7b6738d4bc58c69ec7076e74c9e9f34c5dc7b47de7ef27ba34a8f354b74ab28c"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r3/EDITORIAL.md",
+      "bytes": 13448,
+      "sha256": "99d2cb16d48a35f50541c252379b3d708d330e131861c0d406669a47605463dc"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r3/PRODUCTION.md",
+      "bytes": 14101,
+      "sha256": "f986a67aa8adb7f56caa4cd888a5dc068ba4312923d0d3a9b4356bfb8800f8bd"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r3/QA.md",
+      "bytes": 3452,
+      "sha256": "ba8eb9e8a8a787f229034650bfb4aabe9e84e980e786bad1fae21e2a25dea778"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r3/README.md",
+      "bytes": 5973,
+      "sha256": "574e339ab1f2c9e4573c0e460a28c93929c5c5195a71a383ef02879eade046a3"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r3/REVISION-NOTES.md",
+      "bytes": 4715,
+      "sha256": "b6ab227534db0b708bb8cf94cafcc23a31984ce33cfadc8db3baae18ecbd3b42"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r3/build_zine.py",
+      "bytes": 37252,
+      "sha256": "59874db088fa94369cbb2b7e44a44eecac01892a7d0374be6a7790539c03f290"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r3/image-ledger.json",
+      "bytes": 10065,
+      "sha256": "2c92ad952bf77aa59cacfc48c5b2b9763562561d67428db8fc62d986a5905e3c"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r3/issues.json",
+      "bytes": 4934,
+      "sha256": "05f7a19334c500e34040e009edcb22ae03e53272dc8f4ab55e8918f4a8b48284"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r3/layout-manifest.json",
+      "bytes": 2683,
+      "sha256": "3d2bf37235329db2b0167cecdcfb973f166b2d2379381c96a783c021456c57de"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r3/typeset-text.txt",
+      "bytes": 35537,
+      "sha256": "be99ed4862a46c902d81ab205b926b80b4d9ffb111cb11ea3b92a827348fdb68"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r3/verification.json",
+      "bytes": 3650,
+      "sha256": "add51e1ed9ecd6ac45c871f0c3c85dea6fc83b1ae1414646723c27a32438c1e6"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r3/verify_pdf.py",
+      "bytes": 2627,
+      "sha256": "c0ed3019c5a7fede934aac54508f538f69c79f3ca93c38e644720db78ed13e06"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r3/week-in-hazel-001-style-lab.pdf",
+      "bytes": 10709984,
+      "sha256": "e6796b2ee0b1cdb0aa3a0b3d6e873f3f45022f93a625de06e3f0e7beb9c209b6"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r3/week-in-hazel-001-woodcut.pdf",
+      "bytes": 26019778,
+      "sha256": "64140d25fe078f435019cd1bc79bfe89f4c0c988637ffb1d0ce97d4dbb7f4f5e"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r3/week-in-hazel-001.pdf",
+      "bytes": 11950201,
+      "sha256": "d7185f3aeb344bb7ae6a2a27aab941d03faad32cf6e8fba0a6c6c97146ae89f8"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r4/EDITORIAL.md",
+      "bytes": 14884,
+      "sha256": "21f51472291434676304f88d7b22930b929ecad5409f5358563fc0a4bab6bad1"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r4/PROCESS.md",
+      "bytes": 5907,
+      "sha256": "9291d08221d26433a4a8430173616f878b8fa3f5b3355622f24a66e40957368a"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r4/PRODUCTION.md",
+      "bytes": 16288,
+      "sha256": "8cabbf1c6955bb5e3602a98f3f8d1be1d07ce3bb2a0778fe617277f2cac4961d"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r4/QA.md",
+      "bytes": 3813,
+      "sha256": "64bd5c10d5989b2e80ac64fbd72ebf1b2f9f681396e7f3b45b9d57825e933bbc"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r4/README.md",
+      "bytes": 6368,
+      "sha256": "94361ee8688fcb7b9ff56abb6c6524a778f1fbaa90bead5dbc57ea9bf1daaf93"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r4/REVISION-NOTES.md",
+      "bytes": 6055,
+      "sha256": "b8f892ff5cfc63b52e61089bab51acd794c3755a0816dbf5cbe810ff99093cd8"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r4/SOURCES.md",
+      "bytes": 15557,
+      "sha256": "7b3a3df5d6638d34a1cf61be31ca4eb375a1123a51feca838394090fcbc7b874"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r4/build_zine.py",
+      "bytes": 40895,
+      "sha256": "5b1740423563bfd81a108cd8e3e069f3769316b72205e08b60bd70c7ffeada59"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r4/image-ledger.json",
+      "bytes": 10214,
+      "sha256": "e3afdcdb000dd44f1ef19ada68a5c70af436bac522b3626994112d7ee56aef9c"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r4/issues.json",
+      "bytes": 5321,
+      "sha256": "dc1d5debc026624481be16b36d39a583b0f2611f6156753032653ba74280762f"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r4/layout-manifest.json",
+      "bytes": 2683,
+      "sha256": "3d2bf37235329db2b0167cecdcfb973f166b2d2379381c96a783c021456c57de"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r4/typeset-text.txt",
+      "bytes": 40587,
+      "sha256": "a1f9f68381cd66f688a8715724ad875727a3e43cf46cbe8ea57341c54a6ca894"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r4/verification.json",
+      "bytes": 3650,
+      "sha256": "983183e1b5d9308194bb085d5bbec7bd04dc751359daec0e443be013e334ea7f"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r4/verify_pdf.py",
+      "bytes": 2627,
+      "sha256": "9246b5c1ef9205454d4702419a697ccebb0ea0f4a1e78ad5fc5b5b4d5080e08a"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r4/week-in-hazel-001-style-lab.pdf",
+      "bytes": 10710008,
+      "sha256": "8774fffd4df2f95f24e50c21782d95ce09d5bafbea5bb67456ba17460bc14a79"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r4/week-in-hazel-001-woodcut.pdf",
+      "bytes": 26011849,
+      "sha256": "79dbff51cbc41619f510b1fa0cec510c8215ccde60a7ed6a4ffddc5a7ab62b2f"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/r4/week-in-hazel-001.pdf",
+      "bytes": 11942207,
+      "sha256": "ca52ac9cc899745f186f7cff72b0ad2a626c8e1ef152eccc689b6caf57920dbe"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/v1-QA.md",
+      "bytes": 2431,
+      "sha256": "2631d842f25bad8c573053bbc60ee5d539e1e12301913f0c845bc5637c2a1076"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/v1-image-ledger.json",
+      "bytes": 3897,
+      "sha256": "f3ef596daa8fed4f931a05673c2ab4a226885fa58adec86706617691306d3e69"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/v1-verification.json",
+      "bytes": 452,
+      "sha256": "d797f321f5f6911d122c2fde8aaaf3ba787c01b72056fafaad5f3ceee1b01c66"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/week-in-hazel-001-style-lab.pdf",
+      "bytes": 10471128,
+      "sha256": "a616e98181a0e306e2903eb3285fe4ac2f4d52c8ccd82fa5e2f17e83ae4ab5f3"
+    },
+    {
+      "path": "output/week-in-hazel/revisions/week-in-hazel-001.pdf",
+      "bytes": 11220717,
+      "sha256": "01ffa48fa71398fddf5860188cc919af514436b636cdfce31d127e07b91d26d1"
+    },
+    {
+      "path": "output/week-in-hazel/typeset-text.txt",
+      "bytes": 39374,
+      "sha256": "85417cf6e3af527c69cb32d6df95c66a049a1e0f54b41f3e6c98506fb3bad356"
+    },
+    {
+      "path": "output/week-in-hazel/typesetting/layout.json",
+      "bytes": 96220,
+      "sha256": "e655f1c16fc33a9d62c3e9a3c2b90ea78e4c1d044d4b5b562c4d7d4d048e22c6"
+    },
+    {
+      "path": "output/week-in-hazel/typesetting/metrics.json",
+      "bytes": 35499,
+      "sha256": "607e842825232890a4dfd789ad329ade2b2625e858799b761f3cf1a8e1f3423f"
+    },
+    {
+      "path": "output/week-in-hazel/typesetting/week-in-hazel-001-style-lab.html",
+      "bytes": 6186,
+      "sha256": "0b6cdc387b230e64d28d09a1d41ecbed6229bc17eee8b8ba0aff082ef798e954"
+    },
+    {
+      "path": "output/week-in-hazel/typesetting/week-in-hazel-001-woodcut.html",
+      "bytes": 33912,
+      "sha256": "330dd6e57f12486ee744ac704bf399cd48bb08d94b35bdfba386d2bff15d0707"
+    },
+    {
+      "path": "output/week-in-hazel/typesetting/week-in-hazel-001.html",
+      "bytes": 33865,
+      "sha256": "ae917f7d4f2228fce70a6f3c26abeafc841911661dbbf6978f31dfe01cf1c8ea"
+    },
+    {
+      "path": "output/week-in-hazel/verification.json",
+      "bytes": 4231,
+      "sha256": "3ef9735f7af137dcba1025003bf9b3ead404fccba5b05b63be25edb05e6a3a14"
+    },
+    {
+      "path": "output/week-in-hazel/verify_pdf.py",
+      "bytes": 2977,
+      "sha256": "15ec0f7fee891c7e5af33ffc57703b6745c0b0677221811f8b7b92fb536789e9"
+    },
+    {
+      "path": "output/week-in-hazel/web/README.md",
+      "bytes": 3904,
+      "sha256": "97b2f57de05116ba8d04021730d9312fc3cf47fbb69c3df8576586608dca7ba5"
+    },
+    {
+      "path": "output/week-in-hazel/web/build_web.py",
+      "bytes": 13241,
+      "sha256": "d018f264bc8459347c8e0bb6a466953ef84a0493edc94abb35557865713c02f4"
+    },
+    {
+      "path": "output/week-in-hazel/web/pilot-content.json",
+      "bytes": 47786,
+      "sha256": "e2e79b0f78cc0c7b16376154ce0f40199c434be5b54e773c1d8466ace8cc9499"
+    },
+    {
+      "path": "output/pdf/week-in-hazel-001-style-lab.pdf",
+      "bytes": 11510786,
+      "sha256": "bbc624722b41fc197ab5391378679a9ba0bd9db15ffca69356abbcfcb8c098a9"
+    },
+    {
+      "path": "output/pdf/week-in-hazel-001-woodcut.pdf",
+      "bytes": 28589016,
+      "sha256": "d50f65abe7da09a20db4885aee5baf1132b7fb63e97ca575e08c0df5d7586a7c"
+    },
+    {
+      "path": "output/pdf/week-in-hazel-001.pdf",
+      "bytes": 14520065,
+      "sha256": "973072e6f9517dc7b7d69c806b277df52ae65d8df33f023dd4331f17ee7a2093"
+    },
+    {
+      "path": "output/pdf/week-in-hazel-neg019.pdf",
+      "bytes": 13576998,
+      "sha256": "ca41d7b05c32238ef97cf152229c02c671187b0423c2712c0b4662bd5c1a024f"
+    },
+    {
+      "path": "output/pdf/week-in-hazel-neg060.pdf",
+      "bytes": 12634133,
+      "sha256": "1eadcf37f3bc3ce8ead87001e2209a5664049805c603406cc51a7219587ef024"
+    },
+    {
+      "path": "output/pdf/week-in-hazel-neg100.pdf",
+      "bytes": 13288051,
+      "sha256": "d458c2caafbb5075e5a726701b626c5c254bd6b56ac6e202fe92685232df4e8b"
+    },
+    {
+      "path": "site/hazel/weekly/.gitattributes",
+      "bytes": 39,
+      "sha256": "d8c417358db6b3821bc5730aaa1360fbbc86e26142e9bc00ade7cfd1d8623351"
+    },
+    {
+      "path": "site/hazel/weekly/assets/001/constellation-score-woodcut.png",
+      "bytes": 2122365,
+      "sha256": "37ae43c0f69503ba8669a34009162ec0e0bc2087728229f83aa4c3210d7670fa"
+    },
+    {
+      "path": "site/hazel/weekly/assets/001/drawer-tree.png",
+      "bytes": 4030758,
+      "sha256": "17fc570edf7a06ef8eefd586ac0fdf13b71d42eb61e889915d058f7944df92f5"
+    },
+    {
+      "path": "site/hazel/weekly/assets/001/fumola-scene-woodcut.png",
+      "bytes": 2615663,
+      "sha256": "74cbde2014db05d009879f3c0bab22ede0985fe2ac189cf08dd3ef057e2d4161"
+    },
+    {
+      "path": "site/hazel/weekly/assets/001/modular-focus-woodcut.png",
+      "bytes": 3165803,
+      "sha256": "a5f4015d155ce36564b336b355881ff1188fb89e63c60f41bc702f52cbdc798d"
+    },
+    {
+      "path": "site/hazel/weekly/assets/001/observable-comic.png",
+      "bytes": 3571299,
+      "sha256": "cb5924db3d8649ec51ed01ad85d76004461133d005a8139be68ebf85848ed00d"
+    },
+    {
+      "path": "site/hazel/weekly/assets/001/probes-cards-woodcut.png",
+      "bytes": 2550333,
+      "sha256": "13083f2d97c6f8b20ddb370d780da08fbbee7458ba231ba2b85548e8b4889285"
+    },
+    {
+      "path": "site/hazel/weekly/assets/covers/001.png",
+      "bytes": 660607,
+      "sha256": "a967b87695348e24e6646e220d454d56150e6730afc98c2fd9741ecfded2c586"
+    },
+    {
+      "path": "site/hazel/weekly/assets/covers/neg019.png",
+      "bytes": 645027,
+      "sha256": "51b23dc566ad84cef51a2fda9ac25309999980479c668c240e53650ccf8f6d0b"
+    },
+    {
+      "path": "site/hazel/weekly/assets/covers/neg060.png",
+      "bytes": 653773,
+      "sha256": "cc7d15ec916f5ec13b58b0753d454fd4804b5357517317718bf06c31b8dca381"
+    },
+    {
+      "path": "site/hazel/weekly/assets/covers/neg100.png",
+      "bytes": 688115,
+      "sha256": "a6dbd57cf698105a5219cc5121d45d142237167f0d1efd137f4d880458c8ffe5"
+    },
+    {
+      "path": "site/hazel/weekly/assets/favicon.svg",
+      "bytes": 213,
+      "sha256": "0120776914cb3a59fb633de1bf34c7476f5d7bcc583a5a92fe8b769c61ba5ae9"
+    },
+    {
+      "path": "site/hazel/weekly/assets/fonts/libertine-LICENSE.txt",
+      "bytes": 5867,
+      "sha256": "6bec0a03b3f31e720f756dc03fc298524ca1417caf82ffc8d80c1ffeeab6c0fc"
+    },
+    {
+      "path": "site/hazel/weekly/assets/fonts/libertine-bold.ttf",
+      "bytes": 2105948,
+      "sha256": "392338c6e2926d7b435ecea51807b597b0937ce718226bf8468f60cfdd109a14"
+    },
+    {
+      "path": "site/hazel/weekly/assets/fonts/libertine-italic.ttf",
+      "bytes": 2050040,
+      "sha256": "96f10a95e199601143b0d511c8c2731f9fc8d1482abe48e9d832abd097e0ee04"
+    },
+    {
+      "path": "site/hazel/weekly/assets/fonts/libertine.ttf",
+      "bytes": 2567492,
+      "sha256": "dbbdbc37105a59dbd64a4a552b5841002c0990c30fd225fdcac198058e60266a"
+    },
+    {
+      "path": "site/hazel/weekly/assets/fonts/rubik-LICENSE.txt",
+      "bytes": 4234,
+      "sha256": "51948a47016197a1214157337c8a2edc75e988cd24ef4cffaa8afdf325bb403d"
+    },
+    {
+      "path": "site/hazel/weekly/assets/fonts/rubik-bold.ttf",
+      "bytes": 140396,
+      "sha256": "b1c36dfcbc5fe5011c552c76725c84d989a71d56440e8bfbfa0cb68b593dbad6"
+    },
+    {
+      "path": "site/hazel/weekly/assets/neg019/comic.png",
+      "bytes": 3244520,
+      "sha256": "b930b5c62b220b088aefbe90ed7122b3a60493631fafed5194e2deb9ca78deae"
+    },
+    {
+      "path": "site/hazel/weekly/assets/neg019/cover.png",
+      "bytes": 4174658,
+      "sha256": "f5c88116da8ac19f83470a278b38ba0d34863a1ff140f98513b767ab0d487a4e"
+    },
+    {
+      "path": "site/hazel/weekly/assets/neg019/screenshot.png",
+      "bytes": 98882,
+      "sha256": "67e9f633cfad9f7fb942c66ea6957789e1e523a1a5d198d3e161a164f4ee2a46"
+    },
+    {
+      "path": "site/hazel/weekly/assets/neg060/comic.png",
+      "bytes": 3197202,
+      "sha256": "028a13e78cc6b76deff857eb5a88b6fa53f05b1bd135de6ef3a151767cd58bc0"
+    },
+    {
+      "path": "site/hazel/weekly/assets/neg060/cover.png",
+      "bytes": 3984555,
+      "sha256": "bd91ab69bf9e3900c8dceea44cb2983475494e966b13a4aff40d9239d073484e"
+    },
+    {
+      "path": "site/hazel/weekly/assets/neg060/screenshot.png",
+      "bytes": 223022,
+      "sha256": "04ad8e4c48febb32387c55b069c5368ecd86eb685184a2d32f001750b2dae1c2"
+    },
+    {
+      "path": "site/hazel/weekly/assets/neg100/comic.png",
+      "bytes": 3481169,
+      "sha256": "51534045a7038ba464e59bec851b022198b117a05ad7b7c84662b45e0da81b0d"
+    },
+    {
+      "path": "site/hazel/weekly/assets/neg100/cover.png",
+      "bytes": 4243559,
+      "sha256": "0d0d5b7b10a084b82b5de70a7bd26d19e7df7c6416b6f9b2fc36620fc289f381"
+    },
+    {
+      "path": "site/hazel/weekly/assets/neg100/screenshot.png",
+      "bytes": 83673,
+      "sha256": "4f8705e667346d3dadcf03395524b7770c4420af0b9cf16642a6d0683f5ef20b"
+    },
+    {
+      "path": "site/hazel/weekly/index.html",
+      "bytes": 4794,
+      "sha256": "511e9b348a5a3deb7217e060d734d08377d44aed9a827df1ea40b7e46ccfef1d"
+    },
+    {
+      "path": "site/hazel/weekly/issues/001/index.html",
+      "bytes": 32558,
+      "sha256": "8b5b7f3c2c0530f9c37e45cb31fd1fbece158e507cfaa06942248cb6bddab8c6"
+    },
+    {
+      "path": "site/hazel/weekly/issues/neg019/index.html",
+      "bytes": 25740,
+      "sha256": "e0e807899083b8acc47e6166c595213cc388d2863b5c659d304bf062fba54ca2"
+    },
+    {
+      "path": "site/hazel/weekly/issues/neg060/index.html",
+      "bytes": 22944,
+      "sha256": "6e2903b3b066e5eb838758ad34137a70dc4888c232649785b0b4c0750d196e12"
+    },
+    {
+      "path": "site/hazel/weekly/issues/neg100/index.html",
+      "bytes": 22300,
+      "sha256": "5a4c4962a8d542d57ed96f3a72c1823708be903952a7bd09dd42849fb7c6bfc8"
+    },
+    {
+      "path": "site/hazel/weekly/pdfs/week-in-hazel-001.pdf",
+      "bytes": 28589016,
+      "sha256": "d50f65abe7da09a20db4885aee5baf1132b7fb63e97ca575e08c0df5d7586a7c"
+    },
+    {
+      "path": "site/hazel/weekly/pdfs/week-in-hazel-neg019.pdf",
+      "bytes": 13576998,
+      "sha256": "ca41d7b05c32238ef97cf152229c02c671187b0423c2712c0b4662bd5c1a024f"
+    },
+    {
+      "path": "site/hazel/weekly/pdfs/week-in-hazel-neg060.pdf",
+      "bytes": 12634133,
+      "sha256": "1eadcf37f3bc3ce8ead87001e2209a5664049805c603406cc51a7219587ef024"
+    },
+    {
+      "path": "site/hazel/weekly/pdfs/week-in-hazel-neg100.pdf",
+      "bytes": 13288051,
+      "sha256": "d458c2caafbb5075e5a726701b626c5c254bd6b56ac6e202fe92685232df4e8b"
+    },
+    {
+      "path": "site/hazel/weekly/style.css",
+      "bytes": 14403,
+      "sha256": "89c974cd0554bb820f7c3f001201937cc4350a161559d52a7d37ce3f69287cb7"
+    }
+  ]
+}

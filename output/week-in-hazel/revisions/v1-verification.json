@@ -1,0 +1,23 @@
+{
+  "metric_reproduction": "identical",
+  "pdf_checks": [
+    {
+      "file": "week-in-hazel-001.pdf",
+      "pages": 10,
+      "words": 1917,
+      "links": 38,
+      "unique_links": 32,
+      "offpage_characters": 0,
+      "bytes": 11220717
+    },
+    {
+      "file": "week-in-hazel-001-style-lab.pdf",
+      "pages": 4,
+      "words": 362,
+      "links": 6,
+      "unique_links": 6,
+      "offpage_characters": 0,
+      "bytes": 10471128
+    }
+  ]
+}

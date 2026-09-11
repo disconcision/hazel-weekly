@@ -1,0 +1,84 @@
+[
+  [
+    {
+      "id": 4553767369,
+      "node_id": "PRR_kwDOBMdeZM8AAAABD2z5yQ",
+      "user": {
+        "login": "copilot-pull-request-reviewer[bot]",
+        "id": 175728472,
+        "node_id": "BOT_kgDOCnlnWA",
+        "avatar_url": "https://avatars.githubusercontent.com/in/946600?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D",
+        "html_url": "https://github.com/apps/copilot-pull-request-reviewer",
+        "followers_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/followers",
+        "following_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/following{/other_user}",
+        "gists_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/subscriptions",
+        "organizations_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/orgs",
+        "repos_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/repos",
+        "events_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/received_events",
+        "type": "Bot",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "## Pull request overview\n\nThis PR restructures Hazel so `util`/`language`/`haz3lcore` no longer depend on js_of_ocaml/Vdom, and introduces a new native Notty-based terminal UI (`tui.exe`) that reuses the shared core editing pipeline.\n\n**Changes:**\n- Split web-only utilities, effect handlers, and projector views into `src/web/`, with injection points in core (`TimeUtil.now_ms`, probe focus handler, projector focusables).\n- Add a new native TUI library/executable (`src/tui/`) plus a headless replay driver and golden/input tests.\n- Split test execution into native (`haz3ltest.exe`) vs web/node (`haz3ltest_web.bc.js`) runners and update scripts/rules accordingly.\n\n### Reviewed changes\n\nCopilot reviewed 157 out of 177 changed files in this pull request and generated 4 comments.\n\n<details>\n<summary>Show a summary per file</summary>\n\n| File | Description |\r\n| ---- | ----------- |\r\n| test/Test_AgentTools.re | Update imports for web split |\r\n| test/run_node.sh | Run web test bundle |\r\n| test/haz3ltest.re | Native test runner suite list |\r\n| test/haz3ltest_web.re | New node/web test runner |\r\n| test/evaluator/Test_Evaluator.re | Move StepperBase to web runner |\r\n| test/dune | Split common vs web runners |\r\n| src/web/Worker.re | Document worker behavior |\r\n| src/web/view/TestView.re | Update WebUtil import |\r\n| src/web/view/NutMenu.re | Update WebUtil import |\r\n| src/web/view/Kind.re | Update WebUtil import |\r\n| src/web/view/DerivationExerciseMode.re | Remove unused Util open |\r\n| src/web/view/ContextInspector.re | Update WebUtil import |\r\n| src/web/view/AgentView/WorkbenchView.re | Time diff now injection + imports |\r\n| src/web/view/AgentView/ToolResultView.re | Update WebUtil import |\r\n| src/web/view/AgentView/ChatView.re | Time diff now injection |\r\n| src/web/view/AgentView/ChatMessagesView.re | Switch to KeyEvent.shift_held |\r\n| src/web/view/AgentView/ChatBottomBar.re | Switch to KeyEvent.shift_held |\r\n| src/web/view/AgentView/AgentView.re | Update WebUtil import |\r\n| src/web/view/AgentView/AgentMainMenuView.re | Update WebUtil import |\r\n| src/web/view/AgentCore/AgentGlobals.re | Route model fetch via OpenRouterHttp |\r\n| src/web/view/AgentCore/Agent.re | Route chat via OpenRouterHttp |\r\n| src/web/util/WorkerServer.re | Worker clock injection + onmessage |\r\n| src/web/util/WebUtil.re | Re-home WebUtil under web |\r\n| src/web/util/SvgUtil.re | Web SVG/path helpers |\r\n| src/web/util/OpenRouterHttp.re | Web-only HTTP transport for OpenRouter |\r\n| src/web/util/MenuView.re | Vdom rendering helpers for Menu |\r\n| src/web/util/MenuListener.re | Document-level menu listeners |\r\n| src/web/util/KeyEvent.re | DOM keyboard event \u2192 pure Key.t |\r\n| src/web/util/JsUtil.re | Re-home JsUtil under web |\r\n| src/web/util/FloatingElement.re | Fixed-position overlay positioning |\r\n| src/web/util/ContextMenuListener.re | Context menu listener instance |\r\n| src/web/util/ColumnMenuListener.re | Column menu listener instance |\r\n| src/web/util/BonsaiUtil.re | Web Bonsai helpers moved under web |\r\n| src/web/util/ApiHttp.re | Web-only HTTP transport layer |\r\n| src/web/projectors/TypeProjView.re | Web view half of TypeProj |\r\n| src/web/projectors/TextAreaProjView.re | Web view half of TextAreaProj |\r\n| src/web/projectors/TableProjView.re | Web view half of TableProj |\r\n| src/web/projectors/TableCoreView.re | Web-only table cell rendering |\r\n| src/web/projectors/SliderProjView.re | Web view half of SliderProj |\r\n| src/web/projectors/SliderFProjView.re | Web view half of SliderFProj |\r\n| src/web/projectors/RichProbeViewRegistry.re | Web registry of rich probe views |\r\n| src/web/projectors/RichProbeView.re | Web half of rich probe API |\r\n| src/web/projectors/ProjectorViews.re | Web registry of projector views |\r\n| src/web/projectors/ProjectorViewBase.re | Web projector view interface |\r\n| src/web/projectors/LivelitViews.re | Web livelit views registry |\r\n| src/web/projectors/LivelitProjView.re | Web view half of LivelitProj |\r\n| src/web/projectors/FoldProjView.re | Web view half of FoldProj |\r\n| src/web/projectors/CSVProjectorView.re | Web view half of CSV projector |\r\n| src/web/projectors/CheckboxProjView.re | Web view half of CheckboxProj |\r\n| src/web/NinjaKeys.re | Remove unused Util open |\r\n| src/web/Main.re | Install CoreEffects at startup |\r\n| src/web/exercises/CodeGrading.re | Remove unused Util open |\r\n| src/web/EdgeScroll.re | Remove unused Util open |\r\n| src/web/derivation/DrvCursorInspector.re | Update WebUtil import |\r\n| src/web/debug/Benchmark.re | Remove unused Util open |\r\n| src/web/CoreEffects.re | Install web effect handlers |\r\n| src/web/app/sidebar/Sidebar.re | Update WebUtil/JsUtil imports |\r\n| src/web/app/sidebar/ProblemSidebar.re | Update WebUtil import |\r\n| src/web/app/sidebar/DebugSidebar.re | Update WebUtil import + JsUtil refs |\r\n| src/web/app/probesystem/SampleFocusBar.re | Switch Key.mk \u2192 KeyEvent.mk |\r\n| src/web/app/probesystem/ProbeSidebar.re | Update WebUtil import |\r\n| src/web/app/Page.re | Keyboard/meta + KeyEvent listener changes |\r\n| src/web/app/log/LogSidebar.re | Update WebUtil/JsUtil imports |\r\n| src/web/app/inspector/CursorInspector.re | Update WebUtil import |\r\n| src/web/app/explainthis/ExplainThis.re | Update WebUtil import |\r\n| src/web/app/editors/stepper/StepperTargetBox.re | Remove unused Util open |\r\n| src/web/app/editors/stepper/AssumptionBox.re | Remove unused Util open |\r\n| src/web/app/editors/Editors.re | Remove unused Util open |\r\n| src/web/app/editors/decoration/VarHighlight.re | Update WebUtil import |\r\n| src/web/app/editors/decoration/Highlight.re | Update WebUtil import |\r\n| src/web/app/editors/decoration/EmptyHoleDec.re | Remove unused Util open |\r\n| src/web/app/editors/decoration/Arms.re | Update WebUtil import |\r\n| src/web/app/editors/code/ContextMenu.re | Switch to MenuView helpers |\r\n| src/web/app/editors/code/CodeWithStatics.re | Update WebUtil import |\r\n| src/web/app/editors/code/CodeViewable.re | Update WebUtil import |\r\n| src/web/app/editors/code/CodeEditable.re | Switch Key.handler \u2192 KeyEvent.handler |\r\n| src/web/app/editors/code/Code.re | Update WebUtil import |\r\n| src/web/app/editors/cell/InstructorEditViews.re | Remove unused Util open |\r\n| src/web/app/CrashHandling.re | Remove unused Util open |\r\n| src/web/app/common/Widgets.re | Update WebUtil import usage |\r\n| src/web/app/common/RefractorView.re | Update WebUtil import |\r\n| src/web/app/common/ProjectorView.re | Wire core logic + web view registry |\r\n| src/web/Animation.re | Remove unused Util open |\r\n| src/web/agent/ToolJsonDefinitions/ViewTools.re | New agent tool JSON definitions |\r\n| src/web/agent/ToolJsonDefinitions/ReadTools.re | New agent tool JSON definitions |\r\n| src/web/agent/ToolJsonDefinitions/ProbeTools.re | New agent tool JSON definitions |\r\n| src/web/agent/prompt_factory/Eg_EmojiPaint.re | New prompt example scaffold |\r\n| src/web/agent/CompositionView.re | Add Haz3lcore open after split |\r\n| src/web/agent/CompositionActions.re | Add Haz3lcore open after split |\r\n| src/web/agent/AgentToolResult.re | Add Haz3lcore open after split |\r\n| src/web/agent/AgentContextCore/AgentContext.re | Add Haz3lcore open after split |\r\n| src/util/Util.re | Drop web-only module re-exports |\r\n| src/util/Unicode.re | Pure grapheme segmentation + emoji detection |\r\n| src/util/TimeUtil.re | Clock injection + pure time diff formatting |\r\n| src/util/StringUtil.re | Switch regex + URI coding to pure OCaml |\r\n| src/util/OpenRouter.re | Remove HTTP transport from util |\r\n| src/util/Key.re | Remove DOM-specific key extraction |\r\n| src/util/dune | Drop web deps; add re/uuseg/uucp |\r\n| src/util/Calc.re | Comment tweak |\r\n| src/util/API.re | Keep pure JSON helpers only |\r\n| src/tui/TuiHistory.re | Undo/redo for TUI editor snapshots |\r\n| src/tui/Theme.re | Terminal color theme mapping |\r\n| src/tui/Style.re | Terminal style data model |\r\n| src/tui/StatusView.re | Bottom status bar rendering |\r\n| src/tui/ResultView.re | Live evaluation + table rendering |\r\n| src/tui/Replay.re | Headless replay driver for tests |\r\n| src/tui/README.md | TUI usage, keybinds, architecture |\r\n| src/tui/ProbeView.re | Offside probe sample rendering |\r\n| src/tui/NottyIO.re | Frame \u2192 notty image renderer |\r\n| src/tui/NottyEvents.re | notty event \u2192 input event translation |\r\n| src/tui/NottyAttr.ml | Notty attr combine helper |\r\n| src/tui/Keymap.re | Input event \u2192 app action mapping |\r\n| src/tui/InspectorView.re | Cursor inspector pane rendering |\r\n| src/tui/Frame.re | Backend-agnostic frame model + row ops |\r\n| src/tui/FileIo.re | TUI file load/save + zipper serialization |\r\n| src/tui/EvalWorker.re | Forked async evaluation worker |\r\n| src/tui/dune | haz3ltui library + tui.exe |\r\n| src/tui/BackpackView.re | Backpack chip overlay rendering |\r\n| src/nativecheck/Nativecheck.re | Native smoke-check executable |\r\n| src/nativecheck/dune | Nativecheck build stanza |\r\n| src/language/term/Exp.re | Strip projectors from pat/typ too |\r\n| src/language/statics/LivelitCtx.re | Remove Vdom view from livelit ctx |\r\n| src/language/statics/Ctx.re | Remove Vdom node-or-list type |\r\n| src/language/Livelit.re | Move livelit views to web |\r\n| src/language/dynamics/Sample.re | Use TimeUtil.now_ms for timestamps |\r\n| src/haz3lcore/projectors/ProjectorPerform.re | Use installed focusables |\r\n| src/haz3lcore/projectors/ProbeText.re | Avoid projector triggers in text output |\r\n| src/haz3lcore/projectors/implementations/TypeProj.re | Logic/view split scaffolding |\r\n| src/haz3lcore/projectors/implementations/TextAreaProj.re | Remove Vdom view; keep logic |\r\n| src/haz3lcore/projectors/implementations/TableRenderer.rei | Update doc comment for split |\r\n| src/haz3lcore/projectors/implementations/TableProj.re | Add sizing injection for TUI |\r\n| src/haz3lcore/projectors/implementations/TableCore.rei | Remove Vdom rendering API |\r\n| src/haz3lcore/projectors/implementations/TableCore.re | Keep parsing only; view moved to web |\r\n| src/haz3lcore/projectors/implementations/SliderProj.re | Remove Vdom view; expose helpers |\r\n| src/haz3lcore/projectors/implementations/SliderFProj.re | Remove Vdom view; expose helpers |\r\n| src/haz3lcore/projectors/implementations/RichProbeRegistry.re | Note web view registry pairing |\r\n| src/haz3lcore/projectors/implementations/RichProbe.re | Remove Vdom half from core interface |\r\n| src/haz3lcore/projectors/implementations/LivelitProj.re | Remove Vdom view; expose helpers |\r\n| src/haz3lcore/projectors/implementations/FoldProj.re | Remove Vdom view; expose types |\r\n| src/haz3lcore/projectors/implementations/CheckboxProj.re | Remove Vdom view; expose helpers |\r\n| src/haz3lcore/ProbePerform.re | Frontend-installed focus handler |\r\n| src/haz3lcore/Keyboard.re | Remove self-open |\r\n| src/haz3lcore/dune | Drop js_of_ocaml ppx dependency |\r\n| src/CLI/Print.re | Strip projectors before printing |\r\n| run_tests | Split native vs node test execution |\r\n| Makefile | Add tui targets |\r\n| hazel.opam.locked | Add notty dependency |\r\n| hazel.opam | Add notty/re/uuseg/uucp deps |\r\n| hazel-tui | Convenience launcher script |\r\n| dune-project | Add notty/re/uuseg/uucp deps |\r\n| docs/projector-backend-split.md | Document projector split plan |\n</details>\n\n\n\n\n\n\n\n---\n\n\ud83d\udca1 <a href=\"/hazelgrove/hazel/new/dev?filename=.github/instructions/*.instructions.md\" class=\"Link--inTextBlock\" target=\"_blank\" rel=\"noopener noreferrer\">Add Copilot custom instructions</a> for smarter, more guided reviews. <a href=\"https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot\" class=\"Link--inTextBlock\" target=\"_blank\" rel=\"noopener noreferrer\">Learn how to get started</a>.",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/2349#pullrequestreview-4553767369",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/2349",
+      "author_association": "CONTRIBUTOR",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/2349#pullrequestreview-4553767369"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/2349"
+        }
+      },
+      "submitted_at": "2026-06-23T13:34:22Z",
+      "commit_id": "d1aa9d2ba6fa8b1a713b616a01e1c78e42ed8af0"
+    },
+    {
+      "id": 4580352403,
+      "node_id": "PRR_kwDOBMdeZM8AAAABEQKhkw",
+      "user": {
+        "login": "copilot-pull-request-reviewer[bot]",
+        "id": 175728472,
+        "node_id": "BOT_kgDOCnlnWA",
+        "avatar_url": "https://avatars.githubusercontent.com/in/946600?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D",
+        "html_url": "https://github.com/apps/copilot-pull-request-reviewer",
+        "followers_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/followers",
+        "following_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/following{/other_user}",
+        "gists_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/subscriptions",
+        "organizations_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/orgs",
+        "repos_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/repos",
+        "events_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/received_events",
+        "type": "Bot",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "Copilot was unable to review this pull request because the user who requested the review has reached their quota limit.",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/2349#pullrequestreview-4580352403",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/2349",
+      "author_association": "CONTRIBUTOR",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/2349#pullrequestreview-4580352403"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/2349"
+        }
+      },
+      "submitted_at": "2026-06-26T14:47:38Z",
+      "commit_id": "494c0725e264a58c7a6d7ff6708b0ecab4e015c3"
+    }
+  ]
+]

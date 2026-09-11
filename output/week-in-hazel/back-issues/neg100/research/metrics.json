@@ -1,0 +1,60 @@
+{
+  "period_head": "35629e93f29e509b71de86946f2056834d265a09",
+  "commits": 17,
+  "nonmerge": 13,
+  "merges": 4,
+  "authors": {
+    "Cyrus Omar": 4,
+    "Alexander Bandukwala": 7,
+    "Matt Keenan": 6
+  },
+  "daily": {
+    "2024-09-27": 6,
+    "2024-09-29": 1,
+    "2024-09-30": 2,
+    "2024-10-01": 4,
+    "2024-10-02": 4
+  },
+  "daily_signature_headers": {
+    "2024-09-29": 1,
+    "2024-10-01": 4,
+    "2024-10-02": 3
+  },
+  "daily_claude_credits": {},
+  "agent_credit_objects": {
+    "claude": 0,
+    "copilot": 0,
+    "openai": 0,
+    "codex": 0,
+    "chatgpt": 0
+  },
+  "agent_credit_shas": {
+    "claude": [],
+    "copilot": [],
+    "openai": [],
+    "codex": [],
+    "chatgpt": []
+  },
+  "signature_headers": 8,
+  "signature_header_shas": [
+    "35629e93f29e509b71de86946f2056834d265a09",
+    "6eb4622928495d27187d034ba71373750fdbf5fd",
+    "31e03596a61c99c890d6d1f12687200532780dba",
+    "a255b690f07adae44a5740e17edb14591124dec9",
+    "76ed41d82dc1fb426db80942fc72551ff6bcd28c",
+    "854edc88864ca3cb03c128dda8b5bc553dcd2731",
+    "8fbfe3bb80758f256b54a5fce45dd95cb49a3d9e",
+    "503e2356ce6d5c3d0824d2939403029960cb6840"
+  ],
+  "prs_opened": 5,
+  "prs_merged": 5,
+  "dev_merges": 4,
+  "feature_merges": [
+    {
+      "number": 1399,
+      "base": "labeled-tuple-rewrite"
+    }
+  ],
+  "issues_opened": 1,
+  "scope": "UTC committer dates inside week, reachable from historical week-end dev head; signature presence only; exact Co-authored-by trailers"
+}

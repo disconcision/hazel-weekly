@@ -1,0 +1,9 @@
+{
+  "repository": "hazelgrove/hazel",
+  "context_since": "2026-08-21T00:00:00Z",
+  "event_cutoff_exclusive": "2026-09-11T00:00:00Z",
+  "completed_utc": "2026-09-11T05:01:40.324306+00:00",
+  "issue_and_pr_records": 135,
+  "pr_details": 104,
+  "note": "Mutable prose/status reflect retrieval; cached files are not overwritten. Use a fresh output directory per issue."
+}

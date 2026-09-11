@@ -1,0 +1,87 @@
+{
+  "period_head": "4c949a18ade0710687c7ff00231131f3cb20a06c",
+  "commits": 65,
+  "nonmerge": 42,
+  "merges": 23,
+  "authors": {
+    "Cyrus Omar": 28,
+    "Matt Keenan": 33,
+    "cyrus-": 2,
+    "disconcision": 2
+  },
+  "daily": {
+    "2026-04-17": 13,
+    "2026-04-19": 1,
+    "2026-04-20": 1,
+    "2026-04-21": 31,
+    "2026-04-22": 11,
+    "2026-04-23": 8
+  },
+  "daily_signature_headers": {
+    "2026-04-17": 1,
+    "2026-04-21": 12,
+    "2026-04-22": 4,
+    "2026-04-23": 2
+  },
+  "daily_claude_credits": {
+    "2026-04-17": 2,
+    "2026-04-21": 12
+  },
+  "agent_credit_objects": {
+    "claude": 14,
+    "copilot": 0,
+    "openai": 0,
+    "codex": 0,
+    "chatgpt": 0
+  },
+  "agent_credit_shas": {
+    "claude": [
+      "0c53d06fe7c258643d4d4329a1ddb32f0ba4d3b6",
+      "40057eabfd50db2c0f6379d60d500fd34f931cfd",
+      "49406d2cea1483cb349e4b262c7ced9e7fad6d0c",
+      "801595cfa67f85adebca2b9127f828c0c3bdca8a",
+      "46432a4da722583fac25dfb21ba2f368110e407b",
+      "13e203ca0630d8f59728a532d5b5b75befe1306f",
+      "9ccff548504c00eb477b29cef14dcd3cd25e5c2a",
+      "346a3b8604f0f99b088f2c1655d1f450d75b104e",
+      "80299c3017deb939f3a93630be8d9dbbf8c8792b",
+      "9768fff9cbe074f7e3c25898ec9feb14daab1795",
+      "fe85ae4482c0c5d57b6d623797433c5c0e91e022",
+      "fce283659c878884e10810caf1a2c05acb070656",
+      "9a8abd6344cad0edd253efecf4f13bb8ddafc41c",
+      "8c166b9b55f5ed51443c8973e0c553fb3da017ee"
+    ],
+    "copilot": [],
+    "openai": [],
+    "codex": [],
+    "chatgpt": []
+  },
+  "signature_headers": 19,
+  "signature_header_shas": [
+    "4c949a18ade0710687c7ff00231131f3cb20a06c",
+    "ddef5291a0f87fa736466638cf7ec5a8195844de",
+    "4061cfdc392fa6940e140a655961e99b09b63d7f",
+    "f32b1156aad267d09c1afe4df8e44e88aa74b5e2",
+    "4cb33f35cfc3ce8bbb1a7c969c5ae51d96f3ade2",
+    "7c75475b26aa5d4ab40d36624c0e2b68ca714620",
+    "653a6d70040a53403adffcc034d09841e81cebd4",
+    "3e3548928f4c79cb875254559da575510196261f",
+    "0f520b568165d58ec10a8187d7e28fd8c4782dfd",
+    "3a287ac0311cef499f3487f661419b26f73a4e8f",
+    "2c594b037fbf86442e2896b9e59d7b45bdac58c3",
+    "a155131bb3be41fcd596ff1d8f652fd83681ae8b",
+    "b0eaafd3c7d8c91bca15295649d63c7e9836304a",
+    "0336b4d66e15c502e33e2f5aa95d6cfa5ae8bb0e",
+    "9dff8110f489387d3e35ba033ecc2169f17b0b82",
+    "95f94495e7c0773871695f1332ba0f87a6baa5d8",
+    "b79e1abed226d982b85eda8491c110f10c328dc3",
+    "59302202adb94261ae03e6c2313d25a56e875e4e",
+    "a81e3188fd13665af430882c17c64f6033a53b54"
+  ],
+  "prs_opened": 6,
+  "prs_merged": 14,
+  "dev_merges": 14,
+  "feature_merges": [],
+  "issues_opened": 5,
+  "scope": "UTC committer dates inside week, reachable from historical week-end dev head; signature presence only; exact Co-authored-by trailers"
+}

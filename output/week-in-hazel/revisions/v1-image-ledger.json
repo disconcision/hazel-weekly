@@ -1,0 +1,118 @@
+[
+  {
+    "id": "drawer-tree",
+    "issue": "001",
+    "kind": "generated illustration",
+    "concept": "Open probe drawers as a tree cabinet",
+    "path": "assets/drawer-tree.png",
+    "branch": "conceptual",
+    "url": null,
+    "created_utc": "2026-09-11T04:39:50.410513+00:00",
+    "reuse_rule": "Do not repeat this composition or premise in the next issue; only reuse as a labeled comparison if a changed behavior requires it.",
+    "prompt": "PROMPTS.md",
+    "pixel_dimensions": [
+      1536,
+      1024
+    ]
+  },
+  {
+    "id": "probes-cards",
+    "issue": "001",
+    "kind": "authentic screenshot",
+    "concept": "Insertion-sort intermediate hands as rich card samples",
+    "path": "assets/probes-cards.png",
+    "branch": "dev",
+    "url": "https://hazel.org/build/dev/",
+    "created_utc": "2026-09-11T05:03:07.904751+00:00",
+    "reuse_rule": "Do not repeat this composition or premise in the next issue; only reuse as a labeled comparison if a changed behavior requires it.",
+    "prompt": null,
+    "pixel_dimensions": [
+      380,
+      238
+    ],
+    "full_capture_path": "assets/probes-cards-full.png",
+    "full_capture_pixel_dimensions": [
+      1280,
+      720
+    ],
+    "capture_crop_css": {
+      "x": 0,
+      "y": 0,
+      "width": 380,
+      "height": 238
+    },
+    "pdf_rendering": "Native HiDPI full capture placed behind a PDF clipping rectangle matching the capture crop; no bitmap retouching."
+  },
+  {
+    "id": "modular-focus",
+    "issue": "001",
+    "kind": "staged screenshot",
+    "concept": "One definition from Mega 1k, scoped outline, live probe, whole-program result",
+    "path": "assets/modular-focus.png",
+    "branch": "modular-editors",
+    "url": "https://hazel.org/build/modular-editors/",
+    "created_utc": "2026-09-11T05:01:18.148595+00:00",
+    "reuse_rule": "Do not repeat this composition or premise in the next issue; only reuse as a labeled comparison if a changed behavior requires it.",
+    "prompt": null,
+    "pixel_dimensions": [
+      510,
+      195
+    ],
+    "full_capture_path": "assets/modular-focus-full.png",
+    "full_capture_pixel_dimensions": [
+      1280,
+      720
+    ],
+    "capture_crop_css": {
+      "x": 0,
+      "y": 0,
+      "width": 510,
+      "height": 195
+    },
+    "pdf_rendering": "Native HiDPI full capture placed behind a PDF clipping rectangle matching the capture crop; no bitmap retouching."
+  },
+  {
+    "id": "fumola-scene",
+    "issue": "001",
+    "kind": "staged screenshot",
+    "concept": "Fumola GCD and named-cell computation return (6, 42) into Hazel",
+    "path": "assets/fumola-scene.png",
+    "branch": "fumola-livelit-mvp",
+    "url": "https://hazel.org/build/fumola-livelit-mvp/",
+    "created_utc": "2026-09-11T05:01:18.253496+00:00",
+    "reuse_rule": "Do not repeat this composition or premise in the next issue; only reuse as a labeled comparison if a changed behavior requires it.",
+    "prompt": null,
+    "pixel_dimensions": [
+      422,
+      170
+    ],
+    "full_capture_path": "assets/fumola-scene-full.png",
+    "full_capture_pixel_dimensions": [
+      1280,
+      720
+    ],
+    "capture_crop_css": {
+      "x": 0,
+      "y": 0,
+      "width": 422,
+      "height": 170
+    },
+    "pdf_rendering": "Native HiDPI full capture placed behind a PDF clipping rectangle matching the capture crop; no bitmap retouching."
+  },
+  {
+    "id": "observable-comic",
+    "issue": "001",
+    "kind": "generated comic",
+    "concept": "Question-mark creature asks if it is done; observability is a consolation",
+    "path": "assets/observable-comic.png",
+    "branch": "fictional",
+    "url": null,
+    "created_utc": "2026-09-11T04:47:06.600580+00:00",
+    "reuse_rule": "Do not repeat this composition or premise in the next issue; only reuse as a labeled comparison if a changed behavior requires it.",
+    "prompt": "PROMPTS.md",
+    "pixel_dimensions": [
+      2172,
+      724
+    ]
+  }
+]

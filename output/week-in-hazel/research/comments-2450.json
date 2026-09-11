@@ -1,0 +1,51 @@
+[
+  [
+    {
+      "url": "https://api.github.com/repos/hazelgrove/hazel/issues/comments/5299786062",
+      "html_url": "https://github.com/hazelgrove/hazel/issues/2450#issuecomment-5299786062",
+      "issue_url": "https://api.github.com/repos/hazelgrove/hazel/issues/2450",
+      "id": 5299786062,
+      "node_id": "IC_kwDOBMdeZM8AAAABO-RRTg",
+      "user": {
+        "login": "disconcision",
+        "id": 22436459,
+        "node_id": "MDQ6VXNlcjIyNDM2NDU5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/22436459?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/disconcision",
+        "html_url": "https://github.com/disconcision",
+        "followers_url": "https://api.github.com/users/disconcision/followers",
+        "following_url": "https://api.github.com/users/disconcision/following{/other_user}",
+        "gists_url": "https://api.github.com/users/disconcision/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/disconcision/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/disconcision/subscriptions",
+        "organizations_url": "https://api.github.com/users/disconcision/orgs",
+        "repos_url": "https://api.github.com/users/disconcision/repos",
+        "events_url": "https://api.github.com/users/disconcision/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/disconcision/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "created_at": "2026-08-15T01:21:31Z",
+      "updated_at": "2026-08-15T01:21:31Z",
+      "body": "Investigated further; the mechanism and scope are sharper than the original report:\n\n**Scope**: any text that is not a complete menhir program \u2014 dangling `;`, trailing operator, body-less `let \u2026 in` chains \u2014 takes FastParse's append-a-hole retry, and `strip_appended_hole` then leaves the loaded zipper holding an ill-formed top-level segment: a final infix/prefix operator with no operand and no grout (the typing parser would have regrouted). The program text itself round-trips fine.\n\n**Loss point**: at print, trigger re-emission (`Triggers.refractor_seg_to_seg_with`) computes `Segment.skel` per segment level. On the ill-formed top level, skel raises `Failure(\"Skel.push_output: split_kids: index out of bounds\")` (not even the documented `Nonconvex_segment`) and the catch-all silently abandons wrapping for that level. Emission recurses per tile child, so **invocations targeting terms nested inside any tile child (let defs, parens, fn bodies) survive; only invocations on top-level terms are dropped**. That is why binding-chain fragments usually look fine \u2014 their content sits in def children \u2014 while `^^probe(f(1));\\n^^probe(f(2));` loses both.\n\n**Also affected**: `^^probe(1 + 1);\\nlet a = 2 in` and `let a = 2 in\\n^^probe(a + 1);\\nlet b = 3 in` both drop the top-level invocation \u2014 so the body-less-let case is real, just masked when targets are nested.\n\n**Fix directions** (a design call): (a) emission-side \u2014 heal the segment for skel purposes only, e.g. append a temporary convex grout before computing skel and drop it from the emitted result (the missing final operand is the only ill-formedness these loads produce), keeping text byte-fidelity; (b) load-side \u2014 keep the appended hole as Grout (matching the typing parser and paste, cf. 49dbc8063f), at the cost of the text round-trip gaining a trailing `\u00bf`. The silent catch-all in `refractor_seg_to_seg_with` deserves at least a console note either way.",
+      "author_association": "MEMBER",
+      "pin": null,
+      "reactions": {
+        "url": "https://api.github.com/repos/hazelgrove/hazel/issues/comments/5299786062/reactions",
+        "total_count": 0,
+        "+1": 0,
+        "-1": 0,
+        "laugh": 0,
+        "hooray": 0,
+        "confused": 0,
+        "heart": 0,
+        "rocket": 0,
+        "eyes": 0
+      },
+      "performed_via_github_app": null,
+      "minimized": null
+    }
+  ]
+]

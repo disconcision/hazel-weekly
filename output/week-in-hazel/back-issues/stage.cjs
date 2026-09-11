@@ -1,0 +1,14 @@
+const {chromium}=require('/Users/andrewblinn/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');const fs=require('fs'),path=require('path');
+(async()=>{let slug=process.argv[2],port={neg100:8920,neg060:8921,neg019:8922}[slug];const c=await chromium.launchPersistentContext(path.join(__dirname,slug,'research/browser-profile'),{channel:'chrome',headless:true,viewport:{width:1150,height:720},deviceScaleFactor:3});const p=c.pages()[0];await p.goto('http://127.0.0.1:'+port,{waitUntil:'domcontentloaded'});await p.waitForTimeout(1500);
+await p.locator('select').first().selectOption({label:'Scratch'});await p.waitForTimeout(500);
+const programs={neg100:'# A program with room left to work #\nlet unfinished : Int = ? in\nlet twice : Int -> Int = fun x -> x * 2 in\n\n# A hole does not erase the other results #\n(twice(3), unfinished, twice(9))',neg060:'# One function, one missing case #\nlet length : [Int] -> Int =\n  fun xs ->\n    case xs\n    | [] => 0\n    | head::tail => ?\n    end\nin\n\ntest length([]) == 0 end;\ntest length([4, 7]) == 2 end;\nlength([4, 7])',neg019:'# Compact definitions, ordinary functions #\nlet fact(n: Int): Int =\n  if n == 0 then 1 else n * fact(n - 1)\nin\nlet inc(x) = x + 1 in\n\ntest fact(3) == 6 end;\ntest inc(3) == 4 end;\n(fact(5), inc(41))'};
+await p.locator(slug==='neg100'?'#code-container':'.code-editor').first().click({position:{x:25,y:18}});await p.keyboard.press('Meta+a');
+await p.evaluate(text=>{const dt=new DataTransfer();dt.setData('text/plain',text);document.querySelector('#page').dispatchEvent(new ClipboardEvent('paste',{clipboardData:dt,bubbles:true,cancelable:true}));},programs[slug]);await p.waitForTimeout(1000);
+if(slug==='neg060'){
+  if(!await p.locator('#assistant').isVisible())await p.locator('[title="Switch to Helpful Assistant"]').click();
+  if(await p.getByText('Confirm and Chat',{exact:true}).isVisible())await p.locator('#assistant > .header > .chat-button').dispatchEvent('click');
+  await p.waitForTimeout(400);
+  console.log('assistant computed',await p.locator('#assistant').evaluate(e=>({style:getComputedStyle(e).cssText,padding:getComputedStyle(e).padding,html:e.outerHTML.slice(0,700)})));
+}
+console.log('BODY',(await p.locator('body').innerText()).slice(-6500));console.log('tit',await p.locator('[title]').evaluateAll(es=>es.map(e=>[e.getAttribute('title'),e.className]).slice(-30)));
+await p.evaluate(()=>document.fonts.ready);fs.writeFileSync(path.join(__dirname,slug,'research/ui.html'),await p.content());fs.writeFileSync(path.join(__dirname,slug,'research/screenshot-program.hz'),programs[slug]);await p.screenshot({path:path.join(__dirname,slug,'assets/stage.png')});await p.screenshot({path:path.join(__dirname,slug,'assets/screenshot.png'),clip:slug==='neg060'?{x:8,y:36,width:1115,height:510}:slug==='neg019'?{x:8,y:36,width:700,height:310}:{x:8,y:36,width:730,height:270}});await c.close()})();

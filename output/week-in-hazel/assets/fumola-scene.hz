@@ -1,0 +1,9 @@
+# TWO LANGUAGES, ONE NOTEBOOK #
+
+let gcd : Int =
+  ^fumola_put_force(0, "`zine_gcd", "Gcd.gcd(12, 18)") in
+
+let answer : Int =
+  ^fumola_eval(0, "`zine_counter := 41; get(`zine_counter) + 1") in
+
+(gcd, answer)

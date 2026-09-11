@@ -1,0 +1,51 @@
+[
+  [
+    {
+      "url": "https://api.github.com/repos/hazelgrove/hazel/issues/comments/4835173945",
+      "html_url": "https://github.com/hazelgrove/hazel/issues/2067#issuecomment-4835173945",
+      "issue_url": "https://api.github.com/repos/hazelgrove/hazel/issues/2067",
+      "id": 4835173945,
+      "node_id": "IC_kwDOBMdeZM8AAAABIDLmOQ",
+      "user": {
+        "login": "disconcision",
+        "id": 22436459,
+        "node_id": "MDQ6VXNlcjIyNDM2NDU5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/22436459?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/disconcision",
+        "html_url": "https://github.com/disconcision",
+        "followers_url": "https://api.github.com/users/disconcision/followers",
+        "following_url": "https://api.github.com/users/disconcision/following{/other_user}",
+        "gists_url": "https://api.github.com/users/disconcision/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/disconcision/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/disconcision/subscriptions",
+        "organizations_url": "https://api.github.com/users/disconcision/orgs",
+        "repos_url": "https://api.github.com/users/disconcision/repos",
+        "events_url": "https://api.github.com/users/disconcision/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/disconcision/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "created_at": "2026-06-29T17:15:12Z",
+      "updated_at": "2026-06-29T17:15:12Z",
+      "body": "Repro via a Card projector spanning a linebreak:\n\n```\nlet one_card\n= ^^card((Spades,Jack)) in\n```\n\nThe code text and its decorations (selection highlight, caret, error squiggles) land on different rows below the projector. Root cause: `Code.view` walks a tile's shards right-to-left while `Measured` walks left-to-right, desyncing a shared deferred-linebreak counter, so the code text fails to reserve the projector's rows. A fix exists (`Code.re` walk-order, `Aba.join` \u2192 `Aba.fold_left`) and is being folded into the drawer PR #2321. (Closing #2359 as a dup of this.)\n",
+      "author_association": "MEMBER",
+      "pin": null,
+      "reactions": {
+        "url": "https://api.github.com/repos/hazelgrove/hazel/issues/comments/4835173945/reactions",
+        "total_count": 0,
+        "+1": 0,
+        "-1": 0,
+        "laugh": 0,
+        "hooray": 0,
+        "confused": 0,
+        "heart": 0,
+        "rocket": 0,
+        "eyes": 0
+      },
+      "performed_via_github_app": null,
+      "minimized": null
+    }
+  ]
+]

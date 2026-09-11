@@ -1,0 +1,51 @@
+[
+  [
+    {
+      "url": "https://api.github.com/repos/hazelgrove/hazel/issues/comments/5390775057",
+      "html_url": "https://github.com/hazelgrove/hazel/issues/2453#issuecomment-5390775057",
+      "issue_url": "https://api.github.com/repos/hazelgrove/hazel/issues/2453",
+      "id": 5390775057,
+      "node_id": "IC_kwDOBMdeZM8AAAABQVCzEQ",
+      "user": {
+        "login": "disconcision",
+        "id": 22436459,
+        "node_id": "MDQ6VXNlcjIyNDM2NDU5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/22436459?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/disconcision",
+        "html_url": "https://github.com/disconcision",
+        "followers_url": "https://api.github.com/users/disconcision/followers",
+        "following_url": "https://api.github.com/users/disconcision/following{/other_user}",
+        "gists_url": "https://api.github.com/users/disconcision/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/disconcision/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/disconcision/subscriptions",
+        "organizations_url": "https://api.github.com/users/disconcision/orgs",
+        "repos_url": "https://api.github.com/users/disconcision/repos",
+        "events_url": "https://api.github.com/users/disconcision/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/disconcision/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "created_at": "2026-08-24T04:34:05Z",
+      "updated_at": "2026-08-24T04:34:05Z",
+      "body": "Swept the lexer's other word reservations against the editor text path (roundtrip through Parser.to_zipper/MakeTerm). Same class as Nat/Bool, on the expression side: `let poly = 1 in 2`, `let named_fun = 1 in 2`, `let rec = 1 in 2`, `let end = 1 in 2`, `let then = 1 in 2` all roundtrip cleanly as variables in the editor but fail menhir outright \u2014 the lexer emits POLY/NAMED_FUN/REC/END/THEN unconditionally.\n\nThe filter words (`eval`, `pause`, `debug`, `hide`) plus `use`/`fix`/`test`/`hint`/`typfun` are keywords on both sides, so no parity gap there \u2014 but menhir hard-errors where the editor degrades to incomplete tiles; a demo program using `let eval = \u2026` tripped the FastParseCorpus ratchet that way. Whatever contextual-keyword treatment fixes the type names should cover the five identifier-legal words above too.",
+      "author_association": "MEMBER",
+      "pin": null,
+      "reactions": {
+        "url": "https://api.github.com/repos/hazelgrove/hazel/issues/comments/5390775057/reactions",
+        "total_count": 0,
+        "+1": 0,
+        "-1": 0,
+        "laugh": 0,
+        "hooray": 0,
+        "confused": 0,
+        "heart": 0,
+        "rocket": 0,
+        "eyes": 0
+      },
+      "performed_via_github_app": null,
+      "minimized": null
+    }
+  ]
+]

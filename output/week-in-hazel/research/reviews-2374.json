@@ -1,0 +1,124 @@
+[
+  [
+    {
+      "id": 5085034274,
+      "node_id": "PRR_kwDOBMdeZM8AAAABLxd3Ig",
+      "user": {
+        "login": "disconcision",
+        "id": 22436459,
+        "node_id": "MDQ6VXNlcjIyNDM2NDU5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/22436459?u=0cb0d45f709c1bd00cd617bdb0e4317792e78d58&v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/disconcision",
+        "html_url": "https://github.com/disconcision",
+        "followers_url": "https://api.github.com/users/disconcision/followers",
+        "following_url": "https://api.github.com/users/disconcision/following{/other_user}",
+        "gists_url": "https://api.github.com/users/disconcision/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/disconcision/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/disconcision/subscriptions",
+        "organizations_url": "https://api.github.com/users/disconcision/orgs",
+        "repos_url": "https://api.github.com/users/disconcision/repos",
+        "events_url": "https://api.github.com/users/disconcision/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/disconcision/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/2374#pullrequestreview-5085034274",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/2374",
+      "author_association": "MEMBER",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/2374#pullrequestreview-5085034274"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/2374"
+        }
+      },
+      "submitted_at": "2026-09-02T02:54:40Z",
+      "commit_id": "9ea50dc820438b3e442d00bcfa64ee1517f4e27c"
+    },
+    {
+      "id": 5086065546,
+      "node_id": "PRR_kwDOBMdeZM8AAAABLyczig",
+      "user": {
+        "login": "disconcision",
+        "id": 22436459,
+        "node_id": "MDQ6VXNlcjIyNDM2NDU5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/22436459?u=0cb0d45f709c1bd00cd617bdb0e4317792e78d58&v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/disconcision",
+        "html_url": "https://github.com/disconcision",
+        "followers_url": "https://api.github.com/users/disconcision/followers",
+        "following_url": "https://api.github.com/users/disconcision/following{/other_user}",
+        "gists_url": "https://api.github.com/users/disconcision/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/disconcision/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/disconcision/subscriptions",
+        "organizations_url": "https://api.github.com/users/disconcision/orgs",
+        "repos_url": "https://api.github.com/users/disconcision/repos",
+        "events_url": "https://api.github.com/users/disconcision/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/disconcision/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "Blocking finding:\n\n[P1] Remove the tracked scratch/debug bundle before merge. `probe_tmp/dune` makes `probe2.re` part of the repository-wide `@check` target, but `probe_tmp/probe2.re:191` calls the removed `CanonicalCompletion.chip_at_caret`. The current Fast checks job therefore fails with `Error: Unbound value CanonicalCompletion.chip_at_caret` before quick tests can run. This looks like an accidental artifact bundle rather than product code: the PR also adds two exploratory patch files, probe executables, `CLAUDE.md`, and `plans`, where `plans` is an absolute symlink to `/Users/andrewblinn/Dropbox/projects/hazel/plans` and will be broken for every other checkout. Please remove these local artifacts (or intentionally move/maintain any probe that should survive) so `dune build @check --profile release` passes.\n\nVerification: `dune build @test-quick --profile dev` passes locally with 3,821 tests; the focused Derivation/DerivationCase run also passes (65 tests). GitHub Full tests are still running at review time, while Fast checks fail for the compile error above.",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/2374#pullrequestreview-5086065546",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/2374",
+      "author_association": "MEMBER",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/2374#pullrequestreview-5086065546"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/2374"
+        }
+      },
+      "submitted_at": "2026-09-02T05:50:38Z",
+      "commit_id": "5efda53cfde749d21f7b6b6c6cedd865d5c2b20e"
+    },
+    {
+      "id": 5086385284,
+      "node_id": "PRR_kwDOBMdeZM8AAAABLywUhA",
+      "user": {
+        "login": "disconcision",
+        "id": 22436459,
+        "node_id": "MDQ6VXNlcjIyNDM2NDU5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/22436459?u=0cb0d45f709c1bd00cd617bdb0e4317792e78d58&v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/disconcision",
+        "html_url": "https://github.com/disconcision",
+        "followers_url": "https://api.github.com/users/disconcision/followers",
+        "following_url": "https://api.github.com/users/disconcision/following{/other_user}",
+        "gists_url": "https://api.github.com/users/disconcision/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/disconcision/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/disconcision/subscriptions",
+        "organizations_url": "https://api.github.com/users/disconcision/orgs",
+        "repos_url": "https://api.github.com/users/disconcision/repos",
+        "events_url": "https://api.github.com/users/disconcision/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/disconcision/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "Second, systematic pass over the updated head found three additional reproducible correctness issues. I consider the first two merge-blocking. The reproductions below were run against this exact head; all current CI checks are green, but the existing tests do not cover these states.",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/2374#pullrequestreview-5086385284",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/2374",
+      "author_association": "MEMBER",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/2374#pullrequestreview-5086385284"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/2374"
+        }
+      },
+      "submitted_at": "2026-09-02T06:35:51Z",
+      "commit_id": "ce1431f91aa8232bc1cda359b03b6949f749c218"
+    }
+  ]
+]

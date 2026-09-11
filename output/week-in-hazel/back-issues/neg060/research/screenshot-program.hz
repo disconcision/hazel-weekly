@@ -1,0 +1,12 @@
+# One function, one missing case #
+let length : [Int] -> Int =
+  fun xs ->
+    case xs
+    | [] => 0
+    | head::tail => ?
+    end
+in
+
+test length([]) == 0 end;
+test length([4, 7]) == 2 end;
+length([4, 7])

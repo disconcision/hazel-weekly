@@ -1,0 +1,166 @@
+[
+  {
+    "id": "001",
+    "title": "The cabinet is open.",
+    "start_utc": "2026-09-04T00:00:00Z",
+    "end_exclusive_utc": "2026-09-11T00:00:00Z",
+    "artifact": "../pdf/week-in-hazel-001.pdf",
+    "style_studies": "../pdf/week-in-hazel-001-style-lab.pdf",
+    "status": "ready",
+    "contributors": [
+      "Andrew Blinn",
+      "Alexander Bandukwala",
+      "Matthew Hammer",
+      "Cyrus Omar"
+    ],
+    "topics": [
+      {
+        "key": "probes-iv",
+        "role": "lead",
+        "page": 2,
+        "new_angle": "Merged into dev; drawers and rich card samples",
+        "return_trigger": "Return for resolved regressions or a materially new interaction",
+        "github_numbers": [
+          2363,
+          2519,
+          2520,
+          2521,
+          2524
+        ]
+      },
+      {
+        "key": "flaky-eval-properties",
+        "role": "follow-up",
+        "page": 3,
+        "new_angle": "Known disagreements pinned; human cost of noisy CI",
+        "return_trigger": "Return when underlying bugs or test strategy change",
+        "github_numbers": [
+          2482,
+          2516
+        ]
+      },
+      {
+        "key": "modules-ii",
+        "role": "feature",
+        "page": 4,
+        "new_angle": "Nine-part draft stack; signature identity through stdlib sketch",
+        "return_trigger": "New design decision, status change, or concrete user demo",
+        "github_numbers": [
+          2493,
+          2494,
+          2495,
+          2498,
+          2500,
+          2501,
+          2503,
+          2508,
+          2510
+        ]
+      },
+      {
+        "key": "agent-workspace",
+        "role": "feature",
+        "page": 5,
+        "new_angle": "Focused modular editing and bounded probe settling",
+        "return_trigger": "Changed workflow or an end-to-end agent run",
+        "github_numbers": [
+          2469,
+          2505,
+          2427,
+          2480
+        ]
+      },
+      {
+        "key": "constellation",
+        "role": "feature",
+        "page": 6,
+        "new_angle": "Locally built Scorekeeper graph; canvas mode, master-editor samples, hull timing and camera hold",
+        "return_trigger": "Live agent run, changed interaction or resolved rough edge; do not repeat the same static Scorekeeper map",
+        "github_numbers": [
+          2505
+        ]
+      },
+      {
+        "key": "fumola-livelits",
+        "role": "feature",
+        "page": 7,
+        "new_angle": "Foreign named state; current forms; two feature-branch loader merges",
+        "return_trigger": "Runtime-contract evolution, reuse demo, lifetime/copying decision",
+        "github_numbers": [
+          2492,
+          2504,
+          2509
+        ]
+      },
+      {
+        "key": "tutorial-holes",
+        "role": "small detail",
+        "page": 8,
+        "new_angle": "Text lessons and a disappearing single-element hole affect teaching",
+        "return_trigger": "Hole fix or new lesson interaction; do not repeat the same anecdote",
+        "github_numbers": [
+          2485,
+          2513,
+          2518
+        ]
+      },
+      {
+        "key": "agent-credit-metrics",
+        "role": "recurring",
+        "page": 9,
+        "new_angle": "First baseline: declared trailers separate from signatures",
+        "return_trigger": "Comparable next-window change with limitations intact",
+        "github_numbers": []
+      },
+      {
+        "key": "wasm-evaluator",
+        "role": "bench note",
+        "page": 10,
+        "new_angle": "Latest corrected scope: about 3.5x fixed-precision evaluator workload",
+        "return_trigger": "App-shaped benchmark or arbitrary-precision progress",
+        "github_numbers": [
+          2490
+        ]
+      },
+      {
+        "key": "branch-postcards",
+        "role": "brief",
+        "page": 10,
+        "new_angle": "Type abbreviation budget; rich depth clamp",
+        "return_trigger": "Merge or meaningful new behavior",
+        "github_numbers": []
+      },
+      {
+        "key": "blackboard",
+        "role": "late brief",
+        "page": 10,
+        "new_angle": "Kernel/editor-sort MVP; draft",
+        "return_trigger": "Inspect a new proof/checking interaction when available",
+        "github_numbers": [
+          2525
+        ]
+      }
+    ],
+    "images": [
+      "drawer-tree",
+      "probes-cards",
+      "modular-focus",
+      "fumola-scene",
+      "observable-comic",
+      "probes-cards-woodcut",
+      "fumola-scene-woodcut",
+      "modular-focus-woodcut",
+      "constellation-score",
+      "constellation-score-woodcut"
+    ],
+    "next_issue_end_exclusive_utc": "2026-09-18T00:00:00Z",
+    "edition": "pilot",
+    "verified_utc": "2026-09-11T07:12:18.786300+00:00",
+    "revision": 3,
+    "woodcut_study": "../pdf/week-in-hazel-001-woodcut.pdf",
+    "revision_notes": "REVISION-NOTES.md",
+    "production_guide": "PRODUCTION.md",
+    "preferred_screenshot_exemplar": "assets/probes-cards-woodcut.png",
+    "pages": 11
+  }
+]

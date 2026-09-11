@@ -1,0 +1,404 @@
+[
+  [
+    {
+      "id": 5105699598,
+      "node_id": "PRR_kwDOBMdeZM8AAAABMFLLDg",
+      "user": {
+        "login": "7h3kk1d",
+        "id": 995429,
+        "node_id": "MDQ6VXNlcjk5NTQyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/995429?u=504e0fe645bebaa279aac14ee9d4298c7016a68c&v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/7h3kk1d",
+        "html_url": "https://github.com/7h3kk1d",
+        "followers_url": "https://api.github.com/users/7h3kk1d/followers",
+        "following_url": "https://api.github.com/users/7h3kk1d/following{/other_user}",
+        "gists_url": "https://api.github.com/users/7h3kk1d/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/7h3kk1d/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/7h3kk1d/subscriptions",
+        "organizations_url": "https://api.github.com/users/7h3kk1d/orgs",
+        "repos_url": "https://api.github.com/users/7h3kk1d/repos",
+        "events_url": "https://api.github.com/users/7h3kk1d/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/7h3kk1d/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "I'm still reading the PR and just got to the main Statics part. Mostly surface-level stuff so far, but I'm still somewhat confused why we validate the expansion type at invocation if it's a value expand is returning and it's a fixed type. It seems like expand being typed `Model -> Expand` could just be typed at livelit definition. I understand why this isn't the case in the papers quoted version.",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/2488#pullrequestreview-5105699598",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/2488",
+      "author_association": "MEMBER",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/2488#pullrequestreview-5105699598"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/2488"
+        }
+      },
+      "submitted_at": "2026-09-03T21:20:03Z",
+      "commit_id": "da22f4ae767115fba4836866f5154c89a61c2d84"
+    },
+    {
+      "id": 5105344141,
+      "node_id": "PRR_kwDOBMdeZM8AAAABME1ejQ",
+      "user": {
+        "login": "disconcision",
+        "id": 22436459,
+        "node_id": "MDQ6VXNlcjIyNDM2NDU5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/22436459?u=0cb0d45f709c1bd00cd617bdb0e4317792e78d58&v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/disconcision",
+        "html_url": "https://github.com/disconcision",
+        "followers_url": "https://api.github.com/users/disconcision/followers",
+        "following_url": "https://api.github.com/users/disconcision/following{/other_user}",
+        "gists_url": "https://api.github.com/users/disconcision/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/disconcision/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/disconcision/subscriptions",
+        "organizations_url": "https://api.github.com/users/disconcision/orgs",
+        "repos_url": "https://api.github.com/users/disconcision/repos",
+        "events_url": "https://api.github.com/users/disconcision/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/disconcision/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "No big concerns though I also agree with most of alexander's comments... A challenge here though is that you're building on top of user-livelits, which is mostly slop I haven't reviewed yet, so definitely don't take the existing internals as principled.\r\n\r\nI guess one thing I haven't fully thought out is how much we should be special-casing livelit def stuff as opposed to extending module features to support the required functionality. I'm fine doing the former for now but might be worth thinking about what we'd need from modules to avoid it.\r\n\r\nI'll do a functional review tomorrow",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/2488#pullrequestreview-5105344141",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/2488",
+      "author_association": "MEMBER",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/2488#pullrequestreview-5105344141"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/2488"
+        }
+      },
+      "submitted_at": "2026-09-03T23:03:33Z",
+      "commit_id": "da22f4ae767115fba4836866f5154c89a61c2d84"
+    },
+    {
+      "id": 5107688204,
+      "node_id": "PRR_kwDOBMdeZM8AAAABMHEjDA",
+      "user": {
+        "login": "matthewhammer",
+        "id": 1183963,
+        "node_id": "MDQ6VXNlcjExODM5NjM=",
+        "avatar_url": "https://avatars.githubusercontent.com/u/1183963?u=71edb29bfc6b74ab31cda47547b33546c46491ab&v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/matthewhammer",
+        "html_url": "https://github.com/matthewhammer",
+        "followers_url": "https://api.github.com/users/matthewhammer/followers",
+        "following_url": "https://api.github.com/users/matthewhammer/following{/other_user}",
+        "gists_url": "https://api.github.com/users/matthewhammer/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/matthewhammer/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/matthewhammer/subscriptions",
+        "organizations_url": "https://api.github.com/users/matthewhammer/orgs",
+        "repos_url": "https://api.github.com/users/matthewhammer/repos",
+        "events_url": "https://api.github.com/users/matthewhammer/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/matthewhammer/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/2488#pullrequestreview-5107688204",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/2488",
+      "author_association": "MEMBER",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/2488#pullrequestreview-5107688204"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/2488"
+        }
+      },
+      "submitted_at": "2026-09-03T23:17:08Z",
+      "commit_id": "da22f4ae767115fba4836866f5154c89a61c2d84"
+    },
+    {
+      "id": 5113561717,
+      "node_id": "PRR_kwDOBMdeZM8AAAABMMrCdQ",
+      "user": {
+        "login": "7h3kk1d",
+        "id": 995429,
+        "node_id": "MDQ6VXNlcjk5NTQyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/995429?u=504e0fe645bebaa279aac14ee9d4298c7016a68c&v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/7h3kk1d",
+        "html_url": "https://github.com/7h3kk1d",
+        "followers_url": "https://api.github.com/users/7h3kk1d/followers",
+        "following_url": "https://api.github.com/users/7h3kk1d/following{/other_user}",
+        "gists_url": "https://api.github.com/users/7h3kk1d/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/7h3kk1d/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/7h3kk1d/subscriptions",
+        "organizations_url": "https://api.github.com/users/7h3kk1d/orgs",
+        "repos_url": "https://api.github.com/users/7h3kk1d/repos",
+        "events_url": "https://api.github.com/users/7h3kk1d/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/7h3kk1d/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/2488#pullrequestreview-5113561717",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/2488",
+      "author_association": "MEMBER",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/2488#pullrequestreview-5113561717"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/2488"
+        }
+      },
+      "submitted_at": "2026-09-04T13:32:48Z",
+      "commit_id": "da22f4ae767115fba4836866f5154c89a61c2d84"
+    },
+    {
+      "id": 5113662090,
+      "node_id": "PRR_kwDOBMdeZM8AAAABMMxKig",
+      "user": {
+        "login": "7h3kk1d",
+        "id": 995429,
+        "node_id": "MDQ6VXNlcjk5NTQyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/995429?u=504e0fe645bebaa279aac14ee9d4298c7016a68c&v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/7h3kk1d",
+        "html_url": "https://github.com/7h3kk1d",
+        "followers_url": "https://api.github.com/users/7h3kk1d/followers",
+        "following_url": "https://api.github.com/users/7h3kk1d/following{/other_user}",
+        "gists_url": "https://api.github.com/users/7h3kk1d/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/7h3kk1d/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/7h3kk1d/subscriptions",
+        "organizations_url": "https://api.github.com/users/7h3kk1d/orgs",
+        "repos_url": "https://api.github.com/users/7h3kk1d/repos",
+        "events_url": "https://api.github.com/users/7h3kk1d/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/7h3kk1d/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/2488#pullrequestreview-5113662090",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/2488",
+      "author_association": "MEMBER",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/2488#pullrequestreview-5113662090"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/2488"
+        }
+      },
+      "submitted_at": "2026-09-04T13:41:27Z",
+      "commit_id": "da22f4ae767115fba4836866f5154c89a61c2d84"
+    },
+    {
+      "id": 5113679488,
+      "node_id": "PRR_kwDOBMdeZM8AAAABMMyOgA",
+      "user": {
+        "login": "7h3kk1d",
+        "id": 995429,
+        "node_id": "MDQ6VXNlcjk5NTQyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/995429?u=504e0fe645bebaa279aac14ee9d4298c7016a68c&v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/7h3kk1d",
+        "html_url": "https://github.com/7h3kk1d",
+        "followers_url": "https://api.github.com/users/7h3kk1d/followers",
+        "following_url": "https://api.github.com/users/7h3kk1d/following{/other_user}",
+        "gists_url": "https://api.github.com/users/7h3kk1d/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/7h3kk1d/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/7h3kk1d/subscriptions",
+        "organizations_url": "https://api.github.com/users/7h3kk1d/orgs",
+        "repos_url": "https://api.github.com/users/7h3kk1d/repos",
+        "events_url": "https://api.github.com/users/7h3kk1d/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/7h3kk1d/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/2488#pullrequestreview-5113679488",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/2488",
+      "author_association": "MEMBER",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/2488#pullrequestreview-5113679488"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/2488"
+        }
+      },
+      "submitted_at": "2026-09-04T13:42:49Z",
+      "commit_id": "da22f4ae767115fba4836866f5154c89a61c2d84"
+    },
+    {
+      "id": 5113849293,
+      "node_id": "PRR_kwDOBMdeZM8AAAABMM8lzQ",
+      "user": {
+        "login": "7h3kk1d",
+        "id": 995429,
+        "node_id": "MDQ6VXNlcjk5NTQyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/995429?u=504e0fe645bebaa279aac14ee9d4298c7016a68c&v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/7h3kk1d",
+        "html_url": "https://github.com/7h3kk1d",
+        "followers_url": "https://api.github.com/users/7h3kk1d/followers",
+        "following_url": "https://api.github.com/users/7h3kk1d/following{/other_user}",
+        "gists_url": "https://api.github.com/users/7h3kk1d/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/7h3kk1d/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/7h3kk1d/subscriptions",
+        "organizations_url": "https://api.github.com/users/7h3kk1d/orgs",
+        "repos_url": "https://api.github.com/users/7h3kk1d/repos",
+        "events_url": "https://api.github.com/users/7h3kk1d/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/7h3kk1d/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/2488#pullrequestreview-5113849293",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/2488",
+      "author_association": "MEMBER",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/2488#pullrequestreview-5113849293"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/2488"
+        }
+      },
+      "submitted_at": "2026-09-04T13:57:36Z",
+      "commit_id": "da22f4ae767115fba4836866f5154c89a61c2d84"
+    },
+    {
+      "id": 5118182170,
+      "node_id": "PRR_kwDOBMdeZM8AAAABMRFDGg",
+      "user": {
+        "login": "disconcision",
+        "id": 22436459,
+        "node_id": "MDQ6VXNlcjIyNDM2NDU5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/22436459?u=0cb0d45f709c1bd00cd617bdb0e4317792e78d58&v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/disconcision",
+        "html_url": "https://github.com/disconcision",
+        "followers_url": "https://api.github.com/users/disconcision/followers",
+        "following_url": "https://api.github.com/users/disconcision/following{/other_user}",
+        "gists_url": "https://api.github.com/users/disconcision/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/disconcision/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/disconcision/subscriptions",
+        "organizations_url": "https://api.github.com/users/disconcision/orgs",
+        "repos_url": "https://api.github.com/users/disconcision/repos",
+        "events_url": "https://api.github.com/users/disconcision/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/disconcision/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/2488#pullrequestreview-5118182170",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/2488",
+      "author_association": "MEMBER",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/2488#pullrequestreview-5118182170"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/2488"
+        }
+      },
+      "submitted_at": "2026-09-04T22:03:18Z",
+      "commit_id": "da22f4ae767115fba4836866f5154c89a61c2d84"
+    },
+    {
+      "id": 5118193469,
+      "node_id": "PRR_kwDOBMdeZM8AAAABMRFvPQ",
+      "user": {
+        "login": "disconcision",
+        "id": 22436459,
+        "node_id": "MDQ6VXNlcjIyNDM2NDU5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/22436459?u=0cb0d45f709c1bd00cd617bdb0e4317792e78d58&v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/disconcision",
+        "html_url": "https://github.com/disconcision",
+        "followers_url": "https://api.github.com/users/disconcision/followers",
+        "following_url": "https://api.github.com/users/disconcision/following{/other_user}",
+        "gists_url": "https://api.github.com/users/disconcision/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/disconcision/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/disconcision/subscriptions",
+        "organizations_url": "https://api.github.com/users/disconcision/orgs",
+        "repos_url": "https://api.github.com/users/disconcision/repos",
+        "events_url": "https://api.github.com/users/disconcision/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/disconcision/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "Functionally it looks good to me; i'm content to merge this in to my branch. I think there are a lot of things conceptually unsettled but not obvious whether it makes sense to deal with them all here",
+      "state": "APPROVED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/2488#pullrequestreview-5118193469",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/2488",
+      "author_association": "MEMBER",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/2488#pullrequestreview-5118193469"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/2488"
+        }
+      },
+      "submitted_at": "2026-09-04T22:05:28Z",
+      "commit_id": "da22f4ae767115fba4836866f5154c89a61c2d84"
+    },
+    {
+      "id": 5118474663,
+      "node_id": "PRR_kwDOBMdeZM8AAAABMRW5pw",
+      "user": {
+        "login": "7h3kk1d",
+        "id": 995429,
+        "node_id": "MDQ6VXNlcjk5NTQyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/995429?u=504e0fe645bebaa279aac14ee9d4298c7016a68c&v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/7h3kk1d",
+        "html_url": "https://github.com/7h3kk1d",
+        "followers_url": "https://api.github.com/users/7h3kk1d/followers",
+        "following_url": "https://api.github.com/users/7h3kk1d/following{/other_user}",
+        "gists_url": "https://api.github.com/users/7h3kk1d/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/7h3kk1d/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/7h3kk1d/subscriptions",
+        "organizations_url": "https://api.github.com/users/7h3kk1d/orgs",
+        "repos_url": "https://api.github.com/users/7h3kk1d/repos",
+        "events_url": "https://api.github.com/users/7h3kk1d/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/7h3kk1d/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/2488#pullrequestreview-5118474663",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/2488",
+      "author_association": "MEMBER",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/2488#pullrequestreview-5118474663"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/2488"
+        }
+      },
+      "submitted_at": "2026-09-04T23:03:17Z",
+      "commit_id": "da22f4ae767115fba4836866f5154c89a61c2d84"
+    }
+  ]
+]

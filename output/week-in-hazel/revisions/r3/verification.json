@@ -1,0 +1,137 @@
+{
+  "revision": 3,
+  "verified_utc": "2026-09-11T07:07:25.573700+00:00",
+  "metric_reproduction": "Weekly snapshot unchanged from verified revision 1; new open backlog query saved separately.",
+  "pdf_checks": [
+    {
+      "file": "week-in-hazel-001.pdf",
+      "pages": 11,
+      "words": 2669,
+      "links": 43,
+      "unique_links": 36,
+      "offpage_characters": 0,
+      "bytes": 11950201,
+      "sha256": "d7185f3aeb344bb7ae6a2a27aab941d03faad32cf6e8fba0a6c6c97146ae89f8",
+      "lossless_image_filters": true,
+      "exact_native_clean_plates": [
+        "probes-cards-clean.png",
+        "modular-focus-clean.png",
+        "constellation-score-clean.png",
+        "fumola-scene-clean.png"
+      ],
+      "images": [
+        {
+          "width": 1536,
+          "height": 1024,
+          "filter": "['/ASCII85Decode', '/FlateDecode']"
+        },
+        {
+          "width": 2456,
+          "height": 1454,
+          "filter": "['/ASCII85Decode', '/FlateDecode']"
+        },
+        {
+          "width": 3271,
+          "height": 1256,
+          "filter": "['/ASCII85Decode', '/FlateDecode']"
+        },
+        {
+          "width": 847,
+          "height": 1125,
+          "filter": "['/ASCII85Decode', '/FlateDecode']"
+        },
+        {
+          "width": 2647,
+          "height": 1051,
+          "filter": "['/ASCII85Decode', '/FlateDecode']"
+        },
+        {
+          "width": 2172,
+          "height": 724,
+          "filter": "['/ASCII85Decode', '/FlateDecode']"
+        }
+      ]
+    },
+    {
+      "file": "week-in-hazel-001-woodcut.pdf",
+      "pages": 11,
+      "words": 2676,
+      "links": 43,
+      "unique_links": 36,
+      "offpage_characters": 0,
+      "bytes": 26019778,
+      "sha256": "64140d25fe078f435019cd1bc79bfe89f4c0c988637ffb1d0ce97d4dbb7f4f5e",
+      "lossless_image_filters": true,
+      "exact_native_clean_plates": [],
+      "images": [
+        {
+          "width": 1536,
+          "height": 1024,
+          "filter": "['/ASCII85Decode', '/FlateDecode']"
+        },
+        {
+          "width": 1630,
+          "height": 965,
+          "filter": "['/ASCII85Decode', '/FlateDecode']"
+        },
+        {
+          "width": 2022,
+          "height": 778,
+          "filter": "['/ASCII85Decode', '/FlateDecode']"
+        },
+        {
+          "width": 1088,
+          "height": 1445,
+          "filter": "['/ASCII85Decode', '/FlateDecode']"
+        },
+        {
+          "width": 1989,
+          "height": 791,
+          "filter": "['/ASCII85Decode', '/FlateDecode']"
+        },
+        {
+          "width": 2172,
+          "height": 724,
+          "filter": "['/ASCII85Decode', '/FlateDecode']"
+        }
+      ]
+    },
+    {
+      "file": "week-in-hazel-001-style-lab.pdf",
+      "pages": 4,
+      "words": 370,
+      "links": 6,
+      "unique_links": 6,
+      "offpage_characters": 0,
+      "bytes": 10709984,
+      "sha256": "e6796b2ee0b1cdb0aa3a0b3d6e873f3f45022f93a625de06e3f0e7beb9c209b6",
+      "lossless_image_filters": true,
+      "exact_native_clean_plates": [
+        "fumola-scene-clean.png",
+        "modular-focus-clean.png"
+      ],
+      "images": [
+        {
+          "width": 1536,
+          "height": 1024,
+          "filter": "['/ASCII85Decode', '/FlateDecode']"
+        },
+        {
+          "width": 2647,
+          "height": 1051,
+          "filter": "['/ASCII85Decode', '/FlateDecode']"
+        },
+        {
+          "width": 3271,
+          "height": 1256,
+          "filter": "['/ASCII85Decode', '/FlateDecode']"
+        },
+        {
+          "width": 2172,
+          "height": 724,
+          "filter": "['/ASCII85Decode', '/FlateDecode']"
+        }
+      ]
+    }
+  ]
+}

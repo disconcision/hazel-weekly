@@ -1,0 +1,164 @@
+[
+  [
+    {
+      "id": 3332783717,
+      "node_id": "PRR_kwDOBMdeZM7Gpj5l",
+      "user": {
+        "login": "copilot-pull-request-reviewer[bot]",
+        "id": 175728472,
+        "node_id": "BOT_kgDOCnlnWA",
+        "avatar_url": "https://avatars.githubusercontent.com/in/946600?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D",
+        "html_url": "https://github.com/apps/copilot-pull-request-reviewer",
+        "followers_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/followers",
+        "following_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/following{/other_user}",
+        "gists_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/subscriptions",
+        "organizations_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/orgs",
+        "repos_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/repos",
+        "events_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/received_events",
+        "type": "Bot",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "## Pull Request Overview\n\nThis PR adds a new configuration mode to the editor with dedicated support for customizing editor colors through an interactive interface. The configuration system is built as a general framework supporting multiple configuration types including color schemes and keyboard shortcuts.\n\n- Adds `ConfigurationMode` module providing a slide-based editor for various configuration types\n- Implements color scheme configuration with live CSS variable updates\n- Adds keyboard shortcut configuration using a new keybinding projector\n\n### Reviewed Changes\n\nCopilot reviewed 17 out of 18 changed files in this pull request and generated 5 comments.\n\n<details>\n<summary>Show a summary per file</summary>\n\n| File | Description |\r\n| ---- | ----------- |\r\n| src/web/view/ConfigurationMode.re | New module implementing configuration slides with side effects |\r\n| src/web/init/docs/Shortcuts.ml | Default shortcuts configuration data |\r\n| src/haz3lcore/projectors/implementations/KeybindingProj.re | Interactive keybinding editor projector |\r\n| src/web/www/style/cell.css | Adds CSS styling for Configuration mode |\r\n| src/web/view/ScratchMode.re | Adds scratch_sort field to model |\r\n| Multiple integration files | Integration of configuration mode into the editor system |\n</details>\n\n\n\n\n\n\n---\n\n<sub>**Tip:** Customize your code reviews with copilot-instructions.md. <a href=\"/hazelgrove/hazel/new/dev/.github?filename=copilot-instructions.md\" class=\"Link--inTextBlock\" target=\"_blank\" rel=\"noopener noreferrer\">Create the file</a> or <a href=\"https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot\" class=\"Link--inTextBlock\" target=\"_blank\" rel=\"noopener noreferrer\">learn how to get started</a>.</sub>",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/1591#pullrequestreview-3332783717",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/1591",
+      "author_association": "CONTRIBUTOR",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/1591#pullrequestreview-3332783717"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/1591"
+        }
+      },
+      "submitted_at": "2025-10-13T19:26:28Z",
+      "commit_id": "9549c2c4c7bd9fd06cb34fda37d3ee6542a2dbfc"
+    },
+    {
+      "id": 3336292085,
+      "node_id": "PRR_kwDOBMdeZM7G28b1",
+      "user": {
+        "login": "copilot-pull-request-reviewer[bot]",
+        "id": 175728472,
+        "node_id": "BOT_kgDOCnlnWA",
+        "avatar_url": "https://avatars.githubusercontent.com/in/946600?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D",
+        "html_url": "https://github.com/apps/copilot-pull-request-reviewer",
+        "followers_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/followers",
+        "following_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/following{/other_user}",
+        "gists_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/subscriptions",
+        "organizations_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/orgs",
+        "repos_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/repos",
+        "events_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/received_events",
+        "type": "Bot",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "## Pull Request Overview\n\nCopilot reviewed 27 out of 27 changed files in this pull request and generated 8 comments.\n\n\n\n\n\n---\n\n<sub>**Tip:** Customize your code reviews with copilot-instructions.md. <a href=\"/hazelgrove/hazel/new/dev/.github?filename=copilot-instructions.md\" class=\"Link--inTextBlock\" target=\"_blank\" rel=\"noopener noreferrer\">Create the file</a> or <a href=\"https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot\" class=\"Link--inTextBlock\" target=\"_blank\" rel=\"noopener noreferrer\">learn how to get started</a>.</sub>",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/1591#pullrequestreview-3336292085",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/1591",
+      "author_association": "CONTRIBUTOR",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/1591#pullrequestreview-3336292085"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/1591"
+        }
+      },
+      "submitted_at": "2025-10-14T15:32:53Z",
+      "commit_id": "3be269d9a1302161d5fb644299851bdacd25e16e"
+    },
+    {
+      "id": 3336351514,
+      "node_id": "PRR_kwDOBMdeZM7G3K8a",
+      "user": {
+        "login": "copilot-pull-request-reviewer[bot]",
+        "id": 175728472,
+        "node_id": "BOT_kgDOCnlnWA",
+        "avatar_url": "https://avatars.githubusercontent.com/in/946600?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D",
+        "html_url": "https://github.com/apps/copilot-pull-request-reviewer",
+        "followers_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/followers",
+        "following_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/following{/other_user}",
+        "gists_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/subscriptions",
+        "organizations_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/orgs",
+        "repos_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/repos",
+        "events_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/received_events",
+        "type": "Bot",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "## Pull Request Overview\n\nCopilot reviewed 27 out of 27 changed files in this pull request and generated 3 comments.\n\n\n\n\n\n---\n\n<sub>**Tip:** Customize your code reviews with copilot-instructions.md. <a href=\"/hazelgrove/hazel/new/dev/.github?filename=copilot-instructions.md\" class=\"Link--inTextBlock\" target=\"_blank\" rel=\"noopener noreferrer\">Create the file</a> or <a href=\"https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot\" class=\"Link--inTextBlock\" target=\"_blank\" rel=\"noopener noreferrer\">learn how to get started</a>.</sub>",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/1591#pullrequestreview-3336351514",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/1591",
+      "author_association": "CONTRIBUTOR",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/1591#pullrequestreview-3336351514"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/1591"
+        }
+      },
+      "submitted_at": "2025-10-14T15:46:45Z",
+      "commit_id": "f792a267cc8236d596b0ef5e9b73a10b60bca9bb"
+    },
+    {
+      "id": 3336360090,
+      "node_id": "PRR_kwDOBMdeZM7G3NCa",
+      "user": {
+        "login": "7h3kk1d",
+        "id": 995429,
+        "node_id": "MDQ6VXNlcjk5NTQyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/995429?u=504e0fe645bebaa279aac14ee9d4298c7016a68c&v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/7h3kk1d",
+        "html_url": "https://github.com/7h3kk1d",
+        "followers_url": "https://api.github.com/users/7h3kk1d/followers",
+        "following_url": "https://api.github.com/users/7h3kk1d/following{/other_user}",
+        "gists_url": "https://api.github.com/users/7h3kk1d/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/7h3kk1d/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/7h3kk1d/subscriptions",
+        "organizations_url": "https://api.github.com/users/7h3kk1d/orgs",
+        "repos_url": "https://api.github.com/users/7h3kk1d/repos",
+        "events_url": "https://api.github.com/users/7h3kk1d/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/7h3kk1d/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/1591#pullrequestreview-3336360090",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/1591",
+      "author_association": "MEMBER",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/1591#pullrequestreview-3336360090"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/1591"
+        }
+      },
+      "submitted_at": "2025-10-14T15:48:33Z",
+      "commit_id": "f792a267cc8236d596b0ef5e9b73a10b60bca9bb"
+    }
+  ]
+]

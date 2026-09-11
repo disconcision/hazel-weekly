@@ -1,0 +1,65 @@
+4c949a18ade0710687c7ff00231131f3cb20a06c	2026-04-23T11:27:57-04:00	Cyrus Omar	ddef5291a0f87fa736466638cf7ec5a8195844de 93b5bb18243377b766b3d14bffad6ffabdcb52d7	Create a new input syntax for function. (#1254)
+93b5bb18243377b766b3d14bffad6ffabdcb52d7	2026-04-23T16:15:14+01:00	Cyrus Omar	5d20b9cdc1b2287b9068ad41e93897642b18ab20	refmt
+5d20b9cdc1b2287b9068ad41e93897642b18ab20	2026-04-23T16:06:43+01:00	Cyrus Omar	385ef6c512c617f4e94b4566b4e80672f5a1ad51	tweak cursor inspector message for sugared function definitions
+385ef6c512c617f4e94b4566b4e80672f5a1ad51	2026-04-23T15:54:33+01:00	Cyrus Omar	f5e0a371643440aed5819f13593bb3eb19e00186 ddef5291a0f87fa736466638cf7ec5a8195844de	merge with dev + cleanup code
+ddef5291a0f87fa736466638cf7ec5a8195844de	2026-04-23T09:40:16-04:00	Cyrus Omar	4061cfdc392fa6940e140a655961e99b09b63d7f 8192d898844f2307e92d2eab100143f1fb8e41ab	feat: Wadler/Lindig-style pretty printer with Cmd+S and result formatting (#2180)
+8192d898844f2307e92d2eab100143f1fb8e41ab	2026-04-23T14:35:55+01:00	Cyrus Omar	61a69cdc382c1165f01059cd0679c6de7cdc4ec3	keep caret on same term when possible
+61a69cdc382c1165f01059cd0679c6de7cdc4ec3	2026-04-23T14:24:41+01:00	Cyrus Omar	ca8cfa7d2bef640413b51d29f24c939378e649ce	improvements to a few cases + add to command palette
+ca8cfa7d2bef640413b51d29f24c939378e649ce	2026-04-23T12:17:49+01:00	Cyrus Omar	033cac4e1b94a1fc4302909f4abce9e58d0dfd80 4061cfdc392fa6940e140a655961e99b09b63d7f	Merge branch 'dev' into pretty-printer-probeless
+4061cfdc392fa6940e140a655961e99b09b63d7f	2026-04-22T08:53:05-04:00	Cyrus Omar	f32b1156aad267d09c1afe4df8e44e88aa74b5e2 abbc8b79d6eef78a6e1a8b5f737fdcdf88e9c024	(All-out) Elastatics (#2213)
+f32b1156aad267d09c1afe4df8e44e88aa74b5e2	2026-04-22T08:50:03-04:00	Cyrus Omar	4cb33f35cfc3ce8bbb1a7c969c5ae51d96f3ade2 7c75475b26aa5d4ab40d36624c0e2b68ca714620	Keyboard architecture refactor: Key.handler, ContextualAction, focus decentralization (#2198)
+abbc8b79d6eef78a6e1a8b5f737fdcdf88e9c024	2026-04-22T12:11:46+01:00	Matt Keenan	ac796ccc5194f81bbf9db497bd18dfa969676321	Formatter
+4cb33f35cfc3ce8bbb1a7c969c5ae51d96f3ade2	2026-04-22T07:03:12-04:00	Cyrus Omar	653a6d70040a53403adffcc034d09841e81cebd4 cc118cf4e14d099c5fbd0b198e5706e463c5bf46	chore: update dependencies (#2220)
+7c75475b26aa5d4ab40d36624c0e2b68ca714620	2026-04-22T06:57:15-04:00	Cyrus Omar	e5cfaa3f24f3c1d39b871e3651eadbf2090bbd2f 653a6d70040a53403adffcc034d09841e81cebd4	Merge branch 'dev' into keyboard-architecture-refactor
+ac796ccc5194f81bbf9db497bd18dfa969676321	2026-04-22T11:46:15+01:00	Matt Keenan	5463ceaec4ca05df38f5a2572f888978a153d5cb	Stop tracking AGENTS.md
+e5cfaa3f24f3c1d39b871e3651eadbf2090bbd2f	2026-04-22T11:42:30+01:00	Matt Keenan	c4c1d1c29838f594f3d5dcd67179427424fe7526	Ninjakeys escape
+033cac4e1b94a1fc4302909f4abce9e58d0dfd80	2026-04-22T11:32:46+01:00	Cyrus Omar	ee6528ab662d32678c339c3ffe25c6904254d270 653a6d70040a53403adffcc034d09841e81cebd4	Merge branch 'dev' into pretty-printer-probeless
+ee6528ab662d32678c339c3ffe25c6904254d270	2026-04-22T11:29:34+01:00	Cyrus Omar	cb55241bc0e555983c4f16168ad7a84c521bbfd3 0336b4d66e15c502e33e2f5aa95d6cfa5ae8bb0e	merge
+5463ceaec4ca05df38f5a2572f888978a153d5cb	2026-04-22T11:23:16+01:00	Matt Keenan	4626dd460540a106d49af53d0892ba85b0da74f5	elab syn ty property
+cc118cf4e14d099c5fbd0b198e5706e463c5bf46	2026-04-22T09:45:31+00:00	cyrus-	653a6d70040a53403adffcc034d09841e81cebd4	chore: update dependencies
+653a6d70040a53403adffcc034d09841e81cebd4	2026-04-21T10:24:02-04:00	Cyrus Omar	3e3548928f4c79cb875254559da575510196261f 3a287ac0311cef499f3487f661419b26f73a4e8f	chore: update dependencies (#2113)
+3e3548928f4c79cb875254559da575510196261f	2026-04-21T10:15:41-04:00	Cyrus Omar	2c594b037fbf86442e2896b9e59d7b45bdac58c3 0f520b568165d58ec10a8187d7e28fd8c4782dfd	Bump vite-plugin-static-copy from 2.3.0 to 2.3.2 (#1891)
+0f520b568165d58ec10a8187d7e28fd8c4782dfd	2026-04-21T10:12:10-04:00	Cyrus Omar	a155131bb3be41fcd596ff1d8f652fd83681ae8b 2c594b037fbf86442e2896b9e59d7b45bdac58c3	Merge branch 'dev' into dependabot/npm_and_yarn/vite-plugin-static-copy-2.3.2
+3a287ac0311cef499f3487f661419b26f73a4e8f	2026-04-21T10:11:53-04:00	Cyrus Omar	b0eaafd3c7d8c91bca15295649d63c7e9836304a 2c594b037fbf86442e2896b9e59d7b45bdac58c3	Merge branch 'dev' into bot-update-deps
+2c594b037fbf86442e2896b9e59d7b45bdac58c3	2026-04-21T10:11:21-04:00	Cyrus Omar	0336b4d66e15c502e33e2f5aa95d6cfa5ae8bb0e 2fd2cb4a74f0bce4653a3d489fa482d5cd6dc92e	fix missing record wildcard (#2219)
+2fd2cb4a74f0bce4653a3d489fa482d5cd6dc92e	2026-04-21T14:59:27+01:00	Cyrus Omar	0336b4d66e15c502e33e2f5aa95d6cfa5ae8bb0e	fix missing record wildcard
+c4c1d1c29838f594f3d5dcd67179427424fe7526	2026-04-21T14:13:16+01:00	Matt Keenan	0df8c820cb927b3bfd8b8ff12d0c8f82b4126bc0	Fix ctrl+a in ninjakeys
+0df8c820cb927b3bfd8b8ff12d0c8f82b4126bc0	2026-04-21T14:13:16+01:00	Matt Keenan	d8ca27341ceb2e228ff480d0a230b6c6683122d0	Hide mouse on lose focus
+d8ca27341ceb2e228ff480d0a230b6c6683122d0	2026-04-21T14:13:16+01:00	Matt Keenan	704bed77cde8aaa6a11874bbd93a3ae2e053051a	Tidy up
+704bed77cde8aaa6a11874bbd93a3ae2e053051a	2026-04-21T14:06:32+01:00	Matt Keenan	33d42fa361ff88ed6783b91e0d7c02d15b8bbefa	Move actions down
+33d42fa361ff88ed6783b91e0d7c02d15b8bbefa	2026-04-21T14:06:14+01:00	Matt Keenan	0c53d06fe7c258643d4d4329a1ddb32f0ba4d3b6	Delete dead code
+0c53d06fe7c258643d4d4329a1ddb32f0ba4d3b6	2026-04-21T14:06:14+01:00	Matt Keenan	40057eabfd50db2c0f6379d60d500fd34f931cfd	Remove dead handle_key_event chain across all layers
+40057eabfd50db2c0f6379d60d500fd34f931cfd	2026-04-21T14:06:14+01:00	Matt Keenan	49406d2cea1483cb349e4b262c7ced9e7fad6d0c	Distribute contextual actions to layers, wire EditMode, remove dead code
+49406d2cea1483cb349e4b262c7ced9e7fad6d0c	2026-04-21T14:00:13+01:00	Matt Keenan	801595cfa67f85adebca2b9127f828c0c3bdca8a	Fix cursor getting stuck inside nested expressions
+801595cfa67f85adebca2b9127f828c0c3bdca8a	2026-04-21T14:00:13+01:00	Matt Keenan	46432a4da722583fac25dfb21ba2f368110e407b	Fix first-click focus, selection highlighting, and projector escape
+46432a4da722583fac25dfb21ba2f368110e407b	2026-04-21T14:00:13+01:00	Matt Keenan	13e203ca0630d8f59728a532d5b5b75befe1306f	Move keyboard handling into editors, simplify Page handler
+13e203ca0630d8f59728a532d5b5b75befe1306f	2026-04-21T14:00:13+01:00	Matt Keenan	9ccff548504c00eb477b29cef14dcd3cd25e5c2a	Fix command palette actions not executing
+9ccff548504c00eb477b29cef14dcd3cd25e5c2a	2026-04-21T14:00:13+01:00	Matt Keenan	346a3b8604f0f99b088f2c1655d1f450d75b104e	Apply auto-formatter changes
+346a3b8604f0f99b088f2c1655d1f450d75b104e	2026-04-21T14:00:13+01:00	Matt Keenan	80299c3017deb939f3a93630be8d9dbbf8c8792b	Add EditMode type and EditorView.Focus module
+80299c3017deb939f3a93630be8d9dbbf8c8792b	2026-04-21T14:00:13+01:00	Matt Keenan	9768fff9cbe074f7e3c25898ec9feb14daab1795	Add contextual_actions to cursor type and wire up dynamic NinjaKeys
+9768fff9cbe074f7e3c25898ec9feb14daab1795	2026-04-21T14:00:13+01:00	Matt Keenan	fe85ae4482c0c5d57b6d623797433c5c0e91e022	Introduce ContextualAction type and unify shortcuts with command palette
+fe85ae4482c0c5d57b6d623797433c5c0e91e022	2026-04-21T14:00:13+01:00	Matt Keenan	fce283659c878884e10810caf1a2c05acb070656	Refactor Page.re to use Key.handler for keyboard event wiring
+fce283659c878884e10810caf1a2c05acb070656	2026-04-21T14:00:13+01:00	Matt Keenan	0336b4d66e15c502e33e2f5aa95d6cfa5ae8bb0e	Add Key.handler factory for reusable keyboard event wiring
+a155131bb3be41fcd596ff1d8f652fd83681ae8b	2026-04-21T08:44:02-04:00	Cyrus Omar	b2e98e0cf6bf772caef8cda1e840390b3db65fd5 0336b4d66e15c502e33e2f5aa95d6cfa5ae8bb0e	Merge branch 'dev' into dependabot/npm_and_yarn/vite-plugin-static-copy-2.3.2
+b0eaafd3c7d8c91bca15295649d63c7e9836304a	2026-04-21T08:40:05-04:00	Cyrus Omar	44186c06b4593e633a01b902476ab34922e4ea57 0336b4d66e15c502e33e2f5aa95d6cfa5ae8bb0e	Merge branch 'dev' into bot-update-deps
+0336b4d66e15c502e33e2f5aa95d6cfa5ae8bb0e	2026-04-21T08:24:49-04:00	Cyrus Omar	9dff8110f489387d3e35ba033ecc2169f17b0b82 d13cf4236f5f81327b3eb7b10767c581e1f8c55e	Rewrite float negation as 0.0 -. e in ExpToSegment (#2169)
+9dff8110f489387d3e35ba033ecc2169f17b0b82	2026-04-21T08:23:48-04:00	Cyrus Omar	95f94495e7c0773871695f1332ba0f87a6baa5d8 acce18b001efd1e754d95a711d918f4e5c888e98	Add alt+shift+left/right to extend selection by token (#2171)
+95f94495e7c0773871695f1332ba0f87a6baa5d8	2026-04-21T08:22:14-04:00	Cyrus Omar	b79e1abed226d982b85eda8491c110f10c328dc3 c52abdfcab49702765791ac423cdd7750f3ad5a2	Variable highlighting cleanup (#2191)
+b79e1abed226d982b85eda8491c110f10c328dc3	2026-04-21T08:20:59-04:00	Cyrus Omar	59302202adb94261ae03e6c2313d25a56e875e4e 6f45cf57b1d8f8398ea05abc5a27c7a62e44caa4	Bump picomatch (#2195)
+59302202adb94261ae03e6c2313d25a56e875e4e	2026-04-21T08:16:40-04:00	Cyrus Omar	a81e3188fd13665af430882c17c64f6033a53b54 94861316fc78aabe8b7cb1ee183f1eab9573c83a	Bump vite from 6.3.4 to 6.4.2 (#2208)
+4626dd460540a106d49af53d0892ba85b0da74f5	2026-04-21T11:36:17+01:00	Matt Keenan	012aea534110e8bd1abbba5e78f4095c6784edb0	test fixes
+012aea534110e8bd1abbba5e78f4095c6784edb0	2026-04-20T21:24:47+01:00	Matt Keenan	49d5ff0b67483dd075eaad74f00ef26c31b9696f	add tests
+44186c06b4593e633a01b902476ab34922e4ea57	2026-04-19T09:28:54+00:00	cyrus-	a81e3188fd13665af430882c17c64f6033a53b54	chore: update dependencies
+49d5ff0b67483dd075eaad74f00ef26c31b9696f	2026-04-17T18:24:41+01:00	Matt Keenan	c6f617c7eb18bd093bdd51f02a20719acd914c4e	Changes according to Alexander's suggestions
+c6f617c7eb18bd093bdd51f02a20719acd914c4e	2026-04-17T18:24:41+01:00	Matt Keenan	888af61735931c2b7bed95c3ea20abedad15dd1a	Merge test fixup
+888af61735931c2b7bed95c3ea20abedad15dd1a	2026-04-17T18:24:41+01:00	Matt Keenan	842b1aa27f988d7cbc00f88d6378153facab9cb5	statics getters
+842b1aa27f988d7cbc00f88d6378153facab9cb5	2026-04-17T18:24:41+01:00	Matt Keenan	ae3f3edde3e049bec563ac2831ba8ce0ea750101	extract statics helper clusters into focused modules
+ae3f3edde3e049bec563ac2831ba8ce0ea750101	2026-04-17T18:24:41+01:00	Matt Keenan	ce0f9836fd7454d2226c51832c7113263bbaeff7	fold typ status rules into type traversal
+ce0f9836fd7454d2226c51832c7113263bbaeff7	2026-04-17T18:24:41+01:00	Matt Keenan	878590b9e4720ccad81920e0ad4ff599e5e95898	more tidying
+878590b9e4720ccad81920e0ad4ff599e5e95898	2026-04-17T18:24:41+01:00	Matt Keenan	3111e25845e711301a682d8f48c540bdf32b5749	move some helpers out
+3111e25845e711301a682d8f48c540bdf32b5749	2026-04-17T18:24:41+01:00	Matt Keenan	0630117203e2ed1b304a64509b6f672d822590fa	push duplicate label logic inside
+0630117203e2ed1b304a64509b6f672d822590fa	2026-04-17T18:24:41+01:00	Matt Keenan	cc620bbbdc4bddd93e4c61e2ff6116d7c4c5dbb4	move out statics helpers
+cc620bbbdc4bddd93e4c61e2ff6116d7c4c5dbb4	2026-04-17T18:24:41+01:00	Matt Keenan	a81e3188fd13665af430882c17c64f6033a53b54	delete elaborator
+a81e3188fd13665af430882c17c64f6033a53b54	2026-04-17T08:06:31-04:00	Cyrus Omar	c56a60689cfd7ffd481789b86f8d23128a6e79f2 9a8abd6344cad0edd253efecf4f13bb8ddafc41c	Fix fold projector breaking type definitions (#2215)
+9a8abd6344cad0edd253efecf4f13bb8ddafc41c	2026-04-17T12:19:29+01:00	disconcision	8c166b9b55f5ed51443c8973e0c553fb3da017ee	Include leading + in sum type term boundaries
+8c166b9b55f5ed51443c8973e0c553fb3da017ee	2026-04-17T10:49:38+01:00	disconcision	c56a60689cfd7ffd481789b86f8d23128a6e79f2	Fix fold projector breaking type definitions

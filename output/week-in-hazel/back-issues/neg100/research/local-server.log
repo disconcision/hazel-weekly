@@ -1,0 +1,133 @@
+127.0.0.1 - - [11/Sep/2026 13:45:09] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:45:09] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:45:09] "GET /ninja_module.js HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:45:09] code 404, message File not found
+127.0.0.1 - - [11/Sep/2026 13:45:09] "GET /hazel.js HTTP/1.1" 404 -
+127.0.0.1 - - [11/Sep/2026 13:45:09] "GET /img/loading.gif HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:45:09] "GET /style/fonts.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:45:09] "GET /style/variables.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:45:09] "GET /style/animations.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:45:09] "GET /img/hazelnut.svg HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:45:09] "GET /style/loading.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:45:09] "GET /style/editor.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:45:09] "GET /style/projectors.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:45:09] "GET /style/nut-menu.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:45:09] "GET /style/cursor-inspector.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:45:09] "GET /style/type-display.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:45:09] "GET /style/projectors-panel.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:45:09] "GET /style/explainthis.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:45:09] "GET /style/exercise-mode.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:45:09] "GET /style/dynamics.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:45:09] "GET /style/cell.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:45:09] "GET /style/toggle.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:45:09] "GET /style/fonts/HelveticaNeue-Regular.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:50:05] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:50:05] "GET /ninja_module.js HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:50:05] "GET /img/loading.gif HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:50:05] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:50:05] "GET /hazel.js HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:50:05] "GET /img/hazelnut.svg HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:50:05] "GET /style/fonts.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:50:05] "GET /style/variables.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:50:05] "GET /style/animations.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:50:05] "GET /style/editor.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:50:05] "GET /style/loading.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:50:05] "GET /style/projectors.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:50:05] "GET /style/nut-menu.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:50:05] "GET /style/cursor-inspector.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:50:05] "GET /style/type-display.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:50:05] "GET /style/projectors-panel.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:50:05] "GET /style/explainthis.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:50:05] "GET /style/exercise-mode.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:50:05] "GET /style/cell.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:50:05] "GET /style/dynamics.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:50:05] "GET /style/toggle.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:50:05] "GET /style/fonts/HelveticaNeue-Regular.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:50:06] "GET /worker.js HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:50:06] "GET /style/fonts/SourceCodePro-Bold.otf.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:50:06] "GET /style/fonts/HelveticaNeue-Bold.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:50:06] "GET /img/noun-fold-1593402.svg HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:50:06] "GET /style/fonts/SourceCodePro-Regular.otf.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:50:06] "GET /worker.js HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:56:40] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:56:40] "GET /ninja_module.js HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:56:40] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:56:40] "GET /hazel.js HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:56:40] "GET /img/loading.gif HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:56:40] "GET /img/hazelnut.svg HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:56:40] "GET /style/fonts.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:56:40] "GET /style/animations.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:56:40] "GET /style/variables.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:56:40] "GET /style/editor.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:56:40] "GET /style/nut-menu.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:56:40] "GET /style/projectors.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:56:40] "GET /style/loading.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:56:40] "GET /style/cursor-inspector.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:56:40] "GET /style/type-display.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:56:40] "GET /style/projectors-panel.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:56:40] "GET /style/explainthis.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:56:40] "GET /style/exercise-mode.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:56:40] "GET /style/cell.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:56:40] "GET /style/dynamics.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:56:40] "GET /style/toggle.css HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:56:40] "GET /style/fonts/HelveticaNeue-Regular.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:56:41] "GET /worker.js HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:56:42] "GET /style/fonts/SourceCodePro-Regular.otf.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:56:42] "GET /style/fonts/SourceCodePro-Bold.otf.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:56:42] "GET /style/fonts/HelveticaNeue-Bold.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [11/Sep/2026 13:56:42] "GET /img/noun-fold-1593402.svg HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 50156)
+127.0.0.1 - - [11/Sep/2026 13:56:42] "GET /worker.js HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 683, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 660, in __init__
+    super().__init__(*args, **kwargs)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 747, in __init__
+    self.handle()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 434, in handle
+    self.handle_one_request()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 422, in handle_one_request
+    method()
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 667, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/http/server.py", line 867, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/shutil.py", line 208, in copyfileobj
+    fdst_write(buf)
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/socketserver.py", line 826, in write
+    self._sock.sendall(b)
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+127.0.0.1 - - [11/Sep/2026 14:01:17] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 14:01:17] "GET /style.css HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 14:01:17] "GET /ninja_module.js HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 14:01:17] "GET /img/hazelnut.svg HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 14:01:17] "GET /hazel.js HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 14:01:17] "GET /style/variables.css HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 14:01:17] "GET /style/fonts.css HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 14:01:17] "GET /img/loading.gif HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 14:01:17] "GET /style/animations.css HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 14:01:17] "GET /style/loading.css HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 14:01:17] "GET /style/editor.css HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 14:01:17] "GET /style/projectors.css HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 14:01:17] "GET /style/nut-menu.css HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 14:01:17] "GET /style/cursor-inspector.css HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 14:01:17] "GET /style/projectors-panel.css HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 14:01:17] "GET /style/explainthis.css HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 14:01:17] "GET /style/exercise-mode.css HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 14:01:17] "GET /style/type-display.css HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 14:01:17] "GET /style/cell.css HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 14:01:17] "GET /style/dynamics.css HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 14:01:17] "GET /style/toggle.css HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 14:01:17] "GET /style/fonts/HelveticaNeue-Regular.woff2 HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 14:01:17] "GET /worker.js HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 14:01:18] "GET /img/noun-fold-1593402.svg HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 14:01:18] "GET /style/fonts/SourceCodePro-Regular.otf.woff2 HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 14:01:18] "GET /style/fonts/SourceCodePro-Bold.otf.woff2 HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 14:01:18] "GET /style/fonts/HelveticaNeue-Bold.woff2 HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 14:02:56] "GET /hazel.js HTTP/1.1" 304 -
+127.0.0.1 - - [11/Sep/2026 14:02:57] "GET /worker.js HTTP/1.1" 304 -

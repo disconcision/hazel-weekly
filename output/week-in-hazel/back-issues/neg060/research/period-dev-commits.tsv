@@ -1,0 +1,41 @@
+2b4a189132e4a0d653035d25ccba80643d53cb1a	2025-07-09T18:50:04-04:00	andrew blinn	761ad5c546a59f90855392f35ff49bfd784aeba0 1bca573a32d6e11a0473a955f1fb40968df9c4b5	Agentic Assistant (Task Completion) (#1575)
+1bca573a32d6e11a0473a955f1fb40968df9c4b5	2025-07-09T18:20:05-04:00	disconcision	7a0697650b86122692aa977db02896a5343b4b2c 761ad5c546a59f90855392f35ff49bfd784aeba0	merge fix
+7a0697650b86122692aa977db02896a5343b4b2c	2025-07-09T18:07:50-04:00	disconcision	cdca2f1fcd705aa60446f6d8c1d5ab1a9fe95a9d 47da43c120712c7b9fe3ea4f535c4811bfaf0251	Merge branch 'task-completion-assistant' of github.com:hazelgrove/hazel into task-completion-assistant
+761ad5c546a59f90855392f35ff49bfd784aeba0	2025-07-09T18:06:32-04:00	andrew blinn	8ed0e4f869faded53317de2461c19ba23e3e6961 1400b7d2d655113ac41e4c1e92b86dd1493413c0	Indentation (#1761)
+8ed0e4f869faded53317de2461c19ba23e3e6961	2025-07-09T18:05:46-04:00	andrew blinn	e02891c5f85e6c5abd6ab656f88b64d9cf2980b7 8872f31e45dbca607c1cfd16f0f77ec18c9685d4	Syntax fixes (#1754)
+8872f31e45dbca607c1cfd16f0f77ec18c9685d4	2025-07-09T14:30:01-04:00	disconcision	e97b01117805a787b69ba8381e289e67b00f60b1	#1767. this seems symptomatic of a more general error in how remolding and regrouting are ordered but i'm just applying a localmost fix until we see more issues
+47da43c120712c7b9fe3ea4f535c4811bfaf0251	2025-07-08T19:18:04-04:00	Cyrus Desai	bb54cbd9bc3ab64f9781e14439e473c183c40e5d 9e730f7009020f83d5a1673295a444e4f39fd2ba	Merge branch 'task-completion-assistant' of https://github.com/hazelgrove/hazel into task-completion-assistant
+bb54cbd9bc3ab64f9781e14439e473c183c40e5d	2025-07-08T19:17:35-04:00	Cyrus Desai	03ad9522f3fa4e0bcd7da42da53fba5bc0f7e775	disabled compose button with 'Coming soon!' message on hover
+9e730f7009020f83d5a1673295a444e4f39fd2ba	2025-07-08T16:44:54-04:00	andrew blinn	bc4161d3048064c0c1e4c4ae4c19ed276b8cb490 e02891c5f85e6c5abd6ab656f88b64d9cf2980b7	Merge branch 'dev' into task-completion-assistant
+e02891c5f85e6c5abd6ab656f88b64d9cf2980b7	2025-07-08T12:07:44-04:00	Cyrus Omar	bfae450d965db247ae798e822a973f4f01b72481 b8096d458c45bbd5e6b7af17632f0ead3127ca3a	Dependabot at home (#1721)
+1400b7d2d655113ac41e4c1e92b86dd1493413c0	2025-07-07T17:36:08-04:00	disconcision	90946dcc4a2489e93707baa1aa26255fe425eed4	hd exn fix
+90946dcc4a2489e93707baa1aa26255fe425eed4	2025-07-07T15:21:16-04:00	disconcision	068578bce4b339864094b2bfa9b757af280c6119 e97b01117805a787b69ba8381e289e67b00f60b1	Merge branch 'syntax-fixes' of github.com:hazelgrove/hazel into indentation-2
+e97b01117805a787b69ba8381e289e67b00f60b1	2025-07-07T14:42:03-04:00	disconcision	d8926aa5d71d9e57dcefd6d61cd210ae14934371	update tydi
+068578bce4b339864094b2bfa9b757af280c6119	2025-07-06T20:53:10-04:00	disconcision	e2b10eb604b5fb49fafd04eae24a10e99e793f53	indentation cleanup
+e2b10eb604b5fb49fafd04eae24a10e99e793f53	2025-07-06T19:47:03-04:00	disconcision	82d785cde02ffc76fe775b89316e5600e0b87759 d8926aa5d71d9e57dcefd6d61cd210ae14934371	Merge branch 'syntax-fixes' of github.com:hazelgrove/hazel into indentation-2
+82d785cde02ffc76fe775b89316e5600e0b87759	2025-07-06T19:34:55-04:00	disconcision	7c0e3567172127e0b826e491fa9854bbb69fb20f	indentation cleanup
+7c0e3567172127e0b826e491fa9854bbb69fb20f	2025-07-06T19:32:12-04:00	disconcision	7f315c37e617680d8e4948d564bf5b548dc5d887	all indentation tests passing
+7f315c37e617680d8e4948d564bf5b548dc5d887	2025-07-06T16:04:56-04:00	disconcision	fc18a4451c289fa65432b2154fd9808b572f6614	indentation top level fix
+fc18a4451c289fa65432b2154fd9808b572f6614	2025-07-06T15:22:19-04:00	disconcision	58ec421b7921171b431d7590672cd7efe319b316	better tuple indentation
+58ec421b7921171b431d7590672cd7efe319b316	2025-07-06T13:38:03-04:00	disconcision	af8ff2cdb86e53e4106a3f75e73e6b6e231f3dc2	more indentation tests
+af8ff2cdb86e53e4106a3f75e73e6b6e231f3dc2	2025-07-06T12:54:27-04:00	disconcision	811071cc4155d319f36b2ed5eaba77b526a870af	indentation tests
+811071cc4155d319f36b2ed5eaba77b526a870af	2025-07-06T03:44:33-04:00	disconcision	459f54a223582c43339afde399122a9ea26b6b2d	indentation pareto improvement candidate
+459f54a223582c43339afde399122a9ea26b6b2d	2025-07-06T00:27:06-04:00	disconcision	bfae450d965db247ae798e822a973f4f01b72481	take 2 on better-indent
+d8926aa5d71d9e57dcefd6d61cd210ae14934371	2025-07-04T15:57:18-04:00	disconcision	5a94e451d3c069c59e12c290ff3010692eb32a3a	fix #1759
+5a94e451d3c069c59e12c290ff3010692eb32a3a	2025-07-04T14:42:48-04:00	disconcision	77a2c30569bdff5066d2cd20edca6ce7d7adc684	case rules tiles now connect to case rules at the skel level even before end is dropped
+77a2c30569bdff5066d2cd20edca6ce7d7adc684	2025-07-04T13:59:40-04:00	disconcision	3b8fbb04d2d9bd3490cd314b3bb58fbef52ce1f5	fix #1652
+3b8fbb04d2d9bd3490cd314b3bb58fbef52ce1f5	2025-07-04T08:55:57-04:00	disconcision	52ac854b1295be745a2e4889aa07cddb21cdddde	fix #1259
+52ac854b1295be745a2e4889aa07cddb21cdddde	2025-07-04T08:21:48-04:00	disconcision	fd5dd0773b454d01bc2cc3c89bf9d6471b0d79ff	fix #1259
+fd5dd0773b454d01bc2cc3c89bf9d6471b0d79ff	2025-07-04T08:00:38-04:00	disconcision	bc9ad65fd9d51ac1f8dd8bb688f6b8eb3a217439	fix #1253
+bc9ad65fd9d51ac1f8dd8bb688f6b8eb3a217439	2025-07-04T07:36:21-04:00	disconcision	816fea11b6694570bd1ceba7d23125a8a6c0dc19	fix #1362. regression tests for string regexp builtins
+816fea11b6694570bd1ceba7d23125a8a6c0dc19	2025-07-04T06:08:21-04:00	disconcision	56ee4cd4a2b141fd739aa871f5d0a1e9d0c06ff7	alphabetize builtins
+56ee4cd4a2b141fd739aa871f5d0a1e9d0c06ff7	2025-07-04T05:55:05-04:00	disconcision	7e93f9c5c4c990e13a95557a36db2ae05bb78283	fix #1470
+7e93f9c5c4c990e13a95557a36db2ae05bb78283	2025-07-04T05:25:04-04:00	disconcision	ab0b6940588878ebfd64d8d7f7e5d9270cabb7ac	cleanup
+ab0b6940588878ebfd64d8d7f7e5d9270cabb7ac	2025-07-04T05:19:00-04:00	disconcision	2ca23d5298612d5c8dc77757c2472691b1ef144b	improvement to previous fix, less special-casey elaboration
+2ca23d5298612d5c8dc77757c2472691b1ef144b	2025-07-04T04:20:57-04:00	disconcision	94955c1587d2a3e68e36954d9f3b1d6ab2e82f15	fix #1354. various sort decoration tweaks to improve case expression entry experience. cleanup old nul sort styles
+94955c1587d2a3e68e36954d9f3b1d6ab2e82f15	2025-07-04T01:16:11-04:00	disconcision	0a15c06eda2c0813a83c2838f81bc6342bb26fa1	fix #1564
+0a15c06eda2c0813a83c2838f81bc6342bb26fa1	2025-07-04T00:42:58-04:00	disconcision	e0046bd95b57ba9712f946636ec499ded9e5aac2	fix #1727
+e0046bd95b57ba9712f946636ec499ded9e5aac2	2025-07-04T00:16:59-04:00	disconcision	9e243be281bc8d0b2eb43c4077b55a514ca899cd	cleanup
+9e243be281bc8d0b2eb43c4077b55a514ca899cd	2025-07-04T00:10:06-04:00	disconcision	ebecee8eb40d3489eb6066d3a1ea84f504ace043	cleanup
+ebecee8eb40d3489eb6066d3a1ea84f504ace043	2025-07-03T22:53:02-04:00	disconcision	f047d137fccc1a218e934e8e557bc6aa32aa084f	fix #1724 (crash when inserting between two trailing delims when the leading delim is in backpack)
+f047d137fccc1a218e934e8e557bc6aa32aa084f	2025-07-03T20:41:52-04:00	disconcision	bfae450d965db247ae798e822a973f4f01b72481	fixed #1115

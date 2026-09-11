@@ -1,0 +1,469 @@
+[
+  {
+    "id": "001",
+    "title": "The cabinet is open.",
+    "start_utc": "2026-09-04T00:00:00Z",
+    "end_exclusive_utc": "2026-09-11T00:00:00Z",
+    "artifact": "../pdf/week-in-hazel-001.pdf",
+    "style_studies": "../pdf/week-in-hazel-001-style-lab.pdf",
+    "status": "ready",
+    "contributors": [
+      "Andrew Blinn",
+      "Alexander Bandukwala",
+      "Matthew Hammer",
+      "Cyrus Omar"
+    ],
+    "topics": [
+      {
+        "key": "probes-iv",
+        "role": "lead",
+        "page": 2,
+        "new_angle": "Merged into dev; drawers and rich card samples",
+        "return_trigger": "Return for resolved regressions or a materially new interaction",
+        "github_numbers": [
+          2363,
+          2519,
+          2520,
+          2521,
+          2524
+        ]
+      },
+      {
+        "key": "flaky-eval-properties",
+        "role": "follow-up",
+        "page": 3,
+        "new_angle": "Known disagreements pinned; human cost of noisy CI",
+        "return_trigger": "Return when underlying bugs or test strategy change",
+        "github_numbers": [
+          2482,
+          2516
+        ]
+      },
+      {
+        "key": "modules-ii",
+        "role": "feature",
+        "page": 4,
+        "new_angle": "Nine-part draft stack; signature identity through stdlib sketch",
+        "return_trigger": "New design decision, status change, or concrete user demo",
+        "github_numbers": [
+          2493,
+          2494,
+          2495,
+          2498,
+          2500,
+          2501,
+          2503,
+          2508,
+          2510
+        ]
+      },
+      {
+        "key": "agent-workspace",
+        "role": "feature",
+        "page": 5,
+        "new_angle": "Focused modular editing and bounded probe settling",
+        "return_trigger": "Changed workflow or an end-to-end agent run",
+        "github_numbers": [
+          2469,
+          2505,
+          2427,
+          2480
+        ]
+      },
+      {
+        "key": "constellation",
+        "role": "feature",
+        "page": 6,
+        "new_angle": "Locally built Scorekeeper graph; canvas mode, master-editor samples, hull timing and camera hold",
+        "return_trigger": "Live agent run, changed interaction or resolved rough edge; do not repeat the same static Scorekeeper map",
+        "github_numbers": [
+          2505
+        ]
+      },
+      {
+        "key": "fumola-livelits",
+        "role": "feature",
+        "page": 7,
+        "new_angle": "Foreign named state; current forms; two feature-branch loader merges",
+        "return_trigger": "Runtime-contract evolution, reuse demo, lifetime/copying decision",
+        "github_numbers": [
+          2492,
+          2504,
+          2509
+        ]
+      },
+      {
+        "key": "tutorial-holes",
+        "role": "small detail",
+        "page": 8,
+        "new_angle": "Text lessons and a disappearing single-element hole affect teaching",
+        "return_trigger": "Hole fix or new lesson interaction; do not repeat the same anecdote",
+        "github_numbers": [
+          2485,
+          2513,
+          2518
+        ]
+      },
+      {
+        "key": "agent-credit-metrics",
+        "role": "recurring",
+        "page": 9,
+        "new_angle": "First baseline: declared trailers separate from signatures",
+        "return_trigger": "Comparable next-window change with limitations intact",
+        "github_numbers": []
+      },
+      {
+        "key": "wasm-evaluator",
+        "role": "bench note",
+        "page": 10,
+        "new_angle": "Latest corrected scope: about 3.5x fixed-precision evaluator workload",
+        "return_trigger": "App-shaped benchmark or arbitrary-precision progress",
+        "github_numbers": [
+          2490
+        ]
+      },
+      {
+        "key": "branch-postcards",
+        "role": "brief",
+        "page": 10,
+        "new_angle": "Type abbreviation budget; rich depth clamp",
+        "return_trigger": "Merge or meaningful new behavior",
+        "github_numbers": []
+      },
+      {
+        "key": "blackboard",
+        "role": "late brief",
+        "page": 10,
+        "new_angle": "Kernel/editor-sort MVP; draft",
+        "return_trigger": "Inspect a new proof/checking interaction when available",
+        "github_numbers": [
+          2525
+        ]
+      }
+    ],
+    "images": [
+      "drawer-tree",
+      "probes-cards",
+      "modular-focus",
+      "fumola-scene",
+      "observable-comic",
+      "probes-cards-woodcut",
+      "fumola-scene-woodcut",
+      "modular-focus-woodcut",
+      "constellation-score",
+      "constellation-score-woodcut"
+    ],
+    "next_issue_end_exclusive_utc": "2026-09-18T00:00:00Z",
+    "edition": "pilot",
+    "verified_utc": "2026-09-11T08:22:16.078579+00:00",
+    "revision": 5,
+    "woodcut_study": "../pdf/week-in-hazel-001-woodcut.pdf",
+    "revision_notes": "REVISION-NOTES.md",
+    "production_guide": "PRODUCTION.md",
+    "preferred_screenshot_exemplar": "assets/probes-cards-woodcut.png",
+    "pages": 11,
+    "process_notes": "PROCESS.md",
+    "reporting_credits": {
+      "editor": "Astra (AI editor)",
+      "revision_4_only": [
+        "Ellis (AI reporting agent): probes, CI and tutorials",
+        "Rowan (AI reporting agent): Modules II",
+        "Mica (AI reporting agent): workspace and runtimes"
+      ],
+      "revision_5_editorial_pass": "Astra: audience audit, prose and browser typography; no additional reporting agents assigned"
+    },
+    "extracted_words_clean": 2864,
+    "extracted_words_woodcut": 2869,
+    "audience_guide": "AUDIENCE.md",
+    "number": 1
+  },
+  {
+    "id": "-019",
+    "number": -19,
+    "title": "At the same table.",
+    "start_utc": "2026-04-17T00:00:00+00:00",
+    "end_exclusive_utc": "2026-04-24T00:00:00+00:00",
+    "artifact": "../pdf/week-in-hazel-neg019.pdf",
+    "status": "ready",
+    "edition": "retrospective",
+    "produced_utc": "2026-09-11T21:14:43.382932+00:00",
+    "revision": 1,
+    "historical_dev_head": "4c949a18ade0710687c7ff00231131f3cb20a06c",
+    "pages": 8,
+    "extracted_words": 2403,
+    "topics": [
+      {
+        "key": "neg019-the-big-landing",
+        "role": "lead",
+        "page": 2,
+        "new_angle": "Checking and elaboration share a pass.",
+        "github_numbers": [
+          2213
+        ],
+        "return_trigger": "Return on a substantive later change; consult reporting dates, not retrospective production date."
+      },
+      {
+        "key": "neg019-a-language-landing",
+        "role": "feature",
+        "page": 3,
+        "new_angle": "The function name comes first.",
+        "github_numbers": [
+          1254
+        ],
+        "return_trigger": "Return on a substantive later change; consult reporting dates, not retrospective production date."
+      },
+      {
+        "key": "neg019-formatting",
+        "role": "feature",
+        "page": 4,
+        "new_angle": "Give long results some line breaks.",
+        "github_numbers": [
+          2180
+        ],
+        "return_trigger": "Return on a substantive later change; consult reporting dates, not retrospective production date."
+      },
+      {
+        "key": "neg019-the-editor-boundary",
+        "role": "feature",
+        "page": 5,
+        "new_angle": "Send the key to the right editor.",
+        "github_numbers": [
+          2198,
+          2171,
+          2169,
+          2191,
+          2219,
+          2215,
+          2216
+        ],
+        "return_trigger": "Return on a substantive later change; consult reporting dates, not retrospective production date."
+      },
+      {
+        "key": "neg019-still-in-development",
+        "role": "feature",
+        "page": 6,
+        "new_angle": "The next boundaries are already visible.",
+        "github_numbers": [
+          2222,
+          2225,
+          2221,
+          2217,
+          2218,
+          2223,
+          2224
+        ],
+        "return_trigger": "Return on a substantive later change; consult reporting dates, not retrospective production date."
+      },
+      {
+        "key": "neg019-the-instrument-panel",
+        "role": "feature",
+        "page": 7,
+        "new_angle": "Fourteen dev merges. Several kinds of work.",
+        "github_numbers": [
+          2213,
+          2180,
+          1254,
+          2198,
+          2171
+        ],
+        "return_trigger": "Return on a substantive later change; consult reporting dates, not retrospective production date."
+      }
+    ],
+    "images": [
+      "neg019-cover",
+      "neg019-screenshot",
+      "neg019-comic"
+    ],
+    "reporting_credits": {
+      "editor": "Astra (AI editor and reporter)",
+      "illustrations": "ImageGen"
+    },
+    "production_guide": "back-issues/README.md",
+    "source_directory": "back-issues/neg019/research",
+    "next_issue_end_exclusive_utc": null
+  },
+  {
+    "id": "-060",
+    "number": -60,
+    "title": "Another seat at the desk.",
+    "start_utc": "2025-07-04T00:00:00+00:00",
+    "end_exclusive_utc": "2025-07-11T00:00:00+00:00",
+    "artifact": "../pdf/week-in-hazel-neg060.pdf",
+    "status": "ready",
+    "edition": "retrospective",
+    "produced_utc": "2026-09-11T21:14:43.382932+00:00",
+    "revision": 1,
+    "historical_dev_head": "2b4a189132e4a0d653035d25ccba80643d53cb1a",
+    "pages": 7,
+    "extracted_words": 2135,
+    "topics": [
+      {
+        "key": "neg060-the-big-landing",
+        "role": "lead",
+        "page": 2,
+        "new_angle": "An assistant lands. Compose waits.",
+        "github_numbers": [
+          1575
+        ],
+        "return_trigger": "Return on a substantive later change; consult reporting dates, not retrospective production date."
+      },
+      {
+        "key": "neg060-inside-the-interaction",
+        "role": "feature",
+        "page": 3,
+        "new_angle": "The second request is not always a repair.",
+        "github_numbers": [
+          1575,
+          1771
+        ],
+        "return_trigger": "Return on a substantive later change; consult reporting dates, not retrospective production date."
+      },
+      {
+        "key": "neg060-editing-unfinished-code",
+        "role": "feature",
+        "page": 4,
+        "new_angle": "Indent the program you have so far.",
+        "github_numbers": [
+          1761,
+          1754
+        ],
+        "return_trigger": "Return on a substantive later change; consult reporting dates, not retrospective production date."
+      },
+      {
+        "key": "neg060-the-first-reports",
+        "role": "feature",
+        "page": 5,
+        "new_angle": "A result, a context, a place to scroll.",
+        "github_numbers": [
+          1721,
+          1765,
+          1769,
+          1760,
+          1771,
+          1772,
+          1776,
+          1777,
+          1770,
+          1762,
+          1763,
+          1779
+        ],
+        "return_trigger": "Return on a substantive later change; consult reporting dates, not retrospective production date."
+      },
+      {
+        "key": "neg060-the-instrument-panel",
+        "role": "feature",
+        "page": 6,
+        "new_angle": "A long branch meets a busy week.",
+        "github_numbers": [
+          1575,
+          1754,
+          1761,
+          1721
+        ],
+        "return_trigger": "Return on a substantive later change; consult reporting dates, not retrospective production date."
+      }
+    ],
+    "images": [
+      "neg060-cover",
+      "neg060-screenshot",
+      "neg060-comic"
+    ],
+    "reporting_credits": {
+      "editor": "Astra (AI editor and reporter)",
+      "illustrations": "ImageGen"
+    },
+    "production_guide": "back-issues/README.md",
+    "source_directory": "back-issues/neg060/research",
+    "next_issue_end_exclusive_utc": null
+  },
+  {
+    "id": "-100",
+    "number": -100,
+    "title": "New roots.",
+    "start_utc": "2024-09-27T00:00:00+00:00",
+    "end_exclusive_utc": "2024-10-04T00:00:00+00:00",
+    "artifact": "../pdf/week-in-hazel-neg100.pdf",
+    "status": "ready",
+    "edition": "retrospective",
+    "produced_utc": "2026-09-11T21:14:43.382932+00:00",
+    "revision": 1,
+    "historical_dev_head": "35629e93f29e509b71de86946f2056834d265a09",
+    "pages": 7,
+    "extracted_words": 2113,
+    "topics": [
+      {
+        "key": "neg100-the-big-landing",
+        "role": "lead",
+        "page": 2,
+        "new_angle": "Same editor. New machinery.",
+        "github_numbers": [
+          1400
+        ],
+        "return_trigger": "Return on a substantive later change; consult reporting dates, not retrospective production date."
+      },
+      {
+        "key": "neg100-under-the-surface",
+        "role": "feature",
+        "page": 3,
+        "new_angle": "What happens after the first display?",
+        "github_numbers": [
+          1400
+        ],
+        "return_trigger": "Return on a substantive later change; consult reporting dates, not retrospective production date."
+      },
+      {
+        "key": "neg100-the-branch-garden",
+        "role": "feature",
+        "page": 4,
+        "new_angle": "Names change the alignment.",
+        "github_numbers": [
+          1399,
+          1401
+        ],
+        "return_trigger": "Return on a substantive later change; consult reporting dates, not retrospective production date."
+      },
+      {
+        "key": "neg100-at-the-workbench",
+        "role": "feature",
+        "page": 5,
+        "new_angle": "Warnings need somewhere to land.",
+        "github_numbers": [
+          1378,
+          1405,
+          1402,
+          1401,
+          1404,
+          1403
+        ],
+        "return_trigger": "Return on a substantive later change; consult reporting dates, not retrospective production date."
+      },
+      {
+        "key": "neg100-the-instrument-panel",
+        "role": "feature",
+        "page": 6,
+        "new_angle": "Four landings on dev. One on a branch.",
+        "github_numbers": [
+          1400,
+          1399,
+          1401,
+          1378,
+          1404
+        ],
+        "return_trigger": "Return on a substantive later change; consult reporting dates, not retrospective production date."
+      }
+    ],
+    "images": [
+      "neg100-cover",
+      "neg100-screenshot",
+      "neg100-comic"
+    ],
+    "reporting_credits": {
+      "editor": "Astra (AI editor and reporter)",
+      "illustrations": "ImageGen"
+    },
+    "production_guide": "back-issues/README.md",
+    "source_directory": "back-issues/neg100/research",
+    "next_issue_end_exclusive_utc": null
+  }
+]

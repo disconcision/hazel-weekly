@@ -1,0 +1,31 @@
+
+  bundled.js  859.2kb
+
+⚡ Done in 94ms
+warning: /Users/andrewblinn/.opam/editor-output/lib/bin_prot/runtime.js:9: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/bin_prot/runtime.js:31: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/core/runtime.js:10: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/incr_dom/javascript_profiling/runtime.js:1: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/incr_dom/javascript_profiling/runtime.js:15: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/incr_dom/javascript_profiling/runtime.js:26: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/incr_dom/javascript_profiling/runtime.js:40: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/incr_dom/javascript_profiling/runtime.js:51: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/zarith_stubs_js/biginteger.js:3: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/bin_prot/runtime.js:9: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/bin_prot/runtime.js:31: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/core/runtime.js:10: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/incr_dom/javascript_profiling/runtime.js:1: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/incr_dom/javascript_profiling/runtime.js:15: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/incr_dom/javascript_profiling/runtime.js:26: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/incr_dom/javascript_profiling/runtime.js:40: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/incr_dom/javascript_profiling/runtime.js:51: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/zarith_stubs_js/biginteger.js:3: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/bin_prot/runtime.js:9: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/bin_prot/runtime.js:31: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/core/runtime.js:10: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/incr_dom/javascript_profiling/runtime.js:1: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/incr_dom/javascript_profiling/runtime.js:15: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/incr_dom/javascript_profiling/runtime.js:26: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/incr_dom/javascript_profiling/runtime.js:40: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/incr_dom/javascript_profiling/runtime.js:51: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/zarith_stubs_js/biginteger.js:3: 'joo_global_object' is being deprecated, please use `globalThis` instead

@@ -1,0 +1,114 @@
+
+  bundled.js  859.5kb
+
+⚡ Done in 42ms
+warning: /Users/andrewblinn/.opam/editor-output/lib/bin_prot/runtime.js:9: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/bin_prot/runtime.js:31: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/core/runtime.js:10: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/incr_dom/javascript_profiling/runtime.js:1: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/incr_dom/javascript_profiling/runtime.js:15: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/incr_dom/javascript_profiling/runtime.js:26: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/incr_dom/javascript_profiling/runtime.js:40: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/incr_dom/javascript_profiling/runtime.js:51: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/zarith_stubs_js/biginteger.js:3: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/bin_prot/runtime.js:9: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/bin_prot/runtime.js:31: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/core/runtime.js:10: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/incr_dom/javascript_profiling/runtime.js:1: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/incr_dom/javascript_profiling/runtime.js:15: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/incr_dom/javascript_profiling/runtime.js:26: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/incr_dom/javascript_profiling/runtime.js:40: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/incr_dom/javascript_profiling/runtime.js:51: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/zarith_stubs_js/biginteger.js:3: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/bin_prot/runtime.js:9: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/bin_prot/runtime.js:31: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/core/runtime.js:10: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/incr_dom/javascript_profiling/runtime.js:1: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/incr_dom/javascript_profiling/runtime.js:15: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/incr_dom/javascript_profiling/runtime.js:26: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/incr_dom/javascript_profiling/runtime.js:40: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/incr_dom/javascript_profiling/runtime.js:51: 'joo_global_object' is being deprecated, please use `globalThis` instead
+warning: /Users/andrewblinn/.opam/editor-output/lib/zarith_stubs_js/biginteger.js:3: 'joo_global_object' is being deprecated, please use `globalThis` instead
+File "src/menhirParser/Parser.mly", line 142, characters 0-9:
+Warning: the precedence level assigned to MOD_ITEM_EXP is never useful.
+File "src/menhirParser/Parser.mly", line 519, characters 26-38:
+Warning: this %prec declaration is never useful.
+Warning: 56 states have shift/reduce conflicts.
+Warning: 2 states have reduce/reduce conflicts.
+Warning: 58 shift/reduce conflicts were arbitrarily resolved.
+Warning: 53 reduce/reduce conflicts were arbitrarily resolved.
+File "<standard.mly>", line 252, characters 2-62:
+Warning: production separated_nonempty_list(PLUS,sumTerm) -> CONSTRUCTOR_IDENT OPEN_PAREN tupTypeEntry COMMA loption(separated_nonempty_list(COMMA,tupTypeEntry)) CLOSE_PAREN PLUS separated_nonempty_list(PLUS,sumTerm) is never reduced.
+File "<standard.mly>", line 252, characters 2-62:
+Warning: production separated_nonempty_list(PLUS,sumTerm) -> CONSTRUCTOR_IDENT OPEN_PAREN typ CLOSE_PAREN PLUS separated_nonempty_list(PLUS,sumTerm) is never reduced.
+File "src/menhirParser/Parser.mly", line 282, characters 6-71:
+Warning: production typ -> CONSTRUCTOR_IDENT PLUS separated_nonempty_list(PLUS,sumTerm) is never reduced.
+Warning: in total, 3 productions are never reduced.
+File "src/haz3lcore/projectors/implementations/ProbePill.re", line 1, characters 0-9:
+1 | open Util;
+    ^^^^^^^^^
+Warning 33 [unused-open]: unused open Util.
+File "src/haz3lcore/derived/Measured.re", line 587, characters 4-21:
+587 | let find_shards_by_id = (id: Id.t, m: t): option(list((int, measurement))) =>
+          ^^^^^^^^^^^^^^^^^
+Warning 32 [unused-value-declaration]: unused value find_shards_by_id.
+File "src/haz3lcore/projectors/implementations/ProbePill.re", line 1, characters 0-9:
+1 | open Util;
+    ^^^^^^^^^
+Warning 33 [unused-open]: unused open Util.
+File "src/haz3lcore/derived/Measured.re", line 587, characters 4-21:
+587 | let find_shards_by_id = (id: Id.t, m: t): option(list((int, measurement))) =>
+          ^^^^^^^^^^^^^^^^^
+Warning 32 [unused-value-declaration]: unused value find_shards_by_id.
+File "src/web/app/canvas/CanvasRipple.re", line 925, characters 10-16:
+925 |       let two_pi = 2. *. Float.pi;
+                ^^^^^^
+Warning 26 [unused-var]: unused variable two_pi.
+
+File "src/web/app/canvas/CanvasRipple.re", line 952, characters 10-21:
+952 |       let to_screen_x = (m: float): float => m *. z +. pan_slack -. sl
+                ^^^^^^^^^^^
+Warning 26 [unused-var]: unused variable to_screen_x.
+
+File "src/web/app/canvas/CanvasRipple.re", line 953, characters 10-21:
+953 |       and to_screen_y = (m: float): float => m *. z +. pan_slack -. st;
+                ^^^^^^^^^^^
+Warning 26 [unused-var]: unused variable to_screen_y.
+File "src/web/app/canvas/CanvasLayout.re", line 224, characters 6-15:
+224 |   let find_grid = (k: string): option(CanvasGraph.tynode) =>
+            ^^^^^^^^^
+Warning 26 [unused-var]: unused variable find_grid.
+File "src/web/app/canvas/CanvasRipple.re", line 925, characters 10-16:
+925 |       let two_pi = 2. *. Float.pi;
+                ^^^^^^
+Warning 26 [unused-var]: unused variable two_pi.
+
+File "src/web/app/canvas/CanvasRipple.re", line 952, characters 10-21:
+952 |       let to_screen_x = (m: float): float => m *. z +. pan_slack -. sl
+                ^^^^^^^^^^^
+Warning 26 [unused-var]: unused variable to_screen_x.
+
+File "src/web/app/canvas/CanvasRipple.re", line 953, characters 10-21:
+953 |       and to_screen_y = (m: float): float => m *. z +. pan_slack -. st;
+                ^^^^^^^^^^^
+Warning 26 [unused-var]: unused variable to_screen_y.
+File "src/web/app/canvas/CanvasLayout.re", line 224, characters 6-15:
+224 |   let find_grid = (k: string): option(CanvasGraph.tynode) =>
+            ^^^^^^^^^
+Warning 26 [unused-var]: unused variable find_grid.
+File "src/web/app/canvas/CanvasBubble.re", line 242, characters 23-25:
+242 |   let edge_len = ((ix, iy)) => Float.abs(ix) > 0.5 ? w : h;
+                             ^^
+Warning 27 [unused-var-strict]: unused variable iy.
+File "src/web/app/canvas/CanvasBubble.re", line 242, characters 23-25:
+242 |   let edge_len = ((ix, iy)) => Float.abs(ix) > 0.5 ? w : h;
+                             ^^
+Warning 27 [unused-var-strict]: unused variable iy.
+File "src/web/app/canvas/CanvasSidebar.re", line 1244, characters 6-20:
+1244 |   let selected_value =
+             ^^^^^^^^^^^^^^
+Warning 26 [unused-var]: unused variable selected_value.
+File "src/web/app/canvas/CanvasSidebar.re", line 1244, characters 6-20:
+1244 |   let selected_value =
+             ^^^^^^^^^^^^^^
+Warning 26 [unused-var]: unused variable selected_value.

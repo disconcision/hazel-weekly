@@ -1,0 +1,142 @@
+{
+  "verified_utc": "2026-09-11T21:14:05.042298+00:00",
+  "pdf_checks": [
+    {
+      "issue": "-100",
+      "file": "week-in-hazel-neg100.pdf",
+      "pages": 7,
+      "words": 2113,
+      "links": 18,
+      "unique_links": 8,
+      "offpage_characters": 0,
+      "exact_screenshot_pixels": true,
+      "no_jpeg_images": true,
+      "images": [
+        {
+          "pixels": [
+            1536,
+            1024
+          ],
+          "filters": "['/ASCII85Decode', '/FlateDecode']"
+        },
+        {
+          "pixels": [
+            2190,
+            810
+          ],
+          "filters": "['/ASCII85Decode', '/FlateDecode']"
+        },
+        {
+          "pixels": [
+            2172,
+            724
+          ],
+          "filters": "['/ASCII85Decode', '/FlateDecode']"
+        }
+      ],
+      "bytes": 13288051,
+      "sha256": "d458c2caafbb5075e5a726701b626c5c254bd6b56ac6e202fe92685232df4e8b"
+    },
+    {
+      "issue": "-060",
+      "file": "week-in-hazel-neg060.pdf",
+      "pages": 7,
+      "words": 2135,
+      "links": 26,
+      "unique_links": 15,
+      "offpage_characters": 0,
+      "exact_screenshot_pixels": true,
+      "no_jpeg_images": true,
+      "images": [
+        {
+          "pixels": [
+            1536,
+            1024
+          ],
+          "filters": "['/ASCII85Decode', '/FlateDecode']"
+        },
+        {
+          "pixels": [
+            3345,
+            1530
+          ],
+          "filters": "['/ASCII85Decode', '/FlateDecode']"
+        },
+        {
+          "pixels": [
+            2172,
+            724
+          ],
+          "filters": "['/ASCII85Decode', '/FlateDecode']"
+        }
+      ],
+      "bytes": 12634133,
+      "sha256": "1eadcf37f3bc3ce8ead87001e2209a5664049805c603406cc51a7219587ef024"
+    },
+    {
+      "issue": "-019",
+      "file": "week-in-hazel-neg019.pdf",
+      "pages": 8,
+      "words": 2403,
+      "links": 26,
+      "unique_links": 17,
+      "offpage_characters": 0,
+      "exact_screenshot_pixels": true,
+      "no_jpeg_images": true,
+      "images": [
+        {
+          "pixels": [
+            1536,
+            1024
+          ],
+          "filters": "['/ASCII85Decode', '/FlateDecode']"
+        },
+        {
+          "pixels": [
+            2100,
+            930
+          ],
+          "filters": "['/ASCII85Decode', '/FlateDecode']"
+        },
+        {
+          "pixels": [
+            2172,
+            724
+          ],
+          "filters": "['/ASCII85Decode', '/FlateDecode']"
+        }
+      ],
+      "bytes": 13576998,
+      "sha256": "ca41d7b05c32238ef97cf152229c02c671187b0423c2712c0b4662bd5c1a024f"
+    }
+  ],
+  "browser_typography": {
+    "engine": "153.0.8010.36",
+    "files": [
+      {
+        "name": "week-in-hazel-neg100.pdf",
+        "comparison": {
+          "total": 35,
+          "changed": 7
+        },
+        "errors": []
+      },
+      {
+        "name": "week-in-hazel-neg060.pdf",
+        "comparison": {
+          "total": 38,
+          "changed": 9
+        },
+        "errors": []
+      },
+      {
+        "name": "week-in-hazel-neg019.pdf",
+        "comparison": {
+          "total": 44,
+          "changed": 7
+        },
+        "errors": []
+      }
+    ]
+  }
+}

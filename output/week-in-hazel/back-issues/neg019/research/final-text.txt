@@ -1,0 +1,245 @@
+A SMALL MAGAZINE ABOUT A VERY LIVE LANGUAGE
+Week in
+ISSUE -019
+HAZEL
+17–23 APR 2026 RETROSPECTIVE
+At the same table.
+Elastatics unites checking and elaboration. Compact function
+definitions land. Focus and prey printing get new machinery of
+their own.
+THE WEEK AS IT STOOD / MADE SEPTEMBER 2026
+WEEK IN HAZEL THE BIG LANDING
+MERGED INTO DEV / ELASTATICS #2213
+Checking and elaboration
+share a pass.
+Inputs Outputs
+Shared implementation
+Source expression + Elaborated expression + its
+Check the form while building
+expected type. static information.
+its elaboration.
+EXPECTED TYPE CAN AFFECT THE ELABORATED RESULT
+M a Keenan’s Elastatics reaches dev on e resulting name, elab_syn_ty, makes the
+April 22. It combines statics and elabora‐ relationship explicit. It is the synthesized type of
+tion and removes the intervening Self the elaborated expression, not a promise that the
+representation. is is a large internal landing— computation ignored its expected type. A field
+81 files in the PR—but its most interesting rename here records a semantic agreement that
+consequence is a closer relationship between future cases need to preserve.
+a type decision and the elaborated term that
+e change also separates Mark, Warning and
+decision produces.
+Message. ose names concern how informa‐
+Keeping the two procedures separate gives them tion is represented and surfaced; their separation
+room to dri. A new form or contextual rule does not sele all questions about diagnostic pri‐
+needs corresponding treatment on both sides. ority or sidebar presentation. e review leaves
+e combined implementation lets a case estab‐ room for work on multiple marks and how mes‐
+lish its static information while producing the sages should behave.
+expression that evaluation will use.
+e landing therefore has two scales. At the
+e review does not treat that unification as per‐ code level it removes a layer and brings related
+mission to simplify away subtle distinctions. computations together. At the review level it
+Alexander Bandukwala questions whether a sharpens the contract between an expected type,
+field called the synthesized type suggests too the term built under that expectation and the
+much independence from context. Expected information shown back to the user. Both are
+types can affect the elaborated result: an integer part of the feature, even though neither requires
+literal can elaborate with a natural-number a new buon.
+expectation, and labels can be introduced under
+an expected shape.
+#2213
+-019 / 17–23 APR 2026 02
+WEEK IN HAZEL A LANGUAGE LANDING
+MERGED INTO DEV / FUNCTION SYNTAX #1254
+The function name
+comes first.
+Compact factorial and increment definitions, two passing tests, and the result (120, 42). This staged program runs in
+the rebuilt April 23 dev revision.
+D avid Fang’s function-definition syntax e tests go beyond a two-argument example.
+lands on April 23, in a PR opened more ey cover single and zero arguments, omied
+than two years earlier. let f(x: Int, y: annotations, recursion, nested lets and an incon‐
+Int) = x + y puts the parameter list beside the sistent return annotation. e factorial in the
+bound name. e shared build now accepts the screenshot exercises the recursive case with an
+compact form alongside the explicit fun form. explicit result type.
+e implementation handles the shorthand in Another set of checks preserves the original
+statics. e surface binder is recognized as a source identifiers in the statics information map.
+function application shape, then rewrien into at is essential for the cursor inspector, high‐
+an ordinary function binding. An optional lighting and explain-this: users select the
+return annotation constrains the body compact syntax they wrote, not the desugared
+of that function. It is not a new runtime form underneath. Binder-wrapper tests also
+calling convention. check that the inspector can show the function’s
+arrow type directly. Less syntax on the page still
+requires precise bookkeeping behind it.
+#1254
+-019 / 17–23 APR 2026 03
+WEEK IN HAZEL FORMATTING
+MERGED INTO DEV / #2180
+Give long results
+some line breaks.
+Segment Reassembled tiles
+Layout document
+Delimiter nesting; Line breaks added;
+Groups and breaks choose
+pieces retain their indentation handled
+what fits the target width.
+structural identity. downstream.
+A FORMATTER MUST PRESERVE GROUPING AS WELL AS SPACE
+A lexander’s prey printer lands April 23, e code handles those cases with comma split‐
+separated from the larger probes work ting and precedence-aware infix chains. Tiles are
+so it can merge on its own. Long evalua‐ decomposed on demand so the layout can coor‐
+tion results supply a practical motivation: a dinate decisions across their boundaries—for
+value may be correct and still be difficult to example, keeping an opening delimiter on the
+inspect when its printed form insists on one same line as a binding. Aer layout, segment
+long line. reassembly reconstructs the tiles.
+e new formaer uses a Wadler/Lindig-style e save-and-reparse command now formats,
+document representation with a greedy layout and evaluation results use the line-breaking
+algorithm. Pieces, spaces, optional breaks and machinery. e accompanying test suite covers
+groups describe where a form may fit on one details including reverse-pipe parentheses and
+line and where it can break. e default target is labeled tuples. ose are useful examples
+sixty characters. Indentation remains a down‐ because a formaer must preserve grouping as
+stream responsibility rather than being folded well as improve appearance.
+into the line-breaking algorithm.
+Cyrus Omar’s review pushes on nested lets and
+e implementation works on segments. eir trailing holes, including whether a hole should
+nesting follows matched delimiters; it does not get its own line. ese are not decorative aer‐
+by itself capture every precedence relationship thoughts in Hazel. Formaing an incomplete
+in the parsed term. at maers for a prefix program changes what the reader perceives as
+form such as a function: the rest of the segment its unfinished part. A nice layout for a com‐
+aer its arrow can contain material outside the pleted value is only one of the formaer’s jobs.
+function body.
+#2180
+-019 / 17–23 APR 2026 04
+WEEK IN HAZEL THE EDITOR BOUNDARY
+MERGED INTO DEV / KEYBOARD FOCUS #2198
+Send the key
+to the right editor.
+Local keyboard handlers and shared contextual actions replace a more
+centralized dispatch path. e refactor sets boundaries without promising new
+navigation everywhere.
+#2198 moves keyboard handling toward the Reviewing the boundaries. Cyrus reports
+editor that owns the interaction. Local command-palee select-all affecting the last
+Key.handler logic gets a chance to handle an editor, then later raises an Escape interaction.
+event; unhandled work can continue to the Both are good probes of ownership: a global-
+page level. at makes the boundary between looking interface can still need the context of a
+an inner editor and its surrounding interface specific editor. Merely consolidating action
+more explicit. types does not prove that every route chooses
+that context correctly.
+ContextualAction connects command-palee
+items with shortcut behavior. As the cursor Selection gets a smaller fix too. #2171 adds
+context is assembled, its contextual actions Alt/Option-Shi word selection and lands April
+accumulate. e command available in a partic‐ 21. e PR is authored by Copilot. at is direct
+ular editor can then describe the same operation evidence of an agent-associated contribution in
+that its keyboard shortcut performs, rather than the week’s merge list, independent of whether
+relying on two unrelated dispatch paths. its commits carry a particular co-author trailer.
+Focus becomes especially important around pro‐ Other landings. Float negation (#2169), vari‐
+jectors. Entering an embedded editor, escaping able highlighting (#2191) and wildcard handling
+from it and returning focus to the parent should in records (#2219) arrive beside the major refac‐
+agree about who owns the next key. e refactor tors. ese changes touch everyday expression
+also addresses first-click focus through tabindex entry and inspection, giving the week more
+and default arrow-key behavior. ose details user-visible detail than its architectural headline
+decide whether a user’s next action reaches the alone suggests.
+intended place.
+A folding fix, #2215, closes the prefix-sum-
+e review is explicit about scope: this is a related report #2216 on April 17. e narrower
+refactor, not the arrival of keyboard navigation repair belongs in the same account as the larger
+between cells. A beer dispatch structure can focus work: both concern whether the editor
+support future interaction work without already presents and responds to the program the user
+implementing it. e distinction is worth pre‐ actually has in front of them.
+serving when trying the build.
+#2198 / #2171 / #2169 / #2191 / #2219 / #2215 / #2216
+-019 / 17–23 APR 2026 05
+WEEK IN HAZEL STILL IN DEVELOPMENT
+OPEN PRs AND ISSUES / AT THE APRIL 23 CUTOFF
+The next boundaries
+are already visible.
+Incremental evaluation and the Problems Sidebar enter the PR queue while reports
+test the edges of the current interface.
+Incremental evaluation opens. #2222 What gets culled? Issue #2217 describes view‐
+appears on April 22. It is an open line of work at port culling around projectors, including
+this cutoff, not an evaluator already delivered by shimmer and disabled culling in exercise/tutorial
+the week’s dev merges. e question it raises is contexts. Avoiding work offscreen is aractive,
+consequential alongside Elastatics: once the but the boundary should not produce visible
+static pipeline has changed, what evaluation instability as content enters view. e report
+work can a subsequent edit safely reuse? supplies a concrete UI cost to investigate.
+at is a question about dependencies and inval‐ Which clauses are ruled out? #2218 proposes
+idation, not a speedup established by the PR’s crossing out refuted clauses during indetermi‐
+opening. A reusable result must still correspond nate matching. A match that cannot finish may
+to the edited program. e week’s record sup‐ nevertheless have learned something about
+ports following the experiment, rather than which alternatives cannot apply. Showing that
+assigning a performance number to it. partial knowledge could make the remaining
+uncertainty easier to understand.
+A sidebar for problems. #2225 opens April 23.
+Its timing makes the separation of Mark, Navigation across editors. #2223 reports
+Warning and Message in Elastatics particularly jumps to other editors not working. It is a useful
+relevant. Internal diagnostic categories and the companion to the focus refactor’s stated
+interface that gathers problems need a shared limit: a change in event ownership should
+account of what deserves aention. e new not be mistaken for a completed cross-editor
+sidebar is still open work, separate from the navigation experience.
+landed representation change.
+Bindings and references. #2224 reports prob‐
+Projector menus. #2221, opened April 22, pro‐ lems with unused/reference information for
+poses context-menu support across projectors. forall bindings. e compact-function tests
+Like the keyboard refactor, it concerns an opera‐ already show how much the inspector depends
+tion that should follow the object being inter‐ on preserving source identities through elabora‐
+acted with. It has not landed by the end of this tion. e forall report concerns another place
+issue’s window. where the information aached to a visible
+binder needs to remain trustworthy.
+#2222 / #2225 / #2221 / #2217 / #2218 / #2223 / #2224
+-019 / 17–23 APR 2026 06
+WEEK IN HAZEL THE INSTRUMENT PANEL
+17–23 APRIL / UTC
+Fourteen dev merges.
+Several kinds of work.
+6 14 5
+PRs opened PRs merged issues opened
+DAILY COMMIT OBJECTS / WEEK-END DEV GRAPH
+31
+13
+11
+8
+0 1 1
+17 18 19 20 21 22 23
+Gray: all objects / Green: Claude credit / Red tick: signature header
+e week's merge list includes Elastatics, key‐ Visible agent involvement. Fourteen of the
+board focus, prey printing and compact function sixty-five objects carry a Claude co-author trailer.
+syntax, plus folding, selection, highlighting, float Nineteen contain Git signature headers, a different
+and record fixes. Five dependency PRs also land. measure. Copilot’s authorship of #2171 supplies
+e total is fourteen; treating every merge as a additional evidence that a trailer-only count
+feature would give a distorted picture of the week. would miss.
+Six PRs open and five issues open. e week-end In review, Ma Keenan and Alexander
+dev graph contains sixty-five commit objects dated Bandukwala refine the expected-type contract in
+inside the window, forty-two of them non-merge Elastatics. Alexander brings the formaer through
+commits. A commit count does not capture the review; Cyrus Omar asks about layout and focus
+years between the function-syntax PR’s opening behavior and merges the major changes. David
+and its arrival here, or the code movement inside Fang’s long-running syntax proposal finally
+the Elastatics refactor. arrives. e PRs reveal contributions that commit-
+author rankings miss.
+65 unique objects; 42 non-merge. UTC committer dates; reachable from 4c949a18ad. Agent totals count declared co-author
+trailers; signature headers are not verified here.
+#2213 / #2180 / #1254 / #2198 / #2171
+-019 / 17–23 APR 2026 07
+WEEK IN HAZEL THE FICTION DEPARTMENT
+TWO WINDOWS, ONE BENCH
+Now compare notes
+without the partition.
+A fictional office after Elastatics. Sharing an implementation brings checking and elaboration together; it does not make
+expected-type questions disappear.
+A contract worth remembering. e Elastatics e cover. Two feeds—outlines and filled shapes
+review’s field-name decision is a useful guide to —meet at a printing press. eir alignment stands
+future work. e synthesized type of an elabo‐ for type information and elaborated output being
+rated expression may reflect the expected type produced together. e lile trays of distinct
+supplied while building it. Remembering that marks borrow from Mark, Warning and Message,
+relationship will maer more than remembering without assigning those categories a literal color
+the old division into two passes. code in Hazel.
+e formaer has its own boundary to keep visi‐ e comic puts the two jobs at a shared bench.
+ble: segment structure is not a full account of Removing a partition helps them compare the
+term precedence. Its layout choices must preserve same sheet; it does not guarantee agreement. Its
+meaning even when the delimiter tree is not the clerks and office are invented, and do not stand
+whole story. for particular contributors.
+And the keyboard refactor leaves a practical test Week in Hazel · Issue -019
+for every embedded editor: aer entering, select‐ A retrospective edition for April 17–23, 2026.
+ing, invoking a command and escaping, which Reporting and readiness stop at the end of that
+component receives the next key? e UTC week. Edited and reported by Astra, AI
+current open navigation report makes that editor. Cover and comic by ImageGen. Screenshot
+a concrete interaction to follow, not just an from a rebuilt week-end dev revision. Produced
+architectural preference. September 2026.
+#2213 / #2180 / #2198 / #2223
+-019 / 17–23 APR 2026 08

@@ -1,0 +1,324 @@
+[
+  [
+    {
+      "id": 4574178801,
+      "node_id": "PRR_kwDOBMdeZM8AAAABEKRt8Q",
+      "user": {
+        "login": "7h3kk1d",
+        "id": 995429,
+        "node_id": "MDQ6VXNlcjk5NTQyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/995429?u=504e0fe645bebaa279aac14ee9d4298c7016a68c&v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/7h3kk1d",
+        "html_url": "https://github.com/7h3kk1d",
+        "followers_url": "https://api.github.com/users/7h3kk1d/followers",
+        "following_url": "https://api.github.com/users/7h3kk1d/following{/other_user}",
+        "gists_url": "https://api.github.com/users/7h3kk1d/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/7h3kk1d/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/7h3kk1d/subscriptions",
+        "organizations_url": "https://api.github.com/users/7h3kk1d/orgs",
+        "repos_url": "https://api.github.com/users/7h3kk1d/repos",
+        "events_url": "https://api.github.com/users/7h3kk1d/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/7h3kk1d/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/2341#pullrequestreview-4574178801",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/2341",
+      "author_association": "MEMBER",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/2341#pullrequestreview-4574178801"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/2341"
+        }
+      },
+      "submitted_at": "2026-06-25T19:08:41Z",
+      "commit_id": "5c709a4899b41fefacb5fe5a4f68cdc0a069342b"
+    },
+    {
+      "id": 4962867206,
+      "node_id": "PRR_kwDOBMdeZM8AAAABJ89YBg",
+      "user": {
+        "login": "7h3kk1d",
+        "id": 995429,
+        "node_id": "MDQ6VXNlcjk5NTQyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/995429?u=504e0fe645bebaa279aac14ee9d4298c7016a68c&v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/7h3kk1d",
+        "html_url": "https://github.com/7h3kk1d",
+        "followers_url": "https://api.github.com/users/7h3kk1d/followers",
+        "following_url": "https://api.github.com/users/7h3kk1d/following{/other_user}",
+        "gists_url": "https://api.github.com/users/7h3kk1d/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/7h3kk1d/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/7h3kk1d/subscriptions",
+        "organizations_url": "https://api.github.com/users/7h3kk1d/orgs",
+        "repos_url": "https://api.github.com/users/7h3kk1d/repos",
+        "events_url": "https://api.github.com/users/7h3kk1d/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/7h3kk1d/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/2341#pullrequestreview-4962867206",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/2341",
+      "author_association": "MEMBER",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/2341#pullrequestreview-4962867206"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/2341"
+        }
+      },
+      "submitted_at": "2026-08-18T15:33:26Z",
+      "commit_id": "0f0e93398a493f08750bf7c566b58fc75f74ffc5"
+    },
+    {
+      "id": 4964250083,
+      "node_id": "PRR_kwDOBMdeZM8AAAABJ-Rx4w",
+      "user": {
+        "login": "Negabinary",
+        "id": 31668468,
+        "node_id": "MDQ6VXNlcjMxNjY4NDY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/31668468?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Negabinary",
+        "html_url": "https://github.com/Negabinary",
+        "followers_url": "https://api.github.com/users/Negabinary/followers",
+        "following_url": "https://api.github.com/users/Negabinary/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Negabinary/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Negabinary/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Negabinary/subscriptions",
+        "organizations_url": "https://api.github.com/users/Negabinary/orgs",
+        "repos_url": "https://api.github.com/users/Negabinary/repos",
+        "events_url": "https://api.github.com/users/Negabinary/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Negabinary/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "Generally happy, but would want @disconcision to sign off on the \"Right-click now preserves selections\" part before merging because he understands the implications of that decision better than I do",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/2341#pullrequestreview-4964250083",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/2341",
+      "author_association": "MEMBER",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/2341#pullrequestreview-4964250083"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/2341"
+        }
+      },
+      "submitted_at": "2026-08-18T18:07:12Z",
+      "commit_id": "0f0e93398a493f08750bf7c566b58fc75f74ffc5"
+    },
+    {
+      "id": 4964298885,
+      "node_id": "PRR_kwDOBMdeZM8AAAABJ-UwhQ",
+      "user": {
+        "login": "7h3kk1d",
+        "id": 995429,
+        "node_id": "MDQ6VXNlcjk5NTQyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/995429?u=504e0fe645bebaa279aac14ee9d4298c7016a68c&v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/7h3kk1d",
+        "html_url": "https://github.com/7h3kk1d",
+        "followers_url": "https://api.github.com/users/7h3kk1d/followers",
+        "following_url": "https://api.github.com/users/7h3kk1d/following{/other_user}",
+        "gists_url": "https://api.github.com/users/7h3kk1d/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/7h3kk1d/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/7h3kk1d/subscriptions",
+        "organizations_url": "https://api.github.com/users/7h3kk1d/orgs",
+        "repos_url": "https://api.github.com/users/7h3kk1d/repos",
+        "events_url": "https://api.github.com/users/7h3kk1d/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/7h3kk1d/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/2341#pullrequestreview-4964298885",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/2341",
+      "author_association": "MEMBER",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/2341#pullrequestreview-4964298885"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/2341"
+        }
+      },
+      "submitted_at": "2026-08-18T18:10:04Z",
+      "commit_id": "0f0e93398a493f08750bf7c566b58fc75f74ffc5"
+    },
+    {
+      "id": 4965080462,
+      "node_id": "PRR_kwDOBMdeZM8AAAABJ_Edjg",
+      "user": {
+        "login": "disconcision",
+        "id": 22436459,
+        "node_id": "MDQ6VXNlcjIyNDM2NDU5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/22436459?u=0cb0d45f709c1bd00cd617bdb0e4317792e78d58&v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/disconcision",
+        "html_url": "https://github.com/disconcision",
+        "followers_url": "https://api.github.com/users/disconcision/followers",
+        "following_url": "https://api.github.com/users/disconcision/following{/other_user}",
+        "gists_url": "https://api.github.com/users/disconcision/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/disconcision/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/disconcision/subscriptions",
+        "organizations_url": "https://api.github.com/users/disconcision/orgs",
+        "repos_url": "https://api.github.com/users/disconcision/repos",
+        "events_url": "https://api.github.com/users/disconcision/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/disconcision/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/2341#pullrequestreview-4965080462",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/2341",
+      "author_association": "MEMBER",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/2341#pullrequestreview-4965080462"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/2341"
+        }
+      },
+      "submitted_at": "2026-08-18T19:40:30Z",
+      "commit_id": "0f0e93398a493f08750bf7c566b58fc75f74ffc5"
+    },
+    {
+      "id": 4965092385,
+      "node_id": "PRR_kwDOBMdeZM8AAAABJ_FMIQ",
+      "user": {
+        "login": "7h3kk1d",
+        "id": 995429,
+        "node_id": "MDQ6VXNlcjk5NTQyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/995429?u=504e0fe645bebaa279aac14ee9d4298c7016a68c&v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/7h3kk1d",
+        "html_url": "https://github.com/7h3kk1d",
+        "followers_url": "https://api.github.com/users/7h3kk1d/followers",
+        "following_url": "https://api.github.com/users/7h3kk1d/following{/other_user}",
+        "gists_url": "https://api.github.com/users/7h3kk1d/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/7h3kk1d/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/7h3kk1d/subscriptions",
+        "organizations_url": "https://api.github.com/users/7h3kk1d/orgs",
+        "repos_url": "https://api.github.com/users/7h3kk1d/repos",
+        "events_url": "https://api.github.com/users/7h3kk1d/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/7h3kk1d/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/2341#pullrequestreview-4965092385",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/2341",
+      "author_association": "MEMBER",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/2341#pullrequestreview-4965092385"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/2341"
+        }
+      },
+      "submitted_at": "2026-08-18T19:41:57Z",
+      "commit_id": "0f0e93398a493f08750bf7c566b58fc75f74ffc5"
+    },
+    {
+      "id": 4965108551,
+      "node_id": "PRR_kwDOBMdeZM8AAAABJ_GLRw",
+      "user": {
+        "login": "7h3kk1d",
+        "id": 995429,
+        "node_id": "MDQ6VXNlcjk5NTQyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/995429?u=504e0fe645bebaa279aac14ee9d4298c7016a68c&v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/7h3kk1d",
+        "html_url": "https://github.com/7h3kk1d",
+        "followers_url": "https://api.github.com/users/7h3kk1d/followers",
+        "following_url": "https://api.github.com/users/7h3kk1d/following{/other_user}",
+        "gists_url": "https://api.github.com/users/7h3kk1d/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/7h3kk1d/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/7h3kk1d/subscriptions",
+        "organizations_url": "https://api.github.com/users/7h3kk1d/orgs",
+        "repos_url": "https://api.github.com/users/7h3kk1d/repos",
+        "events_url": "https://api.github.com/users/7h3kk1d/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/7h3kk1d/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/2341#pullrequestreview-4965108551",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/2341",
+      "author_association": "MEMBER",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/2341#pullrequestreview-4965108551"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/2341"
+        }
+      },
+      "submitted_at": "2026-08-18T19:43:46Z",
+      "commit_id": "0f0e93398a493f08750bf7c566b58fc75f74ffc5"
+    },
+    {
+      "id": 4985628509,
+      "node_id": "PRR_kwDOBMdeZM8AAAABKSqnXQ",
+      "user": {
+        "login": "7h3kk1d",
+        "id": 995429,
+        "node_id": "MDQ6VXNlcjk5NTQyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/995429?u=504e0fe645bebaa279aac14ee9d4298c7016a68c&v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/7h3kk1d",
+        "html_url": "https://github.com/7h3kk1d",
+        "followers_url": "https://api.github.com/users/7h3kk1d/followers",
+        "following_url": "https://api.github.com/users/7h3kk1d/following{/other_user}",
+        "gists_url": "https://api.github.com/users/7h3kk1d/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/7h3kk1d/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/7h3kk1d/subscriptions",
+        "organizations_url": "https://api.github.com/users/7h3kk1d/orgs",
+        "repos_url": "https://api.github.com/users/7h3kk1d/repos",
+        "events_url": "https://api.github.com/users/7h3kk1d/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/7h3kk1d/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/2341#pullrequestreview-4985628509",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/2341",
+      "author_association": "MEMBER",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/2341#pullrequestreview-4985628509"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/2341"
+        }
+      },
+      "submitted_at": "2026-08-20T17:33:31Z",
+      "commit_id": "0f0e93398a493f08750bf7c566b58fc75f74ffc5"
+    }
+  ]
+]

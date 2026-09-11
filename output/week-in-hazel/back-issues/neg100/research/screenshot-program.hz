@@ -1,0 +1,6 @@
+# A program with room left to work #
+let unfinished : Int = ? in
+let twice : Int -> Int = fun x -> x * 2 in
+
+# A hole does not erase the other results #
+(twice(3), unfinished, twice(9))

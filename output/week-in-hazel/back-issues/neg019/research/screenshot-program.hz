@@ -1,0 +1,9 @@
+# Compact definitions, ordinary functions #
+let fact(n: Int): Int =
+  if n == 0 then 1 else n * fact(n - 1)
+in
+let inc(x) = x + 1 in
+
+test fact(3) == 6 end;
+test inc(3) == 4 end;
+(fact(5), inc(41))

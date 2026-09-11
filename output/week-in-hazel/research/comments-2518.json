@@ -1,0 +1,51 @@
+[
+  [
+    {
+      "url": "https://api.github.com/repos/hazelgrove/hazel/issues/comments/5604795132",
+      "html_url": "https://github.com/hazelgrove/hazel/issues/2518#issuecomment-5604795132",
+      "issue_url": "https://api.github.com/repos/hazelgrove/hazel/issues/2518",
+      "id": 5604795132,
+      "node_id": "IC_kwDOBMdeZM8AAAABThJi_A",
+      "user": {
+        "login": "7h3kk1d",
+        "id": 995429,
+        "node_id": "MDQ6VXNlcjk5NTQyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/995429?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/7h3kk1d",
+        "html_url": "https://github.com/7h3kk1d",
+        "followers_url": "https://api.github.com/users/7h3kk1d/followers",
+        "following_url": "https://api.github.com/users/7h3kk1d/following{/other_user}",
+        "gists_url": "https://api.github.com/users/7h3kk1d/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/7h3kk1d/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/7h3kk1d/subscriptions",
+        "organizations_url": "https://api.github.com/users/7h3kk1d/orgs",
+        "repos_url": "https://api.github.com/users/7h3kk1d/repos",
+        "events_url": "https://api.github.com/users/7h3kk1d/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/7h3kk1d/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "created_at": "2026-09-09T15:56:08Z",
+      "updated_at": "2026-09-09T15:56:08Z",
+      "body": "\ud83e\udd16 Adding the user-facing cost, from #2485: the tutorial lessons *want* Grout, because a student fills a gap by typing into it. Since a hole as a container's only element is dropped on reload, `14-list-literals.hzt` is forced to spell it `?` instead \u2014 an explicit hole tile, which the student has to select and replace rather than type into. So this bug is not only a persistence asymmetry; it costs the intended editing experience wherever a lesson wants a single blank inside a list or tuple, and the workaround has to be reverted per-lesson once it is fixed.",
+      "author_association": "MEMBER",
+      "pin": null,
+      "reactions": {
+        "url": "https://api.github.com/repos/hazelgrove/hazel/issues/comments/5604795132/reactions",
+        "total_count": 0,
+        "+1": 0,
+        "-1": 0,
+        "laugh": 0,
+        "hooray": 0,
+        "confused": 0,
+        "heart": 0,
+        "rocket": 0,
+        "eyes": 0
+      },
+      "performed_via_github_app": null,
+      "minimized": null
+    }
+  ]
+]

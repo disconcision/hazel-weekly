@@ -1,0 +1,284 @@
+[
+  [
+    {
+      "id": 4519476046,
+      "node_id": "PRR_kwDOBMdeZM8AAAABDWG7Tg",
+      "user": {
+        "login": "7h3kk1d",
+        "id": 995429,
+        "node_id": "MDQ6VXNlcjk5NTQyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/995429?u=504e0fe645bebaa279aac14ee9d4298c7016a68c&v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/7h3kk1d",
+        "html_url": "https://github.com/7h3kk1d",
+        "followers_url": "https://api.github.com/users/7h3kk1d/followers",
+        "following_url": "https://api.github.com/users/7h3kk1d/following{/other_user}",
+        "gists_url": "https://api.github.com/users/7h3kk1d/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/7h3kk1d/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/7h3kk1d/subscriptions",
+        "organizations_url": "https://api.github.com/users/7h3kk1d/orgs",
+        "repos_url": "https://api.github.com/users/7h3kk1d/repos",
+        "events_url": "https://api.github.com/users/7h3kk1d/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/7h3kk1d/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/2350#pullrequestreview-4519476046",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/2350",
+      "author_association": "MEMBER",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/2350#pullrequestreview-4519476046"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/2350"
+        }
+      },
+      "submitted_at": "2026-06-17T20:43:45Z",
+      "commit_id": "672a2627274ca706e41d753ffef953ab6ec5bfcc"
+    },
+    {
+      "id": 4554360640,
+      "node_id": "PRR_kwDOBMdeZM8AAAABD3YHQA",
+      "user": {
+        "login": "copilot-pull-request-reviewer[bot]",
+        "id": 175728472,
+        "node_id": "BOT_kgDOCnlnWA",
+        "avatar_url": "https://avatars.githubusercontent.com/in/946600?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D",
+        "html_url": "https://github.com/apps/copilot-pull-request-reviewer",
+        "followers_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/followers",
+        "following_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/following{/other_user}",
+        "gists_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/subscriptions",
+        "organizations_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/orgs",
+        "repos_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/repos",
+        "events_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/copilot-pull-request-reviewer%5Bbot%5D/received_events",
+        "type": "Bot",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "## Pull request overview\n\nAdds a new `^^chart` projector and supporting infrastructure so evaluated `Chart` ADT values can be rendered as D3-driven SVG charts in the web UI (optionally auto-displayed via a settings toggle).\n\n**Changes:**\n- Introduces built-in `Chart` ADT plus an OCaml-side recognizer (`ChartCore`) and a web projector (`ChartProj`) that delegates rendering to D3 in `prebundle.js`.\n- Adds a \u201cCharts\u201d toggle to evaluation settings and wires chart projection into pretty-printing/projector menus.\n- Adds chart styling (CSS vars + projector CSS), JS dependencies for D3 modules, and a native unit-test suite for chart recognition.\n\n### Reviewed changes\n\nCopilot reviewed 32 out of 33 changed files in this pull request and generated 3 comments.\n\n<details>\n<summary>Show a summary per file</summary>\n\n| File | Description |\r\n| ---- | ----------- |\r\n| test/Test_PrettyPrint.re | Extends pretty-print settings with `project_charts`. |\r\n| test/Test_Menhir.re | Updates settings used in parser roundtrip tests with `project_charts`. |\r\n| test/Test_ExpToSegment.re | Updates multiple settings records to include `project_charts`. |\r\n| test/Test_DerivationCase.re | Updates pretty-print settings record to include `project_charts`. |\r\n| test/Test_ChartCore.re | Adds unit tests for `ChartCore.parse_chart`. |\r\n| test/Test_Abbreviate.re | Extends abbreviation settings with `project_charts`. |\r\n| test/haz3ltest.re | Registers `Test_ChartCore` in the test suite. |\r\n| src/web/www/style/variables.css | Adds chart-related CSS variables and series palette. |\r\n| src/web/www/style/projectors/proj-chart.css | Adds chart projector CSS for D3-rendered SVG. |\r\n| src/web/www/style/projectors/proj-base.css | Imports the new chart projector stylesheet. |\r\n| src/web/www/prebundle.js | Adds `window.HazelD3.render` and D3 rendering code for charts. |\r\n| src/web/view/NutMenu.re | Adds \u201cCharts\u201d toggle to the Value Display settings menu. |\r\n| src/web/view/Kind.re | Ensures kind/type views don\u2019t auto-project charts by default. |\r\n| src/web/view/ContextInspector.re | Ensures context inspector views don\u2019t auto-project charts by default. |\r\n| src/web/Settings.re | Adds `ProjectCharts` setting plumbing and default state. |\r\n| src/web/derivation/DrvCursorInspector.re | Adds `project_charts` to settings used in derivation inspector. |\r\n| src/web/app/sidebar/DebugSidebar.re | Adds `project_charts` to debug sidebar code-view settings. |\r\n| src/web/app/inspector/CursorInspector.re | Adds `project_charts` to cursor inspector code-view settings. |\r\n| src/web/app/explainthis/DrvDoc.re | Adds `project_charts` to ExplainThis doc rendering settings. |\r\n| src/web/app/editors/code/ContextMenu.re | Adds \u201cChart\u201d to projector kind label mapping for context menus. |\r\n| src/language/ProjectorKind.re | Registers `Chart` as a projector kind (`\"chart\"` / `^^chart`). |\r\n| src/language/CoreSettings.re | Adds `project_charts` to evaluation settings defaults. |\r\n| src/language/builtins/BuiltinsADT.re | Adds built-in `Chart` ADT type alias and constructors. |\r\n| src/haz3lcore/zipper/action/Introduce.re | Extends settings record with `project_charts`. |\r\n| src/haz3lcore/projectors/ProjectorInit.re | Registers `ChartProj` in projector initialization. |\r\n| src/haz3lcore/projectors/ProjectorInfo.re | Ensures projector utility settings include `project_charts`. |\r\n| src/haz3lcore/projectors/implementations/ChartProj.re | Implements the chart projector and D3 hook integration. |\r\n| src/haz3lcore/projectors/implementations/ChartCore.rei | Declares `ChartCore` types and `parse_chart` API. |\r\n| src/haz3lcore/projectors/implementations/ChartCore.re | Implements chart recognition/parsing from elaborated syntax. |\r\n| src/haz3lcore/pretty/ExpToSegment.re | Adds chart auto-projection gating and setting support. |\r\n| src/CLI/Print.re | Extends CLI printing settings with `project_charts`. |\r\n| package.json | Adds D3 module dependencies needed by `prebundle.js`. |\r\n| package-lock.json | Locks the added D3 dependencies and transitive deps. |\n</details>\n\n\n\n\n\n\n\n---\n\n\ud83d\udca1 <a href=\"/hazelgrove/hazel/new/dev?filename=.github/instructions/*.instructions.md\" class=\"Link--inTextBlock\" target=\"_blank\" rel=\"noopener noreferrer\">Add Copilot custom instructions</a> for smarter, more guided reviews. <a href=\"https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot\" class=\"Link--inTextBlock\" target=\"_blank\" rel=\"noopener noreferrer\">Learn how to get started</a>.",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/2350#pullrequestreview-4554360640",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/2350",
+      "author_association": "CONTRIBUTOR",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/2350#pullrequestreview-4554360640"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/2350"
+        }
+      },
+      "submitted_at": "2026-06-23T14:43:52Z",
+      "commit_id": "bd940aa73c6865761c02822987ede3ff5660d079"
+    },
+    {
+      "id": 4554373075,
+      "node_id": "PRR_kwDOBMdeZM8AAAABD3Y30w",
+      "user": {
+        "login": "7h3kk1d",
+        "id": 995429,
+        "node_id": "MDQ6VXNlcjk5NTQyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/995429?u=504e0fe645bebaa279aac14ee9d4298c7016a68c&v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/7h3kk1d",
+        "html_url": "https://github.com/7h3kk1d",
+        "followers_url": "https://api.github.com/users/7h3kk1d/followers",
+        "following_url": "https://api.github.com/users/7h3kk1d/following{/other_user}",
+        "gists_url": "https://api.github.com/users/7h3kk1d/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/7h3kk1d/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/7h3kk1d/subscriptions",
+        "organizations_url": "https://api.github.com/users/7h3kk1d/orgs",
+        "repos_url": "https://api.github.com/users/7h3kk1d/repos",
+        "events_url": "https://api.github.com/users/7h3kk1d/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/7h3kk1d/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/2350#pullrequestreview-4554373075",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/2350",
+      "author_association": "MEMBER",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/2350#pullrequestreview-4554373075"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/2350"
+        }
+      },
+      "submitted_at": "2026-06-23T14:45:25Z",
+      "commit_id": "bd940aa73c6865761c02822987ede3ff5660d079"
+    },
+    {
+      "id": 4962870470,
+      "node_id": "PRR_kwDOBMdeZM8AAAABJ89kxg",
+      "user": {
+        "login": "7h3kk1d",
+        "id": 995429,
+        "node_id": "MDQ6VXNlcjk5NTQyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/995429?u=504e0fe645bebaa279aac14ee9d4298c7016a68c&v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/7h3kk1d",
+        "html_url": "https://github.com/7h3kk1d",
+        "followers_url": "https://api.github.com/users/7h3kk1d/followers",
+        "following_url": "https://api.github.com/users/7h3kk1d/following{/other_user}",
+        "gists_url": "https://api.github.com/users/7h3kk1d/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/7h3kk1d/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/7h3kk1d/subscriptions",
+        "organizations_url": "https://api.github.com/users/7h3kk1d/orgs",
+        "repos_url": "https://api.github.com/users/7h3kk1d/repos",
+        "events_url": "https://api.github.com/users/7h3kk1d/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/7h3kk1d/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/2350#pullrequestreview-4962870470",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/2350",
+      "author_association": "MEMBER",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/2350#pullrequestreview-4962870470"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/2350"
+        }
+      },
+      "submitted_at": "2026-08-18T15:33:43Z",
+      "commit_id": "98e374ffd878bd0c7197d3d056e4beea0fa1a346"
+    },
+    {
+      "id": 4962873380,
+      "node_id": "PRR_kwDOBMdeZM8AAAABJ89wJA",
+      "user": {
+        "login": "7h3kk1d",
+        "id": 995429,
+        "node_id": "MDQ6VXNlcjk5NTQyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/995429?u=504e0fe645bebaa279aac14ee9d4298c7016a68c&v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/7h3kk1d",
+        "html_url": "https://github.com/7h3kk1d",
+        "followers_url": "https://api.github.com/users/7h3kk1d/followers",
+        "following_url": "https://api.github.com/users/7h3kk1d/following{/other_user}",
+        "gists_url": "https://api.github.com/users/7h3kk1d/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/7h3kk1d/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/7h3kk1d/subscriptions",
+        "organizations_url": "https://api.github.com/users/7h3kk1d/orgs",
+        "repos_url": "https://api.github.com/users/7h3kk1d/repos",
+        "events_url": "https://api.github.com/users/7h3kk1d/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/7h3kk1d/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/2350#pullrequestreview-4962873380",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/2350",
+      "author_association": "MEMBER",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/2350#pullrequestreview-4962873380"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/2350"
+        }
+      },
+      "submitted_at": "2026-08-18T15:33:59Z",
+      "commit_id": "98e374ffd878bd0c7197d3d056e4beea0fa1a346"
+    },
+    {
+      "id": 4962875476,
+      "node_id": "PRR_kwDOBMdeZM8AAAABJ894VA",
+      "user": {
+        "login": "7h3kk1d",
+        "id": 995429,
+        "node_id": "MDQ6VXNlcjk5NTQyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/995429?u=504e0fe645bebaa279aac14ee9d4298c7016a68c&v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/7h3kk1d",
+        "html_url": "https://github.com/7h3kk1d",
+        "followers_url": "https://api.github.com/users/7h3kk1d/followers",
+        "following_url": "https://api.github.com/users/7h3kk1d/following{/other_user}",
+        "gists_url": "https://api.github.com/users/7h3kk1d/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/7h3kk1d/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/7h3kk1d/subscriptions",
+        "organizations_url": "https://api.github.com/users/7h3kk1d/orgs",
+        "repos_url": "https://api.github.com/users/7h3kk1d/repos",
+        "events_url": "https://api.github.com/users/7h3kk1d/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/7h3kk1d/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/2350#pullrequestreview-4962875476",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/2350",
+      "author_association": "MEMBER",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/2350#pullrequestreview-4962875476"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/2350"
+        }
+      },
+      "submitted_at": "2026-08-18T15:34:10Z",
+      "commit_id": "98e374ffd878bd0c7197d3d056e4beea0fa1a346"
+    },
+    {
+      "id": 4962879026,
+      "node_id": "PRR_kwDOBMdeZM8AAAABJ8-GMg",
+      "user": {
+        "login": "7h3kk1d",
+        "id": 995429,
+        "node_id": "MDQ6VXNlcjk5NTQyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/995429?u=504e0fe645bebaa279aac14ee9d4298c7016a68c&v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/7h3kk1d",
+        "html_url": "https://github.com/7h3kk1d",
+        "followers_url": "https://api.github.com/users/7h3kk1d/followers",
+        "following_url": "https://api.github.com/users/7h3kk1d/following{/other_user}",
+        "gists_url": "https://api.github.com/users/7h3kk1d/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/7h3kk1d/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/7h3kk1d/subscriptions",
+        "organizations_url": "https://api.github.com/users/7h3kk1d/orgs",
+        "repos_url": "https://api.github.com/users/7h3kk1d/repos",
+        "events_url": "https://api.github.com/users/7h3kk1d/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/7h3kk1d/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/2350#pullrequestreview-4962879026",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/2350",
+      "author_association": "MEMBER",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/2350#pullrequestreview-4962879026"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/2350"
+        }
+      },
+      "submitted_at": "2026-08-18T15:34:30Z",
+      "commit_id": "98e374ffd878bd0c7197d3d056e4beea0fa1a346"
+    }
+  ]
+]

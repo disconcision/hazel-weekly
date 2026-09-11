@@ -1,0 +1,44 @@
+[
+  [
+    {
+      "id": 5010947873,
+      "node_id": "PRR_kwDOBMdeZM8AAAABKqz_IQ",
+      "user": {
+        "login": "Negabinary",
+        "id": 31668468,
+        "node_id": "MDQ6VXNlcjMxNjY4NDY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/31668468?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Negabinary",
+        "html_url": "https://github.com/Negabinary",
+        "followers_url": "https://api.github.com/users/Negabinary/followers",
+        "following_url": "https://api.github.com/users/Negabinary/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Negabinary/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Negabinary/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Negabinary/subscriptions",
+        "organizations_url": "https://api.github.com/users/Negabinary/orgs",
+        "repos_url": "https://api.github.com/users/Negabinary/repos",
+        "events_url": "https://api.github.com/users/Negabinary/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Negabinary/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "",
+      "state": "APPROVED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/2464#pullrequestreview-5010947873",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/2464",
+      "author_association": "MEMBER",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/2464#pullrequestreview-5010947873"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/2464"
+        }
+      },
+      "submitted_at": "2026-08-24T17:52:13Z",
+      "commit_id": "6336ed5aa2a4e44b4074b06e08aa5e3a184ad38b"
+    }
+  ]
+]

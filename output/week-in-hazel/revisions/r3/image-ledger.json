@@ -1,0 +1,219 @@
+[
+  {
+    "id": "drawer-tree",
+    "issue": "001",
+    "kind": "generated illustration",
+    "concept": "Open probe drawers as a tree cabinet",
+    "path": "assets/drawer-tree.png",
+    "branch": "conceptual",
+    "url": null,
+    "created_utc": "2026-09-11T04:39:50.410513+00:00",
+    "reuse_rule": "Do not repeat this composition or premise in the next issue; only reuse as a labeled comparison if a changed behavior requires it.",
+    "prompt": "PROMPTS.md",
+    "pixel_dimensions": [
+      1536,
+      1024
+    ]
+  },
+  {
+    "id": "probes-cards",
+    "issue": "001",
+    "kind": "authentic screenshot",
+    "concept": "Insertion-sort intermediate hands as rich card samples",
+    "path": "assets/probes-cards-clean.png",
+    "branch": "dev",
+    "url": "https://hazel.org/build/dev/",
+    "created_utc": "2026-09-11T06:04:36.318120+00:00",
+    "reuse_rule": "Do not repeat this composition or premise in the next issue; only reuse as a labeled comparison if a changed behavior requires it.",
+    "prompt": null,
+    "pixel_dimensions": [
+      2456,
+      1454
+    ],
+    "pdf_rendering": "Native dimensions, lossless Flate compression, direct placement with one 4 pt cream mat, one green rule and red corner ticks.",
+    "revision": 2,
+    "deprecated_revision_1": {
+      "path": "assets/probes-cards.png",
+      "actual_encoding": "JPEG",
+      "note": "Old .png extension and HiDPI QA claim were incorrect; not used in current PDF."
+    },
+    "actual_encoding": "PNG",
+    "capture_method": "Firefox native screenshot region export at 180% browser zoom; actual PNG; no resampling or retouching",
+    "printed_width_inches": 6,
+    "effective_dpi": 409.3,
+    "woodcut_alternative": "probes-cards-woodcut"
+  },
+  {
+    "id": "modular-focus",
+    "issue": "001",
+    "kind": "staged screenshot",
+    "concept": "One definition from Mega 1k, scoped outline, live probe, whole-program result",
+    "path": "assets/modular-focus-clean.png",
+    "branch": "modular-editors",
+    "url": "https://hazel.org/build/modular-editors/",
+    "created_utc": "2026-09-11T06:10:58.019976+00:00",
+    "reuse_rule": "Do not repeat this composition or premise in the next issue; only reuse as a labeled comparison if a changed behavior requires it.",
+    "prompt": null,
+    "pixel_dimensions": [
+      3271,
+      1256
+    ],
+    "pdf_rendering": "Native dimensions, lossless Flate compression, direct placement with one 4 pt cream mat, one green rule and red corner ticks.",
+    "revision": 2,
+    "deprecated_revision_1": {
+      "path": "assets/modular-focus.png",
+      "actual_encoding": "JPEG",
+      "note": "Old .png extension and HiDPI QA claim were incorrect; not used in current PDF."
+    },
+    "actual_encoding": "PNG",
+    "capture_method": "Firefox native screenshot region export at 180% browser zoom; actual PNG; no resampling or retouching",
+    "printed_width_inches": 6.5,
+    "effective_dpi": 503.2,
+    "woodcut_alternative": "modular-focus-woodcut"
+  },
+  {
+    "id": "fumola-scene",
+    "issue": "001",
+    "kind": "staged screenshot",
+    "concept": "Fumola GCD and named-cell computation return (6, 42) into Hazel",
+    "path": "assets/fumola-scene-clean.png",
+    "branch": "fumola-livelit-mvp",
+    "url": "https://hazel.org/build/fumola-livelit-mvp/",
+    "created_utc": "2026-09-11T06:07:21.425244+00:00",
+    "reuse_rule": "Do not repeat this composition or premise in the next issue; only reuse as a labeled comparison if a changed behavior requires it.",
+    "prompt": null,
+    "pixel_dimensions": [
+      2647,
+      1051
+    ],
+    "pdf_rendering": "Native dimensions, lossless Flate compression, direct placement with one 4 pt cream mat, one green rule and red corner ticks.",
+    "revision": 2,
+    "deprecated_revision_1": {
+      "path": "assets/fumola-scene.png",
+      "actual_encoding": "JPEG",
+      "note": "Old .png extension and HiDPI QA claim were incorrect; not used in current PDF."
+    },
+    "actual_encoding": "PNG",
+    "capture_method": "Firefox native screenshot region export at 180% browser zoom; actual PNG; no resampling or retouching",
+    "printed_width_inches": 6.5,
+    "effective_dpi": 407.2,
+    "woodcut_alternative": "fumola-scene-woodcut"
+  },
+  {
+    "id": "observable-comic",
+    "issue": "001",
+    "kind": "generated comic",
+    "concept": "Question-mark creature asks if it is done; observability is a consolation",
+    "path": "assets/observable-comic.png",
+    "branch": "fictional",
+    "url": null,
+    "created_utc": "2026-09-11T04:47:06.600580+00:00",
+    "reuse_rule": "Do not repeat this composition or premise in the next issue; only reuse as a labeled comparison if a changed behavior requires it.",
+    "prompt": "PROMPTS.md",
+    "pixel_dimensions": [
+      2172,
+      724
+    ]
+  },
+  {
+    "id": "probes-cards-woodcut",
+    "issue": "001",
+    "revision": 2,
+    "kind": "ImageGen woodcut facsimile",
+    "path": "assets/probes-cards-woodcut.png",
+    "content_reference": "assets/probes-cards-clean.png",
+    "style_reference": "assets/drawer-tree.png",
+    "pixel_dimensions": [
+      1630,
+      965
+    ],
+    "tool": "built-in ImageGen",
+    "prompt": "WOODCUT-PROMPTS.json",
+    "generated_original": "/Users/andrewblinn/.codex/generated_images/01a08ebf-2d54-7572-b5ff-164447df53a5/exec-1e2fe067-e87e-4b58-8f76-114abd7be66b.png",
+    "fidelity": "Overall composition and depicted result retained; generated glyphs, card details and UI marks are not exact. Clean plate remains the syntax/UI reference.",
+    "reuse_rule": "Optional art-direction study; not a default treatment or fresh coverage for next week.",
+    "editorial_preference": "User-selected primary exemplar: restrained stamp quality, clear ink, quiet paper. Use as style reference for future facsimiles.",
+    "pdf_rendering": "Borderless direct placement; no added mat, rule or corner ticks."
+  },
+  {
+    "id": "fumola-scene-woodcut",
+    "issue": "001",
+    "revision": 2,
+    "kind": "ImageGen woodcut facsimile",
+    "path": "assets/fumola-scene-woodcut.png",
+    "content_reference": "assets/fumola-scene-clean.png",
+    "style_reference": "assets/drawer-tree.png",
+    "pixel_dimensions": [
+      1989,
+      791
+    ],
+    "tool": "built-in ImageGen",
+    "prompt": "WOODCUT-PROMPTS.json",
+    "generated_original": "/Users/andrewblinn/.codex/generated_images/01a08ebf-2d54-7572-b5ff-164447df53a5/exec-294703e6-5df3-4de3-96d2-9ff16613c8e3.png",
+    "fidelity": "Overall composition and depicted result retained; generated glyphs, card details and UI marks are not exact. Clean plate remains the syntax/UI reference.",
+    "reuse_rule": "Optional art-direction study; not a default treatment or fresh coverage for next week.",
+    "pdf_rendering": "Borderless direct placement; no added mat, rule or corner ticks."
+  },
+  {
+    "id": "modular-focus-woodcut",
+    "issue": "001",
+    "revision": 2,
+    "kind": "ImageGen woodcut facsimile",
+    "path": "assets/modular-focus-woodcut.png",
+    "content_reference": "assets/modular-focus-clean.png",
+    "style_reference": "assets/drawer-tree.png",
+    "pixel_dimensions": [
+      2022,
+      778
+    ],
+    "tool": "built-in ImageGen",
+    "prompt": "WOODCUT-PROMPTS.json",
+    "generated_original": "/Users/andrewblinn/.codex/generated_images/01a08ebf-2d54-7572-b5ff-164447df53a5/exec-e5c6fb42-fe09-402a-932e-58aab2568ae7.png",
+    "fidelity": "Overall composition and depicted result retained; generated glyphs, card details and UI marks are not exact. Clean plate remains the syntax/UI reference.",
+    "reuse_rule": "Optional art-direction study; not a default treatment or fresh coverage for next week.",
+    "editorial_preference": "User finds this too heavily woodblocky. Retained by request; not the future style target.",
+    "pdf_rendering": "Borderless direct placement; no added mat, rule or corner ticks."
+  },
+  {
+    "id": "constellation-score",
+    "issue": "001",
+    "revision": 3,
+    "kind": "authentic screenshot",
+    "concept": "Score module hull, bonus function arrow, tally and capped passing-test dots",
+    "path": "assets/constellation-score-clean.png",
+    "branch": "agent-canvas",
+    "head_sha": "25c6c57790e89dfd62ca04792f16fa1a3864cdc9",
+    "url": "http://127.0.0.1:8917/",
+    "created_utc": "2026-09-11T07:02:11Z",
+    "pixel_dimensions": [
+      847,
+      1125
+    ],
+    "actual_encoding": "PNG",
+    "capture_method": "Firefox native region screenshot at 190% browser zoom. Documentation > Constellation > Scorekeeper Module, canvas mode; outline, agent sidebar and detail panel closed; graph panned to include entire hull and arrows. No source changes or resampling.",
+    "printed_width_inches": 2.6944444444444446,
+    "effective_dpi": 314.4,
+    "pdf_rendering": "Exact native RGB pixels with lossless PDF embedding. Clean edition uses a single narrow frame.",
+    "woodcut_alternative": "constellation-score-woodcut",
+    "reuse_rule": "Do not repeat this static graph as new next week; return for changed interaction, agent run or meaningful comparison."
+  },
+  {
+    "id": "constellation-score-woodcut",
+    "issue": "001",
+    "revision": 3,
+    "kind": "ImageGen stamp facsimile",
+    "path": "assets/constellation-score-woodcut.png",
+    "content_reference": "assets/constellation-score-clean.png",
+    "style_reference": "assets/probes-cards-woodcut.png",
+    "pixel_dimensions": [
+      1088,
+      1445
+    ],
+    "tool": "built-in ImageGen",
+    "prompt": "WOODCUT-PROMPTS.json / constellation",
+    "generated_original": "/Users/andrewblinn/.codex/generated_images/01a08ebf-2d54-7572-b5ff-164447df53a5/exec-06e77398-6f9e-42db-8527-6dcd2e579d4e.png",
+    "fidelity": "Named nodes, all four integer nodes, question mark, function arrow directions and two passing-test dots retained. Texture, typography, grain and small mark positions vary; not pixel-exact. Clean capture is the evidence.",
+    "pdf_rendering": "Borderless direct placement; no mat or added rule.",
+    "reuse_rule": "Cards remains the primary future style exemplar. This image is one issue-specific use, not fresh future coverage."
+  }
+]

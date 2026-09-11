@@ -1,0 +1,153 @@
+{
+  "window_start": "2026-09-04T00:00:00Z",
+  "window_end_exclusive": "2026-09-11T00:00:00Z",
+  "repository": "hazelgrove/hazel",
+  "default_branch": "dev",
+  "default_head": "a816823aeed5dab2939a8030956fe92cf55bc5cf",
+  "current_remote_branches": 690,
+  "refs_with_tip_committer_date_in_week": 65,
+  "recent_tip_refs": [
+    "adventure-mode",
+    "agent-canvas",
+    "agent-hardening",
+    "artifact-grout",
+    "charts-on-hazel-html",
+    "cleanup/core-haz3lcore",
+    "cleanup/core-idioms",
+    "cleanup/core-language",
+    "cleanup/core-simplify",
+    "cleanup/core-small",
+    "cleanup/core-test",
+    "cleanup/core-util",
+    "cleanup/core-web",
+    "cleanup/dead-css",
+    "cleanup/either-to-result",
+    "cleanup/leaf-interfaces",
+    "cleanup/util-interfaces",
+    "coding-agent-actions",
+    "completion-provenance",
+    "concave-grout-marker",
+    "configuration",
+    "ctor-shadowing",
+    "d3-chart-projector",
+    "delimiter-reassociation-case",
+    "dev",
+    "docs/research-status-report",
+    "dynamic_statics",
+    "exolivelits",
+    "extended-tests",
+    "fix/probe-rich-depth-clamp",
+    "fix/qcheck-property-flakes",
+    "fix-1958-tuple-errors",
+    "fix-incr-eval-bare-fun",
+    "focal-range",
+    "fumola-livelit-mvp",
+    "hazel-html",
+    "integration/modules-livelits",
+    "modular-editors",
+    "modules-ii/1-sig-types",
+    "modules-ii/2-width-subtyping",
+    "modules-ii/3-abstract-types",
+    "modules-ii/4-module-typed-functions",
+    "modules-ii/5-projection-improvements",
+    "modules-ii/6-nested-expectations",
+    "modules-ii/7-duplicate-signature-members",
+    "modules-ii/8-modular-implicits",
+    "modules-ii/9-stdlib-modules",
+    "onboarding-tutorials",
+    "onboarding-tutorials-hzt",
+    "patchwork",
+    "patchwork-view",
+    "perf-debug-panels",
+    "probes-study-rebuilt",
+    "quiver-assist",
+    "refactorings",
+    "resizable-type-probe",
+    "statics-property-known-failures",
+    "strudelize",
+    "stuck-pattern-projection",
+    "theme-semantic-type",
+    "tile-datatype",
+    "tutorial-slide-folders",
+    "user-livelits",
+    "w2-worker-residency",
+    "wasm-eval-bench-spike"
+  ],
+  "new_prs": 23,
+  "new_prs_draft_at_retrieval": 13,
+  "merged_prs": 5,
+  "merged_to_dev": 3,
+  "merged_to_feature_branches": 2,
+  "new_issues": 12,
+  "closed_issues": 4,
+  "unique_commit_objects": 382,
+  "nonmerge_commit_objects": 294,
+  "merge_commit_objects": 88,
+  "claude_coauthor_credit": 277,
+  "nonmerge_claude_credit": 271,
+  "openai_coauthor_credit": 0,
+  "cryptographic_signature_present": 128,
+  "authors": {
+    "Alexander Bandukwala": 133,
+    "Matthew Hammer": 75,
+    "Andrew Blinn": 172,
+    "Cyrus Omar": 2
+  },
+  "daily": {
+    "2026-09-04": {
+      "total": 76,
+      "claude": 76
+    },
+    "2026-09-05": {
+      "total": 47,
+      "claude": 47
+    },
+    "2026-09-06": {
+      "total": 16,
+      "claude": 9
+    },
+    "2026-09-07": {
+      "total": 15,
+      "claude": 10
+    },
+    "2026-09-08": {
+      "total": 126,
+      "claude": 47
+    },
+    "2026-09-09": {
+      "total": 77,
+      "claude": 68
+    },
+    "2026-09-10": {
+      "total": 25,
+      "claude": 20
+    }
+  },
+  "merged": [
+    {
+      "number": 2511,
+      "title": "chore: update dependencies",
+      "base": "dev"
+    },
+    {
+      "number": 2504,
+      "title": "Load the Fumola runtime from a list of sources, not one",
+      "base": "fumola-livelit-mvp"
+    },
+    {
+      "number": 2482,
+      "title": "test: disable two seed-flaky evaluator properties, pin them as expected failures",
+      "base": "dev"
+    },
+    {
+      "number": 2363,
+      "title": "Probes IV",
+      "base": "dev"
+    },
+    {
+      "number": 2509,
+      "title": "Load the Fumola runtime by content hash, and say which one loaded",
+      "base": "fumola-livelit-mvp"
+    }
+  ]
+}

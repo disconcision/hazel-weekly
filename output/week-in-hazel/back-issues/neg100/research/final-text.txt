@@ -1,0 +1,211 @@
+A SMALL MAGAZINE ABOUT A VERY LIVE LANGUAGE
+Week in
+ISSUE -100
+HAZEL
+27 SEP–03 OCT 2024 RETROSPECTIVE
+New roots.
+Bonsai takes over the editor’s machinery. Labeled tuples learn to line
+up. A warning policy gets a second look.
+THE WEEK AS IT STOOD / MADE SEPTEMBER 2026
+WEEK IN HAZEL THE BIG LANDING
+MERGED INTO DEV / #1400
+Same editor.
+New machinery.
+A hole and two complete results share the same program. This small example runs in the rebuilt October 3 dev revision:
+the visible editor survives its move to Bonsai.
+M a Keenan’s Bonsai migration reached e awkward part is startup. Observers, clip‐
+dev on October 2, merged by Cyrus board focus, command-palee setup and the
+Omar. It replaces the Incr_dom applica‐ initial evaluation worker cannot all be treated as
+tion wrapper while retaining Hazel’s model and ordinary drawing. e patch introduces an
+update machinery. e familiar editor is the explicit Startup action, dispatched once aer
+point: the change concerns how that interface the first display, and moves that setup into the
+is driven, rather than a new language form update layer.
+or panel.
+Caret scrolling and saving aer an idle interval
+e new entry point uses a Bonsai state remain associated with post-display work. eir
+machine. An injected action reaches Hazel’s presence in the diff is not a claim that every per‐
+update function, which returns the next model; sistence or scrolling problem is solved. For con‐
+effects can schedule further actions. Initial tributors, the immediate consequence is a new
+loading still begins with the saved model or a place to trace the path from an event to a model
+blank one. at continuity makes this a migra‐ change—and a more explicit boundary between
+tion of the application’s outer structure, not a starting the application and rendering it.
+rewrite of every interaction.
+#1400
+-100 / 27 SEP–03 OCT 2024 02
+WEEK IN HAZEL UNDER THE SURFACE
+BONSAI / ACTIONS AND EFFECTS
+What happens after
+the first display?
+First display Setup effects
+Startup action
+The view exists; the one- Observers, command
+time guard allows startup. Inject into the state palette, clipboard and initial
+machine; run on_startup. evaluation.
+After initialization, later actions continue through the model/update/view path.
+T he migration is compact enough to read Alexander Bandukwala’s review follows the
+as a piece of architecture: twelve files, migration into its less glamorous edges. He asks
+with 195 added and 157 removed lines in whether the changed lockfile records dependen‐
+the merge diff. Most of the interesting work is at cies the patch actually needs or simply the ver‐
+the boundary between the framework and sions installed locally. Ma explains the small
+Hazel’s existing update function. e editor’s opam-version differences. e exchange is a
+language implementation is not being trans‐ useful reminder that a framework migration
+planted alongside it. arrives with a build environment, not just a new
+main function.
+A Bonsai toggle guards the initial effect. Aer
+the interface has first been displayed, that effect e review also asks whether the now-unused
+injects Startup. e action reaches State argument should disappear from the
+Update.on_startup, where the code can estab‐ update interface. It does. at is a small deletion
+lish the font resize observer, initialize the with a practical benefit: the signature stops sug‐
+command palee, arrange clipboard focus and gesting that an extra state channel remains part
+send the evaluator its initial work. Operating- of the application’s contract.
+system detection also belongs to that setup.
+ere is no new benchmark aached to this
+Subsequent actions use the same state machine’s story. e observable result is that a historical
+update path. e distinction maers when dev build can load, edit and evaluate a program
+investigating something that happens only on a through the new wrapper. Claims about
+fresh load: initialization is now an action one improved performance, easier future features or
+can look for, rather than an assortment of setup eliminated bugs would need their own evidence.
+tucked into the old application wrapper. e architectural gain visible here is the explicit
+handling of startup and the removal of an obso‐
+lete interface.
+#1400
+-100 / 27 SEP–03 OCT 2024 03
+WEEK IN HAZEL THE BRANCH GARDEN
+MERGED INTO LABELED-TUPLE-REWRITE / #1399
+Names change
+the alignment.
+Name-based matching
+Positional meaning remains
+Fully labeled components can be aligned by
+Unlabeled components should keep their
+name. Positions alone are no longer enough.
+relative order. Mixed and duplicate cases need
+explicit rules.
+PROPOSED TEST PROPERTIES / LABELED-TUPLE BRANCH
+A second substantial change lands some‐ e tests proposed in the discussion are more
+where other than dev. #1399 merges valuable than a single agreeable example.
+into labeled-tuple-rewrite on Permuting a fully labeled tuple can exercise
+September 27, extending elaboration with label many arrangements; preserving the order of
+insertion and reordering. It is part of the unlabeled components checks a different invari‐
+branch’s evolving treatment of tuples, ant. A test generator that confuses the two
+rather than a feature available in this week’s would certify the wrong behavior.
+shared build.
+A follow-up from @WondAli asks about dedu‐
+e motivating distinction is between a compo‐ plicating the rearrangement implementation
+nent’s position and its name. Once labels partici‐ aer the merge. ere is a familiar pressure
+pate in matching, elaboration may need to here: geing a new elaboration path working is
+supply a missing label or rearrange components one job, making its several cases share the right
+to meet an expected shape. at work cannot be machinery is another. e branch label maers
+reduced to sorting the source text: the unlabeled because that integration work is still local to
+parts still have positional meaning. the experiment.
+e review makes those expectations concrete Nearby, the merged #1401 improves statics and
+through proposed properties. Unlabeled values elaboration test helpers. Alexander and Ma
+should not silently reorder. Fully labeled tuples discuss the readability of fresh identifiers in
+should tolerate a different ordering of the same expected results. A type-level assertion is easier
+names. Cases involving duplicates and unequal to understand when the test expresses the
+lengths need explicit rules. ese are questions intended function type instead of forcing the
+about which programs mean the same thing, not reader through incidental identity bookkeeping.
+merely how tuples should be printed. at is quiet infrastructure for precisely the kind
+of design work labeled tuples require.
+#1399 / #1401
+-100 / 27 SEP–03 OCT 2024 04
+WEEK IN HAZEL AT THE WORKBENCH
+ONE MERGE, TWO OPEN DESIGN THREADS
+Warnings need
+somewhere to land.
+e week’s smaller changes expose decisions about what should stop a build—and
+what should stop an evaluation.
+A warning policy, then its counterproposal. When is a value finished enough? e open
+e merged #1378 centralizes warning behavior deferrals work in #1402 raises a more semantic
+in the Dune workspace: release builds treat stopping question. A deferred application
+warnings as errors, while development builds behaves in some respects like a lambda-like
+allow them. at lowers friction while code is in value, but casts and evaluation operations may
+progress, but it changes what a successful local demand different degrees of completion.
+build can tell its author.
+e October 1–3 discussion distinguishes
+On October 3, #1405 opens with a narrower req_value from req_final. Treating those
+approach: make development warnings fatal requirements as interchangeable would erase
+again, except for unused-code categories. Its the distinction the feature is trying to express.
+rationale is operational. Dune may print a e design question is not simply whether
+warning on the first build and omit it on a sub‐ an application is unfinished; it is whether the
+sequent incremental one; a serious warning can surrounding operation can use the result at
+therefore disappear from immediate aention that stage.
+without having been fixed.
+at places deferrals beside labeled tuples for a
+e second PR is still open at the week’s cutoff. reason. Both need elaboration and runtime
+e two proposals should not be collapsed into behavior to agree about structure that may be
+one seled policy. e useful question is which only partly determined. A small source expres‐
+warnings are expected scaffolding during sion can conceal a fairly exact contract between
+editing, and which should reliably force a the static and dynamic parts of Hazel. Neither
+contributor to stop and look. thread is a dev landing this week.
+A very noisy action. Issue #1403 reports that Tests as a common language. e new test
+every action is being printed to the console. helpers in #1401 give the week a practical coun‐
+#1404, merged October 2, removes the debug terweight to those open designs. Readable asser‐
+output. is is the kind of tiny cleanup that tions let a reviewer distinguish a semantic
+changes the experience of investigating every‐ expectation from the incidental representation
+thing else: a console full of routine editor events used to check it. As the branches grow, preserv‐
+makes the exceptional event harder to find. ing that distinction will make their failures more
+useful than a dump of fresh identifiers.
+#1378 / #1405 / #1402 / #1401 / #1404 / #1403
+-100 / 27 SEP–03 OCT 2024 05
+WEEK IN HAZEL THE INSTRUMENT PANEL
+27 SEPTEMBER–3 OCTOBER / UTC
+Four landings on dev.
+One on a branch.
+5 5 1
+PRs opened PRs merged issue opened
+DAILY COMMIT OBJECTS / WEEK-END DEV GRAPH
+6
+4 4
+2
+1
+0 0
+27 28 29 30 01 02 03
+Gray: all objects / Green: Claude credit / Red tick: signature header
+e merge map matters. e five merged PRs People in the review. Ma Keenan carries the
+include Bonsai, the statics-test helpers, the Bonsai transition; Alexander Bandukwala follows
+warning policy and the console cleanup on dev. its dependencies and update interface while pursu‐
+Label insertion and reordering lands on labeled- ing the tuple work. Cyrus Omar merges the frame‐
+tuple-rewrite. Counting all five without their work change and nearby dev work. e named
+destinations would overstate what someone contributions are clearer in the PRs than in a
+opening the shared editor can try. ranking of commit authors.
+e commit graph tells a narrower story: seven‐ Eight objects contain a Git signature header. None
+teen objects in the week are reachable from the contains the agent co-author trailers counted here.
+October 3 dev head, thirteen of them non-merge A signature is an authentication mechanism; an
+commits. ese are commit objects dated within agent credit is a declaration of involvement.
+the window, not seventeen distinct features or sev‐ Neither establishes how the uncredited code was
+enteen equal units of work. wrien. e absence of a trailer is not a human-
+only certificate.
+17 unique objects; 13 non-merge. UTC committer dates; reachable from 35629e93f2. Agent totals count declared co-author trailers;
+signature headers are not verified here.
+#1400 / #1399 / #1401 / #1378 / #1404
+-100 / 27 SEP–03 OCT 2024 06
+WEEK IN HAZEL THE FICTION DEPARTMENT
+A SMALL RELOCATION
+Please mind the roots.
+An invented greenhouse scene after the Bonsai migration. The plant keeps its crown; the stand and the connections
+underneath change.
+Still on the bench. e warning proposal leaves e cover. A bonsai rests on a keyboard-like tray
+a concrete question for the next build: can the while its roots are transferred to a new support.
+development profile stay forgiving about unused e image borrows the framework’s name literal‐
+scaffolding while making other warnings ly, then treats startup and event wiring as the less
+impossible to overlook? e open PR draws that visible work below the leaves. e gardening
+boundary more narrowly than the policy that tools and brass hardware are illustration, not
+just landed. claims about the implementation.
+For labeled tuples, the next informative examples e comic makes the same distinction in three
+are the awkward ones: a mixture of labeled and beats. It is a fictional scene about changing
+positional components, duplicate labels, or a support machinery while keeping the editor rec‐
+shape that does not match in length. ose ognizable. No developer is being portrayed by
+cases say more about the branch’s semantics one of its figures.
+than another successful permutation of two
+Week in Hazel · Issue -100
+named fields.
+A retrospective edition for September 27–October
+For deferrals, the point to keep watching is the 3, 2024. Reporting and readiness stop at the end
+consumer. A result that is adequate for one oper‐ of that UTC week. Edited and reported by Astra,
+ation may still be too incomplete for another. AI editor. Cover and comic by ImageGen.
+Making that distinction visible in tests will help Screenshot from a rebuilt week-end dev revision.
+separate intentional delay from an evaluator that Produced September 2026.
+has simply stopped too soon.
+#1405 / #1399 / #1402
+-100 / 27 SEP–03 OCT 2024 07

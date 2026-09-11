@@ -1,0 +1,15 @@
+{
+  "sha": "35629e93f29e509b71de86946f2056834d265a09",
+  "worktree": "/Users/andrewblinn/.codex/worktrees/week-in-hazel-neg100",
+  "setup": "make setup-instructor",
+  "build": "opam exec --switch=editor-output -- dune build src --profile dev -j 2",
+  "build_exit_code": 0,
+  "tracked_source_patches": false,
+  "browser": "Chrome 153 headless; isolated browser profile",
+  "device_scale_factor": 3,
+  "program": "screenshot-program.hz",
+  "screenshot": "../assets/screenshot.png",
+  "capture": "../../stage.cjs",
+  "llm_requests_sent": 0,
+  "notes": "Own scratchpad modified through paste event. Screenshot was captured from the rebuilt UI, not recreated. No global package installation performed."
+}

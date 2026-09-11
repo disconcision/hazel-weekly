@@ -1,0 +1,44 @@
+[
+  [
+    {
+      "id": 4928927095,
+      "node_id": "PRR_kwDOBMdeZM8AAAABJcl1dw",
+      "user": {
+        "login": "Negabinary",
+        "id": 31668468,
+        "node_id": "MDQ6VXNlcjMxNjY4NDY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/31668468?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Negabinary",
+        "html_url": "https://github.com/Negabinary",
+        "followers_url": "https://api.github.com/users/Negabinary/followers",
+        "following_url": "https://api.github.com/users/Negabinary/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Negabinary/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Negabinary/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Negabinary/subscriptions",
+        "organizations_url": "https://api.github.com/users/Negabinary/orgs",
+        "repos_url": "https://api.github.com/users/Negabinary/repos",
+        "events_url": "https://api.github.com/users/Negabinary/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Negabinary/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "weak reject\n\n- first two commits look like a very half-hearted attempt to solve some of the duplication between Tutorial mode and Exercise mode. Not sure it's worth just trimming this around the edges, I'd leave this work to be picked up when someone wants to commit to combining them\n- I don't know how much value we get from functorizing slider + sliderf; they're both pretty small, and we might actually want them to have different (e.g. snapping) behaviour later.",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/2437#pullrequestreview-4928927095",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/2437",
+      "author_association": "MEMBER",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/2437#pullrequestreview-4928927095"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/2437"
+        }
+      },
+      "submitted_at": "2026-08-13T15:47:57Z",
+      "commit_id": "a0ed4a7529d0d19ec6cbdcb5c0298e281e438180"
+    }
+  ]
+]

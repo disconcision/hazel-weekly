@@ -1,0 +1,124 @@
+[
+  [
+    {
+      "id": 4875097994,
+      "node_id": "PRR_kwDOBMdeZM8AAAABIpQXig",
+      "user": {
+        "login": "7h3kk1d",
+        "id": 995429,
+        "node_id": "MDQ6VXNlcjk5NTQyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/995429?u=504e0fe645bebaa279aac14ee9d4298c7016a68c&v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/7h3kk1d",
+        "html_url": "https://github.com/7h3kk1d",
+        "followers_url": "https://api.github.com/users/7h3kk1d/followers",
+        "following_url": "https://api.github.com/users/7h3kk1d/following{/other_user}",
+        "gists_url": "https://api.github.com/users/7h3kk1d/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/7h3kk1d/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/7h3kk1d/subscriptions",
+        "organizations_url": "https://api.github.com/users/7h3kk1d/orgs",
+        "repos_url": "https://api.github.com/users/7h3kk1d/repos",
+        "events_url": "https://api.github.com/users/7h3kk1d/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/7h3kk1d/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/2363#pullrequestreview-4875097994",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/2363",
+      "author_association": "MEMBER",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/2363#pullrequestreview-4875097994"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/2363"
+        }
+      },
+      "submitted_at": "2026-08-06T13:29:08Z",
+      "commit_id": "0e90e4322bf5bb422345299b502a6ebfa26d4d5f"
+    },
+    {
+      "id": 4879498769,
+      "node_id": "PRR_kwDOBMdeZM8AAAABItc-EQ",
+      "user": {
+        "login": "disconcision",
+        "id": 22436459,
+        "node_id": "MDQ6VXNlcjIyNDM2NDU5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/22436459?u=0cb0d45f709c1bd00cd617bdb0e4317792e78d58&v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/disconcision",
+        "html_url": "https://github.com/disconcision",
+        "followers_url": "https://api.github.com/users/disconcision/followers",
+        "following_url": "https://api.github.com/users/disconcision/following{/other_user}",
+        "gists_url": "https://api.github.com/users/disconcision/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/disconcision/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/disconcision/subscriptions",
+        "organizations_url": "https://api.github.com/users/disconcision/orgs",
+        "repos_url": "https://api.github.com/users/disconcision/repos",
+        "events_url": "https://api.github.com/users/disconcision/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/disconcision/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/2363#pullrequestreview-4879498769",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/2363",
+      "author_association": "MEMBER",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/2363#pullrequestreview-4879498769"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/2363"
+        }
+      },
+      "submitted_at": "2026-08-07T02:44:45Z",
+      "commit_id": "0e90e4322bf5bb422345299b502a6ebfa26d4d5f"
+    },
+    {
+      "id": 5094954870,
+      "node_id": "PRR_kwDOBMdeZM8AAAABL67Xdg",
+      "user": {
+        "login": "disconcision",
+        "id": 22436459,
+        "node_id": "MDQ6VXNlcjIyNDM2NDU5",
+        "avatar_url": "https://avatars.githubusercontent.com/u/22436459?u=0cb0d45f709c1bd00cd617bdb0e4317792e78d58&v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/disconcision",
+        "html_url": "https://github.com/disconcision",
+        "followers_url": "https://api.github.com/users/disconcision/followers",
+        "following_url": "https://api.github.com/users/disconcision/following{/other_user}",
+        "gists_url": "https://api.github.com/users/disconcision/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/disconcision/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/disconcision/subscriptions",
+        "organizations_url": "https://api.github.com/users/disconcision/orgs",
+        "repos_url": "https://api.github.com/users/disconcision/repos",
+        "events_url": "https://api.github.com/users/disconcision/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/disconcision/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "I reviewed head b90c310 against dev, including the adjacent probe and editor-layout code. The current fast checks, full tests, preview, and Codecov checks are green. I found three browser-side correctness issues that I would address before merge; the inline comments include the failure mode and a suggested direction.\n\nMaintainability and structure:\n\n- ProbeProj.re is now 2,544 lines and owns persisted projector state, mutable global display settings, sample caches, navigation/focus, menus and listeners, rich-renderer selection, and drawer rendering. Those are useful seams for ProbeSettings, ProbeNavigation, ProbeSampleMenu, ProbeRichView, and ProbeDrawer modules, leaving the projector implementation mostly as orchestration.\n- ProbePerform.re is 1,424 lines and similarly combines target discovery, automatic-probe reconciliation, manual/multi-probe lifecycle, collision cleanup, focus, and step-into behavior. ProbeTargets, AutoProbePerform, and ProbeFocus would make the invariants and tests much easier to isolate.\n- CardTypes/CardSyntax/CardView and MenuListener are good extractions in this branch; I would continue that pattern. In particular, ProbeProj.vacuous_value currently knows about CardSyntax to decide whether automatic rich rendering has evidence. That policy belongs on the RichProbe renderer interface as an auto-applicability/evidence predicate, so future list-shaped renderers do not add more domain checks to the generic probe module.\n- ProbeStagger, RefractorShift, ScrollWidth, SampleAnchor, and FocusEffect are individually small, but together form a global mutable after-display subsystem. An editor-scoped layout-effects coordinator would give these caches an explicit owner and directly prevent the first two findings below.\n\nNaming and comments:\n\n- Settings.s and Settings.go hide whether code is reading state or dispatching an update; current and update/dispatch would be clearer, ideally behind a non-global interface.\n- The strongest comments explain invariants, such as raw versus finalized sample maps, observation-span delegation, and agreement between reserved and measured drawer rows. Keep those close to the code.\n- The long design-history comments are less durable. ProbeStagger links an implementation plan, AutoProbe describes Caret only as a top-level definition even though bare expressions are supported, and the RichProbe module comment ends mid-thought. I would trim these to current behavioral contracts and move the exegesis/history to maintained design docs.\n- git diff --check reports trailing whitespace in hazel-programs/docs/reference/cards.hz on lines 8 and 38.\n\nOverall, the card/view and listener extractions are heading in a good direction, but the new layout code needs editor identity to be a first-class input rather than relying on document-global selectors and refs.",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/2363#pullrequestreview-5094954870",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/2363",
+      "author_association": "MEMBER",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/2363#pullrequestreview-5094954870"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/2363"
+        }
+      },
+      "submitted_at": "2026-09-02T20:51:04Z",
+      "commit_id": "b90c310d8be98626b745f2cb2e332911989dbef3"
+    }
+  ]
+]

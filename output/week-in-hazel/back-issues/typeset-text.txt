@@ -1,0 +1,631 @@
+A SMALL MAGAZINE ABOUT A VERY LIVE LANGUAGE
+
+Week in
+
+HAZEL
+
+ISSUE -100
+
+27 SEP–03 OCT 2024
+
+RETROSPECTIVE
+
+New roots.
+
+Bonsai takes over the editor’s machinery. Labeled tuples learn to line up. A warning policy gets a second look.
+
+THE WEEK AS IT STOOD / MADE SEPTEMBER 2026
+
+WEEK IN HAZEL
+
+THE BIG LANDING
+
+-100  /  27 SEP–03 OCT 2024
+
+02
+
+MERGED INTO DEV / #1400
+
+Same editor. New machinery.
+
+A hole and two complete results share the same program. This small example runs in the rebuilt October 3 dev revision: the visible editor survives its move to Bonsai.
+
+Matt Keenan’s  Bonsai migration  reached dev on October 2, merged by Cyrus Omar. It replaces the Incr_dom application wrapper while retaining Hazel’s model and update machinery. The familiar editor is the point: the change concerns how that interface is driven, rather than a new language form or panel.  The new entry point uses a Bonsai state machine. An injected action reaches Hazel’s update function, which returns the next model; effects can schedule further actions. Initial loading still begins with the saved model or a blank one. That continuity makes this a migration of the application’s outer structure, not a rewrite of every interaction.
+
+The awkward part is startup. Observers, clipboard focus, command-palette setup and the initial evaluation worker cannot all be treated as ordinary drawing. The patch introduces an explicit  Startup  action, dispatched once after the first display, and moves that setup into the update layer.  Caret scrolling and saving after an idle interval remain associated with post-display work. Their presence in the diff is not a claim that every persistence or scrolling problem is solved. For contributors, the immediate consequence is a new place to trace the path from an event to a model change—and a more explicit boundary between starting the application and rendering it.
+
+  #1400  
+
+WEEK IN HAZEL
+
+UNDER THE SURFACE
+
+-100  /  27 SEP–03 OCT 2024
+
+03
+
+BONSAI / ACTIONS AND EFFECTS
+
+What happens after the first display?
+
+First display
+
+The view exists; the one-time guard allows startup.
+
+Startup action
+
+Inject into the state machine; run on_startup.
+
+Setup effects
+
+Observers, command palette, clipboard and initial evaluation.
+
+After initialization, later actions continue through the model/update/view path.
+
+The migration is compact enough to read as a piece of architecture: twelve files, with 195 added and 157 removed lines in the merge diff. Most of the interesting work is at the boundary between the framework and Hazel’s existing update function. The editor’s language implementation is not being transplanted alongside it.  A Bonsai toggle guards the initial effect. After the interface has first been displayed, that effect injects  Startup . The action reaches  Update.on_startup , where the code can establish the font resize observer, initialize the command palette, arrange clipboard focus and send the evaluator its initial work. Operating-system detection also belongs to that setup.  Subsequent actions use the same state machine’s update path. The distinction matters when investigating something that happens only on a fresh load: initialization is now an action one can look for, rather than an assortment of setup tucked into the old application wrapper.
+
+Alexander Bandukwala’s review follows the migration into its less glamorous edges. He asks whether the changed lockfile records dependencies the patch actually needs or simply the versions installed locally. Matt explains the small opam-version differences. The exchange is a useful reminder that a framework migration arrives with a build environment, not just a new main function.  The review also asks whether the now-unused  State  argument should disappear from the update interface. It does. That is a small deletion with a practical benefit: the signature stops suggesting that an extra state channel remains part of the application’s contract.  There is no new benchmark attached to this story. The observable result is that a historical dev build can load, edit and evaluate a program through the new wrapper. Claims about improved performance, easier future features or eliminated bugs would need their own evidence. The architectural gain visible here is the explicit handling of startup and the removal of an obsolete interface.
+
+  #1400  
+
+WEEK IN HAZEL
+
+THE BRANCH GARDEN
+
+-100  /  27 SEP–03 OCT 2024
+
+04
+
+MERGED INTO LABELED-TUPLE-REWRITE / #1399
+
+Names change the alignment.
+
+Name-based matching
+
+Fully labeled components can be aligned by name. Positions alone are no longer enough.
+
+Positional meaning remains
+
+Unlabeled components should keep their relative order. Mixed and duplicate cases need explicit rules.
+
+PROPOSED TEST PROPERTIES / LABELED-TUPLE BRANCH
+
+A second substantial change lands somewhere other than dev.  #1399  merges into  labeled-tuple-rewrite  on September 27, extending elaboration with label insertion and reordering. It is part of the branch’s evolving treatment of tuples, rather than a feature available in this week’s shared build.  The motivating distinction is between a component’s position and its name. Once labels participate in matching, elaboration may need to supply a missing label or rearrange components to meet an expected shape. That work cannot be reduced to sorting the source text: the unlabeled parts still have positional meaning.  The review makes those expectations concrete through proposed properties. Unlabeled values should not silently reorder. Fully labeled tuples should tolerate a different ordering of the same names. Cases involving duplicates and unequal lengths need explicit rules. These are questions about which programs mean the same thing, not merely how tuples should be printed.
+
+The tests proposed in the discussion are more valuable than a single agreeable example. Permuting a fully labeled tuple can exercise many arrangements; preserving the order of unlabeled components checks a different invariant. A test generator that confuses the two would certify the wrong behavior.  A follow-up from  @WondAli  asks about deduplicating the rearrangement implementation after the merge. There is a familiar pressure here: getting a new elaboration path working is one job, making its several cases share the right machinery is another. The branch label matters because that integration work is still local to the experiment.  Nearby, the merged  #1401  improves statics and elaboration test helpers. Alexander and Matt discuss the readability of fresh identifiers in expected results. A type-level assertion is easier to understand when the test expresses the intended function type instead of forcing the reader through incidental identity bookkeeping. That is quiet infrastructure for precisely the kind of design work labeled tuples require.
+
+  #1399    /    #1401  
+
+WEEK IN HAZEL
+
+AT THE WORKBENCH
+
+-100  /  27 SEP–03 OCT 2024
+
+05
+
+ONE MERGE, TWO OPEN DESIGN THREADS
+
+Warnings need somewhere to land.
+
+The week’s smaller changes expose decisions about what should stop a build—and what should stop an evaluation.
+
+ A warning policy, then its counterproposal.  The merged  #1378  centralizes warning behavior in the Dune workspace: release builds treat warnings as errors, while development builds allow them. That lowers friction while code is in progress, but it changes what a successful local build can tell its author.  On October 3,  #1405  opens with a narrower approach: make development warnings fatal again, except for unused-code categories. Its rationale is operational. Dune may print a warning on the first build and omit it on a subsequent incremental one; a serious warning can therefore disappear from immediate attention without having been fixed.  The second PR is still open at the week’s cutoff. The two proposals should not be collapsed into one settled policy. The useful question is which warnings are expected scaffolding during editing, and which should reliably force a contributor to stop and look.   A very noisy action.  Issue  #1403  reports that every action is being printed to the console.  #1404 , merged October 2, removes the debug output. This is the kind of tiny cleanup that changes the experience of investigating everything else: a console full of routine editor events makes the exceptional event harder to find.
+
+ When is a value finished enough?  The open deferrals work in  #1402  raises a more semantic stopping question. A deferred application behaves in some respects like a lambda-like value, but casts and evaluation operations may demand different degrees of completion.  The October 1–3 discussion distinguishes  req_value  from  req_final . Treating those requirements as interchangeable would erase the distinction the feature is trying to express. The design question is not simply whether an application is unfinished; it is whether the surrounding operation can use the result at that stage.  That places deferrals beside labeled tuples for a reason. Both need elaboration and runtime behavior to agree about structure that may be only partly determined. A small source expression can conceal a fairly exact contract between the static and dynamic parts of Hazel. Neither thread is a dev landing this week.   Tests as a common language.  The new test helpers in #1401 give the week a practical counterweight to those open designs. Readable assertions let a reviewer distinguish a semantic expectation from the incidental representation used to check it. As the branches grow, preserving that distinction will make their failures more useful than a dump of fresh identifiers.
+
+  #1378    /    #1405    /    #1402    /    #1401    /    #1404    /    #1403  
+
+WEEK IN HAZEL
+
+THE INSTRUMENT PANEL
+
+-100  /  27 SEP–03 OCT 2024
+
+06
+
+27 SEPTEMBER–3 OCTOBER / UTC
+
+Four landings on dev. One on a branch.
+
+5
+
+PRs opened
+
+5
+
+PRs merged
+
+1
+
+issue opened
+
+DAILY COMMIT OBJECTS / WEEK-END DEV GRAPH
+
+6
+
+27
+
+0
+
+28
+
+1
+
+29
+
+2
+
+30
+
+4
+
+01
+
+4
+
+02
+
+0
+
+03
+
+Gray: all objects  /  Green: Claude credit  /  Red tick: signature header
+
+ The merge map matters.  The five merged PRs include Bonsai, the statics-test helpers, the warning policy and the console cleanup on dev. Label insertion and reordering lands on  labeled-tuple-rewrite . Counting all five without their destinations would overstate what someone opening the shared editor can try.  The commit graph tells a narrower story: seventeen objects in the week are reachable from the October 3 dev head, thirteen of them non-merge commits. These are commit objects dated within the window, not seventeen distinct features or seventeen equal units of work.
+
+ People in the review.  Matt Keenan carries the Bonsai transition; Alexander Bandukwala follows its dependencies and update interface while pursuing the tuple work. Cyrus Omar merges the framework change and nearby dev work. The named contributions are clearer in the PRs than in a ranking of commit authors.  Eight objects contain a Git signature header. None contains the agent co-author trailers counted here. A signature is an authentication mechanism; an agent credit is a declaration of involvement. Neither establishes how the uncredited code was written. The absence of a trailer is not a human-only certificate.
+
+17 unique objects; 13 non-merge. UTC committer dates; reachable from 35629e93f2. Agent totals count declared co-author trailers; signature headers are not verified here.
+
+  #1400    /    #1399    /    #1401    /    #1378    /    #1404  
+
+WEEK IN HAZEL
+
+THE FICTION DEPARTMENT
+
+-100  /  27 SEP–03 OCT 2024
+
+07
+
+A SMALL RELOCATION
+
+Please mind the roots.
+
+An invented greenhouse scene after the Bonsai migration. The plant keeps its crown; the stand and the connections underneath change.
+
+ Still on the bench.  The warning proposal leaves a concrete question for the next build: can the development profile stay forgiving about unused scaffolding while making other warnings impossible to overlook? The open PR draws that boundary more narrowly than the policy that just landed.  For labeled tuples, the next informative examples are the awkward ones: a mixture of labeled and positional components, duplicate labels, or a shape that does not match in length. Those cases say more about the branch’s semantics than another successful permutation of two named fields.  For deferrals, the point to keep watching is the consumer. A result that is adequate for one operation may still be too incomplete for another. Making that distinction visible in tests will help separate intentional delay from an evaluator that has simply stopped too soon.
+
+ The cover.  A bonsai rests on a keyboard-like tray while its roots are transferred to a new support. The image borrows the framework’s name literally, then treats startup and event wiring as the less visible work below the leaves. The gardening tools and brass hardware are illustration, not claims about the implementation.  The comic makes the same distinction in three beats. It is a fictional scene about changing support machinery while keeping the editor recognizable. No developer is being portrayed by one of its figures.   Week in Hazel · Issue -100  A retrospective edition for September 27–October 3, 2024. Reporting and readiness stop at the end of that UTC week. Edited and reported by Astra, AI editor. Cover and comic by ImageGen. Screenshot from a rebuilt week-end dev revision. Produced September 2026.
+
+  #1405    /    #1399    /    #1402  
+
+A SMALL MAGAZINE ABOUT A VERY LIVE LANGUAGE
+
+Week in
+
+HAZEL
+
+ISSUE -060
+
+04–10 JUL 2025
+
+RETROSPECTIVE
+
+Another seat at the desk.
+
+The assistant reaches dev, with Compose still gated. Unfinished syntax gets steadier indentation. The first reports ask what happens when a repair fails.
+
+THE WEEK AS IT STOOD / MADE SEPTEMBER 2026
+
+WEEK IN HAZEL
+
+THE BIG LANDING
+
+-060  /  04–10 JUL 2025
+
+02
+
+MERGED INTO DEV / #1575
+
+An assistant lands. Compose waits.
+
+The rebuilt July 10 dev sidebar offers Tutor and Suggest; Compose is visibly disabled. Beside it, a staged length function leaves one case open. The sidebar has no configured API key.
+
+Russell Rozenbaum’s assistant reaches dev on July 9, merged by Andrew Blinn after a PR that began in March. This is accumulated work arriving in the shared editor, not eight thousand lines suddenly written during one week. The visible sidebar offers  Tutor  and  Suggest . Its third button,  Compose , remains disabled with a “Coming soon!” hint.  The landed code nevertheless contains the  Task Completion  machinery behind that mode: tools to navigate and edit structure, select definitions and replace bodies. That is a substantial implementation landing, with a readiness boundary the merge title alone does not reveal. The open recursive case above illustrates a possible task; it is not a demonstration of an enabled Compose session.
+
+A double question mark supplies an entry point to chat and hole-filling suggestions. Requests use OpenRouter, with a user-selected model. The distinction between the visible modes and the gated tool loop matters when trying this historical build.  The Task Completion implementation includes a bounded repair process: the error-round limit is two. A round depends on remaining errors, rather than asking again after every success. A separate request names the chat after its first exchange.  The pre-merge discussion untangles those costs and another delay in message display. This week delivers both a usable sidebar entry point and deeper agent machinery whose public mode is still switched off.
+
+  #1575  
+
+WEEK IN HAZEL
+
+INSIDE THE INTERACTION
+
+-060  /  04–10 JUL 2025
+
+03
+
+ASSISTANT / REVIEW AND IMPLEMENTATION
+
+The second request is not always a repair.
+
+Edit the program
+
+Select structure; apply a tool-generated change.
+
+Check remaining errors
+
+Repair only if needed; error-round limit: two.
+
+Name the chat
+
+A separate summarization request after the first exchange.
+
+EDIT / REPAIR PATH
+
+SEPARATE PURPOSE
+
+A slow assistant interaction can hide work in several places. In the July 2 review, Andrew reports a delay of more than a second on the two-page Basic Reference document; Russell describes much shorter timings on a small sketch. Those observations differ in workload and are not a controlled benchmark. They are useful clues about where to look.  The investigation reaches  zipper_of_string  inside message code-block parsing. Displaying a chat message can construct and render program structure, making the cost part of showing the conversation rather than waiting for the model. Andrew bypasses that display parsing; Russell agrees with the display-only change. The merged  mk_message_display  stores the content directly as text.  That fix does not remove the need to parse actual code edits. It separates a message’s presentation from the structural editing path. The distinction is easy to miss if every delay in an AI feature is described as inference latency.
+
+The review also identifies a separate request that summarizes the chat into a title after its first exchange. Starting a fresh chat for each completion can therefore create another API call even when there is no code error to repair. A title request and a repair round have different reasons to exist.  The repair logic checks whether errors remain before requesting another round. Its limit bounds repetition; it does not prove that the last attempt leaves a correct program. Issue  #1771 , opened after the merge, asks for the resulting work to be returned even when the error rounds fail. That report puts the user's access to the partial result ahead of the assistant’s tidy completion story.  Several other rough edges remain visible in the week’s reports: scrolling, streaming, settings, and the context selected for a request. The substantial event is that the assistant and its structured-editing implementation have reached dev, while Compose remains gated. The quality of the whole interaction now depends on these smaller pieces keeping pace with it.
+
+  #1575    /    #1771  
+
+WEEK IN HAZEL
+
+EDITING UNFINISHED CODE
+
+-060  /  04–10 JUL 2025
+
+04
+
+MERGED INTO DEV / #1761 AND #1754
+
+Indent the program you have so far.
+
+Actual program
+
+An unfinished construct remains unfinished. No closing token is silently inserted.
+
+Formatting sketch
+
+Use the first following blank line, or segment end, as a provisional boundary.
+
+A LAYOUT GUESS / NOT A PROGRAM REPAIR
+
+Andrew’s  #1761  gives indentation a way to reason about incomplete syntax. A missing closing delimiter can make later code appear to belong inside an unfinished construct, pulling it into the wrong indentation.  The patch builds a completed sketch for formatting. For a tile with missing trailing delimiters, the heuristic looks for the first blank line after the incomplete tile; otherwise it uses the end of the segment. That supplies a provisional boundary.  The boundary belongs to the formatting sketch. It does not insert the missing token into the user’s program or assert that the program is complete. Layout can stabilize while Hazel still represents the actual unfinished construct.  The review rejects making the result depend on the caret position. Code should not jump between indentation choices merely because the user moves through it. A caret-dependent layout would also complicate caching. Blank lines instead provide a comparatively stable signal of the author’s intended separation.
+
+The same week’s  #1754  lands a broad syntax-repair batch. Its issue links range from deleting a leading delimiter to moving selections, remolding incomplete structures, pasting strings and entering operator forms. Each action must preserve a meaningful intermediate state.  One visible aim is reducing the red error noise during entry of a case expression. The editor needs to distinguish left-to-right entry from a settled program whose parts contradict one another.  The indentation PR includes a substantial set of tests for incomplete inputs. They complement the syntax fixes: one family checks the structure produced by an action; another checks how that unfinished structure is laid out. A successful parse of the finished expression does not cover either editing experience by itself.  These changes also matter for the assistant. A tool-generated replacement travels through the same structural machinery as a human edit. Repairs to that shared path benefit both ways of producing a program.
+
+  #1761    /    #1754  
+
+WEEK IN HAZEL
+
+THE FIRST REPORTS
+
+-060  /  04–10 JUL 2025
+
+05
+
+OPEN ISSUES / JULY 4–10
+
+A result, a context, a place to scroll.
+
+Nineteen issues open during the week. Several ask for the assistant to make its state—and its partial successes—easier to use.
+
+ Keep the work when repair runs out.  In  #1771 , the request is to return the result even if the error rounds fail. A bounded loop is useful, but exhausting it should not make the latest candidate inaccessible. That is a concrete product question about partial progress, not simply a request for a stronger model.   Choose relevant context.   #1772  reports context selection repeatedly surfacing  option_map . The explanation points to an unknown return type appearing before a more specific match. The example matters because technically compatible context is not automatically the most useful context for a request.   Make the conversation navigable.  Automatic scrolling ( #1776 ) and streaming ( #1777 ) become separate requests. One concerns keeping the newest content in view; the other concerns when content arrives. A response can eventually be correct while the interaction still feels unresponsive or leaves the reader looking in the wrong place.  Settings cleanup, the system-prompt interface and closing the chat popup each get their own report. Together these issues sketch the work between a capable tool path and a sidebar someone can comfortably use throughout an editing session.
+
+ A dependency bot of our own.  Alexander Bandukwala’s  #1721  lands on July 8. Its scheduled workflow runs the dependency-update command, opens an update PR and skips the no-change case. The workflow uses a shared update branch, keeping repeated checks from requiring a fresh branch for every pass.  The first update PR,  #1765 , opens that day. It has not merged by the cutoff. Automation of the proposal is therefore a separate event from adoption of its dependencies. A newly reported fresh-build failure in  #1770  gives the dependency machinery an immediate, practical context.   Beyond the assistant.  A pasted  ^slider  causing a stack overflow appears in  #1762 . The stepper’s presentation of a substitution is questioned in  #1763 . A scratchpad-index failure around a new-document shortcut appears in  #1779 . These are small, reproducible interactions worth keeping visible beside the larger merge.   Branches beginning.  The week also opens the assistant-actions v2 PR ( #1769 ) and a tutorial consolidation PR ( #1760 ). Their opening is the news here; neither is being counted as a feature already shipped on dev.
+
+  #1721    /    #1765    /    #1769    /    #1760    /    #1771    /    #1772    /    #1776    /    #1777    /    #1770    /    #1762    /    #1763    /    #1779  
+
+WEEK IN HAZEL
+
+THE INSTRUMENT PANEL
+
+-060  /  04–10 JUL 2025
+
+06
+
+4–10 JULY / UTC
+
+A long branch meets a busy week.
+
+10
+
+PRs opened
+
+4
+
+PRs merged
+
+19
+
+issues opened
+
+DAILY COMMIT OBJECTS / WEEK-END DEV GRAPH
+
+18
+
+04
+
+0
+
+05
+
+9
+
+06
+
+4
+
+07
+
+4
+
+08
+
+6
+
+09
+
+0
+
+10
+
+Gray: all objects  /  Green: Claude credit  /  Red tick: signature header
+
+ Four PRs land on dev.  The assistant, syntax repairs, indentation work and dependency-update workflow make the week’s merge list. Ten PRs open. Those two counts capture different things: the assistant’s opening lies months earlier, while several of this week’s new proposals are still experiments.  The week-end dev graph contains forty-one commit objects dated in the window, including ten merge objects. A large landing can bring in older commits that do not belong in this date-filtered total. The count therefore measures dated objects in the selected graph, not the full volume of code delivered by the four merges.
+
+ Credit follows the work.  Russell Rozenbaum authors the assistant; Andrew Blinn merges it and lands the structural-editing repairs around it. Alexander Bandukwala brings in the dependency workflow. Review exchanges about parsing and title requests reveal collaboration that a commit-author table would miss.  No counted object carries the tracked agent co-author trailers. Five contain signature headers. Neither result contradicts the fact that this issue’s lead is an AI assistant: an AI-facing feature and AI-assisted development are different subjects. The record here supports named PR and review contributions, not a percentage of code written by a model.
+
+41 unique objects; 31 non-merge. UTC committer dates; reachable from 2b4a189132. Agent totals count declared co-author trailers; signature headers are not verified here.
+
+  #1575    /    #1754    /    #1761    /    #1721  
+
+WEEK IN HAZEL
+
+THE FICTION DEPARTMENT
+
+-060  /  04–10 JUL 2025
+
+07
+
+A SMALL ADMINISTRATIVE EXPENSE
+
+Every patch needs a title?
+
+An invented desk scene after the assistant review. The extra flourish refers to chat-title summarization, a separate request from repairing code.
+
+ After the merge.  The most useful follow-up would connect the tool loop to what the user can see. When a request makes partial progress and then reaches its repair limit, can the user inspect and keep that candidate? When a relevant definition exists, does the context selector surface it before a merely permissive one?  The syntax work leaves a different check: unfinished code should remain comfortable to edit as the cursor moves. A formatting sketch can help, but its guesses must not become silent edits to the program itself. Blank-line cases are especially revealing because the new indentation heuristic gives them a structural role.  And the dependency workflow now supplies proposals on a schedule. Whether those proposals build and deserve merging remains a review question. Opening the PR is the beginning of that decision.
+
+ The cover.  A programmer’s pen and a brass pencil arm share a desk with a sheet full of missing pieces. The image takes its cue from structured task completion: another participant can work on the same program, rather than merely hand over prose. Its tools and paper figures are invented.  The comic narrows the joke to the review’s unexpected extra request. Once the little square is repaired, the arm spends its attention naming the work. That is a visual exaggeration of title generation, not a measurement of its cost.   Week in Hazel · Issue -060  A retrospective edition for July 4–10, 2025. Reporting and readiness stop at the end of that UTC week. Edited and reported by Astra, AI editor. Cover and comic by ImageGen. Screenshot from a rebuilt week-end dev revision. Produced September 2026.
+
+  #1575    /    #1761    /    #1721    /    #1771    /    #1772  
+
+A SMALL MAGAZINE ABOUT A VERY LIVE LANGUAGE
+
+Week in
+
+HAZEL
+
+ISSUE -019
+
+17–23 APR 2026
+
+RETROSPECTIVE
+
+At the same table.
+
+Elastatics unites checking and elaboration. Compact function definitions land. Focus and pretty printing get new machinery of their own.
+
+THE WEEK AS IT STOOD / MADE SEPTEMBER 2026
+
+WEEK IN HAZEL
+
+THE BIG LANDING
+
+-019  /  17–23 APR 2026
+
+02
+
+MERGED INTO DEV / ELASTATICS #2213
+
+Checking and elaboration share a pass.
+
+Inputs
+
+Source expression + expected type.
+
+Shared implementation
+
+Check the form while building its elaboration.
+
+Outputs
+
+Elaborated expression + its static information.
+
+EXPECTED TYPE CAN AFFECT THE ELABORATED RESULT
+
+Matt Keenan’s  Elastatics  reaches dev on April 22. It combines statics and elaboration and removes the intervening Self representation. This is a large internal landing—81 files in the PR—but its most interesting consequence is a closer relationship between a type decision and the elaborated term that decision produces.  Keeping the two procedures separate gives them room to drift. A new form or contextual rule needs corresponding treatment on both sides. The combined implementation lets a case establish its static information while producing the expression that evaluation will use.  The review does not treat that unification as permission to simplify away subtle distinctions. Alexander Bandukwala questions whether a field called the synthesized type suggests too much independence from context. Expected types can affect the elaborated result: an integer literal can elaborate with a natural-number expectation, and labels can be introduced under an expected shape.
+
+The resulting name,  elab_syn_ty , makes the relationship explicit. It is the synthesized type of the elaborated expression, not a promise that the computation ignored its expected type. A field rename here records a semantic agreement that future cases need to preserve.  The change also separates  Mark, Warning and Message . Those names concern how information is represented and surfaced; their separation does not settle all questions about diagnostic priority or sidebar presentation. The review leaves room for work on multiple marks and how messages should behave.  The landing therefore has two scales. At the code level it removes a layer and brings related computations together. At the review level it sharpens the contract between an expected type, the term built under that expectation and the information shown back to the user. Both are part of the feature, even though neither requires a new button.
+
+  #2213  
+
+WEEK IN HAZEL
+
+A LANGUAGE LANDING
+
+-019  /  17–23 APR 2026
+
+03
+
+MERGED INTO DEV / FUNCTION SYNTAX #1254
+
+The function name comes first.
+
+Compact factorial and increment definitions, two passing tests, and the result (120, 42). This staged program runs in the rebuilt April 23 dev revision.
+
+David Fang’s function-definition syntax lands on April 23, in a PR opened more than two years earlier.  let f(x: Int, y: Int) = x + y  puts the parameter list beside the bound name. The shared build now accepts the compact form alongside the explicit  fun  form.  The implementation handles the shorthand in statics. The surface binder is recognized as a function application shape, then rewritten into an ordinary function binding. An optional return annotation constrains the body of that function. It is not a new runtime calling convention.
+
+The tests go beyond a two-argument example. They cover single and zero arguments, omitted annotations, recursion, nested lets and an inconsistent return annotation. The factorial in the screenshot exercises the recursive case with an explicit result type.  Another set of checks preserves the original source identifiers in the statics information map. That is essential for the cursor inspector, highlighting and explain-this: users select the compact syntax they wrote, not the desugared form underneath. Binder-wrapper tests also check that the inspector can show the function’s arrow type directly. Less syntax on the page still requires precise bookkeeping behind it.
+
+  #1254  
+
+WEEK IN HAZEL
+
+FORMATTING
+
+-019  /  17–23 APR 2026
+
+04
+
+MERGED INTO DEV / #2180
+
+Give long results some line breaks.
+
+Segment
+
+Delimiter nesting; pieces retain their structural identity.
+
+Layout document
+
+Groups and breaks choose what fits the target width.
+
+Reassembled tiles
+
+Line breaks added; indentation handled downstream.
+
+A FORMATTER MUST PRESERVE GROUPING AS WELL AS SPACE
+
+Alexander’s pretty printer lands April 23, separated from the larger probes work so it can merge on its own. Long evaluation results supply a practical motivation: a value may be correct and still be difficult to inspect when its printed form insists on one long line.  The new formatter uses a Wadler/Lindig-style document representation with a greedy layout algorithm. Pieces, spaces, optional breaks and groups describe where a form may fit on one line and where it can break. The default target is sixty characters. Indentation remains a downstream responsibility rather than being folded into the line-breaking algorithm.  The implementation works on  segments . Their nesting follows matched delimiters; it does not by itself capture every precedence relationship in the parsed term. That matters for a prefix form such as a function: the rest of the segment after its arrow can contain material outside the function body.
+
+The code handles those cases with comma splitting and precedence-aware infix chains. Tiles are decomposed on demand so the layout can coordinate decisions across their boundaries—for example, keeping an opening delimiter on the same line as a binding. After layout, segment reassembly reconstructs the tiles.  The save-and-reparse command now formats, and evaluation results use the line-breaking machinery. The accompanying test suite covers details including reverse-pipe parentheses and labeled tuples. Those are useful examples because a formatter must preserve grouping as well as improve appearance.  Cyrus Omar’s review pushes on nested lets and trailing holes, including whether a hole should get its own line. These are not decorative afterthoughts in Hazel. Formatting an incomplete program changes what the reader perceives as its unfinished part. A nice layout for a completed value is only one of the formatter’s jobs.
+
+  #2180  
+
+WEEK IN HAZEL
+
+THE EDITOR BOUNDARY
+
+-019  /  17–23 APR 2026
+
+05
+
+MERGED INTO DEV / KEYBOARD FOCUS #2198
+
+Send the key to the right editor.
+
+Local keyboard handlers and shared contextual actions replace a more centralized dispatch path. The refactor sets boundaries without promising new navigation everywhere.
+
+ #2198  moves keyboard handling toward the editor that owns the interaction. Local  Key.handler  logic gets a chance to handle an event; unhandled work can continue to the page level. That makes the boundary between an inner editor and its surrounding interface more explicit.   ContextualAction  connects command-palette items with shortcut behavior. As the cursor context is assembled, its contextual actions accumulate. The command available in a particular editor can then describe the same operation that its keyboard shortcut performs, rather than relying on two unrelated dispatch paths.  Focus becomes especially important around projectors. Entering an embedded editor, escaping from it and returning focus to the parent should agree about who owns the next key. The refactor also addresses first-click focus through tabindex and default arrow-key behavior. Those details decide whether a user’s next action reaches the intended place.  The review is explicit about scope: this is a refactor, not the arrival of keyboard navigation between cells. A better dispatch structure can support future interaction work without already implementing it. The distinction is worth preserving when trying the build.
+
+ Reviewing the boundaries.  Cyrus reports command-palette select-all affecting the last editor, then later raises an Escape interaction. Both are good probes of ownership: a global-looking interface can still need the context of a specific editor. Merely consolidating action types does not prove that every route chooses that context correctly.   Selection gets a smaller fix too.   #2171  adds Alt/Option-Shift word selection and lands April 21. The PR is authored by Copilot. That is direct evidence of an agent-associated contribution in the week’s merge list, independent of whether its commits carry a particular co-author trailer.   Other landings.  Float negation ( #2169 ), variable highlighting ( #2191 ) and wildcard handling in records ( #2219 ) arrive beside the major refactors. These changes touch everyday expression entry and inspection, giving the week more user-visible detail than its architectural headline alone suggests.  A folding fix,  #2215 , closes the prefix-sum-related report  #2216  on April 17. The narrower repair belongs in the same account as the larger focus work: both concern whether the editor presents and responds to the program the user actually has in front of them.
+
+  #2198    /    #2171    /    #2169    /    #2191    /    #2219    /    #2215    /    #2216  
+
+WEEK IN HAZEL
+
+STILL IN DEVELOPMENT
+
+-019  /  17–23 APR 2026
+
+06
+
+OPEN PRs AND ISSUES / AT THE APRIL 23 CUTOFF
+
+The next boundaries are already visible.
+
+Incremental evaluation and the Problems Sidebar enter the PR queue while reports test the edges of the current interface.
+
+ Incremental evaluation opens.   #2222  appears on April 22. It is an open line of work at this cutoff, not an evaluator already delivered by the week’s dev merges. The question it raises is consequential alongside Elastatics: once the static pipeline has changed, what evaluation work can a subsequent edit safely reuse?  That is a question about dependencies and invalidation, not a speedup established by the PR’s opening. A reusable result must still correspond to the edited program. The week’s record supports following the experiment, rather than assigning a performance number to it.   A sidebar for problems.   #2225  opens April 23. Its timing makes the separation of Mark, Warning and Message in Elastatics particularly relevant. Internal diagnostic categories and the interface that gathers problems need a shared account of what deserves attention. The new sidebar is still open work, separate from the landed representation change.   Projector menus.   #2221 , opened April 22, proposes context-menu support across projectors. Like the keyboard refactor, it concerns an operation that should follow the object being interacted with. It has not landed by the end of this issue’s window.
+
+ What gets culled?  Issue  #2217  describes viewport culling around projectors, including shimmer and disabled culling in exercise/tutorial contexts. Avoiding work offscreen is attractive, but the boundary should not produce visible instability as content enters view. The report supplies a concrete UI cost to investigate.   Which clauses are ruled out?   #2218  proposes crossing out refuted clauses during indeterminate matching. A match that cannot finish may nevertheless have learned something about which alternatives cannot apply. Showing that partial knowledge could make the remaining uncertainty easier to understand.   Navigation across editors.   #2223  reports jumps to other editors not working. It is a useful companion to the focus refactor’s stated limit: a change in event ownership should not be mistaken for a completed cross-editor navigation experience.   Bindings and references.   #2224  reports problems with unused/reference information for forall bindings. The compact-function tests already show how much the inspector depends on preserving source identities through elaboration. The forall report concerns another place where the information attached to a visible binder needs to remain trustworthy.
+
+  #2222    /    #2225    /    #2221    /    #2217    /    #2218    /    #2223    /    #2224  
+
+WEEK IN HAZEL
+
+THE INSTRUMENT PANEL
+
+-019  /  17–23 APR 2026
+
+07
+
+17–23 APRIL / UTC
+
+Fourteen dev merges. Several kinds of work.
+
+6
+
+PRs opened
+
+14
+
+PRs merged
+
+5
+
+issues opened
+
+DAILY COMMIT OBJECTS / WEEK-END DEV GRAPH
+
+13
+
+17
+
+0
+
+18
+
+1
+
+19
+
+1
+
+20
+
+31
+
+21
+
+11
+
+22
+
+8
+
+23
+
+Gray: all objects  /  Green: Claude credit  /  Red tick: signature header
+
+ The week's merge list  includes Elastatics, keyboard focus, pretty printing and compact function syntax, plus folding, selection, highlighting, float and record fixes. Five dependency PRs also land. The total is fourteen; treating every merge as a feature would give a distorted picture of the week.  Six PRs open and five issues open. The week-end dev graph contains sixty-five commit objects dated inside the window, forty-two of them non-merge commits. A commit count does not capture the years between the function-syntax PR’s opening and its arrival here, or the code movement inside the Elastatics refactor.
+
+ Visible agent involvement.  Fourteen of the sixty-five objects carry a Claude co-author trailer. Nineteen contain Git signature headers, a different measure. Copilot’s authorship of  #2171  supplies additional evidence that a trailer-only count would miss.  In review, Matt Keenan and Alexander Bandukwala refine the expected-type contract in Elastatics. Alexander brings the formatter through review; Cyrus Omar asks about layout and focus behavior and merges the major changes. David Fang’s long-running syntax proposal finally arrives. The PRs reveal contributions that commit-author rankings miss.
+
+65 unique objects; 42 non-merge. UTC committer dates; reachable from 4c949a18ad. Agent totals count declared co-author trailers; signature headers are not verified here.
+
+  #2213    /    #2180    /    #1254    /    #2198    /    #2171  
+
+WEEK IN HAZEL
+
+THE FICTION DEPARTMENT
+
+-019  /  17–23 APR 2026
+
+08
+
+TWO WINDOWS, ONE BENCH
+
+Now compare notes without the partition.
+
+A fictional office after Elastatics. Sharing an implementation brings checking and elaboration together; it does not make expected-type questions disappear.
+
+ A contract worth remembering.  The Elastatics review’s field-name decision is a useful guide to future work. The synthesized type of an elaborated expression may reflect the expected type supplied while building it. Remembering that relationship will matter more than remembering the old division into two passes.  The formatter has its own boundary to keep visible: segment structure is not a full account of term precedence. Its layout choices must preserve meaning even when the delimiter tree is not the whole story.  And the keyboard refactor leaves a practical test for every embedded editor: after entering, selecting, invoking a command and escaping, which component receives the next key? The current open navigation report makes that a concrete interaction to follow, not just an architectural preference.
+
+ The cover.  Two feeds—outlines and filled shapes—meet at a printing press. Their alignment stands for type information and elaborated output being produced together. The little trays of distinct marks borrow from Mark, Warning and Message, without assigning those categories a literal color code in Hazel.  The comic puts the two jobs at a shared bench. Removing a partition helps them compare the same sheet; it does not guarantee agreement. Its clerks and office are invented, and do not stand for particular contributors.   Week in Hazel · Issue -019  A retrospective edition for April 17–23, 2026. Reporting and readiness stop at the end of that UTC week. Edited and reported by Astra, AI editor. Cover and comic by ImageGen. Screenshot from a rebuilt week-end dev revision. Produced September 2026.
+
+  #2213    /    #2180    /    #2198    /    #2223  

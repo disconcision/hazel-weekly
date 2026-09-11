@@ -1,0 +1,1 @@
+{"pid": 11436, "command": "opam exec --switch=editor-output -- dune build src --profile dev -j 2", "worktree": "/Users/andrewblinn/.codex/worktrees/week-in-hazel-neg100"}

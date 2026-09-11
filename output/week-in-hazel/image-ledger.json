@@ -1,0 +1,385 @@
+[
+  {
+    "id": "drawer-tree",
+    "issue": "001",
+    "kind": "generated illustration",
+    "concept": "Open probe drawers as a tree cabinet",
+    "path": "assets/drawer-tree.png",
+    "branch": "conceptual",
+    "url": null,
+    "created_utc": "2026-09-11T04:39:50.410513+00:00",
+    "reuse_rule": "Do not repeat this composition or premise in the next issue; only reuse as a labeled comparison if a changed behavior requires it.",
+    "prompt": "PROMPTS.md",
+    "pixel_dimensions": [
+      1536,
+      1024
+    ]
+  },
+  {
+    "id": "probes-cards",
+    "issue": "001",
+    "kind": "authentic screenshot",
+    "concept": "Insertion-sort intermediate hands as rich card samples",
+    "path": "assets/probes-cards-clean.png",
+    "branch": "dev",
+    "url": "https://hazel.org/build/dev/",
+    "created_utc": "2026-09-11T06:04:36.318120+00:00",
+    "reuse_rule": "Do not repeat this composition or premise in the next issue; only reuse as a labeled comparison if a changed behavior requires it.",
+    "prompt": null,
+    "pixel_dimensions": [
+      2456,
+      1454
+    ],
+    "pdf_rendering": "Native dimensions, lossless Flate compression, direct placement with one 4 pt cream mat, one green rule and red corner ticks.",
+    "revision": 2,
+    "deprecated_revision_1": {
+      "path": "assets/probes-cards.png",
+      "actual_encoding": "JPEG",
+      "note": "Old .png extension and HiDPI QA claim were incorrect; not used in current PDF."
+    },
+    "actual_encoding": "PNG",
+    "capture_method": "Firefox native screenshot region export at 180% browser zoom; actual PNG; no resampling or retouching",
+    "printed_width_inches": 5.694444444444445,
+    "effective_dpi": 431.3,
+    "woodcut_alternative": "probes-cards-woodcut",
+    "placement_revision": 4
+  },
+  {
+    "id": "modular-focus",
+    "issue": "001",
+    "kind": "staged screenshot",
+    "concept": "One definition from Mega 1k, scoped outline, live probe, whole-program result",
+    "path": "assets/modular-focus-clean.png",
+    "branch": "modular-editors",
+    "url": "https://hazel.org/build/modular-editors/",
+    "created_utc": "2026-09-11T06:10:58.019976+00:00",
+    "reuse_rule": "Do not repeat this composition or premise in the next issue; only reuse as a labeled comparison if a changed behavior requires it.",
+    "prompt": null,
+    "pixel_dimensions": [
+      3271,
+      1256
+    ],
+    "pdf_rendering": "Native dimensions, lossless Flate compression, direct placement with one 4 pt cream mat, one green rule and red corner ticks.",
+    "revision": 2,
+    "deprecated_revision_1": {
+      "path": "assets/modular-focus.png",
+      "actual_encoding": "JPEG",
+      "note": "Old .png extension and HiDPI QA claim were incorrect; not used in current PDF."
+    },
+    "actual_encoding": "PNG",
+    "capture_method": "Firefox native screenshot region export at 180% browser zoom; actual PNG; no resampling or retouching",
+    "printed_width_inches": 6.5,
+    "effective_dpi": 503.2,
+    "woodcut_alternative": "modular-focus-woodcut"
+  },
+  {
+    "id": "fumola-scene",
+    "issue": "001",
+    "kind": "staged screenshot",
+    "concept": "Fumola GCD and named-cell computation return (6, 42) into Hazel",
+    "path": "assets/fumola-scene-clean.png",
+    "branch": "fumola-livelit-mvp",
+    "url": "https://hazel.org/build/fumola-livelit-mvp/",
+    "created_utc": "2026-09-11T06:07:21.425244+00:00",
+    "reuse_rule": "Do not repeat this composition or premise in the next issue; only reuse as a labeled comparison if a changed behavior requires it.",
+    "prompt": null,
+    "pixel_dimensions": [
+      2647,
+      1051
+    ],
+    "pdf_rendering": "Native dimensions, lossless Flate compression, direct placement with one 4 pt cream mat, one green rule and red corner ticks.",
+    "revision": 2,
+    "deprecated_revision_1": {
+      "path": "assets/fumola-scene.png",
+      "actual_encoding": "JPEG",
+      "note": "Old .png extension and HiDPI QA claim were incorrect; not used in current PDF."
+    },
+    "actual_encoding": "PNG",
+    "capture_method": "Firefox native screenshot region export at 180% browser zoom; actual PNG; no resampling or retouching",
+    "printed_width_inches": 6.5,
+    "effective_dpi": 407.2,
+    "woodcut_alternative": "fumola-scene-woodcut"
+  },
+  {
+    "id": "observable-comic",
+    "issue": "001",
+    "kind": "generated comic",
+    "concept": "Question-mark creature asks if it is done; observability is a consolation",
+    "path": "assets/observable-comic.png",
+    "branch": "fictional",
+    "url": null,
+    "created_utc": "2026-09-11T04:47:06.600580+00:00",
+    "reuse_rule": "Do not repeat this composition or premise in the next issue; only reuse as a labeled comparison if a changed behavior requires it.",
+    "prompt": "PROMPTS.md",
+    "pixel_dimensions": [
+      2172,
+      724
+    ]
+  },
+  {
+    "id": "probes-cards-woodcut",
+    "issue": "001",
+    "revision": 2,
+    "kind": "ImageGen woodcut facsimile",
+    "path": "assets/probes-cards-woodcut.png",
+    "content_reference": "assets/probes-cards-clean.png",
+    "style_reference": "assets/drawer-tree.png",
+    "pixel_dimensions": [
+      1630,
+      965
+    ],
+    "tool": "built-in ImageGen",
+    "prompt": "WOODCUT-PROMPTS.json",
+    "generated_original": "/Users/andrewblinn/.codex/generated_images/01a08ebf-2d54-7572-b5ff-164447df53a5/exec-1e2fe067-e87e-4b58-8f76-114abd7be66b.png",
+    "fidelity": "Overall composition and depicted result retained; generated glyphs, card details and UI marks are not exact. Clean plate remains the syntax/UI reference.",
+    "reuse_rule": "Optional art-direction study; not a default treatment or fresh coverage for next week.",
+    "editorial_preference": "User-selected primary exemplar: restrained stamp quality, clear ink, quiet paper. Use as style reference for future facsimiles.",
+    "pdf_rendering": "Borderless direct placement; no added mat, rule or corner ticks.",
+    "printed_width_inches": 5.694444444444445,
+    "effective_dpi": 286.2,
+    "placement_revision": 4
+  },
+  {
+    "id": "fumola-scene-woodcut",
+    "issue": "001",
+    "revision": 2,
+    "kind": "ImageGen woodcut facsimile",
+    "path": "assets/fumola-scene-woodcut.png",
+    "content_reference": "assets/fumola-scene-clean.png",
+    "style_reference": "assets/drawer-tree.png",
+    "pixel_dimensions": [
+      1989,
+      791
+    ],
+    "tool": "built-in ImageGen",
+    "prompt": "WOODCUT-PROMPTS.json",
+    "generated_original": "/Users/andrewblinn/.codex/generated_images/01a08ebf-2d54-7572-b5ff-164447df53a5/exec-294703e6-5df3-4de3-96d2-9ff16613c8e3.png",
+    "fidelity": "Overall composition and depicted result retained; generated glyphs, card details and UI marks are not exact. Clean plate remains the syntax/UI reference.",
+    "reuse_rule": "Optional art-direction study; not a default treatment or fresh coverage for next week.",
+    "pdf_rendering": "Borderless direct placement; no added mat, rule or corner ticks."
+  },
+  {
+    "id": "modular-focus-woodcut",
+    "issue": "001",
+    "revision": 2,
+    "kind": "ImageGen woodcut facsimile",
+    "path": "assets/modular-focus-woodcut.png",
+    "content_reference": "assets/modular-focus-clean.png",
+    "style_reference": "assets/drawer-tree.png",
+    "pixel_dimensions": [
+      2022,
+      778
+    ],
+    "tool": "built-in ImageGen",
+    "prompt": "WOODCUT-PROMPTS.json",
+    "generated_original": "/Users/andrewblinn/.codex/generated_images/01a08ebf-2d54-7572-b5ff-164447df53a5/exec-e5c6fb42-fe09-402a-932e-58aab2568ae7.png",
+    "fidelity": "Overall composition and depicted result retained; generated glyphs, card details and UI marks are not exact. Clean plate remains the syntax/UI reference.",
+    "reuse_rule": "Optional art-direction study; not a default treatment or fresh coverage for next week.",
+    "editorial_preference": "User finds this too heavily woodblocky. Retained by request; not the future style target.",
+    "pdf_rendering": "Borderless direct placement; no added mat, rule or corner ticks."
+  },
+  {
+    "id": "constellation-score",
+    "issue": "001",
+    "revision": 3,
+    "kind": "authentic screenshot",
+    "concept": "Score module hull, bonus function arrow, tally and capped passing-test dots",
+    "path": "assets/constellation-score-clean.png",
+    "branch": "agent-canvas",
+    "head_sha": "25c6c57790e89dfd62ca04792f16fa1a3864cdc9",
+    "url": "http://127.0.0.1:8917/",
+    "created_utc": "2026-09-11T07:02:11Z",
+    "pixel_dimensions": [
+      847,
+      1125
+    ],
+    "actual_encoding": "PNG",
+    "capture_method": "Firefox native region screenshot at 190% browser zoom. Documentation > Constellation > Scorekeeper Module, canvas mode; outline, agent sidebar and detail panel closed; graph panned to include entire hull and arrows. No source changes or resampling.",
+    "printed_width_inches": 2.6944444444444446,
+    "effective_dpi": 314.4,
+    "pdf_rendering": "Exact native RGB pixels with lossless PDF embedding. Clean edition uses a single narrow frame.",
+    "woodcut_alternative": "constellation-score-woodcut",
+    "reuse_rule": "Do not repeat this static graph as new next week; return for changed interaction, agent run or meaningful comparison."
+  },
+  {
+    "id": "constellation-score-woodcut",
+    "issue": "001",
+    "revision": 3,
+    "kind": "ImageGen stamp facsimile",
+    "path": "assets/constellation-score-woodcut.png",
+    "content_reference": "assets/constellation-score-clean.png",
+    "style_reference": "assets/probes-cards-woodcut.png",
+    "pixel_dimensions": [
+      1088,
+      1445
+    ],
+    "tool": "built-in ImageGen",
+    "prompt": "WOODCUT-PROMPTS.json / constellation",
+    "generated_original": "/Users/andrewblinn/.codex/generated_images/01a08ebf-2d54-7572-b5ff-164447df53a5/exec-06e77398-6f9e-42db-8527-6dcd2e579d4e.png",
+    "fidelity": "Named nodes, all four integer nodes, question mark, function arrow directions and two passing-test dots retained. Texture, typography, grain and small mark positions vary; not pixel-exact. Clean capture is the evidence.",
+    "pdf_rendering": "Borderless direct placement; no mat or added rule.",
+    "reuse_rule": "Cards remains the primary future style exemplar. This image is one issue-specific use, not fresh future coverage."
+  },
+  {
+    "id": "neg100-cover",
+    "issue": "-100",
+    "number": -100,
+    "kind": "generated illustration",
+    "concept": "New roots.",
+    "path": "back-issues/neg100/assets/cover.png",
+    "created_utc": "2026-09-11T21:14:43.382932+00:00",
+    "reporting_start_utc": "2024-09-27T00:00:00+00:00",
+    "historical_head": null,
+    "prompt": "back-issues/ART-PROMPTS.json",
+    "cleanup": null,
+    "pixel_dimensions": [
+      1536,
+      1024
+    ],
+    "reuse_rule": "Retrospective visual. Avoid repeating the same program or comic premise; return for a new behavior or an explicitly labeled historical comparison."
+  },
+  {
+    "id": "neg100-screenshot",
+    "issue": "-100",
+    "number": -100,
+    "kind": "authentic historical-build screenshot",
+    "concept": "A hole and two complete results share the same program. This small example runs in the rebuilt October 3 dev revision: the visible editor survives its move to Bonsai.",
+    "path": "back-issues/neg100/assets/screenshot.png",
+    "created_utc": "2026-09-11T21:14:43.382932+00:00",
+    "reporting_start_utc": "2024-09-27T00:00:00+00:00",
+    "historical_head": "35629e93f29e509b71de86946f2056834d265a09",
+    "prompt": null,
+    "cleanup": null,
+    "pixel_dimensions": [
+      2190,
+      810
+    ],
+    "reuse_rule": "Retrospective visual. Avoid repeating the same program or comic premise; return for a new behavior or an explicitly labeled historical comparison."
+  },
+  {
+    "id": "neg100-comic",
+    "issue": "-100",
+    "number": -100,
+    "kind": "generated illustration",
+    "concept": "An invented greenhouse scene after the Bonsai migration. The plant keeps its crown; the stand and the connections underneath change.",
+    "path": "back-issues/neg100/assets/comic.png",
+    "created_utc": "2026-09-11T21:14:43.382932+00:00",
+    "reporting_start_utc": "2024-09-27T00:00:00+00:00",
+    "historical_head": null,
+    "prompt": "back-issues/COMIC-PROMPTS.json",
+    "cleanup": "back-issues/COMIC-CLEANUP.md",
+    "pixel_dimensions": [
+      2172,
+      724
+    ],
+    "reuse_rule": "Retrospective visual. Avoid repeating the same program or comic premise; return for a new behavior or an explicitly labeled historical comparison."
+  },
+  {
+    "id": "neg060-cover",
+    "issue": "-060",
+    "number": -60,
+    "kind": "generated illustration",
+    "concept": "Another seat at the desk.",
+    "path": "back-issues/neg060/assets/cover.png",
+    "created_utc": "2026-09-11T21:14:43.382932+00:00",
+    "reporting_start_utc": "2025-07-04T00:00:00+00:00",
+    "historical_head": null,
+    "prompt": "back-issues/ART-PROMPTS.json",
+    "cleanup": null,
+    "pixel_dimensions": [
+      1536,
+      1024
+    ],
+    "reuse_rule": "Retrospective visual. Avoid repeating the same program or comic premise; return for a new behavior or an explicitly labeled historical comparison."
+  },
+  {
+    "id": "neg060-screenshot",
+    "issue": "-060",
+    "number": -60,
+    "kind": "authentic historical-build screenshot",
+    "concept": "The rebuilt July 10 dev sidebar offers Tutor and Suggest; Compose is visibly disabled. Beside it, a staged length function leaves one case open. The sidebar has no configured API key.",
+    "path": "back-issues/neg060/assets/screenshot.png",
+    "created_utc": "2026-09-11T21:14:43.382932+00:00",
+    "reporting_start_utc": "2025-07-04T00:00:00+00:00",
+    "historical_head": "2b4a189132e4a0d653035d25ccba80643d53cb1a",
+    "prompt": null,
+    "cleanup": null,
+    "pixel_dimensions": [
+      3345,
+      1530
+    ],
+    "reuse_rule": "Retrospective visual. Avoid repeating the same program or comic premise; return for a new behavior or an explicitly labeled historical comparison."
+  },
+  {
+    "id": "neg060-comic",
+    "issue": "-060",
+    "number": -60,
+    "kind": "generated illustration",
+    "concept": "An invented desk scene after the assistant review. The extra flourish refers to chat-title summarization, a separate request from repairing code.",
+    "path": "back-issues/neg060/assets/comic.png",
+    "created_utc": "2026-09-11T21:14:43.382932+00:00",
+    "reporting_start_utc": "2025-07-04T00:00:00+00:00",
+    "historical_head": null,
+    "prompt": "back-issues/COMIC-PROMPTS.json",
+    "cleanup": "back-issues/COMIC-CLEANUP.md",
+    "pixel_dimensions": [
+      2172,
+      724
+    ],
+    "reuse_rule": "Retrospective visual. Avoid repeating the same program or comic premise; return for a new behavior or an explicitly labeled historical comparison."
+  },
+  {
+    "id": "neg019-cover",
+    "issue": "-019",
+    "number": -19,
+    "kind": "generated illustration",
+    "concept": "At the same table.",
+    "path": "back-issues/neg019/assets/cover.png",
+    "created_utc": "2026-09-11T21:14:43.382932+00:00",
+    "reporting_start_utc": "2026-04-17T00:00:00+00:00",
+    "historical_head": null,
+    "prompt": "back-issues/ART-PROMPTS.json",
+    "cleanup": null,
+    "pixel_dimensions": [
+      1536,
+      1024
+    ],
+    "reuse_rule": "Retrospective visual. Avoid repeating the same program or comic premise; return for a new behavior or an explicitly labeled historical comparison."
+  },
+  {
+    "id": "neg019-screenshot",
+    "issue": "-019",
+    "number": -19,
+    "kind": "authentic historical-build screenshot",
+    "concept": "Compact factorial and increment definitions, two passing tests, and the result (120, 42). This staged program runs in the rebuilt April 23 dev revision.",
+    "path": "back-issues/neg019/assets/screenshot.png",
+    "created_utc": "2026-09-11T21:14:43.382932+00:00",
+    "reporting_start_utc": "2026-04-17T00:00:00+00:00",
+    "historical_head": "4c949a18ade0710687c7ff00231131f3cb20a06c",
+    "prompt": null,
+    "cleanup": null,
+    "pixel_dimensions": [
+      2100,
+      930
+    ],
+    "reuse_rule": "Retrospective visual. Avoid repeating the same program or comic premise; return for a new behavior or an explicitly labeled historical comparison."
+  },
+  {
+    "id": "neg019-comic",
+    "issue": "-019",
+    "number": -19,
+    "kind": "generated illustration",
+    "concept": "A fictional office after Elastatics. Sharing an implementation brings checking and elaboration together; it does not make expected-type questions disappear.",
+    "path": "back-issues/neg019/assets/comic.png",
+    "created_utc": "2026-09-11T21:14:43.382932+00:00",
+    "reporting_start_utc": "2026-04-17T00:00:00+00:00",
+    "historical_head": null,
+    "prompt": "back-issues/COMIC-PROMPTS.json",
+    "cleanup": "back-issues/COMIC-CLEANUP.md",
+    "pixel_dimensions": [
+      2172,
+      724
+    ],
+    "reuse_rule": "Retrospective visual. Avoid repeating the same program or comic premise; return for a new behavior or an explicitly labeled historical comparison."
+  }
+]

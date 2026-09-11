@@ -1,0 +1,51 @@
+[
+  [
+    {
+      "url": "https://api.github.com/repos/hazelgrove/hazel/issues/comments/5495621796",
+      "html_url": "https://github.com/hazelgrove/hazel/issues/2128#issuecomment-5495621796",
+      "issue_url": "https://api.github.com/repos/hazelgrove/hazel/issues/2128",
+      "id": 5495621796,
+      "node_id": "IC_kwDOBMdeZM8AAAABR5CIpA",
+      "user": {
+        "login": "7h3kk1d",
+        "id": 995429,
+        "node_id": "MDQ6VXNlcjk5NTQyOQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/995429?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/7h3kk1d",
+        "html_url": "https://github.com/7h3kk1d",
+        "followers_url": "https://api.github.com/users/7h3kk1d/followers",
+        "following_url": "https://api.github.com/users/7h3kk1d/following{/other_user}",
+        "gists_url": "https://api.github.com/users/7h3kk1d/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/7h3kk1d/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/7h3kk1d/subscriptions",
+        "organizations_url": "https://api.github.com/users/7h3kk1d/orgs",
+        "repos_url": "https://api.github.com/users/7h3kk1d/repos",
+        "events_url": "https://api.github.com/users/7h3kk1d/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/7h3kk1d/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "created_at": "2026-09-01T14:36:50Z",
+      "updated_at": "2026-09-01T14:39:39Z",
+      "body": "Still live on `dev`, and still intermittent \u2014 this property failed for me on a random local seed while I was disabling a *different* flaky property (#2457), then passed on the next run.\n\nSince #2422 made the runner propagate a real exit status, that means an unlucky draw blocks whatever PR it lands on.\n\nSo on branch `disable-flaky-eval-pbts` I've **disabled** `qcheck_stepper_confluence` and replaced it with a deterministic pin of the counterexample from this issue and #2372 \u2014 `fun (x::x) -> x`, where one engine freshens the duplicate binder and the other doesn't.\n\nThe pin asserts the **current, wrong** behaviour, deliberately. That's why it isn't a `skip_known_bug` like the ones in `test/Test_Elaboration.re` and `test/statics/`: a skipped test stays silent forever, whereas this one goes red the day the engines agree and names the property to re-enable:\n\n```\n#2128/#2372 appear FIXED: re-enable the disabled `Evaluator and stepper are\nconsistent` property and delete this expected-failure pin\n```\n\nBoth engines are now driven through a shared `reduce_both_engines`, called by the disabled property and the pin alike, so re-enabling is a one-line change.\n\n**On #2408:** that PR fixes a *different* confluence cause \u2014 uncollapsed casts in the branches of an indeterminate `if` (seed 773972249). It doesn't touch binder freshening, so landing it won't on its own make this property safe to re-enable; the pin here should still be red afterwards. Worth confirming when it lands.\n\n#2372 looks like a duplicate of this issue \u2014 same counterexample shape, same diagnosis \u2014 so one of them can probably be closed.\n\n---\n\n**Update:** opened as #2482.\n\nTo be explicit: **that PR does not fix this bug and must not close this issue** (or #2372). It only stops the property from reddening unrelated CI runs. The binder-freshening disagreement is still there \u2014 #2482 pins it as an expected failure so it stays covered, and so that whoever does fix it gets told to re-enable the property.\n",
+      "author_association": "MEMBER",
+      "pin": null,
+      "reactions": {
+        "url": "https://api.github.com/repos/hazelgrove/hazel/issues/comments/5495621796/reactions",
+        "total_count": 0,
+        "+1": 0,
+        "-1": 0,
+        "laugh": 0,
+        "hooray": 0,
+        "confused": 0,
+        "heart": 0,
+        "rocket": 0,
+        "eyes": 0
+      },
+      "performed_via_github_app": null,
+      "minimized": null
+    }
+  ]
+]

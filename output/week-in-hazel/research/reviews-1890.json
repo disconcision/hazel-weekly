@@ -1,0 +1,84 @@
+[
+  [
+    {
+      "id": 4420146563,
+      "node_id": "PRR_kwDOBMdeZM8AAAABB3YVgw",
+      "user": {
+        "login": "cyrus-",
+        "id": 280638,
+        "node_id": "MDQ6VXNlcjI4MDYzOA==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/280638?u=f914d19f3ca1b69d5ed7847ecf78e459e2fadaa1&v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/cyrus-",
+        "html_url": "https://github.com/cyrus-",
+        "followers_url": "https://api.github.com/users/cyrus-/followers",
+        "following_url": "https://api.github.com/users/cyrus-/following{/other_user}",
+        "gists_url": "https://api.github.com/users/cyrus-/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/cyrus-/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/cyrus-/subscriptions",
+        "organizations_url": "https://api.github.com/users/cyrus-/orgs",
+        "repos_url": "https://api.github.com/users/cyrus-/repos",
+        "events_url": "https://api.github.com/users/cyrus-/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/cyrus-/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "- selection snapping does not change background color of folds / otherwise trigger projector selection state (fix architecturally)\n\n<img width=\"538\" height=\"285\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/37d57f2c-28cb-4cf0-a7ee-c2296d78f19a\" />\n\n- not working in this example:\n\n<img width=\"423\" height=\"127\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/a2b6bb92-7d96-4ced-9e03-4bb604e5aaed\" />",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/1890#pullrequestreview-4420146563",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/1890",
+      "author_association": "MEMBER",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/1890#pullrequestreview-4420146563"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/1890"
+        }
+      },
+      "submitted_at": "2026-06-03T15:35:48Z",
+      "commit_id": "29e1682a4e44ed88066b03e939b6fd852e169fe3"
+    },
+    {
+      "id": 4499730077,
+      "node_id": "PRR_kwDOBMdeZM8AAAABDDRunQ",
+      "user": {
+        "login": "Negabinary",
+        "id": 31668468,
+        "node_id": "MDQ6VXNlcjMxNjY4NDY4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/31668468?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Negabinary",
+        "html_url": "https://github.com/Negabinary",
+        "followers_url": "https://api.github.com/users/Negabinary/followers",
+        "following_url": "https://api.github.com/users/Negabinary/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Negabinary/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Negabinary/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Negabinary/subscriptions",
+        "organizations_url": "https://api.github.com/users/Negabinary/orgs",
+        "repos_url": "https://api.github.com/users/Negabinary/repos",
+        "events_url": "https://api.github.com/users/Negabinary/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Negabinary/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "body": "Left a few minor comments, otherwise looks good!",
+      "state": "COMMENTED",
+      "html_url": "https://github.com/hazelgrove/hazel/pull/1890#pullrequestreview-4499730077",
+      "pull_request_url": "https://api.github.com/repos/hazelgrove/hazel/pulls/1890",
+      "author_association": "MEMBER",
+      "_links": {
+        "html": {
+          "href": "https://github.com/hazelgrove/hazel/pull/1890#pullrequestreview-4499730077"
+        },
+        "pull_request": {
+          "href": "https://api.github.com/repos/hazelgrove/hazel/pulls/1890"
+        }
+      },
+      "submitted_at": "2026-06-15T17:51:53Z",
+      "commit_id": "0dacb369baaed64dfc0bcb0f89d028ae52d23a12"
+    }
+  ]
+]

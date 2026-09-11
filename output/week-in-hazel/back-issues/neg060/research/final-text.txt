@@ -1,0 +1,219 @@
+A SMALL MAGAZINE ABOUT A VERY LIVE LANGUAGE
+Week in
+ISSUE -060
+HAZEL
+04–10 JUL 2025 RETROSPECTIVE
+Another seat at the desk.
+e assistant reaches dev, with Compose still gated. Unfinished
+syntax gets steadier indentation. e first reports ask what happens
+when a repair fails.
+THE WEEK AS IT STOOD / MADE SEPTEMBER 2026
+WEEK IN HAZEL THE BIG LANDING
+MERGED INTO DEV / #1575
+An assistant lands.
+Compose waits.
+The rebuilt July 10 dev sidebar offers Tutor and Suggest; Compose is visibly disabled. Beside it, a staged length function
+leaves one case open. The sidebar has no configured API key.
+R ussell Rozenbaum’s assistant reaches A double question mark supplies an entry point
+dev on July 9, merged by Andrew Blinn to chat and hole-filling suggestions. Requests
+aer a PR that began in March. is is use OpenRouter, with a user-selected model. e
+accumulated work arriving in the shared editor, distinction between the visible modes and the
+not eight thousand lines suddenly wrien gated tool loop maers when trying this histori‐
+during one week. e visible sidebar offers cal build.
+Tutor and Suggest. Its third buon, Compose,
+e Task Completion implementation includes a
+remains disabled with a “Coming soon!” hint.
+bounded repair process: the error-round limit is
+e landed code nevertheless contains the Task two. A round depends on remaining errors,
+Completion machinery behind that mode: tools rather than asking again aer every success.
+to navigate and edit structure, select definitions A separate request names the chat aer its
+and replace bodies. at is a substantial imple‐ first exchange.
+mentation landing, with a readiness boundary
+e pre-merge discussion untangles those costs
+the merge title alone does not reveal. e open
+and another delay in message display. is week
+recursive case above illustrates a possible
+delivers both a usable sidebar entry point and
+task; it is not a demonstration of an enabled
+deeper agent machinery whose public mode is
+Compose session.
+still switched off.
+#1575
+-060 / 04–10 JUL 2025 02
+WEEK IN HAZEL INSIDE THE INTERACTION
+ASSISTANT / REVIEW AND IMPLEMENTATION
+The second request
+is not always a repair.
+Edit the program Name the chat
+Check remaining errors
+Select structure; apply a A separate summarization
+Repair only if needed; error-
+tool-generated change. request after the first
+round limit: two.
+exchange.
+EDIT / REPAIR PATH SEPARATE PURPOSE
+A slow assistant interaction can hide work e review also identifies a separate request that
+in several places. In the July 2 review, summarizes the chat into a title aer its first
+Andrew reports a delay of more than a exchange. Starting a fresh chat for each comple‐
+second on the two-page Basic Reference docu‐ tion can therefore create another API call even
+ment; Russell describes much shorter timings on when there is no code error to repair. A title
+a small sketch. ose observations differ in request and a repair round have different
+workload and are not a controlled benchmark. reasons to exist.
+ey are useful clues about where to look.
+e repair logic checks whether errors remain
+e investigation reaches zipper_of_string before requesting another round. Its limit
+inside message code-block parsing. Displaying a bounds repetition; it does not prove that the last
+chat message can construct and render program aempt leaves a correct program. Issue #1771,
+structure, making the cost part of showing the opened aer the merge, asks for the resulting
+conversation rather than waiting for the model. work to be returned even when the error rounds
+Andrew bypasses that display parsing; Russell fail. at report puts the user's access to the
+agrees with the display-only change. e partial result ahead of the assistant’s tidy com‐
+merged mk_message_display stores the pletion story.
+content directly as text.
+Several other rough edges remain visible in the
+at fix does not remove the need to parse week’s reports: scrolling, streaming, seings,
+actual code edits. It separates a message’s pre‐ and the context selected for a request. e sub‐
+sentation from the structural editing path. e stantial event is that the assistant and its struc‐
+distinction is easy to miss if every delay in an AI tured-editing implementation have reached dev,
+feature is described as inference latency. while Compose remains gated. e quality of the
+whole interaction now depends on these smaller
+pieces keeping pace with it.
+#1575 / #1771
+-060 / 04–10 JUL 2025 03
+WEEK IN HAZEL EDITING UNFINISHED CODE
+MERGED INTO DEV / #1761 AND #1754
+Indent the program
+you have so far.
+Actual program
+Formatting sketch
+An unfinished construct remains unfinished. No
+Use the first following blank line, or segment end,
+closing token is silently inserted.
+as a provisional boundary.
+A LAYOUT GUESS / NOT A PROGRAM REPAIR
+A ndrew’s #1761 gives indentation a way e same week’s #1754 lands a broad syntax-
+to reason about incomplete syntax. A repair batch. Its issue links range from deleting a
+missing closing delimiter can make later leading delimiter to moving selections, remold‐
+code appear to belong inside an unfinished con‐ ing incomplete structures, pasting strings and
+struct, pulling it into the wrong indentation. entering operator forms. Each action must pre‐
+serve a meaningful intermediate state.
+e patch builds a completed sketch for format‐
+ting. For a tile with missing trailing delimiters, One visible aim is reducing the red error noise
+the heuristic looks for the first blank line during entry of a case expression. e editor
+aer the incomplete tile; otherwise it uses needs to distinguish le-to-right entry from
+the end of the segment. at supplies a a seled program whose parts contradict
+provisional boundary. one another.
+e boundary belongs to the formaing sketch. e indentation PR includes a substantial set of
+It does not insert the missing token into the tests for incomplete inputs. ey complement
+user’s program or assert that the program is the syntax fixes: one family checks the structure
+complete. Layout can stabilize while Hazel still produced by an action; another checks how that
+represents the actual unfinished construct. unfinished structure is laid out. A successful
+parse of the finished expression does not cover
+e review rejects making the result depend on
+either editing experience by itself.
+the caret position. Code should not jump
+between indentation choices merely because the ese changes also maer for the assistant. A
+user moves through it. A caret-dependent layout tool-generated replacement travels through the
+would also complicate caching. Blank lines same structural machinery as a human edit.
+instead provide a comparatively stable signal of Repairs to that shared path benefit both ways of
+the author’s intended separation. producing a program.
+#1761 / #1754
+-060 / 04–10 JUL 2025 04
+WEEK IN HAZEL THE FIRST REPORTS
+OPEN ISSUES / JULY 4–10
+A result, a context,
+a place to scroll.
+Nineteen issues open during the week. Several ask for the assistant to make its state
+—and its partial successes—easier to use.
+Keep the work when repair runs out. In A dependency bot of our own. Alexander
+#1771, the request is to return the result even if Bandukwala’s #1721 lands on July 8. Its sched‐
+the error rounds fail. A bounded loop is useful, uled workflow runs the dependency-update
+but exhausting it should not make the latest command, opens an update PR and skips the no-
+candidate inaccessible. at is a concrete change case. e workflow uses a shared update
+product question about partial progress, not branch, keeping repeated checks from requiring
+simply a request for a stronger model. a fresh branch for every pass.
+Choose relevant context. #1772 reports e first update PR, #1765, opens that day. It
+context selection repeatedly surfacing has not merged by the cutoff. Automation of the
+option_map. e explanation points to an proposal is therefore a separate event from
+unknown return type appearing before a more adoption of its dependencies. A newly
+specific match. e example maers because reported fresh-build failure in #1770 gives
+technically compatible context is not automati‐ the dependency machinery an immediate,
+cally the most useful context for a request. practical context.
+Make the conversation navigable. Automatic Beyond the assistant. A pasted ^slider
+scrolling (#1776) and streaming (#1777) become causing a stack overflow appears in #1762. e
+separate requests. One concerns keeping the stepper’s presentation of a substitution is ques‐
+newest content in view; the other concerns tioned in #1763. A scratchpad-index failure
+when content arrives. A response can eventually around a new-document shortcut appears
+be correct while the interaction still feels unre‐ in #1779. ese are small, reproducible
+sponsive or leaves the reader looking in the interactions worth keeping visible beside the
+wrong place. larger merge.
+Seings cleanup, the system-prompt interface Branches beginning. e week also opens the
+and closing the chat popup each get their own assistant-actions v2 PR (#1769) and a tutorial
+report. Together these issues sketch the work consolidation PR (#1760). eir opening is the
+between a capable tool path and a sidebar news here; neither is being counted as a feature
+someone can comfortably use throughout an already shipped on dev.
+editing session.
+#1721 / #1765 / #1769 / #1760 / #1771 / #1772 / #1776 / #1777 / #1770 / #1762 / #1763 / #1779
+-060 / 04–10 JUL 2025 05
+WEEK IN HAZEL THE INSTRUMENT PANEL
+4–10 JULY / UTC
+A long branch
+meets a busy week.
+10 4 19
+PRs opened PRs merged issues opened
+DAILY COMMIT OBJECTS / WEEK-END DEV GRAPH
+18
+9
+6
+4 4
+0 0
+04 05 06 07 08 09 10
+Gray: all objects / Green: Claude credit / Red tick: signature header
+Four PRs land on dev. e assistant, syntax Credit follows the work. Russell Rozenbaum
+repairs, indentation work and dependency-update authors the assistant; Andrew Blinn merges it and
+workflow make the week’s merge list. Ten PRs lands the structural-editing repairs around it.
+open. ose two counts capture different things: Alexander Bandukwala brings in the dependency
+the assistant’s opening lies months earlier, workflow. Review exchanges about parsing and
+while several of this week’s new proposals are title requests reveal collaboration that a commit-
+still experiments. author table would miss.
+e week-end dev graph contains forty-one No counted object carries the tracked agent co-
+commit objects dated in the window, including ten author trailers. Five contain signature headers.
+merge objects. A large landing can bring in older Neither result contradicts the fact that this issue’s
+commits that do not belong in this date-filtered lead is an AI assistant: an AI-facing feature and
+total. e count therefore measures dated objects AI-assisted development are different subjects.
+in the selected graph, not the full volume of code e record here supports named PR and review
+delivered by the four merges. contributions, not a percentage of code wrien by
+a model.
+41 unique objects; 31 non-merge. UTC committer dates; reachable from 2b4a189132. Agent totals count declared co-author trailers;
+signature headers are not verified here.
+#1575 / #1754 / #1761 / #1721
+-060 / 04–10 JUL 2025 06
+WEEK IN HAZEL THE FICTION DEPARTMENT
+A SMALL ADMINISTRATIVE EXPENSE
+Every patch
+needs a title?
+An invented desk scene after the assistant review. The extra flourish refers to chat-title summarization, a separate
+request from repairing code.
+Aer the merge. e most useful follow-up e cover. A programmer’s pen and a brass
+would connect the tool loop to what the user can pencil arm share a desk with a sheet full of
+see. When a request makes partial progress and missing pieces. e image takes its cue from
+then reaches its repair limit, can the user inspect structured task completion: another participant
+and keep that candidate? When a relevant defini‐ can work on the same program, rather than
+tion exists, does the context selector surface it merely hand over prose. Its tools and paper
+before a merely permissive one? figures are invented.
+e syntax work leaves a different check: unfin‐ e comic narrows the joke to the review’s unex‐
+ished code should remain comfortable to edit as pected extra request. Once the lile square is
+the cursor moves. A formaing sketch can help, repaired, the arm spends its aention naming the
+but its guesses must not become silent edits to work. at is a visual exaggeration of title gener‐
+the program itself. Blank-line cases are especially ation, not a measurement of its cost.
+revealing because the new indentation heuristic
+Week in Hazel · Issue -060
+gives them a structural role.
+A retrospective edition for July 4–10, 2025.
+And the dependency workflow now supplies pro‐ Reporting and readiness stop at the end of that
+posals on a schedule. Whether those proposals UTC week. Edited and reported by Astra, AI
+build and deserve merging remains a review editor. Cover and comic by ImageGen. Screenshot
+question. Opening the PR is the beginning of from a rebuilt week-end dev revision. Produced
+that decision. September 2026.
+#1575 / #1761 / #1721 / #1771 / #1772
+-060 / 04–10 JUL 2025 07

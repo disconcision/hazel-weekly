@@ -1,0 +1,1286 @@
+{
+  "engine": "153.0.8010.36",
+  "pretty": true,
+  "files": [
+    {
+      "name": "week-in-hazel-001.pdf",
+      "measures": [
+        {
+          "id": "p2-n0",
+          "x": 36,
+          "y": 405,
+          "w": 468,
+          "h": 22.59375,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "7760beea51f396da20019b8ed1135de3e1d6b9f65723952801c6a4a21eaa8d49"
+        },
+        {
+          "id": "p2-n1",
+          "x": 36,
+          "y": 445.9921875,
+          "w": 222,
+          "h": 217.0546875,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "e816341d5fcd82b521cab1400591566b4f36847b9502a08fc61abc6a7c5a36f1"
+        },
+        {
+          "id": "p2-n2",
+          "x": 282,
+          "y": 445.9921875,
+          "w": 222,
+          "h": 196.04296875,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "9c39d936d17004951eb5a41b24f7a53180acac76d626718c28eb39c9521781ff"
+        },
+        {
+          "id": "p2-n3",
+          "x": 36,
+          "y": 672.99609375,
+          "w": 468,
+          "h": 9.99609375,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "193abf580040c505b3381d49b83309b315d4498b0ca145d6b85f2edf11e12e68"
+        },
+        {
+          "id": "p3-n0",
+          "x": 36,
+          "y": 118.9921875,
+          "w": 468,
+          "h": 34.0078125,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "060c576c9d049e4f457cfdd54df65fc4a53054f8444761379906504ffa263786"
+        },
+        {
+          "id": "p3-n1",
+          "x": 36,
+          "y": 240,
+          "w": 222,
+          "h": 175.04296875,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "fe57c7ff260b3d4b39acc3c18d8d273593dfc96afd7fa79b4b1b892e3001f9f1"
+        },
+        {
+          "id": "p3-n2",
+          "x": 282,
+          "y": 240,
+          "w": 222,
+          "h": 161.0390625,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "9ba55d6dedb1b528087f16fba30a02f2804d565330d872d19541489e88e56e7c"
+        },
+        {
+          "id": "p3-n3",
+          "x": 36,
+          "y": 483,
+          "w": 222,
+          "h": 96.6328125,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "9dace44d4f4af1176ca5d1ec02e322809666f84784da5207971d2ca4939bfd78"
+        },
+        {
+          "id": "p3-n4",
+          "x": 282,
+          "y": 483,
+          "w": 222,
+          "h": 96.6328125,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "d2ec24336261ec8b4d8371786e4a5f2fea243dc3a6852c775b65df67cabe31cd"
+        },
+        {
+          "id": "p3-n5",
+          "x": 36,
+          "y": 651.99609375,
+          "w": 468,
+          "h": 9.50390625,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "483e24edfb9bdee660f3794e8c9c3a8efddabeaba95ec2fe8d9276ca64bd33e4"
+        },
+        {
+          "id": "p3-n6",
+          "x": 36,
+          "y": 675,
+          "w": 468,
+          "h": 9.99609375,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "a8d22b9abf16658cc641b36beec18033651a12d2e80b4c6c153facc424976e3f"
+        },
+        {
+          "id": "p4-n0",
+          "x": 36,
+          "y": 121.9921875,
+          "w": 468,
+          "h": 36,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "676a134a465c0e5f66d1a5aa25cb07313fa15693aea8eb50720bd9ade0d300d2"
+        },
+        {
+          "id": "p4-n1",
+          "x": 114,
+          "y": 238.9921875,
+          "w": 378,
+          "h": 11.05078125,
+          "pretty": "pretty",
+          "fonts": "Code",
+          "key": "910594f211d0c938d6d58e8114816daa8fd18d70b8e1cb610ae43e8853f7a011"
+        },
+        {
+          "id": "p4-n2",
+          "x": 127.9921875,
+          "y": 309,
+          "w": 363.99609375,
+          "h": 11.05078125,
+          "pretty": "pretty",
+          "fonts": "Code",
+          "key": "e18755a32ac129e06ee36b5ab72eecc86418cc9d0cf0b5a60a286a3849fe2aa1"
+        },
+        {
+          "id": "p4-n3",
+          "x": 141.99609375,
+          "y": 378.99609375,
+          "w": 349.9921875,
+          "h": 11.05078125,
+          "pretty": "pretty",
+          "fonts": "Code",
+          "key": "f51e8b9652278847ffbf59dbdca4518c2b2c7cd0d85a32441bf40a5cf043038f"
+        },
+        {
+          "id": "p4-n4",
+          "x": 36,
+          "y": 411,
+          "w": 222,
+          "h": 252.05859375,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "3d9fb319de3203fe369deb8c02c338422fff9ec6d8089855e6464952c05e6946"
+        },
+        {
+          "id": "p4-n5",
+          "x": 282,
+          "y": 411,
+          "w": 222,
+          "h": 252.05859375,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "e910bbf1cedae71513bb661985386d0fcb7b85541875a1d0293d1f7ef616a077"
+        },
+        {
+          "id": "p4-n6",
+          "x": 36,
+          "y": 672.99609375,
+          "w": 468,
+          "h": 9.99609375,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "5159e9c266f2fa70bd5574c3a39ef1b5fda4d1dc8ab0071ec7202bbcc2063432"
+        },
+        {
+          "id": "p5-n0",
+          "x": 36,
+          "y": 348,
+          "w": 468,
+          "h": 22.0078125,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "d18567be3d75c003e8bbc6501021fdfb4d0982a5075d6e7046aabbf047abf247"
+        },
+        {
+          "id": "p5-n1",
+          "x": 36,
+          "y": 393,
+          "w": 222,
+          "h": 224.05078125,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "dd7aa8243f9e7a03682b3586988cb8743a858958bbdf6238dec07e015a63a94c"
+        },
+        {
+          "id": "p5-n2",
+          "x": 282,
+          "y": 393,
+          "w": 222,
+          "h": 224.05078125,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "c3272529c3bb6fc38897b9286d19d078a26bb6e5cf6c209fce81e0014ac0bda7"
+        },
+        {
+          "id": "p5-n3",
+          "x": 45.99609375,
+          "y": 645,
+          "w": 447.99609375,
+          "h": 12,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "3fe92263c20bb87361cd7734fe91362784886a17d5580fb87e108897b357cbe4"
+        },
+        {
+          "id": "p5-n4",
+          "x": 36,
+          "y": 672.99609375,
+          "w": 468,
+          "h": 9.99609375,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "e76b7ae4d57cea5f70f9e5f503d01028d044ac26b9165dadb563939fb83139c2"
+        },
+        {
+          "id": "p6-n0",
+          "x": 36,
+          "y": 435.99609375,
+          "w": 222,
+          "h": 42.421875,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "674c283ed51db2bd5467e94f4d122cf98fdf38ad30f11d54978c6973d4bc0890"
+        },
+        {
+          "id": "p6-n1",
+          "x": 282,
+          "y": 165.99609375,
+          "w": 222,
+          "h": 98.02734375,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "0c68261e8be4355d7ddecf739c69ba0877dbc104d9c9e4cc0dd9c090b860520a"
+        },
+        {
+          "id": "p6-n2",
+          "x": 282,
+          "y": 271.01953125,
+          "w": 222,
+          "h": 161.0390625,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "1eac871ada595d1f768ad8452fad330bdd7058cac4008993bc983e0b15368c9a"
+        },
+        {
+          "id": "p6-n3",
+          "x": 36,
+          "y": 546,
+          "w": 222,
+          "h": 101.49609375,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "4f126fb4893e7058d358f13c140b4e4e326aa6ca2001e37b4aac691246df4af7"
+        },
+        {
+          "id": "p6-n4",
+          "x": 282,
+          "y": 546,
+          "w": 222,
+          "h": 101.49609375,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "8652d8b2dbc3052a39dc1a531c2934fb3c9613d605f23cb1c2eee1b02786d5cd"
+        },
+        {
+          "id": "p6-n5",
+          "x": 36,
+          "y": 675,
+          "w": 468,
+          "h": 9.99609375,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "67f15c7383650d428932fd7ac0fd9423d58209c8f65ffe6d93d00b4a39e36a95"
+        },
+        {
+          "id": "p7-n0",
+          "x": 36,
+          "y": 363.99609375,
+          "w": 468,
+          "h": 22.0078125,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "380b91b21c23c93b9f0b356e3528a2e2fb91cfe06763ea17ceb2eebaf8069861"
+        },
+        {
+          "id": "p7-n1",
+          "x": 36,
+          "y": 403.9921875,
+          "w": 222,
+          "h": 189.046875,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "73492e6828982097845f935bb140694b7fdc9b812729620adeda471db1ac5bea"
+        },
+        {
+          "id": "p7-n2",
+          "x": 282,
+          "y": 403.9921875,
+          "w": 222,
+          "h": 210.046875,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "716152274867f0185af5a4bd0830e56f3820b00ca56ae9553e1ce51226e60994"
+        },
+        {
+          "id": "p7-n3",
+          "x": 48,
+          "y": 628.9921875,
+          "w": 444,
+          "h": 25.9921875,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "7a9724bf441b9c3745fd05608f2f875548ed17c8b000562a1cd07642a3b9452e"
+        },
+        {
+          "id": "p7-n4",
+          "x": 36,
+          "y": 675,
+          "w": 468,
+          "h": 9.99609375,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "f3595cfc09a10d5d8637d451354eca671aa620c20c62c01ece362adde5c010f8"
+        },
+        {
+          "id": "p8-n0",
+          "x": 36,
+          "y": 147.99609375,
+          "w": 468,
+          "h": 42.01171875,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "f3ca38290c183ef409b57cf8ddf8437aa27c735c5ebf44a301ff8093b6bede1b"
+        },
+        {
+          "id": "p8-n1",
+          "x": 36,
+          "y": 231.99609375,
+          "w": 468,
+          "h": 42.01171875,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "a0b102d6e63f7bb1986e77b7fcaa45fd43afdcedb73d67a65bc127aae3733fc9"
+        },
+        {
+          "id": "p8-n2",
+          "x": 36,
+          "y": 315.99609375,
+          "w": 468,
+          "h": 42.01171875,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "aed62dea50fcdf4b80e1f4cd72ea46be73138c35a03e8b845b5a3214bb24df6f"
+        },
+        {
+          "id": "p8-n3",
+          "x": 36,
+          "y": 399.99609375,
+          "w": 468,
+          "h": 42.01171875,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "c7f17339b794530075ce69848a8900b228b9f17371b73e5981304b203232a32a"
+        },
+        {
+          "id": "p8-n4",
+          "x": 36,
+          "y": 520.9921875,
+          "w": 222,
+          "h": 129.4453125,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "7832f0091e9c90a2ebe0342bac14419b96e22c246c8d43214be53c053260e182"
+        },
+        {
+          "id": "p8-n5",
+          "x": 282,
+          "y": 520.9921875,
+          "w": 222,
+          "h": 143.05078125,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "ba7abbfae1ffb1eb1372611a37805f6cf2bcd918152c3897939d321845338eaa"
+        },
+        {
+          "id": "p8-n6",
+          "x": 36,
+          "y": 675,
+          "w": 468,
+          "h": 9.99609375,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "249ef41ab3eaea1d5e1ea71b8065040a0cbcbe7eeb692b950ee5dcc90e07560b"
+        },
+        {
+          "id": "p9-n0",
+          "x": 36,
+          "y": 234,
+          "w": 468,
+          "h": 24,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "3b0a0bfa78a16247cd7fca4d7351a6a7e56cb8ece572aa333f49e8690ab50c1c"
+        },
+        {
+          "id": "p9-n1",
+          "x": 228,
+          "y": 300.99609375,
+          "w": 276,
+          "h": 38.98828125,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "7dc046ce119162dae38fcfe89111d48e626bbc3cae596942458a7984a8b0de6e"
+        },
+        {
+          "id": "p9-n2",
+          "x": 36,
+          "y": 558,
+          "w": 222,
+          "h": 77.9765625,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "d66e9eaac98c319463a4dd313208dcd7c18641a1be066405ac8f2c60c19a4663"
+        },
+        {
+          "id": "p9-n3",
+          "x": 282,
+          "y": 558,
+          "w": 222,
+          "h": 90.97265625,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "cacc3487db74cbe2c8482cca0a8418496de8d8fba6f4a4638ff15a6ae149e918"
+        },
+        {
+          "id": "p10-n0",
+          "x": 36,
+          "y": 144.99609375,
+          "w": 222,
+          "h": 100.078125,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "6c9ea5fea83cea1cca7b0adf73f286e39d08b5473bbc50b295d4f1d2a3ff1f2e"
+        },
+        {
+          "id": "p10-n1",
+          "x": 282,
+          "y": 144.99609375,
+          "w": 222,
+          "h": 100.078125,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "26b6cf985beaf53d713019431817400f284706a6934f7b7acb90664b54f6e287"
+        },
+        {
+          "id": "p10-n2",
+          "x": 183.99609375,
+          "y": 282,
+          "w": 298.9921875,
+          "h": 28.0078125,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "8ef0fa096ac857195aa147d6ff38dc76eead48079e7069912cd6f5eb59bcbdf0"
+        },
+        {
+          "id": "p10-n3",
+          "x": 36,
+          "y": 535.9921875,
+          "w": 468,
+          "h": 10.79296875,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "84ff122dbd5b47a102e450eb00a1eb81d1e3d0d6d02ea604590d3a57fc73eab8"
+        },
+        {
+          "id": "p10-n4",
+          "x": 36,
+          "y": 568.9921875,
+          "w": 468,
+          "h": 43.51171875,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "be3a249d81110e813f4d255e22d6faa2253dfb9d10ebd2fa426ac6f22e0280a2"
+        },
+        {
+          "id": "p10-n5",
+          "x": 36,
+          "y": 633,
+          "w": 468,
+          "h": 22.9921875,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "11cb64a113e5bd2277175fd97bb0a7de71e07b6d4995e9f6dd522fd349826537"
+        },
+        {
+          "id": "p10-n6",
+          "x": 36,
+          "y": 672.99609375,
+          "w": 468,
+          "h": 9.99609375,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "2a62e4c09c3c1bb764ef1ecf9b2714ef2e4e9fef2cc4489fb49ebb0355c9d9d3"
+        },
+        {
+          "id": "p11-n0",
+          "x": 36,
+          "y": 133.9921875,
+          "w": 468,
+          "h": 54,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "03649222a364789d43035421ecdfaa7c9eaa63dfd55bc950533567cc02537920"
+        },
+        {
+          "id": "p11-n1",
+          "x": 36,
+          "y": 315,
+          "w": 222,
+          "h": 86.4140625,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "317224bfc41f3a4373e4218cec41d71d721c33ad70dec5cd0be280d79c8a7d38"
+        },
+        {
+          "id": "p11-n2",
+          "x": 282,
+          "y": 315,
+          "w": 222,
+          "h": 100.81640625,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "9a65f5fe480a14209ac9f1c4298a58290d692446ee31cc21be00a57012abc955"
+        },
+        {
+          "id": "p11-n3",
+          "x": 36,
+          "y": 514.9921875,
+          "w": 222,
+          "h": 98.02734375,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "8290d6e51cd8497a9e82a21831f1f3899446b8842e532c1c5dd8461f271dd6ad"
+        },
+        {
+          "id": "p11-n4",
+          "x": 282,
+          "y": 514.9921875,
+          "w": 222,
+          "h": 98.02734375,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "d73e7ac7fd86a77e90813fea1a8bcab13de2bcfdf35dea82e4e4918d69f2598b"
+        },
+        {
+          "id": "p11-n5",
+          "x": 36,
+          "y": 649.9921875,
+          "w": 468,
+          "h": 21,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "1ade67533df1290f80ab201a0811b7470c92d00eba46857ba35b0807a68c94e9"
+        }
+      ],
+      "comparison": {
+        "total": 58,
+        "changed": 10
+      },
+      "errors": []
+    },
+    {
+      "name": "week-in-hazel-001-woodcut.pdf",
+      "measures": [
+        {
+          "id": "p2-n0",
+          "x": 36,
+          "y": 405,
+          "w": 468,
+          "h": 22.59375,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "7760beea51f396da20019b8ed1135de3e1d6b9f65723952801c6a4a21eaa8d49"
+        },
+        {
+          "id": "p2-n1",
+          "x": 36,
+          "y": 445.9921875,
+          "w": 222,
+          "h": 217.0546875,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "e816341d5fcd82b521cab1400591566b4f36847b9502a08fc61abc6a7c5a36f1"
+        },
+        {
+          "id": "p2-n2",
+          "x": 282,
+          "y": 445.9921875,
+          "w": 222,
+          "h": 196.04296875,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "9c39d936d17004951eb5a41b24f7a53180acac76d626718c28eb39c9521781ff"
+        },
+        {
+          "id": "p2-n3",
+          "x": 36,
+          "y": 672.99609375,
+          "w": 468,
+          "h": 9.99609375,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "193abf580040c505b3381d49b83309b315d4498b0ca145d6b85f2edf11e12e68"
+        },
+        {
+          "id": "p3-n0",
+          "x": 36,
+          "y": 118.9921875,
+          "w": 468,
+          "h": 34.0078125,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "060c576c9d049e4f457cfdd54df65fc4a53054f8444761379906504ffa263786"
+        },
+        {
+          "id": "p3-n1",
+          "x": 36,
+          "y": 240,
+          "w": 222,
+          "h": 175.04296875,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "fe57c7ff260b3d4b39acc3c18d8d273593dfc96afd7fa79b4b1b892e3001f9f1"
+        },
+        {
+          "id": "p3-n2",
+          "x": 282,
+          "y": 240,
+          "w": 222,
+          "h": 161.0390625,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "9ba55d6dedb1b528087f16fba30a02f2804d565330d872d19541489e88e56e7c"
+        },
+        {
+          "id": "p3-n3",
+          "x": 36,
+          "y": 483,
+          "w": 222,
+          "h": 96.6328125,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "9dace44d4f4af1176ca5d1ec02e322809666f84784da5207971d2ca4939bfd78"
+        },
+        {
+          "id": "p3-n4",
+          "x": 282,
+          "y": 483,
+          "w": 222,
+          "h": 96.6328125,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "d2ec24336261ec8b4d8371786e4a5f2fea243dc3a6852c775b65df67cabe31cd"
+        },
+        {
+          "id": "p3-n5",
+          "x": 36,
+          "y": 651.99609375,
+          "w": 468,
+          "h": 9.50390625,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "483e24edfb9bdee660f3794e8c9c3a8efddabeaba95ec2fe8d9276ca64bd33e4"
+        },
+        {
+          "id": "p3-n6",
+          "x": 36,
+          "y": 675,
+          "w": 468,
+          "h": 9.99609375,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "a8d22b9abf16658cc641b36beec18033651a12d2e80b4c6c153facc424976e3f"
+        },
+        {
+          "id": "p4-n0",
+          "x": 36,
+          "y": 121.9921875,
+          "w": 468,
+          "h": 36,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "676a134a465c0e5f66d1a5aa25cb07313fa15693aea8eb50720bd9ade0d300d2"
+        },
+        {
+          "id": "p4-n1",
+          "x": 114,
+          "y": 238.9921875,
+          "w": 378,
+          "h": 11.05078125,
+          "pretty": "pretty",
+          "fonts": "Code",
+          "key": "910594f211d0c938d6d58e8114816daa8fd18d70b8e1cb610ae43e8853f7a011"
+        },
+        {
+          "id": "p4-n2",
+          "x": 127.9921875,
+          "y": 309,
+          "w": 363.99609375,
+          "h": 11.05078125,
+          "pretty": "pretty",
+          "fonts": "Code",
+          "key": "e18755a32ac129e06ee36b5ab72eecc86418cc9d0cf0b5a60a286a3849fe2aa1"
+        },
+        {
+          "id": "p4-n3",
+          "x": 141.99609375,
+          "y": 378.99609375,
+          "w": 349.9921875,
+          "h": 11.05078125,
+          "pretty": "pretty",
+          "fonts": "Code",
+          "key": "f51e8b9652278847ffbf59dbdca4518c2b2c7cd0d85a32441bf40a5cf043038f"
+        },
+        {
+          "id": "p4-n4",
+          "x": 36,
+          "y": 411,
+          "w": 222,
+          "h": 252.05859375,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "3d9fb319de3203fe369deb8c02c338422fff9ec6d8089855e6464952c05e6946"
+        },
+        {
+          "id": "p4-n5",
+          "x": 282,
+          "y": 411,
+          "w": 222,
+          "h": 252.05859375,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "e910bbf1cedae71513bb661985386d0fcb7b85541875a1d0293d1f7ef616a077"
+        },
+        {
+          "id": "p4-n6",
+          "x": 36,
+          "y": 672.99609375,
+          "w": 468,
+          "h": 9.99609375,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "5159e9c266f2fa70bd5574c3a39ef1b5fda4d1dc8ab0071ec7202bbcc2063432"
+        },
+        {
+          "id": "p5-n0",
+          "x": 36,
+          "y": 348,
+          "w": 468,
+          "h": 22.0078125,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "d18567be3d75c003e8bbc6501021fdfb4d0982a5075d6e7046aabbf047abf247"
+        },
+        {
+          "id": "p5-n1",
+          "x": 36,
+          "y": 393,
+          "w": 222,
+          "h": 224.05078125,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "dd7aa8243f9e7a03682b3586988cb8743a858958bbdf6238dec07e015a63a94c"
+        },
+        {
+          "id": "p5-n2",
+          "x": 282,
+          "y": 393,
+          "w": 222,
+          "h": 224.05078125,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "c3272529c3bb6fc38897b9286d19d078a26bb6e5cf6c209fce81e0014ac0bda7"
+        },
+        {
+          "id": "p5-n3",
+          "x": 45.99609375,
+          "y": 645,
+          "w": 447.99609375,
+          "h": 12,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "3fe92263c20bb87361cd7734fe91362784886a17d5580fb87e108897b357cbe4"
+        },
+        {
+          "id": "p5-n4",
+          "x": 36,
+          "y": 672.99609375,
+          "w": 468,
+          "h": 9.99609375,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "e76b7ae4d57cea5f70f9e5f503d01028d044ac26b9165dadb563939fb83139c2"
+        },
+        {
+          "id": "p6-n0",
+          "x": 36,
+          "y": 435.99609375,
+          "w": 222,
+          "h": 42.421875,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "674c283ed51db2bd5467e94f4d122cf98fdf38ad30f11d54978c6973d4bc0890"
+        },
+        {
+          "id": "p6-n1",
+          "x": 282,
+          "y": 165.99609375,
+          "w": 222,
+          "h": 98.02734375,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "0c68261e8be4355d7ddecf739c69ba0877dbc104d9c9e4cc0dd9c090b860520a"
+        },
+        {
+          "id": "p6-n2",
+          "x": 282,
+          "y": 271.01953125,
+          "w": 222,
+          "h": 161.0390625,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "1eac871ada595d1f768ad8452fad330bdd7058cac4008993bc983e0b15368c9a"
+        },
+        {
+          "id": "p6-n3",
+          "x": 36,
+          "y": 546,
+          "w": 222,
+          "h": 101.49609375,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "4f126fb4893e7058d358f13c140b4e4e326aa6ca2001e37b4aac691246df4af7"
+        },
+        {
+          "id": "p6-n4",
+          "x": 282,
+          "y": 546,
+          "w": 222,
+          "h": 101.49609375,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "8652d8b2dbc3052a39dc1a531c2934fb3c9613d605f23cb1c2eee1b02786d5cd"
+        },
+        {
+          "id": "p6-n5",
+          "x": 36,
+          "y": 675,
+          "w": 468,
+          "h": 9.99609375,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "67f15c7383650d428932fd7ac0fd9423d58209c8f65ffe6d93d00b4a39e36a95"
+        },
+        {
+          "id": "p7-n0",
+          "x": 36,
+          "y": 363.99609375,
+          "w": 468,
+          "h": 22.0078125,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "380b91b21c23c93b9f0b356e3528a2e2fb91cfe06763ea17ceb2eebaf8069861"
+        },
+        {
+          "id": "p7-n1",
+          "x": 36,
+          "y": 403.9921875,
+          "w": 222,
+          "h": 189.046875,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "73492e6828982097845f935bb140694b7fdc9b812729620adeda471db1ac5bea"
+        },
+        {
+          "id": "p7-n2",
+          "x": 282,
+          "y": 403.9921875,
+          "w": 222,
+          "h": 210.046875,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "716152274867f0185af5a4bd0830e56f3820b00ca56ae9553e1ce51226e60994"
+        },
+        {
+          "id": "p7-n3",
+          "x": 48,
+          "y": 628.9921875,
+          "w": 444,
+          "h": 25.9921875,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "7a9724bf441b9c3745fd05608f2f875548ed17c8b000562a1cd07642a3b9452e"
+        },
+        {
+          "id": "p7-n4",
+          "x": 36,
+          "y": 675,
+          "w": 468,
+          "h": 9.99609375,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "f3595cfc09a10d5d8637d451354eca671aa620c20c62c01ece362adde5c010f8"
+        },
+        {
+          "id": "p8-n0",
+          "x": 36,
+          "y": 147.99609375,
+          "w": 468,
+          "h": 42.01171875,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "f3ca38290c183ef409b57cf8ddf8437aa27c735c5ebf44a301ff8093b6bede1b"
+        },
+        {
+          "id": "p8-n1",
+          "x": 36,
+          "y": 231.99609375,
+          "w": 468,
+          "h": 42.01171875,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "a0b102d6e63f7bb1986e77b7fcaa45fd43afdcedb73d67a65bc127aae3733fc9"
+        },
+        {
+          "id": "p8-n2",
+          "x": 36,
+          "y": 315.99609375,
+          "w": 468,
+          "h": 42.01171875,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "aed62dea50fcdf4b80e1f4cd72ea46be73138c35a03e8b845b5a3214bb24df6f"
+        },
+        {
+          "id": "p8-n3",
+          "x": 36,
+          "y": 399.99609375,
+          "w": 468,
+          "h": 42.01171875,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "c7f17339b794530075ce69848a8900b228b9f17371b73e5981304b203232a32a"
+        },
+        {
+          "id": "p8-n4",
+          "x": 36,
+          "y": 520.9921875,
+          "w": 222,
+          "h": 129.4453125,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "7832f0091e9c90a2ebe0342bac14419b96e22c246c8d43214be53c053260e182"
+        },
+        {
+          "id": "p8-n5",
+          "x": 282,
+          "y": 520.9921875,
+          "w": 222,
+          "h": 143.05078125,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "ba7abbfae1ffb1eb1372611a37805f6cf2bcd918152c3897939d321845338eaa"
+        },
+        {
+          "id": "p8-n6",
+          "x": 36,
+          "y": 675,
+          "w": 468,
+          "h": 9.99609375,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "249ef41ab3eaea1d5e1ea71b8065040a0cbcbe7eeb692b950ee5dcc90e07560b"
+        },
+        {
+          "id": "p9-n0",
+          "x": 36,
+          "y": 234,
+          "w": 468,
+          "h": 24,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "3b0a0bfa78a16247cd7fca4d7351a6a7e56cb8ece572aa333f49e8690ab50c1c"
+        },
+        {
+          "id": "p9-n1",
+          "x": 228,
+          "y": 300.99609375,
+          "w": 276,
+          "h": 38.98828125,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "7dc046ce119162dae38fcfe89111d48e626bbc3cae596942458a7984a8b0de6e"
+        },
+        {
+          "id": "p9-n2",
+          "x": 36,
+          "y": 558,
+          "w": 222,
+          "h": 77.9765625,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "d66e9eaac98c319463a4dd313208dcd7c18641a1be066405ac8f2c60c19a4663"
+        },
+        {
+          "id": "p9-n3",
+          "x": 282,
+          "y": 558,
+          "w": 222,
+          "h": 90.97265625,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "cacc3487db74cbe2c8482cca0a8418496de8d8fba6f4a4638ff15a6ae149e918"
+        },
+        {
+          "id": "p10-n0",
+          "x": 36,
+          "y": 144.99609375,
+          "w": 222,
+          "h": 100.078125,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "6c9ea5fea83cea1cca7b0adf73f286e39d08b5473bbc50b295d4f1d2a3ff1f2e"
+        },
+        {
+          "id": "p10-n1",
+          "x": 282,
+          "y": 144.99609375,
+          "w": 222,
+          "h": 100.078125,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "26b6cf985beaf53d713019431817400f284706a6934f7b7acb90664b54f6e287"
+        },
+        {
+          "id": "p10-n2",
+          "x": 183.99609375,
+          "y": 282,
+          "w": 298.9921875,
+          "h": 28.0078125,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "8ef0fa096ac857195aa147d6ff38dc76eead48079e7069912cd6f5eb59bcbdf0"
+        },
+        {
+          "id": "p10-n3",
+          "x": 36,
+          "y": 535.9921875,
+          "w": 468,
+          "h": 10.79296875,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "84ff122dbd5b47a102e450eb00a1eb81d1e3d0d6d02ea604590d3a57fc73eab8"
+        },
+        {
+          "id": "p10-n4",
+          "x": 36,
+          "y": 568.9921875,
+          "w": 468,
+          "h": 43.51171875,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "be3a249d81110e813f4d255e22d6faa2253dfb9d10ebd2fa426ac6f22e0280a2"
+        },
+        {
+          "id": "p10-n5",
+          "x": 36,
+          "y": 633,
+          "w": 468,
+          "h": 22.9921875,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "11cb64a113e5bd2277175fd97bb0a7de71e07b6d4995e9f6dd522fd349826537"
+        },
+        {
+          "id": "p10-n6",
+          "x": 36,
+          "y": 672.99609375,
+          "w": 468,
+          "h": 9.99609375,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "2a62e4c09c3c1bb764ef1ecf9b2714ef2e4e9fef2cc4489fb49ebb0355c9d9d3"
+        },
+        {
+          "id": "p11-n0",
+          "x": 36,
+          "y": 133.9921875,
+          "w": 468,
+          "h": 54,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "03649222a364789d43035421ecdfaa7c9eaa63dfd55bc950533567cc02537920"
+        },
+        {
+          "id": "p11-n1",
+          "x": 36,
+          "y": 315,
+          "w": 222,
+          "h": 86.4140625,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "317224bfc41f3a4373e4218cec41d71d721c33ad70dec5cd0be280d79c8a7d38"
+        },
+        {
+          "id": "p11-n2",
+          "x": 282,
+          "y": 315,
+          "w": 222,
+          "h": 100.81640625,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "9a65f5fe480a14209ac9f1c4298a58290d692446ee31cc21be00a57012abc955"
+        },
+        {
+          "id": "p11-n3",
+          "x": 36,
+          "y": 514.9921875,
+          "w": 222,
+          "h": 98.02734375,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "8290d6e51cd8497a9e82a21831f1f3899446b8842e532c1c5dd8461f271dd6ad"
+        },
+        {
+          "id": "p11-n4",
+          "x": 282,
+          "y": 514.9921875,
+          "w": 222,
+          "h": 98.02734375,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "d73e7ac7fd86a77e90813fea1a8bcab13de2bcfdf35dea82e4e4918d69f2598b"
+        },
+        {
+          "id": "p11-n5",
+          "x": 36,
+          "y": 649.9921875,
+          "w": 468,
+          "h": 31.5,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "a234df82148205c19930b9e1ba08bf27eed35281dc9006bca5c2c17c5e2bac8a"
+        }
+      ],
+      "comparison": {
+        "total": 58,
+        "changed": 10
+      },
+      "errors": []
+    },
+    {
+      "name": "week-in-hazel-001-style-lab.pdf",
+      "measures": [
+        {
+          "id": "p1-n0",
+          "x": 339.99609375,
+          "y": 490.9921875,
+          "w": 150,
+          "h": 60,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "871f44df6bdf878f9af5128d03598e5458cdca0d332788810680c485e4fd745f"
+        },
+        {
+          "id": "p1-n1",
+          "x": 36,
+          "y": 586.9921875,
+          "w": 468,
+          "h": 56.98828125,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "d55abc6ff10831be3894bdef3c65edbbe8a0feb363ba16e242826e1623b96e5a"
+        },
+        {
+          "id": "p2-n0",
+          "x": 36,
+          "y": 190.9921875,
+          "w": 222,
+          "h": 79.98046875,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "295760e30840269742c70824b35a32198d50b2e13e3276ec87612247912dcaad"
+        },
+        {
+          "id": "p2-n1",
+          "x": 282,
+          "y": 190.9921875,
+          "w": 222,
+          "h": 79.98046875,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "f3a7362e01694981ee958e0e4820110fed5aab850b62d5836bd7f8b3a93404b1"
+        },
+        {
+          "id": "p2-n2",
+          "x": 36,
+          "y": 537.99609375,
+          "w": 468,
+          "h": 11.49609375,
+          "pretty": "pretty",
+          "fonts": "Code",
+          "key": "0232d056042578c9169c1d8c86868c38d8081eb24011732bc7b1db2a93dc54ac"
+        },
+        {
+          "id": "p2-n3",
+          "x": 36,
+          "y": 669.99609375,
+          "w": 468,
+          "h": 9.99609375,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "9b4bc2dc4f0b570a81ccd6aaa6985aec9f3a5c17fad94e2be967679fdefbbd74"
+        },
+        {
+          "id": "p3-n0",
+          "x": 36,
+          "y": 600,
+          "w": 468,
+          "h": 54,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "dace2454e361108ebf641b2e01ecc04f208e9887a8936f936155e1c2bd616585"
+        },
+        {
+          "id": "p4-n0",
+          "x": 36,
+          "y": 381.99609375,
+          "w": 468,
+          "h": 51.01171875,
+          "pretty": "pretty",
+          "fonts": "Lib",
+          "key": "33a628806cf788d4cc5c3ae3a66af131015ed20ae08efb6d10e6a1d199874bbc"
+        },
+        {
+          "id": "p4-n1",
+          "x": 36,
+          "y": 672,
+          "w": 468,
+          "h": 9.99609375,
+          "pretty": "pretty",
+          "fonts": "Rubik",
+          "key": "ac0ddfeaaf432d765e5d29bb8e57f42c52b0050c3c559ab78e7aa79351504332"
+        }
+      ],
+      "comparison": {
+        "total": 6,
+        "changed": 0
+      },
+      "errors": []
+    }
+  ]
+}
