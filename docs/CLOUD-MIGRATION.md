@@ -4,13 +4,17 @@ Assessment: September 11, 2026. A one-off ChatGPT Work Cloud trial has now been 
 
 ## Current next step: the hosted back-issue trial
 
+**Latest verification, September 11 Pacific / September 12 UTC:** the trial pushed commit `daace136f1cff30b1f552efcc6f0080663239a97` to `codex/cloud-back-issue-trial`. Its Issue -058 prose, HTML, six distinct PNG assets, research, QA, builder, and portability edits are present. The reported eight-page, 18,019,306-byte PDF is absent: the connector rejected its base64 request above 16 MiB. The web conversation now ends with a network error and no visible final bundle link. The committed QA records failed Hazel dependency installation (`libgmp-dev`, followed by apt privilege errors) and failed native PNG capture (Chromium download timeouts; connected-browser JPEG output). Full migration remains unready. See [START-CLOUD.md](START-CLOUD.md) for verified evidence and manual launch instructions.
+
+The original launch omitted model and effort overrides and did not inherit the local task's configuration. The web UI currently shows **GPT-5.6 Sol Extra High**. Andrew wants **GPT-6 Astra Extra High** for the next trial; Astra was verified as available in the web Work model menu. Select model and effort explicitly before launch. The existing task's settings were not changed during this check.
+
 The app already contains two distinct projects named **hazel**: a local project connected to the Mac's Hazel checkout, and a ChatGPT project. The trial was started directly in the existing ChatGPT project using the app's ChatGPT Work Cloud task creation capability. Andrew does not need to create another project for this trial. The local project and this production conversation remain intact; no in-place conversion was attempted.
 
 - Cloud task ID: `6aa49166-9678-83ea-a228-bcc4e5135ce7`.
 - ChatGPT project ID: `g-p-6898c74753888191b5b9e8751ebbd402`.
 - Starting production revision: `36c0a703e8b84014dd5030e74de712f8f16f61d7`.
 - Assignment: [one new retrospective issue](CLOUD-TRIAL.md), including an actual hosted-tool capability check before production.
-- The task is now titled **Produce Cloud Trial Issue**. Its actual web conversation shows repository retrieval, Node/Python and Poppler checks, and selection of Issue **-058**, July 18–24, 2025, with historical cutoff head beginning `790b84e568`. Browser access to public `hazel.org` was allowed for this chat, and the web UI then showed work continuing. Successful completion is not yet established.
+- The task is titled **Produce Cloud Trial Issue**. It selected Issue **-058**, July 18–24, 2025, with historical cutoff head beginning `790b84e568`. Browser access to public `hazel.org` was allowed for this chat. Substantial work is now persisted as described above; successful completion of all trial stages is not established.
 - The desktop `read_thread` tool returned only the initial user brief despite substantial assistant progress being visible on the web. Do not use an empty assistant-message result or the generic active/idle flag alone to conclude that this cloud task has not started or has finished.
 
 This is **ChatGPT Work Cloud**, which is distinct from the repository-oriented Codex cloud environment described below. The official [Work guide](https://learn.chatgpt.com/docs/get-started-with-work) describes hosted work that can continue after the desktop app closes. A [ChatGPT project](https://learn.chatgpt.com/docs/projects) organizes shared sources and conversations; the local-folder project does not automatically become a hosted filesystem. This trial reads its durable production kit from GitHub.

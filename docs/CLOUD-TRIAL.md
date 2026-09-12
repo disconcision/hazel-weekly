@@ -1,5 +1,7 @@
 # Cloud trial: one new retrospective issue
 
+For a new manually launched trial, begin with [START-CLOUD.md](START-CLOUD.md). It records the first attempt's pushed work and failures, adds Issue -058 to the exclusions, and uses a fresh branch so the original trial is preserved. The fixed branch name below describes the original assignment.
+
 Andrew requested a trial in ChatGPT Work Cloud before switching weekly production away from the Mac. Use the existing ChatGPT project named **hazel** for the trial. The desktop project with the same name is a separate local folder connection; it is not being converted or deleted.
 
 ## Outcome

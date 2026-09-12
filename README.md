@@ -8,6 +8,7 @@ Read the magazine at **[andrewblinn.com/hazel/weekly](https://andrewblinn.com/ha
 
 ## Start here
 
+- [Start a cloud trial yourself](docs/START-CLOUD.md): interface steps, the intended model/effort, a copyable prompt, and verified results from the first attempt.
 - [Production brief](output/week-in-hazel/PRODUCTION.md): the assignment, visual language, reporting and verification process.
 - [Editorial guide](output/week-in-hazel/EDITORIAL.md) and [audience](output/week-in-hazel/AUDIENCE.md): write for the people working on Hazel.
 - [Issue ledger](output/week-in-hazel/issues.json), [image ledger](output/week-in-hazel/image-ledger.json), and [numbering](output/week-in-hazel/NUMBERING.md): continuity across weeks.
@@ -55,6 +56,8 @@ The existing PDF builders use Python, ReportLab, Pillow, pypdf, Node, Playwright
 Imported September 11, 2026. This is the project repository and a starting point for cloud migration. **Creating it did not move or activate a scheduled job.** The existing Friday 9 a.m. America/Los_Angeles Codex task still runs locally and reads the original production kit in the sibling `hazel` checkout. Until that task is migrated, reconcile any newer issues and ledgers from that working kit before using this repository for production.
 
 A [one-off cloud back-issue trial](docs/CLOUD-TRIAL.md) has since been started in the existing ChatGPT **hazel** project. It uses this repository as its production kit and has no publishing or scheduling role. See [the migration record](docs/CLOUD-MIGRATION.md) for its task ID and the handover sequence that prevents overlapping weekly schedules.
+
+The trial pushed Issue -058 sources, HTML, art, research, and QA to `codex/cloud-back-issue-trial` at `daace13`. Its PDF upload failed at the connector's request-size limit, and the conversation ended with a network error. Fresh Hazel builds and native PNG capture also remain unresolved. The [manual start guide](docs/START-CLOUD.md) records what is verified and gives a new task the necessary context.
 
 The live website remains in [disconcision/disconcision.github.io](https://github.com/disconcision/disconcision.github.io), deployed from `master`. This repository's `site/` directory is a complete imported copy of the archive, not a second deployment. Publishing a commit here does not update the website. Keep website changes confined to `hazel/weekly/` and preserve the existing `/hazel` redirect and all other navigation.
 
