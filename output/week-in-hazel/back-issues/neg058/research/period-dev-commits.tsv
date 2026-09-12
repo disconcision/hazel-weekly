@@ -1,0 +1,61 @@
+790b84e568197eb668591c4b05903aaeb6de20a9	2025-07-24T16:19:13-04:00	andrew blinn	2bdb606a6b8ac88e6705019531ffb0b751b037dd 0a914f1ec08eb15ca1cc04b16a33995e8f511bf5	Backpack II (#1805)
+0a914f1ec08eb15ca1cc04b16a33995e8f511bf5	2025-07-24T16:07:34-04:00	disconcision	0eb5a3f9926e768c5ea04b857c602cd07e8fef33	exercises mode padding fix
+0eb5a3f9926e768c5ea04b857c602cd07e8fef33	2025-07-24T14:30:31-04:00	andrew blinn	4354c804ba7901087bf7439f54a5cbc43b2d190b 2bdb606a6b8ac88e6705019531ffb0b751b037dd	Merge branch 'dev' into backpack-2
+2bdb606a6b8ac88e6705019531ffb0b751b037dd	2025-07-24T08:59:21-07:00	Liam Scotty	5328152e0c3684d02286426093f73524a9463ee3 9a5f7d9c9b28d5af7ff2b4c3b4f6cf8d99b1c423	Revert "Unused Variable Warnings" (#1825)
+9a5f7d9c9b28d5af7ff2b4c3b4f6cf8d99b1c423	2025-07-24T08:57:48-07:00	Liam Scotty	5328152e0c3684d02286426093f73524a9463ee3	Revert "Unused Variable Warnings"
+5328152e0c3684d02286426093f73524a9463ee3	2025-07-24T10:22:41-05:00	Liam Scotty	b52dcc6191c195b9829276bfc70c4e5c1060e7f9 8c688bc5b24a5978d4a5520ce66ea11e429caad6	Unused Variable Warnings (#1033)
+4354c804ba7901087bf7439f54a5cbc43b2d190b	2025-07-24T00:00:30-04:00	disconcision	6718c1f217553f0b0ef683f6892fbc25f19d7148	don't render empty backpack
+6718c1f217553f0b0ef683f6892fbc25f19d7148	2025-07-23T23:55:30-04:00	disconcision	908b0b1bc6274fde368416f377bde345839d819e	backpack PR fixes
+8c688bc5b24a5978d4a5520ce66ea11e429caad6	2025-07-23T22:03:21-05:00	Liam Scotty	9c76b307ce2f9ba7b773478e735c5b08babbf212 b52dcc6191c195b9829276bfc70c4e5c1060e7f9	Merge branch 'dev' into unused-var-warnings
+908b0b1bc6274fde368416f377bde345839d819e	2025-07-23T20:43:40-04:00	disconcision	cc381b2e31b12132ce892c06be92846ed84d18c1 b52dcc6191c195b9829276bfc70c4e5c1060e7f9	dev merge
+b52dcc6191c195b9829276bfc70c4e5c1060e7f9	2025-07-23T18:06:55-04:00	Cyrus Omar	8af34bc1b0b435f19f234354c206a535629d252d 9747e328fe3f3a5d7971ce47e70e841662920aa8	Fix selection decoration shape (#1822)
+8af34bc1b0b435f19f234354c206a535629d252d	2025-07-23T18:01:53-04:00	Cyrus Omar	0798da80230ba0736435975f03050aeeae51f853 f28f201f71b354ae69363932496e388fa7b8e9c1	Retain/restore projector placements in concrete syntax (#1808)
+cc381b2e31b12132ce892c06be92846ed84d18c1	2025-07-23T13:50:32-04:00	andrew blinn	0a47c9ecd3b5cb6cfbb6167aa332a52db100a2b1 0798da80230ba0736435975f03050aeeae51f853	Merge branch 'dev' into backpack-2
+f28f201f71b354ae69363932496e388fa7b8e9c1	2025-07-23T13:50:13-04:00	andrew blinn	2b459e81b38943b7b305c2817a1f0146f7377151 0798da80230ba0736435975f03050aeeae51f853	Merge branch 'dev' into projectors-retain
+9747e328fe3f3a5d7971ce47e70e841662920aa8	2025-07-23T13:49:32-04:00	andrew blinn	2e80e3e1007511354eff74f2306dc6d1f21806c1 0798da80230ba0736435975f03050aeeae51f853	Merge branch 'dev' into fix-selection-deco
+0798da80230ba0736435975f03050aeeae51f853	2025-07-23T13:38:06-04:00	Cyrus Omar	169bfe50d1880d556302ba1fcc5ef71a67762815 684433fb54e956d974d4ae657788eb78c75759fb	Silence warning 56 (#1806)
+169bfe50d1880d556302ba1fcc5ef71a67762815	2025-07-23T12:29:18-04:00	Cyrus Omar	bec1c13807b18bfe169d7f6a3202784b9d1f04dd deb3efde10dbee79ffcf5c21c82fc61c53f77e55	Add ToggleFocus action (#1799)
+bec1c13807b18bfe169d7f6a3202784b9d1f04dd	2025-07-23T11:17:38-04:00	Cyrus Omar	a6fb6cb95996c3a8ee9b21d84f6b3fb979dd6b04 8209d5f01a137f209aabf69f75056b5507a8abeb	Rename holes in CursorInspector (#1766)
+a6fb6cb95996c3a8ee9b21d84f6b3fb979dd6b04	2025-07-23T11:16:50-04:00	Cyrus Omar	2cad33b5b3c588ef8a7c864c199b295c164742f7 09438ad9828ff72cc384d961f7ce93dcd11bbfee	Normalize typap type in elaboration (#1818)
+9c76b307ce2f9ba7b773478e735c5b08babbf212	2025-07-23T08:12:19-07:00	Liam S Mulcahy	7c596493a2ef0426a98f3d9a55d1f77577c8dc34 2cad33b5b3c588ef8a7c864c199b295c164742f7	Merge remote-tracking branch 'origin' into unused-var-warnings
+7c596493a2ef0426a98f3d9a55d1f77577c8dc34	2025-07-23T08:11:40-07:00	Liam S Mulcahy	4a3ca28036bfd5e570acc0e384b3f757c5992e3d	Update the hole_co_ctx comment
+2cad33b5b3c588ef8a7c864c199b295c164742f7	2025-07-23T11:05:22-04:00	Cyrus Omar	38ccab7c56db1ef54e2a62398fd8e414e388f366 daba2b6298baa3e8b7007b2236e25c14dcdab9cc	chore: update dependencies (#1765)
+684433fb54e956d974d4ae657788eb78c75759fb	2025-07-23T10:30:01-04:00	Matt Keenan	38ccab7c56db1ef54e2a62398fd8e414e388f366	Silence warning 56
+09438ad9828ff72cc384d961f7ce93dcd11bbfee	2025-07-23T09:59:54-04:00	Alexander Bandukwala	8d6238b7c2015b2cfd863c18579389574c5c74fe 38ccab7c56db1ef54e2a62398fd8e414e388f366	Merge branch 'dev' into typap-normalize-elab
+deb3efde10dbee79ffcf5c21c82fc61c53f77e55	2025-07-23T09:59:35-04:00	Alexander Bandukwala	28905a7d6a3a6dc9c6c1e519b00c1d5bb9ba6301 38ccab7c56db1ef54e2a62398fd8e414e388f366	Merge branch 'dev' into toggle-focus-action
+8209d5f01a137f209aabf69f75056b5507a8abeb	2025-07-23T09:56:45-04:00	Alexander Bandukwala	1ab83b53d8ac898f66c9c50db2ef25d093c2430f 38ccab7c56db1ef54e2a62398fd8e414e388f366	Merge branch 'dev' into rename-holes
+2b459e81b38943b7b305c2817a1f0146f7377151	2025-07-23T09:44:57-04:00	Alexander Bandukwala	9212f864054d1db9fbf036000aeb6bc123a35bb7	Add tests for Fold Projector in menhir_maketerm_equivalent_test
+9212f864054d1db9fbf036000aeb6bc123a35bb7	2025-07-23T09:44:42-04:00	Alexander Bandukwala	67eb311bab43a5ff35a553e8af2cf272d76b3e1c	Fix the menhir parser projector invocation
+67eb311bab43a5ff35a553e8af2cf272d76b3e1c	2025-07-23T09:30:08-04:00	Alexander Bandukwala	6f1a77a35255e1ebbe6ed48cc84e803ec926afa9	Change Menhir/MakeTerm ExpToSegment settings
+daba2b6298baa3e8b7007b2236e25c14dcdab9cc	2025-07-23T09:18:18Z	cyrus-	38ccab7c56db1ef54e2a62398fd8e414e388f366	chore: update dependencies
+0a47c9ecd3b5cb6cfbb6167aa332a52db100a2b1	2025-07-23T01:08:34-04:00	disconcision	8ff372dcfd23d75929be7c23d921a7abd5c6df0d	all non-alphanumeric trailing delimiters back to instant putdown
+2e80e3e1007511354eff74f2306dc6d1f21806c1	2025-07-22T23:59:01-04:00	disconcision	38ccab7c56db1ef54e2a62398fd8e414e388f366	fix #1782
+8ff372dcfd23d75929be7c23d921a7abd5c6df0d	2025-07-22T23:45:51-04:00	disconcision	9585a032a96ce90d6eb2537c81150158b1315ee4	rm unnecessary zipper-based global missing shards functions in favor of using the cached segment
+9585a032a96ce90d6eb2537c81150158b1315ee4	2025-07-22T23:42:45-04:00	disconcision	59365e2ba45b277f48f08008230b0ff981e966b0	backpack cleanup
+59365e2ba45b277f48f08008230b0ff981e966b0	2025-07-22T23:19:07-04:00	disconcision	5b96212036a0e80a064487f3e3d0d66eef91e94b	backpack cleanup
+5b96212036a0e80a064487f3e3d0d66eef91e94b	2025-07-22T23:07:27-04:00	disconcision	ea48d669268b5437d4b65b7b05fe46b0acd4c9ff	rm unused mousedown global
+ea48d669268b5437d4b65b7b05fe46b0acd4c9ff	2025-07-22T23:05:41-04:00	disconcision	9ebec80545aebd5ed07c9e86b848e7df449c49b6	rm backpack target setting
+9ebec80545aebd5ed07c9e86b848e7df449c49b6	2025-07-22T23:02:41-04:00	disconcision	9ee63776c9a1ab0fc6af476ff544beafd944e635	test fixes
+6f1a77a35255e1ebbe6ed48cc84e803ec926afa9	2025-07-22T22:36:47-04:00	andrew blinn	e50f9dd2d7c1f6b5ce0de6a2d07ac54514714205 38ccab7c56db1ef54e2a62398fd8e414e388f366	Merge branch 'dev' into projectors-retain
+9ee63776c9a1ab0fc6af476ff544beafd944e635	2025-07-22T22:17:32-04:00	disconcision	01f5dfc84230dcfce2e878e6a26318bb35576ed5	fixes, cleanup. rebuild some doc slides
+01f5dfc84230dcfce2e878e6a26318bb35576ed5	2025-07-22T19:23:45-04:00	disconcision	35472e88cdca45cd782bf80c6ab6f70d1c333281	fix menu / backpack z-index fight
+35472e88cdca45cd782bf80c6ab6f70d1c333281	2025-07-22T19:01:02-04:00	disconcision	9a310c56bbbb31a46dcf30bc494d03aea1c0f555 38ccab7c56db1ef54e2a62398fd8e414e388f366	Merge branch 'dev' of github.com:hazelgrove/hazel into backpack-2
+38ccab7c56db1ef54e2a62398fd8e414e388f366	2025-07-22T18:53:10-04:00	andrew blinn	6ae4867989c8612e45d9cf19f177ee7d8827e9d1 61d56291966d59de44d4ababe97963d0a5db1000	Polymorphic equality (#1267)
+61d56291966d59de44d4ababe97963d0a5db1000	2025-07-22T18:23:06-04:00	disconcision	8c906bf12d01544ede6828e0c3d078afe7476f41 6ae4867989c8612e45d9cf19f177ee7d8827e9d1	Merge branch 'dev' of github.com:hazelgrove/hazel into polymorphic-equal-test
+4a3ca28036bfd5e570acc0e384b3f757c5992e3d	2025-07-22T17:15:55-04:00	disconcision	f58df553a2738cf1eb0ca2f9535b02517d35fca9	rm duplication in error/warnings view
+f58df553a2738cf1eb0ca2f9535b02517d35fca9	2025-07-22T17:04:08-04:00	disconcision	2b3c74040ccf7a11881de042fe37d7fc5ad3525b	colors tweak
+2b3c74040ccf7a11881de042fe37d7fc5ad3525b	2025-07-22T16:51:17-04:00	disconcision	48ffb73ecabdfa77f5abc58e2ffec046a0f0e852 6ae4867989c8612e45d9cf19f177ee7d8827e9d1	Merge branch 'dev' of github.com:hazelgrove/hazel into unused-var-warnings
+9a310c56bbbb31a46dcf30bc494d03aea1c0f555	2025-07-22T16:36:46-04:00	disconcision	67916dcef5e17d37edfc07912e135d1ae179f898	supress term indication deco for kw prefix infix delims
+8d6238b7c2015b2cfd863c18579389574c5c74fe	2025-07-22T10:23:59-04:00	Alexander Bandukwala	6ae4867989c8612e45d9cf19f177ee7d8827e9d1	Normalize typap type in elaboration
+67916dcef5e17d37edfc07912e135d1ae179f898	2025-07-21T13:30:32-04:00	disconcision	cff6f167a841ad617cdfdf59776299bca658ea35	amiguous polymorph token dropping special case. re-enable instant matching for symbolic closing delims
+6ae4867989c8612e45d9cf19f177ee7d8827e9d1	2025-07-20T00:25:29-04:00	Cyrus Omar	11499d2224b2459070974fd5017f60af76870daa 7bb37e5e9b176f03fc22e161a11833bbe610b26e	updated installation documentation and added opam repository archive (#1797)
+7bb37e5e9b176f03fc22e161a11833bbe610b26e	2025-07-20T00:24:45-04:00	Cyrus Omar	e027ce2d4de343fd32ebf7ef0d0823114bf5e2f7	add note about developer documentation
+e027ce2d4de343fd32ebf7ef0d0823114bf5e2f7	2025-07-20T00:22:49-04:00	Cyrus Omar	f9abbbd023f4a038e28e0a6cdfdee9746951b2c5	suggestions from PR
+cff6f167a841ad617cdfdf59776299bca658ea35	2025-07-19T17:39:10-04:00	disconcision	35b0b901f8a01e64e4068748b90431d2d0aef576	reinstate old drop-backpack
+35b0b901f8a01e64e4068748b90431d2d0aef576	2025-07-18T22:39:01-04:00	disconcision	86a4cf9f4ef0d38596be6edb3701c380d1ce60cd	require token end event e.g. space for trailing delimiters to expand
+e50f9dd2d7c1f6b5ce0de6a2d07ac54514714205	2025-07-18T15:20:59-04:00	disconcision	ff9cb11d033aa415da0fa32bc00ed8dce538fa76	attempt to shut up menhir tests
+ff9cb11d033aa415da0fa32bc00ed8dce538fa76	2025-07-18T14:43:19-04:00	disconcision	11499d2224b2459070974fd5017f60af76870daa	retain lexical projector placements when parsed/printed from/to concrete syntax
+86a4cf9f4ef0d38596be6edb3701c380d1ce60cd	2025-07-17T23:57:58-04:00	disconcision	27971f5f6b9cfaa7b005c8accf4613fb30893eec	rm backpack from serializations. rm prints
+27971f5f6b9cfaa7b005c8accf4613fb30893eec	2025-07-17T23:55:49-04:00	disconcision	a559c66a21377bbc2f5466b7b1977f8f6924c600	backpack cleanup. backpack view now string based. dead code removal.
+a559c66a21377bbc2f5466b7b1977f8f6924c600	2025-07-17T23:20:55-04:00	disconcision	5556f9be7fad1e76160f3b327482cf46f00718ed	rm structural insertion (broken out to separate feature branch)
+5556f9be7fad1e76160f3b327482cf46f00718ed	2025-07-17T21:41:24-04:00	disconcision	5876151ccbd54143284c8a5ab2adc22c672c1cc5	backpack cleanup

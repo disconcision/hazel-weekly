@@ -12,7 +12,17 @@ from reportlab.lib.styles import ParagraphStyle
 from reportlab.platypus import Paragraph
 from PIL import Image
 ROOT=Path(__file__).resolve().parent; ASSETS=ROOT/'assets'; OUT=ROOT.parents[1]/'pdf'; OUT.mkdir(exist_ok=True)
-F=Path('/Users/andrewblinn/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/libreoffice-headless/libreoffice/LibreOfficeDev.app/Contents/Resources/fonts/truetype')
+def font_dir():
+ candidates=[]
+ if os.environ.get('HAZEL_ZINE_FONT_DIR'):candidates.append(Path(os.environ['HAZEL_ZINE_FONT_DIR']))
+ if os.environ.get('CODEX_PRIMARY_RUNTIME_ROOT'):
+  candidates.extend(Path(os.environ['CODEX_PRIMARY_RUNTIME_ROOT']).glob('**/fonts/truetype'))
+ candidates.append(Path('/Users/andrewblinn/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/libreoffice-headless/libreoffice/LibreOfficeDev.app/Contents/Resources/fonts/truetype'))
+ required={'LinLibertine_R_G.ttf','LinLibertine_RB_G.ttf','LinLibertine_RI_G.ttf','Rubik-Regular.ttf','Rubik-Bold.ttf','LiberationMono-Regular.ttf'}
+ for candidate in candidates:
+  if candidate.is_dir() and required.issubset(p.name for p in candidate.iterdir()):return candidate
+ raise FileNotFoundError('Week in Hazel fonts not found; set HAZEL_ZINE_FONT_DIR')
+F=font_dir()
 for name,filename in [('Serif','LinLibertine_R_G.ttf'),('SerifBold','LinLibertine_RB_G.ttf'),('SerifItalic','LinLibertine_RI_G.ttf'),('Sans','Rubik-Regular.ttf'),('SansBold','Rubik-Bold.ttf'),('Mono','LiberationMono-Regular.ttf')]: pdfmetrics.registerFont(TTFont(name,str(F/filename)))
 pdfmetrics.registerFontFamily('Serif',normal='Serif',bold='SerifBold',italic='SerifItalic',boldItalic='SerifBold')
 pdfmetrics.registerFontFamily('Sans',normal='Sans',bold='SansBold',italic='Sans',boldItalic='SansBold')
@@ -121,4 +131,3 @@ class Zine:
 def pr(n):return f'https://github.com/hazelgrove/hazel/pull/{n}'
 def issue(n):return f'https://github.com/hazelgrove/hazel/issues/{n}'
 def commit(sha):return 'https://github.com/hazelgrove/hazel/commit/'+sha
-

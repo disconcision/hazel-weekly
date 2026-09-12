@@ -1,0 +1,39 @@
+{
+  "note": "Proposal only. Do not merge into the production ledgers until editorial review and publication planning.",
+  "issue": {
+    "id": "-058",
+    "number": -58,
+    "title": "Carry only the missing pieces.",
+    "start_utc": "2025-07-18T00:00:00+00:00",
+    "end_exclusive_utc": "2025-07-25T00:00:00+00:00",
+    "artifact": "../pdf/week-in-hazel-neg058.pdf",
+    "status": "review-candidate-unpublished",
+    "edition": "retrospective",
+    "produced_utc": "2026-09-12T00:00:00+00:00",
+    "revision": 1,
+    "historical_dev_head": "790b84e568197eb668591c4b05903aaeb6de20a9",
+    "pages": 8,
+    "extracted_words": 2169,
+    "topics": [
+      {"key":"neg058-backpack-derived","role":"lead","page":2,"new_angle":"The backpack is derived from the unfinished program rather than stored state.","github_numbers":[1805,752],"return_trigger":"Return on a substantive later change; consult reporting dates, not retrospective production date."},
+      {"key":"neg058-warnings-briefly","role":"feature","page":3,"new_angle":"Unused-variable warnings reached dev for thirty-six minutes and were reverted.","github_numbers":[1033,1825],"return_trigger":"Return when warning semantics or presentation lands again; distinguish the reverted July 24 state."},
+      {"key":"neg058-projector-equality","role":"feature","page":4,"new_angle":"Projectors acquire concrete syntax while equality broadens across comparable shapes.","github_numbers":[1808,1267],"return_trigger":"Return on substantive follow-up to projector persistence or equality semantics."},
+      {"key":"neg058-scrollbar-regression","role":"feature","page":5,"new_angle":"Backpack II fixes one layer while exposing the scrollbar beneath the top bar.","github_numbers":[1805,1827,1799,1822],"return_trigger":"Return when the cross-mode stacking regression is fixed or the relevant layout changes."},
+      {"key":"neg058-report-boundary","role":"feature","page":6,"new_angle":"Twelve issue reports map the boundary around the week's landings.","github_numbers":[1804,1812,1809,1810,1813,1815,1819,1820,1821,1823,1824],"return_trigger":"Return only when one of these reports produces a substantive outcome."},
+      {"key":"neg058-instrument-panel","role":"feature","page":7,"new_angle":"Sixty-one cutoff-reachable objects and twelve opened PRs describe a crowded week without inferring assistance.","github_numbers":[1805,1808,1267,1033,1825],"return_trigger":"The metrics are fixed to this historical cutoff; do not silently recompute them against a later head."}
+    ],
+    "images": ["neg058-cover","neg058-unused-variable-original","neg058-unused-variable-stamp","neg058-scrollbar-original","neg058-scrollbar-stamp","neg058-comic"],
+    "reporting_credits": {"editor":"Astra (AI editor and reporter)","illustrations":"ImageGen"},
+    "production_guide": "back-issues/README.md",
+    "source_directory": "back-issues/neg058/research",
+    "next_issue_end_exclusive_utc": null
+  },
+  "images": [
+    {"id":"neg058-cover","issue":"-058","number":-58,"kind":"generated cover illustration","concept":"A traveler carries only delimiter shards derived from the unfinished syntax landscape.","path":"back-issues/neg058/assets/cover.png","created_utc":"2026-09-12T00:00:00+00:00","reporting_start_utc":"2025-07-18T00:00:00+00:00","historical_head":null,"prompt":"back-issues/neg058/PROMPTS.json","cleanup":null,"pixel_dimensions":[1536,1024],"reuse_rule":"Do not repeat this traveler, tiled landscape, or missing-delimiter backpack composition."},
+    {"id":"neg058-unused-variable-original","issue":"-058","number":-58,"kind":"authentic historical GitHub PNG","concept":"The proposed unused-variable warning treatment in Hazel's dated basic-reference screenshot.","path":"back-issues/neg058/assets/originals/unused-variable-warnings.png","created_utc":"2025-07-24T00:00:00+00:00","reporting_start_utc":"2025-07-18T00:00:00+00:00","historical_head":"790b84e568197eb668591c4b05903aaeb6de20a9","prompt":null,"cleanup":null,"pixel_dimensions":[1151,1366],"reuse_rule":"Exact evidence for PR #1033; reuse only as an explicitly labeled historical comparison."},
+    {"id":"neg058-unused-variable-stamp","issue":"-058","number":-58,"kind":"generated screenshot treatment","concept":"Light Cards-style stamp facsimile of the dated unused-variable warning screenshot.","path":"back-issues/neg058/assets/unused-variable-warnings-stamp.png","created_utc":"2026-09-12T00:00:00+00:00","reporting_start_utc":"2025-07-18T00:00:00+00:00","historical_head":"790b84e568197eb668591c4b05903aaeb6de20a9","prompt":"back-issues/neg058/PROMPTS.json","cleanup":null,"pixel_dimensions":[1151,1366],"reuse_rule":"Illustration only; retain the authentic source PNG whenever used."},
+    {"id":"neg058-scrollbar-original","issue":"-058","number":-58,"kind":"authentic historical GitHub PNG","concept":"Backpack II scrollbar-under-top-bar regression attached to issue #1827.","path":"back-issues/neg058/assets/originals/backpack-scrollbar-regression.png","created_utc":"2025-07-24T00:00:00+00:00","reporting_start_utc":"2025-07-18T00:00:00+00:00","historical_head":"790b84e568197eb668591c4b05903aaeb6de20a9","prompt":null,"cleanup":null,"pixel_dimensions":[1354,666],"reuse_rule":"Exact evidence for issue #1827; reuse only as an explicitly labeled historical comparison."},
+    {"id":"neg058-scrollbar-stamp","issue":"-058","number":-58,"kind":"generated screenshot treatment","concept":"Light Cards-style stamp facsimile retaining the scrollbar/top-bar relationship.","path":"back-issues/neg058/assets/backpack-scrollbar-regression-stamp.png","created_utc":"2026-09-12T00:00:00+00:00","reporting_start_utc":"2025-07-18T00:00:00+00:00","historical_head":"790b84e568197eb668591c4b05903aaeb6de20a9","prompt":"back-issues/neg058/PROMPTS.json","cleanup":null,"pixel_dimensions":[1788,880],"reuse_rule":"Illustration only; retain the authentic source PNG whenever used."},
+    {"id":"neg058-comic","issue":"-058","number":-58,"kind":"generated illustration","concept":"A fictional warning clerk arrives, outlines a variable near a hole, and catches the return train.","path":"back-issues/neg058/assets/comic.png","created_utc":"2026-09-12T00:00:00+00:00","reporting_start_utc":"2025-07-18T00:00:00+00:00","historical_head":null,"prompt":"back-issues/neg058/PROMPTS.json","cleanup":null,"pixel_dimensions":[2172,724],"reuse_rule":"Do not repeat the warning clerk, station, train, or three-panel premise."}
+  ]
+}

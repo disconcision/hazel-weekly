@@ -1,0 +1,75 @@
+WEEK IN HAZEL CLOUD TRIAL — SELECTED COMMAND TRANSCRIPT
+Trial date: 2026-09-12 UTC
+Historical Hazel revision: 790b84e568197eb668591c4b05903aaeb6de20a9
+
+$ git --version
+git version 2.51.1
+
+$ node --version
+v24.19.0
+
+$ npm --version
+11.10.1
+
+$ python3 --version
+Python 3.12.14
+
+$ gcc --version | head -1
+gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0
+
+$ make --version | head -1
+GNU Make 4.3
+
+$ command -v opam ocamlc dune m4 pkg-config chromium chromium-browser google-chrome
+[no output at start of trial]
+
+$ ./toolchain/bin/opam --version
+2.5.2
+
+$ ./toolchain/bin/opam init --root ./toolchain/opam-root --bare --disable-sandboxing -y default https://github.com/ocaml/opam-repository.git
+[completed successfully]
+
+$ ./toolchain/bin/opam switch create --root ./toolchain/opam-root ./toolchain/hazel-5.2.0 ocaml-base-compiler.5.2.0 -y
+[completed successfully; OCaml 5.2.0 installed from source]
+
+$ npm ci
+added 71 packages, and audited 72 packages
+
+$ make deps
+[repository initialization and update completed]
+#=== ERROR while compiling deps-of-hazel.dev ================================#
+Sorry, no solution found: there seems to be a problem with your request.
+
+No solution found, exiting
+  * Missing dependency:
+    - deps-of-hazel -> conf-gmp >= 5 depends on the unavailable system package 'libgmp-dev'
+make: *** [Makefile:74: deps] Error 20
+
+$ make dev
+dune build --profile dev
+/bin/sh: 1: dune: not found
+make: *** [Makefile:22: dev] Error 127
+
+$ apt-get update
+E: setgroups 65534 failed - setgroups (1: Operation not permitted)
+E: setegid 65534 failed - setegid (1: Operation not permitted)
+E: seteuid 42 failed - seteuid (1: Operation not permitted)
+E: Problem executing scripts APT::Update::Pre-Invoke 'rm -f /var/cache/apt/*.bin || true'
+E: Sub-process returned an error code
+
+$ npx playwright install chromium
+Downloading Chrome for Testing 153.0.8010.12 ... from https://cdn.playwright.dev/builds/cft/153.0.8010.12/linux64/chrome-linux64.zip
+Error: Request to https://cdn.playwright.dev/builds/cft/153.0.8010.12/linux64/chrome-linux64.zip timed out after 30000ms
+[same download timed out three times; zero bytes received]
+
+$ curl -L --max-time 300 -o chrome-linux64.zip https://cdn.playwright.dev/builds/cft/153.0.8010.12/linux64/chrome-linux64.zip
+[zero bytes transferred for 33 seconds; attempt stopped]
+
+Hosted connected Chrome check:
+- https://hazel.org/build/backpack-2/ loaded successfully.
+- The screenshot API returned 87,159 bytes beginning ff d8 ff e0 00 10 4a 46 49 46 00 01.
+- That signature is JPEG/JFIF, not PNG, so the native-PNG acceptance check failed.
+
+Local HTML preview check:
+- Browser navigation to file:///home/oai/share/.../web/index.html was rejected by the cloud browser URL policy.
+- Static HTML/package validation was used instead; this is not counted as fresh browser capture.

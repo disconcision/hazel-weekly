@@ -1,6 +1,6 @@
 /* Typeset text in Chromium; original PDF artwork is composited separately. */
 const fs=require('fs');const path=require('path');
-const runtime=process.env.HAZEL_ZINE_NODE_MODULES || '/Users/andrewblinn/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules';
+const runtime=process.env.HAZEL_ZINE_NODE_MODULES || process.env.CODEX_PRIMARY_RUNTIME_NODE_MODULES || '/Users/andrewblinn/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules';
 const {chromium}=require(path.join(runtime,'playwright'));
 const root=__dirname;const job=JSON.parse(fs.readFileSync(path.join(root,'typesetting/layout.json'),'utf8'));
 const fontDir=job.fontDir;const face=(family,file,weight=400,style='normal')=>`@font-face{font-family:${family};src:url('${new URL('file://'+fontDir+'/'+file).href}');font-weight:${weight};font-style:${style}}`;
@@ -12,7 +12,10 @@ const element=n=>{
  return `<div id="${n.id}" class="box ${n.font==='Serif'&&n.size<=14.5?'body':'display'} ${n.styleStudy?'study':''}" style="left:${n.x}pt;top:${n.y}pt;width:${n.w}pt;font-size:${n.size}pt;line-height:${n.leading}pt;${fontStyles[n.font]};color:${n.color};--paragraph-gap:${n.styleStudy?n.leading:7}pt">${ps}</div>`;
 };
 (async()=>{
- const browser=await chromium.launch({channel:'chrome',headless:true});const results={engine:browser.version(),pretty:true,files:[]};
+ const launch={headless:true};
+ if(process.env.HAZEL_ZINE_BROWSER_EXECUTABLE)launch.executablePath=process.env.HAZEL_ZINE_BROWSER_EXECUTABLE;
+ else launch.channel=process.env.HAZEL_ZINE_BROWSER_CHANNEL || 'chrome';
+ const browser=await chromium.launch(launch);const results={engine:browser.version(),pretty:true,files:[]};
  for(const file of job.files){
   const page=await browser.newPage({viewport:{width:720,height:960},deviceScaleFactor:1});
   const html=`<!doctype html><html lang="en-US"><meta charset="utf-8"><title>${file.name} — text layer</title><style>${fontCSS}@page{size:540pt 720pt;margin:0}*{box-sizing:border-box}html,body{margin:0;padding:0;background:transparent;color:#222a23}.sheet{position:relative;width:540pt;height:720pt;break-after:page}.sheet:last-child{break-after:auto}.box{position:absolute;font-kerning:normal;font-variant-ligatures:common-ligatures}.box p{margin:0;text-wrap:pretty}.body p{hyphens:auto;hyphenate-limit-chars:8 3 3}.box p+p{margin-top:var(--paragraph-gap)}.display p{hyphens:manual}.body b,.body a{hyphens:manual}.initial{float:left;width:32pt;margin-right:5pt;margin-bottom:2pt;font:700 36pt Lib;text-align:center;color:#bb3e27;background:#dce2cc;border-bottom:.6pt solid #355b43}.inline-code{white-space:nowrap}a{color:inherit;text-decoration:none;text-decoration-thickness:.45pt;text-underline-offset:1pt}u{text-decoration:underline;text-underline-offset:1pt}</style>${Array.from({length:file.pages},(_,i)=>`<section class="sheet" data-page="${i+1}">${file.nodes.filter(n=>n.page===i+1).map(element).join('')}</section>`).join('')}</html>`;

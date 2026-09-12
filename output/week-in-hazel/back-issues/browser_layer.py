@@ -1,6 +1,6 @@
 """HTML paragraph layer with measured geometry and lossless PDF art composition."""
 from pathlib import Path
-import json,subprocess,os,hashlib
+import json,subprocess,os,hashlib,shutil
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.platypus import Paragraph
 from pypdf import PdfReader,PdfWriter
@@ -26,7 +26,8 @@ class BrowserLayer:
   jobs=[]
   for z in self.files:jobs.append(dict(name=z.output_path.name,pages=z.n,nodes=z.text_nodes,textPDF=str(self.tmp/(z.output_path.stem+'-text.pdf'))))
   (self.root/'typesetting/layout.json').write_text(json.dumps({'fontDir':str(self.fonts),'files':jobs},indent=2))
-  node='/Users/andrewblinn/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node'
+  node=os.environ.get('HAZEL_ZINE_NODE') or os.environ.get('CODEX_PRIMARY_RUNTIME_NODE') or shutil.which('node')
+  if not node:raise FileNotFoundError('Node not found; set HAZEL_ZINE_NODE')
   subprocess.run([node,str(self.root/'browser_typeset.cjs')],check=True)
   report=json.loads((self.root/'typesetting/metrics.json').read_text())
   if not os.environ.get('HAZEL_ZINE_MEASURED_PASS'):return report

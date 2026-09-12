@@ -1,0 +1,83 @@
+{
+  "issue": "-058",
+  "start_utc": "2025-07-18T00:00:00+00:00",
+  "end_exclusive_utc": "2025-07-25T00:00:00+00:00",
+  "period_head": "790b84e568197eb668591c4b05903aaeb6de20a9",
+  "commits": 61,
+  "nonmerge": 35,
+  "merges": 26,
+  "authors": {
+    "andrew blinn": 7,
+    "disconcision": 29,
+    "Liam Scotty": 4,
+    "Cyrus Omar": 10,
+    "Liam S Mulcahy": 2,
+    "Matt Keenan": 1,
+    "Alexander Bandukwala": 7,
+    "cyrus-": 1
+  },
+  "daily": {
+    "2025-07-18": 6,
+    "2025-07-19": 2,
+    "2025-07-20": 3,
+    "2025-07-21": 1,
+    "2025-07-22": 9,
+    "2025-07-23": 30,
+    "2025-07-24": 10
+  },
+  "daily_signature_headers": {
+    "2025-07-20": 1,
+    "2025-07-22": 2,
+    "2025-07-23": 17,
+    "2025-07-24": 6
+  },
+  "daily_claude_credits": {},
+  "agent_credit_objects": {
+    "claude": 0,
+    "copilot": 0,
+    "openai": 0,
+    "codex": 0,
+    "chatgpt": 0
+  },
+  "agent_credit_shas": {
+    "claude": [],
+    "copilot": [],
+    "openai": [],
+    "codex": [],
+    "chatgpt": []
+  },
+  "signature_headers": 26,
+  "signature_header_shas": [
+    "790b84e568197eb668591c4b05903aaeb6de20a9",
+    "0eb5a3f9926e768c5ea04b857c602cd07e8fef33",
+    "2bdb606a6b8ac88e6705019531ffb0b751b037dd",
+    "9a5f7d9c9b28d5af7ff2b4c3b4f6cf8d99b1c423",
+    "5328152e0c3684d02286426093f73524a9463ee3",
+    "8c688bc5b24a5978d4a5520ce66ea11e429caad6",
+    "b52dcc6191c195b9829276bfc70c4e5c1060e7f9",
+    "8af34bc1b0b435f19f234354c206a535629d252d",
+    "cc381b2e31b12132ce892c06be92846ed84d18c1",
+    "f28f201f71b354ae69363932496e388fa7b8e9c1",
+    "9747e328fe3f3a5d7971ce47e70e841662920aa8",
+    "0798da80230ba0736435975f03050aeeae51f853",
+    "169bfe50d1880d556302ba1fcc5ef71a67762815",
+    "bec1c13807b18bfe169d7f6a3202784b9d1f04dd",
+    "a6fb6cb95996c3a8ee9b21d84f6b3fb979dd6b04",
+    "2cad33b5b3c588ef8a7c864c199b295c164742f7",
+    "09438ad9828ff72cc384d961f7ce93dcd11bbfee",
+    "deb3efde10dbee79ffcf5c21c82fc61c53f77e55",
+    "8209d5f01a137f209aabf69f75056b5507a8abeb",
+    "2b459e81b38943b7b305c2817a1f0146f7377151",
+    "9212f864054d1db9fbf036000aeb6bc123a35bb7",
+    "67eb311bab43a5ff35a553e8af2cf272d76b3e1c",
+    "6f1a77a35255e1ebbe6ed48cc84e803ec926afa9",
+    "38ccab7c56db1ef54e2a62398fd8e414e388f366",
+    "8d6238b7c2015b2cfd863c18579389574c5c74fe",
+    "6ae4867989c8612e45d9cf19f177ee7d8827e9d1"
+  ],
+  "prs_opened": 12,
+  "prs_merged": 11,
+  "dev_merges": 11,
+  "issues_opened": 12,
+  "scope": "UTC committer dates inside the week, reachable from the historical week-end dev head; signature presence only; exact Co-authored-by trailers. PR and issue flow comes from the 2026-09-12 authenticated GitHub search snapshot."
+}

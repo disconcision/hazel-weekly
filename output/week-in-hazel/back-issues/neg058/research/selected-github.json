@@ -1,0 +1,25 @@
+{
+  "retrieved_utc": "2026-09-12T00:00:00Z",
+  "repository": "hazelgrove/hazel",
+  "window": {
+    "start_utc": "2025-07-18T00:00:00Z",
+    "end_exclusive_utc": "2025-07-25T00:00:00Z"
+  },
+  "pull_requests": [
+    {"number": 1033, "title": "Unused Variable Warnings", "base": "dev", "merged_at": "2025-07-24T15:22:41Z", "merge_commit_sha": "5328152e0c3684d02286426093f73524a9463ee3", "url": "https://github.com/hazelgrove/hazel/pull/1033"},
+    {"number": 1267, "title": "Polymorphic equality", "base": "dev", "merged_at": "2025-07-22T22:53:10Z", "merge_commit_sha": "38ccab7c56db1ef54e2a62398fd8e414e388f366", "url": "https://github.com/hazelgrove/hazel/pull/1267"},
+    {"number": 1797, "title": "updated installation documentation and added opam repository archive", "base": "dev", "merged_at": "2025-07-20T04:25:29Z", "merge_commit_sha": "6ae4867989c8612e45d9cf19f177ee7d8827e9d1", "url": "https://github.com/hazelgrove/hazel/pull/1797"},
+    {"number": 1799, "title": "Add ToggleFocus action", "base": "dev", "merged_at": "2025-07-23T16:29:18Z", "merge_commit_sha": "169bfe50d1880d556302ba1fcc5ef71a67762815", "url": "https://github.com/hazelgrove/hazel/pull/1799"},
+    {"number": 1805, "title": "Backpack II", "base": "dev", "merged_at": "2025-07-24T20:19:14Z", "merge_commit_sha": "790b84e568197eb668591c4b05903aaeb6de20a9", "url": "https://github.com/hazelgrove/hazel/pull/1805"},
+    {"number": 1808, "title": "Retain/restore projector placements in concrete syntax", "base": "dev", "merged_at": "2025-07-23T22:01:53Z", "merge_commit_sha": "8af34bc1b0b435f19f234354c206a535629d252d", "url": "https://github.com/hazelgrove/hazel/pull/1808"},
+    {"number": 1818, "title": "Normalize typap type in elaboration", "base": "dev", "merged_at": "2025-07-23T15:16:51Z", "merge_commit_sha": "a6fb6cb95996c3a8ee9b21d84f6b3fb979dd6b04", "url": "https://github.com/hazelgrove/hazel/pull/1818"},
+    {"number": 1822, "title": "Fix selection decoration shape", "base": "dev", "merged_at": "2025-07-23T22:06:55Z", "merge_commit_sha": "b52dcc6191c195b9829276bfc70c4e5c1060e7f9", "url": "https://github.com/hazelgrove/hazel/pull/1822"},
+    {"number": 1825, "title": "Revert Unused Variable Warnings", "base": "dev", "merged_at": "2025-07-24T15:59:21Z", "merge_commit_sha": "2bdb606a6b8ac88e6705019531ffb0b751b037dd", "url": "https://github.com/hazelgrove/hazel/pull/1825"}
+  ],
+  "issues_opened": [1807, 1809, 1810, 1813, 1814, 1815, 1819, 1820, 1821, 1823, 1824, 1827],
+  "selected_review_evidence": [
+    {"pr": 1033, "at": "2025-07-22T21:19:32Z", "status": "approved", "fact": "Warnings were approved after review of color, view-code duplication and the hole-in-scope qualification.", "url": "https://github.com/hazelgrove/hazel/pull/1033#pullrequestreview-3044908300"},
+    {"pr": 1808, "at": "2025-07-18T19:22:36Z", "fact": "The projector concrete-syntax change exposed a parser property-test question before merge.", "url": "https://github.com/hazelgrove/hazel/pull/1808#issuecomment-3090496011"},
+    {"pr": 1799, "at": "2025-07-23T16:29:13Z", "status": "approved", "url": "https://github.com/hazelgrove/hazel/pull/1799#pullrequestreview-3048205085"}
+  ]
+}
