@@ -40,6 +40,20 @@ The script's default command rebuilds the four initial editions, so extending th
 archive requires adding the new issue's content to the build, not merely rerunning
 the initial-issue command. Preserve existing issue URLs and published files.
 
+Every article section must have a permanent, unique lowercase URL slug and a
+linked heading: `<section id="fumola">` with a title link to `#fumola`, for
+example. `article()` supplies the heading permalink and its small `#` marker;
+the shared stylesheet keeps it visible on touch screens and keyboard accessible.
+Readers can click a title and copy the address, or copy the title's link directly.
+The contents list must use the same targets. Keep the link as an ordinary HTML
+anchor so sharing works without JavaScript. Use a short descriptive slug for new
+sections, and retain it when editing the title or moving the section. Preserve
+all previously published IDs, including the original retrospectives' `article-N`
+IDs; if an ID ever changes, keep the old one as an alias. The builder rejects
+duplicate article IDs. Verify that every heading permalink and contents link
+resolves to exactly one target, and check a direct fragment URL on desktop and
+mobile layouts before publishing.
+
 The landing page and shared stylesheet are maintained in the site repository.
 Andrew explicitly authorized adding each new weekly issue to this public archive
 as part of the weekly generation task on September 11, 2026. Publication here is

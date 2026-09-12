@@ -95,6 +95,8 @@ The weekly schedule already exists in Codex; this guide does not create another 
 
 The [web archive handoff](web/README.md) records the personal-site destination, HTML builder and publication checks. Andrew selected **andrewblinn.com/hazel/weekly/** in place of hazel.org. Use the prominent red disclosure banner: “All content is fully AI-generated from the Hazel Git repository and GitHub data.” The second line reads “Reporting, writing and illustrations are all AI-produced.” The tagline is “A small digest for the hazelnut community.” Open HTML editions with large, unframed cover illustrations above their titles. Publish each new weekly issue here as part of the authorized recurring task; confine changes to that path and preserve other navigation and the `/hazel` redirect.
 
+Give every HTML article section a stable, unique anchor and a visibly linked title with the shared `#` permalink marker. Readers must be able to share a direct link such as `issues/001/#fumola`. Use the same targets in the contents list, retain published IDs across revisions and reordering, and verify fragment links before publication. Follow the markup and accessibility guidance in [web/README.md](web/README.md).
+
 ## Issue numbers and historical editions
 
 Follow [NUMBERING.md](NUMBERING.md). Issue numbers are fixed to reporting weeks; Issue 001 anchors September 4-10, 2026, with 000 and negative numbers before it. Back issues retain their historical window, identify themselves as retrospectives and use period evidence.

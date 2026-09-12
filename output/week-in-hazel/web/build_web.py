@@ -50,9 +50,16 @@ def chart(rows, caption, signature=True):
     return '<figure class="chart"><div class="bars" aria-hidden="true">'+''.join(bars)+'</div><figcaption>'+caption+'<br>'+legend+'</figcaption></figure>'+table
 
 def article(key, section, title, kicker, body):
-    return '<section class="article" id="'+key+'" aria-labelledby="'+key+'-title"><p class="eyebrow">'+escape(section)+'</p><p class="eyebrow article-kicker">'+escape(kicker)+'</p><h2 id="'+key+'-title">'+clean(title).replace('<br/>',' ').replace('\n',' ')+'</h2>'+body+'</section>'
+    if not re.fullmatch(r'[a-z][a-z0-9-]*', key):
+        raise ValueError('Section anchors must be stable lowercase URL slugs: '+key)
+    heading=clean(title).replace('<br/>',' ').replace('\n',' ')
+    permalink='<a class="section-link" href="#'+key+'" title="Link to this section">'+heading+'<span class="section-link-mark" aria-hidden="true">#</span></a>'
+    return '<section class="article" id="'+key+'" aria-labelledby="'+key+'-title"><p class="eyebrow">'+escape(section)+'</p><p class="eyebrow article-kicker">'+escape(kicker)+'</p><h2 id="'+key+'-title">'+permalink+'</h2>'+body+'</section>'
 
 def page(slug, issue_id, title, date, deck, sections, retrospective=False, cover_src=None, cover_alt=None):
+    keys=[key for key,_,_ in sections]
+    if len(keys)!=len(set(keys)):
+        raise ValueError('Duplicate section anchors in issue '+slug)
     dest=DEST/'issues'/slug
     dest.mkdir(parents=True, exist_ok=True)
     contents=''.join('<li><a href="#'+key+'">'+escape(plain(heading))+'</a></li>' for key,heading,_ in sections)
